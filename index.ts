@@ -78,6 +78,7 @@ async function optimizeData() {
     }
     type Devices = {
         data: Device[]
+        images:Record<`SlotType.${string}`, string>
     }
     const languages = new Bun.Glob("**/data.json");
     for await (const file of languages.scan("./dist")) {
@@ -86,8 +87,8 @@ async function optimizeData() {
         if (languages.length !== 2) continue;
         if (name !== "data.json") continue;
         const data = require(join(__dirname, "dist", file)) as OldDevices;
-        //OldDevice to Device
-        const devices: Devices = {data: []}
+        //OldDevice to Device TODO images
+        const devices: Devices = {data: [], images: {}}
         for (const key in data) {
             const oldDevice = data[key];
             if (!oldDevice.PrefabName) continue
@@ -161,8 +162,9 @@ async function optimizeData() {
 // await step2()
 // await step3()
 await optimizeData()
-await Promise.all(GODPromise);
 
+await Promise.all(GODPromise);
+//----------------------------------------------HELPERS----------------------------------------------
 function findImage(fileName: string): string {
     if (!fileName) return "";
     if (fileName.includes("/") || fileName.includes("\\")) return fileName;
