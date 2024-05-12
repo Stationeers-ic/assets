@@ -1,0 +1,712 @@
+{
+  "l": {
+    "name": "l",
+    "description": "Lädt die Geräte-Var zur Registrierung.",
+    "example": "l r? d? logicType"
+  },
+  "s": {
+    "name": "s",
+    "description": "Speichert den Wert des Registers in var auf dem Gerät.",
+    "example": "s d? logicType r?"
+  },
+  "ls": {
+    "name": "ls",
+    "description": "Lädt den Slot Var des Geräts in das Register.",
+    "example": "ls r? d? slotIndex logicSlotType"
+  },
+  "lr": {
+    "name": "lr",
+    "description": "Lädt das Reagens des ReagensMode des Geräts in das Register. Inhalt (0), Erforderlich (1), Rezept (2). Kann entweder das Wort oder die Zahl benutzen.",
+    "example": "lr r? d? reagentMode int"
+  },
+  "sb": {
+    "name": "sb",
+    "description": "Speichert den Wert des Registers var auf allen Netzwerkgeräten mit Ausgabe mit dem angegebenen Hash-Typ.",
+    "example": "sb deviceHash logicType r?"
+  },
+  "lb": {
+    "name": "lb",
+    "description": "Lädt var von allen Netzwerkgeräten der Ausgabe mit dem angegebenen Hash-Typ, indem es den Stapelmodus benutzt. Durchschnitt (0), Summe (1), Minimum (2), Maximum (3). Kann entweder das Wort oder die Zahl benutzen.",
+    "example": "lb r? deviceHash logicType batchMode"
+  },
+  "alias": {
+    "name": "alias",
+    "description": "Beschriftet das Register oder die Gerätereferenz mit dem Namen. Gerätereferenzen wirken sich auch darauf aus, was auf den Schrauben auf der IC-Basis angezeigt wird.",
+    "example": "alias str r?|d?"
+  },
+  "move": {
+    "name": "move",
+    "description": "Register = angegebene Zahl oder Wert des Registers.",
+    "example": "move r? a(r?|num)"
+  },
+  "add": {
+    "name": "add",
+    "description": "Register = a + b.",
+    "example": "add r? a(r?|num) b(r?|num)"
+  },
+  "sub": {
+    "name": "sub",
+    "description": "Register = a - b.",
+    "example": "sub r? a(r?|num) b(r?|num)"
+  },
+  "sdse": {
+    "name": "sdse",
+    "description": "Register = 1, wenn das Gerät eingestellt ist, sonst 0.",
+    "example": "sdse r? d?"
+  },
+  "sdns": {
+    "name": "sdns",
+    "description": "Register = 1, wenn das Gerät nicht eingestellt ist, sonst 0.",
+    "example": "sdns r? d?"
+  },
+  "slt": {
+    "name": "slt",
+    "description": "Register = 1, wenn a < b, sonst 0",
+    "example": "slt r? a(r?|num) b(r?|num)"
+  },
+  "sgt": {
+    "name": "sgt",
+    "description": "Register = 1, wenn a > b, sonst 0",
+    "example": "sgt r? a(r?|num) b(r?|num)"
+  },
+  "sle": {
+    "name": "sle",
+    "description": "Register = 1, wenn a <= b, sonst 0",
+    "example": "sle r? a(r?|num) b(r?|num)"
+  },
+  "sge": {
+    "name": "sge",
+    "description": "Register = 1, wenn a >= b, sonst 0",
+    "example": "sge r? a(r?|num) b(r?|num)"
+  },
+  "seq": {
+    "name": "seq",
+    "description": "Register = 1, wenn a == b, sonst 0",
+    "example": "seq r? a(r?|num) b(r?|num)"
+  },
+  "sne": {
+    "name": "sne",
+    "description": "Register = 1, wenn a != b, sonst 0",
+    "example": "sne r? a(r?|num) b(r?|num)"
+  },
+  "sap": {
+    "name": "sap",
+    "description": "Register = 1, wenn abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), sonst 0",
+    "example": "sap r? a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "sna": {
+    "name": "sna",
+    "description": "Register = 1, wenn abs(a - b) > max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), sonst 0",
+    "example": "sna r? a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "and": {
+    "name": "and",
+    "description": "Performs a bitwise logical AND operation on the binary representation of two values. Each bit of the result is determined by evaluating the corresponding bits of the input values. If both bits are 1, the resulting bit is set to 1. Otherwise the resulting bit is set to 0.",
+    "example": "and r? a(r?|num) b(r?|num)"
+  },
+  "or": {
+    "name": "or",
+    "description": "Performs a bitwise logical OR operation on the binary representation of two values. Each bit of the result is determined by evaluating the corresponding bits of the input values. If either bit is 1, the resulting bit is set to 1. If both bits are 0, the resulting bit is set to 0.",
+    "example": "or r? a(r?|num) b(r?|num)"
+  },
+  "xor": {
+    "name": "xor",
+    "description": "Performs a bitwise logical XOR (exclusive OR) operation on the binary representation of two values. Each bit of the result is determined by evaluating the corresponding bits of the input values. If the bits are different (one bit is 0 and the other is 1), the resulting bit is set to 1. If the bits are the same (both 0 or both 1), the resulting bit is set to 0.",
+    "example": "xor r? a(r?|num) b(r?|num)"
+  },
+  "nor": {
+    "name": "nor",
+    "description": "Performs a bitwise logical NOR (NOT OR) operation on the binary representation of two values. Each bit of the result is determined by evaluating the corresponding bits of the input values. If both bits are 0, the resulting bit is set to 1. Otherwise, if at least one bit is 1, the resulting bit is set to 0.",
+    "example": "nor r? a(r?|num) b(r?|num)"
+  },
+  "mul": {
+    "name": "mul",
+    "description": "Register = a \\* b",
+    "example": "mul r? a(r?|num) b(r?|num)"
+  },
+  "div": {
+    "name": "div",
+    "description": "Register = a / b",
+    "example": "div r? a(r?|num) b(r?|num)"
+  },
+  "mod": {
+    "name": "mod",
+    "description": "Register = a mod b (Hinweis: NICHT a % b)",
+    "example": "mod r? a(r?|num) b(r?|num)"
+  },
+  "j": {
+    "name": "j",
+    "description": "Ausführung zu Zeile a springen",
+    "example": "j int"
+  },
+  "bltz": {
+    "name": "bltz",
+    "description": "Verzweige zu Zeile b, wenn a < 0",
+    "example": "bltz a(r?|num) b(r?|num)"
+  },
+  "bgez": {
+    "name": "bgez",
+    "description": "Verzweige zu Zeile b, wenn a >= 0",
+    "example": "bgez a(r?|num) b(r?|num)"
+  },
+  "blez": {
+    "name": "blez",
+    "description": "Verzweige zu Zeile b, wenn a <= 0",
+    "example": "blez a(r?|num) b(r?|num)"
+  },
+  "bgtz": {
+    "name": "bgtz",
+    "description": "In Zeile b verzweigen, wenn a > 0",
+    "example": "bgtz a(r?|num) b(r?|num)"
+  },
+  "bdse": {
+    "name": "bdse",
+    "description": "Verzweige zu Zeile a, wenn Gerät d gesetzt ist",
+    "example": "bdse d? a(r?|num)"
+  },
+  "bdns": {
+    "name": "bdns",
+    "description": "Verzweige zu Zeile a, wenn Gerät d nicht gesetzt ist",
+    "example": "bdns d? a(r?|num)"
+  },
+  "beq": {
+    "name": "beq",
+    "description": "In Zeile c verzweigen, wenn a == b",
+    "example": "beq a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bne": {
+    "name": "bne",
+    "description": "Nach Zeile c verzweigen, wenn a != b",
+    "example": "bne a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bap": {
+    "name": "bap",
+    "description": "Nach Zeile d verzweigen, wenn abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
+    "example": "bap a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+  },
+  "bna": {
+    "name": "bna",
+    "description": "Verzweige zu Zeile d, wenn abs(a - b) > max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
+    "example": "bna a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+  },
+  "jal": {
+    "name": "jal",
+    "description": "Springe zur Zeile a und speichere die nächste Zeilennummer in ra",
+    "example": "jal int"
+  },
+  "brdse": {
+    "name": "brdse",
+    "description": "Relativer Sprung zur Zeile a, wenn Gerät gesetzt ist",
+    "example": "brdse d? a(r?|num)"
+  },
+  "brdns": {
+    "name": "brdns",
+    "description": "Relativer Sprung in Zeile a, wenn Gerät nicht gesetzt ist",
+    "example": "brdns d? a(r?|num)"
+  },
+  "bltzal": {
+    "name": "bltzal",
+    "description": "Verzweige zu Zeile b, wenn a < 0 und speichere die nächste Zeilennummer in ra",
+    "example": "bltzal a(r?|num) b(r?|num)"
+  },
+  "bgezal": {
+    "name": "bgezal",
+    "description": "Verzweige zu Zeile b, wenn a >= 0 ist und speichere die nächste Zeilennummer in ra",
+    "example": "bgezal a(r?|num) b(r?|num)"
+  },
+  "blezal": {
+    "name": "blezal",
+    "description": "Verzweige zu Zeile b, wenn a <= 0 und speichere die nächste Zeilennummer in ra",
+    "example": "blezal a(r?|num) b(r?|num)"
+  },
+  "bgtzal": {
+    "name": "bgtzal",
+    "description": "Verzweige zu Zeile b, wenn a > 0 und speichere die nächste Zeilennummer in ra",
+    "example": "bgtzal a(r?|num) b(r?|num)"
+  },
+  "beqal": {
+    "name": "beqal",
+    "description": "Verzweige zu Zeile c, wenn a == b und speichere die nächste Zeilennummer in ra",
+    "example": "beqal a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bneal": {
+    "name": "bneal",
+    "description": "Verzweige zu Zeile c, wenn a != b und speichere die nächste Zeilennummer in ra",
+    "example": "bneal a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "jr": {
+    "name": "jr",
+    "description": "Relativer Sprung zur Zeile a",
+    "example": "jr int"
+  },
+  "bdseal": {
+    "name": "bdseal",
+    "description": "Springe zur Zeile a und speichere die nächste Zeilennummer, wenn device gesetzt ist",
+    "example": "bdseal d? a(r?|num)"
+  },
+  "bdnsal": {
+    "name": "bdnsal",
+    "description": "Springe zur Zeile a und speichere die nächste Zeilennummer, wenn das Gerät nicht gesetzt ist",
+    "example": "bdnsal d? a(r?|num)"
+  },
+  "brltz": {
+    "name": "brltz",
+    "description": "Relative Verzweigung zu Zeile b, wenn a < 0",
+    "example": "brltz a(r?|num) b(r?|num)"
+  },
+  "brgez": {
+    "name": "brgez",
+    "description": "Relative Verzweigung nach Zeile b, wenn a >= 0",
+    "example": "brgez a(r?|num) b(r?|num)"
+  },
+  "brlez": {
+    "name": "brlez",
+    "description": "Relative Verzweigung nach Zeile b, wenn a <= 0",
+    "example": "brlez a(r?|num) b(r?|num)"
+  },
+  "brgtz": {
+    "name": "brgtz",
+    "description": "Relativer Abzweig nach Zeile b, wenn a > 0",
+    "example": "brgtz a(r?|num) b(r?|num)"
+  },
+  "breq": {
+    "name": "breq",
+    "description": "Relativer Sprung zu Zeile c, wenn a == b",
+    "example": "breq a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "brne": {
+    "name": "brne",
+    "description": "Relativer Sprung nach Zeile c, wenn a != b",
+    "example": "brne a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "brap": {
+    "name": "brap",
+    "description": "Relativer Sprung nach Zeile d, wenn abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
+    "example": "brap a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+  },
+  "brna": {
+    "name": "brna",
+    "description": "Relativer Sprung nach Zeile d, wenn abs(a - b) > max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
+    "example": "brna a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+  },
+  "sqrt": {
+    "name": "sqrt",
+    "description": "Register = Quadratwurzel von a",
+    "example": "sqrt r? a(r?|num)"
+  },
+  "round": {
+    "name": "round",
+    "description": "Register = a gerundet auf die nächste ganze Zahl",
+    "example": "round r? a(r?|num)"
+  },
+  "trunc": {
+    "name": "trunc",
+    "description": "Register = a ohne die Nachkommastelle",
+    "example": "trunc r? a(r?|num)"
+  },
+  "ceil": {
+    "name": "ceil",
+    "description": "Register = kleinste ganze Zahl größer als a",
+    "example": "ceil r? a(r?|num)"
+  },
+  "floor": {
+    "name": "floor",
+    "description": "Register = größte ganze Zahl kleiner als a",
+    "example": "floor r? a(r?|num)"
+  },
+  "max": {
+    "name": "max",
+    "description": "Register = Maximum von a oder b",
+    "example": "max r? a(r?|num) b(r?|num)"
+  },
+  "min": {
+    "name": "min",
+    "description": "Register = Mindestwert von a oder b",
+    "example": "min r? a(r?|num) b(r?|num)"
+  },
+  "abs": {
+    "name": "abs",
+    "description": "Register = der absolute Wert von a",
+    "example": "abs r? a(r?|num)"
+  },
+  "log": {
+    "name": "log",
+    "description": "Register = log(a)",
+    "example": "log r? a(r?|num)"
+  },
+  "exp": {
+    "name": "exp",
+    "description": "Register = exp(a)",
+    "example": "exp r? a(r?|num)"
+  },
+  "rand": {
+    "name": "rand",
+    "description": "Register = ein zufälliger Wert x mit 0 <= x < 1",
+    "example": "rand r?"
+  },
+  "yield": {
+    "name": "yield",
+    "description": "Pausiert die Ausführung für 1 Tick",
+    "example": "yield"
+  },
+  "label": {
+    "name": "label",
+    "description": "VERALTET",
+    "example": "label d? str"
+  },
+  "peek": {
+    "name": "peek",
+    "description": "Register = der Wert, der oben auf dem Stack liegt",
+    "example": "peek r?"
+  },
+  "push": {
+    "name": "push",
+    "description": "Schiebt den Wert von a auf den Stack bei sp und erhöht sp",
+    "example": "push a(r?|num)"
+  },
+  "pop": {
+    "name": "pop",
+    "description": "Register = der Wert am oberen Ende des Stacks und dekrementiert sp",
+    "example": "pop r?"
+  },
+  "hcf": {
+    "name": "hcf",
+    "description": "Anhalten und Feuer fangen",
+    "example": "hcf"
+  },
+  "select": {
+    "name": "select",
+    "description": "Register = b, wenn a ungleich Null ist, sonst c",
+    "example": "select r? a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "blt": {
+    "name": "blt",
+    "description": "Verzweige zu Zeile c, wenn a < b",
+    "example": "blt a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bgt": {
+    "name": "bgt",
+    "description": "Verzweige zu Zeile c, wenn a > b",
+    "example": "bgt a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "ble": {
+    "name": "ble",
+    "description": "Verzweigung in Zeile c, wenn a <= b",
+    "example": "ble a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bge": {
+    "name": "bge",
+    "description": "Verzweigung in Zeile c, wenn a >= b",
+    "example": "bge a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "brlt": {
+    "name": "brlt",
+    "description": "Relativer Sprung zu Zeile c, wenn a < b",
+    "example": "brlt a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "brgt": {
+    "name": "brgt",
+    "description": "Relativer Sprung zu Zeile c, wenn a > b",
+    "example": "brgt a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "brle": {
+    "name": "brle",
+    "description": "Relativer Sprung zu Zeile c, wenn a <= b",
+    "example": "brle a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "brge": {
+    "name": "brge",
+    "description": "Relativer Sprung zu Zeile c, wenn a >= b",
+    "example": "brge a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bltal": {
+    "name": "bltal",
+    "description": "Verzweige zu Zeile c, wenn a < b und speichere die nächste Zeilennummer in ra",
+    "example": "bltal a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bgtal": {
+    "name": "bgtal",
+    "description": "Verzweige zu Zeile c, wenn a > b und speichere die nächste Zeilennummer in ra",
+    "example": "bgtal a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bleal": {
+    "name": "bleal",
+    "description": "Verzweige zu Zeile c, wenn a <= b und speichere die nächste Zeilennummer in ra",
+    "example": "bleal a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bgeal": {
+    "name": "bgeal",
+    "description": "Verzweige zu Zeile c, wenn a >= b und speichere die nächste Zeilennummer in ra",
+    "example": "bgeal a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bapal": {
+    "name": "bapal",
+    "description": "Verzweige zu Zeile c, wenn a != b und speichere die nächste Zeilennummer in ra",
+    "example": "bapal a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+  },
+  "bnaal": {
+    "name": "bnaal",
+    "description": "Verzweige zu Zeile d, wenn abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) und speichere die nächste Zeilennummer in ra",
+    "example": "bnaal a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+  },
+  "beqz": {
+    "name": "beqz",
+    "description": "In Zeile b verzweigen, wenn a == 0",
+    "example": "beqz a(r?|num) b(r?|num)"
+  },
+  "bnez": {
+    "name": "bnez",
+    "description": "Verzweigung in Zeile b, wenn a != 0",
+    "example": "bnez a(r?|num) b(r?|num)"
+  },
+  "bapz": {
+    "name": "bapz",
+    "description": "Verzweige zu Zeile c, wenn abs(a) <= float.epsilon \\* 8",
+    "example": "bapz a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bnaz": {
+    "name": "bnaz",
+    "description": "Verzweige zu Zeile c, wenn abs(a) <= float.epsilon \\* 8",
+    "example": "bnaz a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "breqz": {
+    "name": "breqz",
+    "description": "Relativer Zweig zu Zeile b, wenn a == 0",
+    "example": "breqz a(r?|num) b(r?|num)"
+  },
+  "brnez": {
+    "name": "brnez",
+    "description": "Relativer Zweig zu Zeile b, wenn a != 0",
+    "example": "brnez a(r?|num) b(r?|num)"
+  },
+  "brapz": {
+    "name": "brapz",
+    "description": "Relative Verzweigung nach Zeile c, wenn abs(a) <= float.epsilon \\* 8",
+    "example": "brapz a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "brnaz": {
+    "name": "brnaz",
+    "description": "Relative Verzweigung zu Zeile c, wenn abs(a) > float.epsilon \\* 8",
+    "example": "brnaz a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "beqzal": {
+    "name": "beqzal",
+    "description": "Verzweige zu Zeile b, wenn a == 0 und speichere die nächste Zeilennummer in ra",
+    "example": "beqzal a(r?|num) b(r?|num)"
+  },
+  "bnezal": {
+    "name": "bnezal",
+    "description": "Verzweige zu Zeile b, wenn a != 0 und speichere die nächste Zeilennummer in ra",
+    "example": "bnezal a(r?|num) b(r?|num)"
+  },
+  "bapzal": {
+    "name": "bapzal",
+    "description": "Verzweige zu Zeile c, wenn abs(a) <= float.epsilon \\* 8",
+    "example": "bapzal a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bnazal": {
+    "name": "bnazal",
+    "description": "Verzweige zu Zeile c, wenn abs(a) > float.epsilon \\* 8",
+    "example": "bnazal a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "sltz": {
+    "name": "sltz",
+    "description": "Register = 1, wenn a < 0, sonst 0",
+    "example": "sltz r? a(r?|num)"
+  },
+  "sgtz": {
+    "name": "sgtz",
+    "description": "Register = 1, wenn a > 0, sonst 0",
+    "example": "sgtz r? a(r?|num)"
+  },
+  "slez": {
+    "name": "slez",
+    "description": "Register = 1, wenn a <= 0, sonst 0",
+    "example": "slez r? a(r?|num)"
+  },
+  "sgez": {
+    "name": "sgez",
+    "description": "Register = 1, wenn a >= 0, sonst 0",
+    "example": "sgez r? a(r?|num)"
+  },
+  "seqz": {
+    "name": "seqz",
+    "description": "Register = 1, wenn a == 0, sonst 0",
+    "example": "seqz r? a(r?|num)"
+  },
+  "snez": {
+    "name": "snez",
+    "description": "Register = 1, wenn a != 0, sonst 0",
+    "example": "snez r? a(r?|num)"
+  },
+  "sapz": {
+    "name": "sapz",
+    "description": "Register = 1, wenn |a| <= float.epsilon \\* 8, sonst 0",
+    "example": "sapz r? a(r?|num) b(r?|num)"
+  },
+  "snaz": {
+    "name": "snaz",
+    "description": "Register = 1, wenn |a| > float.epsilon, sonst 0",
+    "example": "snaz r? a(r?|num) b(r?|num)"
+  },
+  "define": {
+    "name": "define",
+    "description": "Erzeugt eine Beschriftung, die im gesamten Programm durch den angegebenen Wert ersetzt wird.",
+    "example": "define str num"
+  },
+  "sleep": {
+    "name": "sleep",
+    "description": "Hält die Ausführung auf dem IC für a Sekunden an",
+    "example": "sleep a(r?|num)"
+  },
+  "sin": {
+    "name": "sin",
+    "description": "Gibt den Sinus des angegebenen Winkels zurück (im Bogenmaß)",
+    "example": "sin r? a(r?|num)"
+  },
+  "asin": {
+    "name": "asin",
+    "description": "Liefert den Winkel (Bogenmaß), dessen Sinus der angegebene Wert ist",
+    "example": "asin r? a(r?|num)"
+  },
+  "tan": {
+    "name": "tan",
+    "description": "Gibt den Tangens des angegebenen Winkels zurück (im Bogenmaß)",
+    "example": "tan r? a(r?|num)"
+  },
+  "atan": {
+    "name": "atan",
+    "description": "Liefert den Winkel (Bogenmaß), dessen tan der angegebene Wert ist",
+    "example": "atan r? a(r?|num)"
+  },
+  "cos": {
+    "name": "cos",
+    "description": "Gibt den Kosinus des angegebenen Winkels zurück (im Bogenmaß)",
+    "example": "cos r? a(r?|num)"
+  },
+  "acos": {
+    "name": "acos",
+    "description": "Gibt den Kosinus des angegebenen Winkels zurück (im Bogenmaß)",
+    "example": "acos r? a(r?|num)"
+  },
+  "atan2": {
+    "name": "atan2",
+    "description": "Gibt den Winkel (Bogenmaß) zurück, dessen Tangens der Quotient aus zwei angegebenen Werten ist: a (y) und b (x)",
+    "example": "atan2 r? a(r?|num) b(r?|num)"
+  },
+  "brnan": {
+    "name": "brnan",
+    "description": "Relative branch to line b if a is not a number (NaN)",
+    "example": "brnan a(r?|num) b(r?|num)"
+  },
+  "bnan": {
+    "name": "bnan",
+    "description": "Branch to line b if a is not a number (NaN)",
+    "example": "bnan a(r?|num) b(r?|num)"
+  },
+  "snan": {
+    "name": "snan",
+    "description": "Register = 1 if a is NaN, otherwise 0",
+    "example": "snan r? a(r?|num)"
+  },
+  "snanz": {
+    "name": "snanz",
+    "description": "Register = 0 if a is NaN, otherwise 1",
+    "example": "snanz r? a(r?|num)"
+  },
+  "lbs": {
+    "name": "lbs",
+    "description": "Loads LogicSlotType from slotIndex from all output network devices with provided type hash using the provide batch mode. Average (0), Sum (1), Minimum (2), Maximum (3). Can use either the word, or the number.",
+    "example": "lbs r? deviceHash slotIndex logicSlotType batchMode"
+  },
+  "lbn": {
+    "name": "lbn",
+    "description": "Loads LogicType from all output network devices with provided type and name hashes using the provide batch mode. Average (0), Sum (1), Minimum (2), Maximum (3). Can use either the word, or the number.",
+    "example": "lbn r? deviceHash nameHash logicType batchMode"
+  },
+  "sbn": {
+    "name": "sbn",
+    "description": "Stores register value to LogicType on all output network devices with provided type hash and name.",
+    "example": "sbn deviceHash nameHash logicType r?"
+  },
+  "lbns": {
+    "name": "lbns",
+    "description": "Loads LogicSlotType from slotIndex from all output network devices with provided type and name hashes using the provide batch mode. Average (0), Sum (1), Minimum (2), Maximum (3). Can use either the word, or the number.",
+    "example": "lbns r? deviceHash nameHash slotIndex logicSlotType batchMode"
+  },
+  "ss": {
+    "name": "ss",
+    "description": "Stores register value to device stored in a slot LogicSlotType on device.",
+    "example": "ss d? slotIndex logicSlotType r?"
+  },
+  "sbs": {
+    "name": "sbs",
+    "description": "Stores register value to LogicSlotType on all output network devices with provided type hash in the provided slot.",
+    "example": "sbs deviceHash slotIndex logicSlotType r?"
+  },
+  "srl": {
+    "name": "srl",
+    "description": "Performs a bitwise logical right shift operation on the binary representation of a value. It shifts the bits to the right and fills the vacated leftmost bits with zeros",
+    "example": "srl r? a(r?|num) b(r?|num)"
+  },
+  "sra": {
+    "name": "sra",
+    "description": "Performs a bitwise arithmetic right shift operation on the binary representation of a value. It shifts the bits to the right and fills the vacated leftmost bits with a copy of the sign bit (the most significant bit).",
+    "example": "sra r? a(r?|num) b(r?|num)"
+  },
+  "sll": {
+    "name": "sll",
+    "description": "Performs a bitwise logical left shift operation on the binary representation of a value. It shifts the bits to the left and fills the vacated rightmost bits with zeros.",
+    "example": "sll r? a(r?|num) b(r?|num)"
+  },
+  "sla": {
+    "name": "sla",
+    "description": "Performs a bitwise arithmetic left shift operation on the binary representation of a value. It shifts the bits to the left and fills the vacated rightmost bits with a copy of the sign bit (the most significant bit).",
+    "example": "sla r? a(r?|num) b(r?|num)"
+  },
+  "not": {
+    "name": "not",
+    "description": "Performs a bitwise logical NOT operation flipping each bit of the input value, resulting in a binary complement. If a bit is 1, it becomes 0, and if a bit is 0, it becomes 1.",
+    "example": "not r? a(r?|num)"
+  },
+  "ld": {
+    "name": "ld",
+    "description": "Loads device LogicType to register by direct ID reference.",
+    "example": "ld r? id(r?|num) logicType"
+  },
+  "sd": {
+    "name": "sd",
+    "description": "Stores register value to LogicType on device by direct ID reference.",
+    "example": "sd id(r?|num) logicType r?"
+  },
+  "poke": {
+    "name": "poke",
+    "description": "Stores the provided value at the provided address in the stack.",
+    "example": "poke address(r?|num) value(r?|num)"
+  },
+  "getd": {
+    "name": "getd",
+    "description": "Seeks directly for the provided device id, attempts to read the stack value at the provided address, and places it in the register.",
+    "example": "getd r? id(r?|num) address(r?|num)"
+  },
+  "putd": {
+    "name": "putd",
+    "description": "Seeks directly for the provided device id, attempts to write the provided value to the stack at the provided address.",
+    "example": "putd id(r?|num) address(r?|num) value(r?|num)"
+  },
+  "get": {
+    "name": "get",
+    "description": "Using the provided device, attempts to read the stack value at the provided address, and places it in the register.",
+    "example": "get r? d? address(r?|num)"
+  },
+  "put": {
+    "name": "put",
+    "description": "Using the provided device, attempts to write the provided value to the stack at the provided address.",
+    "example": "put d? address(r?|num) value(r?|num)"
+  },
+  "clr": {
+    "name": "clr",
+    "description": "Clears the stack memory for the provided device.",
+    "example": "clr d?"
+  }
+}

@@ -1,0 +1,712 @@
+{
+  "l": {
+    "name": "l",
+    "description": "Načte zařízení var pro registraci.",
+    "example": "l r? d? logicType"
+  },
+  "s": {
+    "name": "s",
+    "description": "Uloží hodnotu registru do var na zařízení.",
+    "example": "s d? logicType r?"
+  },
+  "ls": {
+    "name": "ls",
+    "description": "Načte slot var na zařízení k registraci.",
+    "example": "ls r? d? slotIndex logicSlotType"
+  },
+  "lr": {
+    "name": "lr",
+    "description": "Načte činidlo reagentMode ze zařízení do registru. Obsah (0), požadované (1), recept (2). Můžete použít buď slovo, nebo číslo.",
+    "example": "lr r? d? reagentMode int"
+  },
+  "sb": {
+    "name": "sb",
+    "description": "Ukládá hodnotu registru do var na všechny zařízení výstupní sítě s typem hash.",
+    "example": "sb deviceHash logicType r?"
+  },
+  "lb": {
+    "name": "lb",
+    "description": "Načte var ze všech zařízení výstupní sítě s dodaným typem hash pomocí dávkového režimu. Průměr (0), součet (1), minimum (2), maximum (3). Můžete použít buď slovo, nebo číslo.",
+    "example": "lb r? deviceHash logicType batchMode"
+  },
+  "alias": {
+    "name": "alias",
+    "description": "Registr štítků nebo odkaz na zařízení s názvem, odkazy na zařízení také ovlivňují to, co se zobrazuje na šroubech na základně IC.",
+    "example": "alias str r?|d?"
+  },
+  "move": {
+    "name": "move",
+    "description": "Registr = pokud je číslo nebo hodnota registru.",
+    "example": "move r? a(r?|num)"
+  },
+  "add": {
+    "name": "add",
+    "description": "Registr = A + B.",
+    "example": "add r? a(r?|num) b(r?|num)"
+  },
+  "sub": {
+    "name": "sub",
+    "description": "Registr = A - B.",
+    "example": "sub r? a(r?|num) b(r?|num)"
+  },
+  "sdse": {
+    "name": "sdse",
+    "description": "Registr = 1, pokud je zařízení nastaveno, jinak 0.",
+    "example": "sdse r? d?"
+  },
+  "sdns": {
+    "name": "sdns",
+    "description": "Registr = 1, pokud zařízení není nastaveno, jinak 0",
+    "example": "sdns r? d?"
+  },
+  "slt": {
+    "name": "slt",
+    "description": "Registr = 1, pokud je A < B, jinak 0",
+    "example": "slt r? a(r?|num) b(r?|num)"
+  },
+  "sgt": {
+    "name": "sgt",
+    "description": "Registr = 1, pokud je A > B, jinak 0",
+    "example": "sgt r? a(r?|num) b(r?|num)"
+  },
+  "sle": {
+    "name": "sle",
+    "description": "Registr = 1, pokud A <= B, jinak 0",
+    "example": "sle r? a(r?|num) b(r?|num)"
+  },
+  "sge": {
+    "name": "sge",
+    "description": "Registr = 1, pokud A >= B, jinak 0",
+    "example": "sge r? a(r?|num) b(r?|num)"
+  },
+  "seq": {
+    "name": "seq",
+    "description": "Registr = 1, pokud A == B, jinak 0",
+    "example": "seq r? a(r?|num) b(r?|num)"
+  },
+  "sne": {
+    "name": "sne",
+    "description": "Registr = 1, pokud A != B, jinak 0",
+    "example": "sne r? a(r?|num) b(r?|num)"
+  },
+  "sap": {
+    "name": "sap",
+    "description": "Registr = 1, pokud abs(A - B) <= max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8), jinak 0",
+    "example": "sap r? a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "sna": {
+    "name": "sna",
+    "description": "Registr = 1, pokud abs(A - B) > max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8), jinak 0",
+    "example": "sna r? a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "and": {
+    "name": "and",
+    "description": "Performs a bitwise logical AND operation on the binary representation of two values. Each bit of the result is determined by evaluating the corresponding bits of the input values. If both bits are 1, the resulting bit is set to 1. Otherwise the resulting bit is set to 0.",
+    "example": "and r? a(r?|num) b(r?|num)"
+  },
+  "or": {
+    "name": "or",
+    "description": "Performs a bitwise logical OR operation on the binary representation of two values. Each bit of the result is determined by evaluating the corresponding bits of the input values. If either bit is 1, the resulting bit is set to 1. If both bits are 0, the resulting bit is set to 0.",
+    "example": "or r? a(r?|num) b(r?|num)"
+  },
+  "xor": {
+    "name": "xor",
+    "description": "Performs a bitwise logical XOR (exclusive OR) operation on the binary representation of two values. Each bit of the result is determined by evaluating the corresponding bits of the input values. If the bits are different (one bit is 0 and the other is 1), the resulting bit is set to 1. If the bits are the same (both 0 or both 1), the resulting bit is set to 0.",
+    "example": "xor r? a(r?|num) b(r?|num)"
+  },
+  "nor": {
+    "name": "nor",
+    "description": "Performs a bitwise logical NOR (NOT OR) operation on the binary representation of two values. Each bit of the result is determined by evaluating the corresponding bits of the input values. If both bits are 0, the resulting bit is set to 1. Otherwise, if at least one bit is 1, the resulting bit is set to 0.",
+    "example": "nor r? a(r?|num) b(r?|num)"
+  },
+  "mul": {
+    "name": "mul",
+    "description": "Registr = A \\* B",
+    "example": "mul r? a(r?|num) b(r?|num)"
+  },
+  "div": {
+    "name": "div",
+    "description": "Registr = A / B",
+    "example": "div r? a(r?|num) b(r?|num)"
+  },
+  "mod": {
+    "name": "mod",
+    "description": "Registr = A mod B (poznámka: NE A % B)",
+    "example": "mod r? a(r?|num) b(r?|num)"
+  },
+  "j": {
+    "name": "j",
+    "description": "Skok provedení řádku A",
+    "example": "j int"
+  },
+  "bltz": {
+    "name": "bltz",
+    "description": "Větev na řádek B, pokud A < 0",
+    "example": "bltz a(r?|num) b(r?|num)"
+  },
+  "bgez": {
+    "name": "bgez",
+    "description": "Větev na řádek B, pokud A >= 0",
+    "example": "bgez a(r?|num) b(r?|num)"
+  },
+  "blez": {
+    "name": "blez",
+    "description": "Větev na řádek B, pokud A <= 0",
+    "example": "blez a(r?|num) b(r?|num)"
+  },
+  "bgtz": {
+    "name": "bgtz",
+    "description": "Větev na řádek B, pokud A > 0",
+    "example": "bgtz a(r?|num) b(r?|num)"
+  },
+  "bdse": {
+    "name": "bdse",
+    "description": "Větev na řádek A, pokud je zařízení D nastaveno",
+    "example": "bdse d? a(r?|num)"
+  },
+  "bdns": {
+    "name": "bdns",
+    "description": "Větev na řádek A, pokud zařízení D není nastaveno",
+    "example": "bdns d? a(r?|num)"
+  },
+  "beq": {
+    "name": "beq",
+    "description": "Větev na řádek C, pokud A == B",
+    "example": "beq a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bne": {
+    "name": "bne",
+    "description": "Větev na řádek C, pokud A != B",
+    "example": "bne a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bap": {
+    "name": "bap",
+    "description": "Větev na řádek D, pokud abs(A - B) <= max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8)",
+    "example": "bap a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+  },
+  "bna": {
+    "name": "bna",
+    "description": "Větev na řádek D, pokud abs(A - B) > max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8)",
+    "example": "bna a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+  },
+  "jal": {
+    "name": "jal",
+    "description": "Pokud je zařízení nastaveno, přejděte na řádek A a uložte další číslo do ra",
+    "example": "jal int"
+  },
+  "brdse": {
+    "name": "brdse",
+    "description": "Relativní skok na řádek A, pokud je zařízení nastaveno",
+    "example": "brdse d? a(r?|num)"
+  },
+  "brdns": {
+    "name": "brdns",
+    "description": "Relativní skok na řádek A, pokud zařízení není nastaveno",
+    "example": "brdns d? a(r?|num)"
+  },
+  "bltzal": {
+    "name": "bltzal",
+    "description": "Větev na řádek B, pokud A < 0, a další číslo řádku uložte do ra",
+    "example": "bltzal a(r?|num) b(r?|num)"
+  },
+  "bgezal": {
+    "name": "bgezal",
+    "description": "Větev na řádek B, pokud A >= 0, a další číslo řádku uložte do ra",
+    "example": "bgezal a(r?|num) b(r?|num)"
+  },
+  "blezal": {
+    "name": "blezal",
+    "description": "Větev na řádek B, pokud A <= 0, a další číslo řádku uložte do ra",
+    "example": "blezal a(r?|num) b(r?|num)"
+  },
+  "bgtzal": {
+    "name": "bgtzal",
+    "description": "Větev na řádek B, pokud A > 0, a další číslo řádku uložte do ra",
+    "example": "bgtzal a(r?|num) b(r?|num)"
+  },
+  "beqal": {
+    "name": "beqal",
+    "description": "Větev na řádek C, pokud A == B, a uložte další číslo řádku v ra",
+    "example": "beqal a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bneal": {
+    "name": "bneal",
+    "description": "Větev na řádek C, pokud A != B, a uložte další číslo řádku v ra",
+    "example": "bneal a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "jr": {
+    "name": "jr",
+    "description": "Relativní skok na čáru A",
+    "example": "jr int"
+  },
+  "bdseal": {
+    "name": "bdseal",
+    "description": "Pokud je zařízení nastaveno, přejděte na řádek A a uložte další číslo řádku",
+    "example": "bdseal d? a(r?|num)"
+  },
+  "bdnsal": {
+    "name": "bdnsal",
+    "description": "Pokud není zařízení nastaveno, přejděte na řádek A a uložte další číslo řádku",
+    "example": "bdnsal d? a(r?|num)"
+  },
+  "brltz": {
+    "name": "brltz",
+    "description": "Relativní větev k řádku B, pokud A < 0",
+    "example": "brltz a(r?|num) b(r?|num)"
+  },
+  "brgez": {
+    "name": "brgez",
+    "description": "Relativní větev k řádku B, pokud A >= 0",
+    "example": "brgez a(r?|num) b(r?|num)"
+  },
+  "brlez": {
+    "name": "brlez",
+    "description": "Relativní větev k řádku B, pokud A <= 0",
+    "example": "brlez a(r?|num) b(r?|num)"
+  },
+  "brgtz": {
+    "name": "brgtz",
+    "description": "Relativní větev k řádku B, pokud A > 0",
+    "example": "brgtz a(r?|num) b(r?|num)"
+  },
+  "breq": {
+    "name": "breq",
+    "description": "Relativní větev k řádku C, pokud A == B",
+    "example": "breq a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "brne": {
+    "name": "brne",
+    "description": "Relativní větev k řádku C, pokud A != B",
+    "example": "brne a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "brap": {
+    "name": "brap",
+    "description": "Relativní větev k řádku D, pokud abs(A - B) <= max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8)",
+    "example": "brap a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+  },
+  "brna": {
+    "name": "brna",
+    "description": "Relativní větev k řádku D, pokud abs(A - B) > max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8)",
+    "example": "brna a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+  },
+  "sqrt": {
+    "name": "sqrt",
+    "description": "Registr = druhá odmocnina A",
+    "example": "sqrt r? a(r?|num)"
+  },
+  "round": {
+    "name": "round",
+    "description": "Registr = A zaokrouhlené na nejbližší celé číslo",
+    "example": "round r? a(r?|num)"
+  },
+  "trunc": {
+    "name": "trunc",
+    "description": "Registr = A s odstraněnou zlomkovou částí",
+    "example": "trunc r? a(r?|num)"
+  },
+  "ceil": {
+    "name": "ceil",
+    "description": "Registr = nejmenší celé číslo větší než A",
+    "example": "ceil r? a(r?|num)"
+  },
+  "floor": {
+    "name": "floor",
+    "description": "Registr = největší celé číslo menší než A",
+    "example": "floor r? a(r?|num)"
+  },
+  "max": {
+    "name": "max",
+    "description": "Registr = max A nebo B",
+    "example": "max r? a(r?|num) b(r?|num)"
+  },
+  "min": {
+    "name": "min",
+    "description": "Registr = min z A nebo B",
+    "example": "min r? a(r?|num) b(r?|num)"
+  },
+  "abs": {
+    "name": "abs",
+    "description": "Registr = absolutní hodnota A",
+    "example": "abs r? a(r?|num)"
+  },
+  "log": {
+    "name": "log",
+    "description": "Registr = log(A)",
+    "example": "log r? a(r?|num)"
+  },
+  "exp": {
+    "name": "exp",
+    "description": "Registr = exp(A)",
+    "example": "exp r? a(r?|num)"
+  },
+  "rand": {
+    "name": "rand",
+    "description": "Registr = náhodná hodnota X s 0 <= X < 1",
+    "example": "rand r?"
+  },
+  "yield": {
+    "name": "yield",
+    "description": "Pozastaví provádění pro 1 tick",
+    "example": "yield"
+  },
+  "label": {
+    "name": "label",
+    "description": "ZASTARALÉ",
+    "example": "label d? str"
+  },
+  "peek": {
+    "name": "peek",
+    "description": "Registr = hodnota v horní části stohu",
+    "example": "peek r?"
+  },
+  "push": {
+    "name": "push",
+    "description": "Posune hodnotu A do stohu na sp a zvyšuje sp",
+    "example": "push a(r?|num)"
+  },
+  "pop": {
+    "name": "pop",
+    "description": "Registr = hodnota v horní části zstohu a snižuje sp",
+    "example": "pop r?"
+  },
+  "hcf": {
+    "name": "hcf",
+    "description": "Zastavit a vznítit",
+    "example": "hcf"
+  },
+  "select": {
+    "name": "select",
+    "description": "Registr = B, pokud A je nenulová, jinak C",
+    "example": "select r? a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "blt": {
+    "name": "blt",
+    "description": "Větev na řádek C, pokud A < B",
+    "example": "blt a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bgt": {
+    "name": "bgt",
+    "description": "Větev na řádek C, pokud A > B",
+    "example": "bgt a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "ble": {
+    "name": "ble",
+    "description": "Větev na řádek C, pokud A <= B",
+    "example": "ble a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bge": {
+    "name": "bge",
+    "description": "Větev na řádek C, pokud A >= B",
+    "example": "bge a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "brlt": {
+    "name": "brlt",
+    "description": "Relativní skok na čáru C, pokud A < B",
+    "example": "brlt a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "brgt": {
+    "name": "brgt",
+    "description": "Relativní skok na čáru C, pokud A > B",
+    "example": "brgt a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "brle": {
+    "name": "brle",
+    "description": "Relativní skok na čáru C, pokud A <= B",
+    "example": "brle a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "brge": {
+    "name": "brge",
+    "description": "Relativní skok na řádek C, pokud A >= B",
+    "example": "brge a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bltal": {
+    "name": "bltal",
+    "description": "Větev na řádek C, pokud A < B, a uložte další číslo řádku v ra",
+    "example": "bltal a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bgtal": {
+    "name": "bgtal",
+    "description": "Větev na řádek C, pokud A > B, a uložte další číslo řádku v ra",
+    "example": "bgtal a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bleal": {
+    "name": "bleal",
+    "description": "Větev na řádek C, pokud A <= B, a uložte další číslo řádku v ra",
+    "example": "bleal a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bgeal": {
+    "name": "bgeal",
+    "description": "Větev na řádek C, pokud A >= B, a uložte další číslo řádku v ra",
+    "example": "bgeal a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bapal": {
+    "name": "bapal",
+    "description": "Větev na řádek C, pokud A != B, a uložte další číslo řádku v ra",
+    "example": "bapal a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+  },
+  "bnaal": {
+    "name": "bnaal",
+    "description": "Větev na řádek D, pokud abs (A - B) <= max(c \\* max(abs(A), abs(B)), float.epsilon \\* 8) a další číslo řádku uložte do ra",
+    "example": "bnaal a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+  },
+  "beqz": {
+    "name": "beqz",
+    "description": "Větev na řádek B, pokud A == 0",
+    "example": "beqz a(r?|num) b(r?|num)"
+  },
+  "bnez": {
+    "name": "bnez",
+    "description": "Větev na řádek B, pokud A != 0",
+    "example": "bnez a(r?|num) b(r?|num)"
+  },
+  "bapz": {
+    "name": "bapz",
+    "description": "Větev na řádek C, pokud abs(A) <= float.epsilon \\* 8",
+    "example": "bapz a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bnaz": {
+    "name": "bnaz",
+    "description": "Větev na řádek C, pokud abs(A) > float.epsilon \\* 8",
+    "example": "bnaz a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "breqz": {
+    "name": "breqz",
+    "description": "Relativní větev k řádku B, pokud A == 0",
+    "example": "breqz a(r?|num) b(r?|num)"
+  },
+  "brnez": {
+    "name": "brnez",
+    "description": "Relativní větev k řádku B, pokud A != 0",
+    "example": "brnez a(r?|num) b(r?|num)"
+  },
+  "brapz": {
+    "name": "brapz",
+    "description": "Relativní větev k řádku C, pokud abs(A) <= float.epsilon \\* 8",
+    "example": "brapz a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "brnaz": {
+    "name": "brnaz",
+    "description": "Relativní větev k řádku C, pokud abs(A) > float.epsilon \\* 8",
+    "example": "brnaz a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "beqzal": {
+    "name": "beqzal",
+    "description": "Větev na řádek B, pokud A == 0, a další číslo řádku uložte do ra",
+    "example": "beqzal a(r?|num) b(r?|num)"
+  },
+  "bnezal": {
+    "name": "bnezal",
+    "description": "Větev na řádek B, pokud A != 0, a další číslo řádku uložte do ra",
+    "example": "bnezal a(r?|num) b(r?|num)"
+  },
+  "bapzal": {
+    "name": "bapzal",
+    "description": "Větev na řádek C, pokud abs(A) <= float.epsilon \\* 8",
+    "example": "bapzal a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "bnazal": {
+    "name": "bnazal",
+    "description": "Větev na řádek C, pokud abs(A) > float.epsilon \\* 8",
+    "example": "bnazal a(r?|num) b(r?|num) c(r?|num)"
+  },
+  "sltz": {
+    "name": "sltz",
+    "description": "Registr = 1, pokud je A < 0, jinak 0",
+    "example": "sltz r? a(r?|num)"
+  },
+  "sgtz": {
+    "name": "sgtz",
+    "description": "Registr = 1, pokud je A > 0, jinak 0",
+    "example": "sgtz r? a(r?|num)"
+  },
+  "slez": {
+    "name": "slez",
+    "description": "Registr = 1, pokud A <= 0, jinak 0",
+    "example": "slez r? a(r?|num)"
+  },
+  "sgez": {
+    "name": "sgez",
+    "description": "Registr = 1, pokud A >= 0, jinak 0",
+    "example": "sgez r? a(r?|num)"
+  },
+  "seqz": {
+    "name": "seqz",
+    "description": "Registr = 1, pokud A == 0, jinak 0",
+    "example": "seqz r? a(r?|num)"
+  },
+  "snez": {
+    "name": "snez",
+    "description": "Registr = 1, pokud A != 0, jinak 0",
+    "example": "snez r? a(r?|num)"
+  },
+  "sapz": {
+    "name": "sapz",
+    "description": "Registr = 1, pokud |A| <= float.epsilon \\* 8, jinak 0",
+    "example": "sapz r? a(r?|num) b(r?|num)"
+  },
+  "snaz": {
+    "name": "snaz",
+    "description": "Registr = 1, pokud |A| > float.epsilon, jinak 0",
+    "example": "snaz r? a(r?|num) b(r?|num)"
+  },
+  "define": {
+    "name": "define",
+    "description": "Vytvoří štítek, který bude v programu nahrazen zadanou hodnotou.",
+    "example": "define str num"
+  },
+  "sleep": {
+    "name": "sleep",
+    "description": "Pozastaví provádění na IC na několik sekund",
+    "example": "sleep a(r?|num)"
+  },
+  "sin": {
+    "name": "sin",
+    "description": "Vrátí sinus zadaného úhlu",
+    "example": "sin r? a(r?|num)"
+  },
+  "asin": {
+    "name": "asin",
+    "description": "Vrací úhel, jehož sinus je zadaná hodnota",
+    "example": "asin r? a(r?|num)"
+  },
+  "tan": {
+    "name": "tan",
+    "description": "Vrací tangen zadaného úhlu",
+    "example": "tan r? a(r?|num)"
+  },
+  "atan": {
+    "name": "atan",
+    "description": "Vrací úhel, jehož tangen je zadaná hodnota",
+    "example": "atan r? a(r?|num)"
+  },
+  "cos": {
+    "name": "cos",
+    "description": "Vrací kosinus zadaného úhlu",
+    "example": "cos r? a(r?|num)"
+  },
+  "acos": {
+    "name": "acos",
+    "description": "Vrací kosinus zadaného úhlu",
+    "example": "acos r? a(r?|num)"
+  },
+  "atan2": {
+    "name": "atan2",
+    "description": "Returns the angle (radians) whose tangent is the quotient of two specified values: a (y) and b (x)",
+    "example": "atan2 r? a(r?|num) b(r?|num)"
+  },
+  "brnan": {
+    "name": "brnan",
+    "description": "Relative branch to line b if a is not a number (NaN)",
+    "example": "brnan a(r?|num) b(r?|num)"
+  },
+  "bnan": {
+    "name": "bnan",
+    "description": "Branch to line b if a is not a number (NaN)",
+    "example": "bnan a(r?|num) b(r?|num)"
+  },
+  "snan": {
+    "name": "snan",
+    "description": "Register = 1 if a is NaN, otherwise 0",
+    "example": "snan r? a(r?|num)"
+  },
+  "snanz": {
+    "name": "snanz",
+    "description": "Register = 0 if a is NaN, otherwise 1",
+    "example": "snanz r? a(r?|num)"
+  },
+  "lbs": {
+    "name": "lbs",
+    "description": "Loads LogicSlotType from slotIndex from all output network devices with provided type hash using the provide batch mode. Average (0), Sum (1), Minimum (2), Maximum (3). Can use either the word, or the number.",
+    "example": "lbs r? deviceHash slotIndex logicSlotType batchMode"
+  },
+  "lbn": {
+    "name": "lbn",
+    "description": "Loads LogicType from all output network devices with provided type and name hashes using the provide batch mode. Average (0), Sum (1), Minimum (2), Maximum (3). Can use either the word, or the number.",
+    "example": "lbn r? deviceHash nameHash logicType batchMode"
+  },
+  "sbn": {
+    "name": "sbn",
+    "description": "Stores register value to LogicType on all output network devices with provided type hash and name.",
+    "example": "sbn deviceHash nameHash logicType r?"
+  },
+  "lbns": {
+    "name": "lbns",
+    "description": "Loads LogicSlotType from slotIndex from all output network devices with provided type and name hashes using the provide batch mode. Average (0), Sum (1), Minimum (2), Maximum (3). Can use either the word, or the number.",
+    "example": "lbns r? deviceHash nameHash slotIndex logicSlotType batchMode"
+  },
+  "ss": {
+    "name": "ss",
+    "description": "Stores register value to device stored in a slot LogicSlotType on device.",
+    "example": "ss d? slotIndex logicSlotType r?"
+  },
+  "sbs": {
+    "name": "sbs",
+    "description": "Stores register value to LogicSlotType on all output network devices with provided type hash in the provided slot.",
+    "example": "sbs deviceHash slotIndex logicSlotType r?"
+  },
+  "srl": {
+    "name": "srl",
+    "description": "Performs a bitwise logical right shift operation on the binary representation of a value. It shifts the bits to the right and fills the vacated leftmost bits with zeros",
+    "example": "srl r? a(r?|num) b(r?|num)"
+  },
+  "sra": {
+    "name": "sra",
+    "description": "Performs a bitwise arithmetic right shift operation on the binary representation of a value. It shifts the bits to the right and fills the vacated leftmost bits with a copy of the sign bit (the most significant bit).",
+    "example": "sra r? a(r?|num) b(r?|num)"
+  },
+  "sll": {
+    "name": "sll",
+    "description": "Performs a bitwise logical left shift operation on the binary representation of a value. It shifts the bits to the left and fills the vacated rightmost bits with zeros.",
+    "example": "sll r? a(r?|num) b(r?|num)"
+  },
+  "sla": {
+    "name": "sla",
+    "description": "Performs a bitwise arithmetic left shift operation on the binary representation of a value. It shifts the bits to the left and fills the vacated rightmost bits with a copy of the sign bit (the most significant bit).",
+    "example": "sla r? a(r?|num) b(r?|num)"
+  },
+  "not": {
+    "name": "not",
+    "description": "Performs a bitwise logical NOT operation flipping each bit of the input value, resulting in a binary complement. If a bit is 1, it becomes 0, and if a bit is 0, it becomes 1.",
+    "example": "not r? a(r?|num)"
+  },
+  "ld": {
+    "name": "ld",
+    "description": "Loads device LogicType to register by direct ID reference.",
+    "example": "ld r? id(r?|num) logicType"
+  },
+  "sd": {
+    "name": "sd",
+    "description": "Stores register value to LogicType on device by direct ID reference.",
+    "example": "sd id(r?|num) logicType r?"
+  },
+  "poke": {
+    "name": "poke",
+    "description": "Stores the provided value at the provided address in the stack.",
+    "example": "poke address(r?|num) value(r?|num)"
+  },
+  "getd": {
+    "name": "getd",
+    "description": "Seeks directly for the provided device id, attempts to read the stack value at the provided address, and places it in the register.",
+    "example": "getd r? id(r?|num) address(r?|num)"
+  },
+  "putd": {
+    "name": "putd",
+    "description": "Seeks directly for the provided device id, attempts to write the provided value to the stack at the provided address.",
+    "example": "putd id(r?|num) address(r?|num) value(r?|num)"
+  },
+  "get": {
+    "name": "get",
+    "description": "Using the provided device, attempts to read the stack value at the provided address, and places it in the register.",
+    "example": "get r? d? address(r?|num)"
+  },
+  "put": {
+    "name": "put",
+    "description": "Using the provided device, attempts to write the provided value to the stack at the provided address.",
+    "example": "put d? address(r?|num) value(r?|num)"
+  },
+  "clr": {
+    "name": "clr",
+    "description": "Clears the stack memory for the provided device.",
+    "example": "clr d?"
+  }
+}
