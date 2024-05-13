@@ -73,7 +73,7 @@ async function moveData() {
 async function optimizeData() {
 	//optimize data
 	const languages = new Bun.Glob("**/data.json");
-	for await (const file of languages.scan("./dist")) {
+	for await (const file of languages.scan("./dist/languages/")) {
 		const [languages, name] = [dirname(file), basename(file)];
 		// if (languages.length !== 2) continue
 		if (name !== "data.json") continue;
