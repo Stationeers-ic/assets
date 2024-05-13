@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%=title %></title>
+</head>
+
+<body>
+  <h1><%=title %></h1>
+  <p>
+    <%=description %>
+  </p>
+  <ul>
+
+    <% if (back) { %>
+    <li>
+      <a href="/<%-back%>"> ..Parent </a>
+    </li>
+    <% } %>
+
+    <% dirs.forEach(function(dir){ %>
+    <li>
+      <a href="/<%-dir.name%>"><%-dir.name%>/</a>
+    </li>
+    <% }); %>
+    <% files.forEach(function(file){ %>
+    <li> 
+        <a href="/<%-file.name%>"><%-file.name%></a> 
+        <% if (file.type  === "png") { %>
+            <img loading="lazy" src="/<%-file.name %>"> test</img>
+        <% } %>
+    </li>
+    <% }); %>
+  </ul>
+</body>
+
+</html>

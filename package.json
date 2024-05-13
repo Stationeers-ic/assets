@@ -11,5 +11,9 @@
   "scripts": {
     "build": "bun index.ts"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@types/ejs": "^3.1.5",
+    "ejs": "^3.1.10"
+  }
 }
