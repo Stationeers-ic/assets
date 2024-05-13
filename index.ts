@@ -203,10 +203,10 @@ async function optimizeData() {
 	}
 }
 
-// await step0()
-// await step1()
-// await step2()
-// await step3()
+await step0()
+await step1()
+await step2()
+await step3()
 await optimizeData();
 
 await Promise.all(GODPromise);
