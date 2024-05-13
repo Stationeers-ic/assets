@@ -219,10 +219,10 @@ async function optimizeData() {
 			});
 		devices.data.sort((a, b) => a.Key.localeCompare(b.Key));
 		items.data.sort((a, b) => a.Key.localeCompare(b.Key));
-		GODPromise.push(writeFile("devices.json", `./dist/${languages}`, devices));
-		GODPromise.push(writeFile("items.json", `./dist/${languages}`, items));
-		GODPromise.push(writeFile("reagents.json", `./dist/${languages}`, reagents));
-		GODPromise.push(writeFile("logics.json", `./dist/${languages}`, logics));
+		GODPromise.push(writeFile("devices.json", join('dist','languages',languages), devices));
+		GODPromise.push(writeFile("items.json", join('dist','languages',languages), items));
+		GODPromise.push(writeFile("reagents.json", join('dist','languages',languages), reagents));
+		GODPromise.push(writeFile("logics.json", join('dist','languages',languages), logics));
 	}
 }
 
