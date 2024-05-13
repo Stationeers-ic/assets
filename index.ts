@@ -232,7 +232,6 @@ async function generateIndex() {
 	// Использование:
 	promises.push(dir_index(join(__dirname, 'dist'), ''));
 	walkDir("./", function (dirPath: string) {
-		console.log("dirPath", dirPath);
 		promises.push(dir_index(join(__dirname, 'dist'),dirPath));
 	}).catch(console.error);
 
