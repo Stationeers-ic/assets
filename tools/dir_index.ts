@@ -1,8 +1,8 @@
 import Bun, { write } from "bun";
 import ejs from "ejs";
 import type { Stats } from "node:fs";
-import { readdir, stat } from "node:fs/promises";
-import { dirname, join } from "path";
+import fs, { readdir, stat } from "node:fs/promises";
+import path, { dirname, join } from "path";
 
 const templateString = await Bun.file(join(__dirname, "index.ejs")).text();
 
@@ -26,6 +26,7 @@ export type fileObject = {
 	name: string;
 	type: fileType
 	stat: Stats;
+	size: string;
 };
 
 
@@ -44,16 +45,17 @@ export async function dir_index(cwd: string, dir: string) {
 
 	for (const file of iterator) {
 		if (file.endsWith("html")) continue;
+        const fstat = await stat(join(cwd, dir, file))
+        const name = join(dir, file)
 		const f:fileObject = {
-			name: join(dir, file),
-            type:"dir", // "dir" | "html" | "json" | "png
-			stat: await stat(join(cwd, dir, file)),
+			name: name,
+            type: fstat.isDirectory() ? "dir" : getFileType(name), // "dir" | "html" | "json" | "png
+			stat: fstat,
+			size: getValueAndUnit(fstat.size),
 		};
 		if (f.stat.isDirectory()) {
-            f.type = "dir";
 			dirs.push(f);
 		} else {
-            f.type = getFileType(f.name);
 			files.push(f);
 		}
 	}
@@ -61,7 +63,7 @@ export async function dir_index(cwd: string, dir: string) {
 
 	files.sort((a, b) => a.name.localeCompare(b.name));
 	const html = await compile({
-		title: `Directory Index "${dir}"`,
+		title: `${dir}`,
 		description: "This is a directory index",
 		back: dir ? dirname(dir) : "",
 		files,
@@ -70,8 +72,6 @@ export async function dir_index(cwd: string, dir: string) {
 	write(join(cwd, dir, "index.html"), html);
 }
 
-import * as fs from 'fs/promises';
-import * as path from 'path';
 
 export async function walkDir(dir: string, callback: (dirPath: string) => void): Promise<void> {
   const files = await fs.readdir(dir);
@@ -83,4 +83,14 @@ export async function walkDir(dir: string, callback: (dirPath: string) => void):
       await walkDir(dirPath, callback);
     }
   }
+};
+
+
+
+const UNITS = ["byte", "KiB", "MiB", "GiB", "TiB", 'PiB'];
+
+const getValueAndUnit = (n:number) => {
+  const i = n == 0 ? 0 : Math.floor(Math.log(n) / Math.log(1024));
+  const value = n / Math.pow(1024, i);
+  return `${value.toFixed(2)} ${UNITS[i]}`;
 };

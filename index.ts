@@ -46,7 +46,7 @@ async function moveFiles() {
 	];
 	const languages = new Bun.Glob("**/{constants,instructions}.json");
 	for await (const file of languages.scan("source/languages")) {
-		moves.push(copyJSON(join("source", "languages", file), join("dist", dirname(file))));
+		moves.push(copyJSON(join("source", "languages", file), join("dist","languages", dirname(file))));
 	}
 	await Promise.all(moves);
 	console.timeEnd("move other files");
@@ -62,7 +62,7 @@ async function moveData() {
 		moves.push(
 			sFile.json().then(async (json) => {
 				const result = strip(json);
-				await write(join("dist", file), JSON.stringify(result));
+				await write(join("dist","languages", file), JSON.stringify(result));
 			})
 		);
 	}
@@ -72,7 +72,6 @@ async function moveData() {
 
 async function optimizeData() {
 	//optimize data
-
 	const languages = new Bun.Glob("**/data.json");
 	for await (const file of languages.scan("./dist")) {
 		const [languages, name] = [dirname(file), basename(file)];
