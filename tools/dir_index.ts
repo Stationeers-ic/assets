@@ -38,7 +38,6 @@ function getFileType(file: string):fileType {
 }
 
 export async function dir_index(cwd: string, dir: string) {
-    console.log("dir_index", cwd, dir);
 	const iterator = await readdir(join(cwd, dir));
 	const files: fileObject[] = [];
 	const dirs: fileObject[] = [];
@@ -68,9 +67,6 @@ export async function dir_index(cwd: string, dir: string) {
 		files,
 		dirs,
 	});
-	console.log("files", files.length);
-	console.log("dirs", dirs.length);
-
 	write(join(cwd, dir, "index.html"), html);
 }
 
