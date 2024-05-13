@@ -143,3 +143,74 @@ export type StructVersionInsert = {
     BuildTimeMultiplier:    string;
     image:                  null;
 }
+
+export type OldDevices = Record<string, OldDevice>
+export type Device = {
+    id: number,
+    Title: string,
+    Key: string,
+    PrefabName: string,
+    PrefabHash: number,
+    hasChip: boolean,
+    deviceConnectCount: number,
+    image: string,
+    mods: string[],
+    connections: string[],
+    slots: {
+        SlotName: string,
+        SlotType: string,
+        SlotIndex: number,
+        logic: string[]
+    }[],
+    tags: string[],
+    logics: {
+        name: string,
+        permissions: string[]
+    }[]
+}
+
+export type Item = {
+    id:         number;
+    Title:        string;
+    Key:        string;
+    PrefabName: string;
+    PrefabHash: number;
+    StackSize:  number;
+    image:      string;
+    tags:       string[];
+}
+
+
+export type Devices = {
+    data: Device[]
+    images:Record<`SlotType.${string}`, string>
+}
+export type Items = {
+    data: Item[]
+}
+
+
+// To parse this data:
+//
+//   import { Convert, Reagents } from "./file";
+//
+//   const reagents = Convert.toReagents(json);
+
+export type Reagents = {
+    data: Reagent[];
+}
+
+export type Datum = {
+    name:  string;
+    hash:  number;
+    image: string;
+    items: ReagentItem[];
+}
+
+export type ReagentItem = {
+    title:  string;
+    name:  string;
+    hash:  number;
+    image: string;
+    count: number;
+}
