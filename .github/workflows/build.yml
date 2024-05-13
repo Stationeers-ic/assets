@@ -6,8 +6,30 @@ name: Build
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - '**'
+      - '!LICENSE'
+      - '!README.md'
+      - '!.gitattributes'
+      - '!.gitignore'
+      - '!.prettierignore'
+      - '!.editorconfig'
+      - '!.vscode'
+      - '!.idea'
+      - '!package.json'
+      - '!bun.lockb'
+      - '!**.log'
 #   pull_request:
 #     branches: [ "v4", "main" ]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
 
 jobs:
   build:
