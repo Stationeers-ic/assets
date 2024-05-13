@@ -1,7 +1,16 @@
 import Bun, { $ } from "bun"
 import { copyFile as copy, mkdir, rename, rmdir, writeFile as write } from "node:fs/promises"
 import { basename, join, dirname } from "path"
-import type { Device, Devices, Items, OldDevice, OldDevices, ReagentItem, Reagents } from "./tools/types"
+import type {
+	Device,
+	Devices,
+	Items,
+	OldDevice,
+	OldDevices,
+	ReagentItem,
+	Reagents,
+} from "./tools/types"
+import { cpus } from "node:os"
 
 console.info("Start building...")
 
@@ -14,12 +23,15 @@ async function clearDist() {
 }
 
 async function optimizeImages() {
+	const x = (cpus().length+1)>>1
+	console.log("Optimize images using", x, "cores")
 	console.time("Optimize images")
-	await $`tools/oxipng -o max --strip safe --alpha ./source/images -r -q -t 8 --dir ./dist/images`
+	await $`tools/oxipng -o max --strip safe --alpha ./source/images -r -q -t ${x} --dir ./dist/images`
 	console.timeEnd("Optimize images")
 }
 
 async function moveImages() {
+	console.log("move images")
 	console.time("move images")
 	const distImages = new Bun.Glob("./dist/**/*.png")
 	const moves: Promise<void>[] = []
@@ -33,26 +45,36 @@ async function moveImages() {
 }
 
 async function moveFiles() {
+	console.log("move other files")
 	console.time("move other files")
-	await copyJSON("source/languages/EN/colors.json", "./dist")
-	await copyJSON("source/languages/EN/consts.json", "./dist")
+	const moves: Promise<void>[] = [
+		copyJSON("source/languages/EN/colors.json", "./dist"),
+		copyJSON("source/languages/EN/consts.json", "./dist"),
+	]
 	const languages = new Bun.Glob("**/{constants,instructions}.json")
 	for await (const file of languages.scan("source/languages")) {
-		GODPromise.push(copyJSON(join("source", "languages", file), join("dist", dirname(file))))
-	}
-	console.timeEnd("move other files")
-}
-async function moveData() {
-	console.time("move other files")
-	const languages = new Bun.Glob("**/data.json")
-	const moves: Promise<void>[] = []
-	for await (const file of languages.scan("source/languages")) {
-		const sFile = Bun.file(file)
-		const json = (await sFile.json()) as OldDevices
-		GODPromise.push(copyJSON(join("source", "languages", file), join("dist", dirname(file))))
+		moves.push(copyJSON(join("source", "languages", file), join("dist", dirname(file))))
 	}
 	await Promise.all(moves)
 	console.timeEnd("move other files")
+}
+
+async function moveData() {
+	console.log("move data files")
+	console.time("move data files")
+	const languages = new Bun.Glob("**/data.json")
+	const moves: Promise<void>[] = []
+	for await (const file of languages.scan("source/languages")) {
+		const sFile = Bun.file(join("source", "languages", file))
+		moves.push(
+			sFile.json().then(async (json) => {
+				const result = strip(json)
+				await write(join("dist", file), JSON.stringify(result))
+			})
+		)
+	}
+	await Promise.all(moves)
+	console.timeEnd("move data files")
 }
 
 async function optimizeData() {
@@ -63,8 +85,7 @@ async function optimizeData() {
 		const [languages, name] = [dirname(file), basename(file)]
 		// if (languages.length !== 2) continue
 		if (name !== "data.json") continue
-		console.log(join(__dirname, "dist", file))
-		const sFile = Bun.file(join(__dirname, "dist", file))
+		const sFile = Bun.file(join("source", "languages", file))
 		const data = (await sFile.json()) as OldDevices
 		// const data = require() as OldDevices
 		//OldDevice to Device TODO images
@@ -218,14 +239,12 @@ async function optimizeData() {
 }
 
 await clearDist()
-const img = optimizeImages().then(() => moveImages())
-await moveFiles()
-await Promise.all(GODPromise)
+GODPromise.push(optimizeImages().then(() => moveImages()))
+GODPromise.push(moveFiles())
+GODPromise.push(moveData())
 await optimizeData()
 
-await Promise.all(GODPromise)
-await img
-//----------------------------------------------HELPERS----------------------------------------------
+await Promise.all(GODPromise)//----------------------------------------------HELPERS----------------------------------------------
 function findImage(fileName: string): string
 function findImage(fileName: null): null
 function findImage(fileName: string | null): string | null {
@@ -236,6 +255,22 @@ function findImage(fileName: string | null): string | null {
 	return join("images", firstLetter, secondLetter, fileName)
 }
 
+function strip(obj: Record<string, Record<string, any>>): Record<string, Record<string, any>> {
+	const r: Record<string, any> = {}
+	Object.entries(obj).forEach(([key, o]) => {
+		const newO: Record<string, any> = {}
+		Object.entries(o).forEach(([k, v]) => {
+			if (v === null) return
+			if (v === undefined) return
+			if (v === "") return
+			if (Array.isArray(v) && v.length === 0) return
+			if (Object.keys(v).length === 0) return
+			newO[k] = v
+		})
+		r[key] = newO
+	})
+	return r
+}
 async function writeFile(file: string, dir: string, content?: {}) {
 	await mkdir(dir, { recursive: true })
 	return write(join(dir, file), JSON.stringify(content), {
@@ -252,7 +287,7 @@ async function copyFile(file: string, dir: string, newName?: string) {
 	return copy(file, join(dir, newName ?? basename(file)))
 }
 async function copyJSON(file: string, dir: string, newName?: string) {
-	const mk =  mkdir(dir, { recursive: true })
+	const mk = mkdir(dir, { recursive: true })
 	const sFile = Bun.file(file)
 	const json = await sFile.json()
 	await mk
