@@ -1,0 +1,54 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Build
+
+on:
+  push:
+    branches: [ "main" ]
+#   pull_request:
+#     branches: [ "v4", "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
+    #   contents: write
+    # strategy:
+    #   matrix:
+    #     node-version: [14.x, 16.x, 18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Add git author
+        uses: fregante/setup-git-user@v2
+
+      - name: Install bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: build
+        run: bun run build
+
+    #   - name: Pack
+    #     id: build
+    #     run:  echo "OUTPUT=$(npm pack)" 1> "$GITHUB_OUTPUT"
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          # Upload dist repository
+          path: './dist'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3
+
