@@ -1924,6 +1924,13 @@
     "description": "",
     "depricated": false
   },
+  "NameHash": {
+    "literal": "NameHash",
+    "name": "NameHash",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
   "Occupied": {
     "literal": "Occupied",
     "name": "Occupied",

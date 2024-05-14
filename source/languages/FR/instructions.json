@@ -704,5 +704,10 @@
     "name": "clr",
     "description": "Clears the stack memory for the provided device.",
     "example": "clr d?"
+  },
+  "clrd": {
+    "name": "clrd",
+    "description": "Seeks directly for the provided device id and clears the stack memory of that device",
+    "example": "clrd id(r?|num)"
   }
 }

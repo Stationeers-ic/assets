@@ -5,20 +5,20 @@ name: Build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
     paths:
-      - '**'
-      - '!LICENSE'
-      - '!README.md'
-      - '!.gitattributes'
-      - '!.gitignore'
-      - '!.prettierignore'
-      - '!.editorconfig'
-      - '!.vscode'
-      - '!.idea'
-      - '!package.json'
-      - '!bun.lockb'
-      - '!**.log'
+      - "**"
+      - "!LICENSE"
+      - "!README.md"
+      - "!.gitattributes"
+      - "!.gitignore"
+      - "!.prettierignore"
+      - "!.editorconfig"
+      - "!.vscode"
+      - "!.idea"
+      - "!package.json"
+      - "!bun.lockb"
+      - "!**.log"
 #   pull_request:
 #     branches: [ "v4", "main" ]
 permissions:
@@ -28,19 +28,19 @@ permissions:
 
 # Allow one concurrent deployment
 concurrency:
-  group: 'pages'
+  group: "pages"
   cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     # permissions:
-      # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
+    # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
     #   contents: write
     # strategy:
     #   matrix:
     #     node-version: [14.x, 16.x, 18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
       - name: Checkout repo
@@ -59,9 +59,9 @@ jobs:
       - name: build
         run: bun run build
 
-    #   - name: Pack
-    #     id: build
-    #     run:  echo "OUTPUT=$(npm pack)" 1> "$GITHUB_OUTPUT"
+      #   - name: Pack
+      #     id: build
+      #     run:  echo "OUTPUT=$(npm pack)" 1> "$GITHUB_OUTPUT"
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
@@ -69,8 +69,7 @@ jobs:
         uses: actions/upload-pages-artifact@v2
         with:
           # Upload dist repository
-          path: './dist'
+          path: "./dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
-
