@@ -16,7 +16,9 @@ async function clearDist() {
 }
 
 async function optimizeImages() {
-	const x = (cpus().length + 1) >> 1;
+	// const x = (cpus().length + 1) >> 1;
+	let x = cpus().length -1
+	if(x < 1) x = 1
 	console.log("Optimize images using", x, "cores");
 	console.time("Optimize images");
 	await $`tools/oxipng -o max --strip safe --alpha ./source/images -r -q -t ${x} --dir ./dist/images`;
@@ -201,7 +203,7 @@ async function optimizeData() {
 					reagents.data.push({
 						title: oldDevice.Title ?? "",
 						name: key,
-						// hash: oldDevice.PrefabHash,
+						hash: oldDevice.ReagentsHash ?? oldDevice.PrefabHash,
 						image: findImage(oldDevice.MainImage),
 						items: reagentItems,
 					});

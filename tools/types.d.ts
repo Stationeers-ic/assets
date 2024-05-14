@@ -271,7 +271,7 @@ export type Reagents = {
 export type Reagent = {
 	title: string
 	name: string
-	// hash:  number;
+	hash:  number;
 	image: string
 	items: ReagentItem[]
 }
