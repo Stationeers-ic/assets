@@ -98,7 +98,6 @@ async function optimizeData() {
       const [languages, name] = [dirname(file), basename(file)];
       // if (languages.length !== 2) continue
       if (name !== "data.json") continue;
-      console.log("Optimize", join("source", "languages", file));
       const sFile = Bun.file(join("source", "languages", file));
       const data = (await sFile.json()) as OldDevices;
       // const data = require() as OldDevices
@@ -287,11 +286,11 @@ async function generateIndex() {
   return await Promise.all(promises);
 }
 
-// await clearDist();
-// GODPromise.push(optimizeImages().then(() => moveImages()));
-// GODPromise.push(moveFiles());
-// GODPromise.push(moveData());
-// await Promise.all(GODPromise);
+await clearDist();
+GODPromise.push(optimizeImages().then(() => moveImages()));
+GODPromise.push(moveFiles());
+GODPromise.push(moveData());
+await Promise.all(GODPromise);
 await optimizeData();
 await generateIndex();
 //----------------------------------------------HELPERS----------------------------------------------
