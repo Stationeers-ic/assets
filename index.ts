@@ -93,11 +93,12 @@ async function moveData() {
 async function optimizeData() {
   //optimize data
   const languages = new Bun.Glob("**/data.json");
-  for await (const file of languages.scan("./dist/languages/")) {
+  for await (const file of languages.scan("./source/languages/")) {
     try {
       const [languages, name] = [dirname(file), basename(file)];
       // if (languages.length !== 2) continue
       if (name !== "data.json") continue;
+      console.log("Optimize", join("source", "languages", file));
       const sFile = Bun.file(join("source", "languages", file));
       const data = (await sFile.json()) as OldDevices;
       // const data = require() as OldDevices
@@ -120,7 +121,7 @@ async function optimizeData() {
             name: string;
             permissions: string[];
           }[] = [];
-          for (const logic of oldDevice.LogicInsert) {
+          for (const logic of oldDevice?.LogicInsert) {
             const logicName = logic.LogicName.replace(/<[^>]*>?/gm, "");
             const permissions = logic.LogicAccessTypes.split(" ");
             logics.push({
@@ -135,7 +136,7 @@ async function optimizeData() {
             logic: string[];
           }[] = [];
           const slotLogic: Record<number, string[]> = {};
-          oldDevice.LogicSlotInsert.forEach((sl) => {
+          oldDevice?.LogicSlotInsert?.forEach((sl) => {
             const logicName = sl.LogicName.replace(/<[^>]*>?/gm, "");
             const slotIndexs = sl.LogicAccessTypes.split(", ").map((index) =>
               Number(index),
@@ -145,7 +146,7 @@ async function optimizeData() {
               slotLogic[index].push(logicName);
             });
           });
-          oldDevice.SlotInserts.forEach((slot) => {
+          oldDevice?.SlotInserts?.forEach((slot) => {
             const slotName = slot.SlotName;
             const slotType = slot.SlotType;
             const slotIndex = Number(slot.SlotIndex);
@@ -160,20 +161,20 @@ async function optimizeData() {
             });
           });
           const device: Device = {
-            id: oldDevice.PrefabHash,
-            Title: oldDevice.Title ?? key,
+            id: oldDevice?.PrefabHash,
+            Title: oldDevice?.Title ?? key,
             Key: key,
-            PrefabName: oldDevice.PrefabName,
-            PrefabHash: oldDevice.PrefabHash,
+            PrefabName: oldDevice?.PrefabName,
+            PrefabHash: oldDevice?.PrefabHash,
             hasChip: hasChip,
             deviceConnectCount: oldDevice.DeviceConnectCount ?? 0,
             image: findImage(oldDevice.MainImage),
-            mods: oldDevice.ModeInsert.map((mod) => mod.LogicName),
-            connections: oldDevice.ConnectionInsert.map(
-              (connection) => connection.LogicName,
+            mods: oldDevice?.ModeInsert?.map((mod) => mod.LogicName),
+            connections: oldDevice?.ConnectionInsert?.map(
+              (connection) => connection?.LogicName,
             ),
             slots: slots,
-            tags: oldDevice.tags,
+            tags: oldDevice?.tags,
             logics: logics,
           };
           devices.data.push(device);
@@ -286,11 +287,11 @@ async function generateIndex() {
   return await Promise.all(promises);
 }
 
-await clearDist();
-GODPromise.push(optimizeImages().then(() => moveImages()));
-GODPromise.push(moveFiles());
-GODPromise.push(moveData());
-await Promise.all(GODPromise);
+// await clearDist();
+// GODPromise.push(optimizeImages().then(() => moveImages()));
+// GODPromise.push(moveFiles());
+// GODPromise.push(moveData());
+// await Promise.all(GODPromise);
 await optimizeData();
 await generateIndex();
 //----------------------------------------------HELPERS----------------------------------------------
