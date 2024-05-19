@@ -1,21 +1,21 @@
 import Bun, { $ } from "bun";
 import {
-	copyFile as copy,
-	mkdir,
-	rename,
-	rmdir,
-	writeFile as write,
+  copyFile as copy,
+  mkdir,
+  rename,
+  rmdir,
+  writeFile as write,
 } from "node:fs/promises";
 import { cpus } from "node:os";
 import { basename, dirname, join } from "path";
 import { dir_index, walkDir } from "./tools/dir_index";
 import type {
-	Device,
-	Devices,
-	Items,
-	OldDevices,
-	ReagentItem,
-	Reagents,
+  Device,
+  Devices,
+  Items,
+  OldDevices,
+  ReagentItem,
+  Reagents,
 } from "./tools/types";
 
 console.info("Start building...");
@@ -285,7 +285,7 @@ async function generateIndex() {
 }
 
 await clearDist();
-// GODPromise.push(optimizeImages().then(() => moveImages()));
+GODPromise.push(optimizeImages().then(() => moveImages()));
 GODPromise.push(moveFiles());
 GODPromise.push(moveData());
 await Promise.all(GODPromise);
