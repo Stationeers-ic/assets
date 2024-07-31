@@ -55,1990 +55,2074 @@
     "depricated": false,
     "description": "A constant representing the smallest value representable in double precision"
   },
-  "None": {
-    "literal": "None",
-    "name": "None",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Power": {
-    "literal": "Power",
-    "name": "Power",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Open": {
-    "literal": "Open",
-    "name": "Open",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Mode": {
-    "literal": "Mode",
-    "name": "Mode",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Error": {
-    "literal": "Error",
-    "name": "Error",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Pressure": {
-    "literal": "Pressure",
-    "name": "Pressure",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Temperature": {
-    "literal": "Temperature",
-    "name": "Temperature",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "PressureExternal": {
-    "literal": "PressureExternal",
-    "name": "PressureExternal",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "PressureInternal": {
-    "literal": "PressureInternal",
-    "name": "PressureInternal",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Activate": {
-    "literal": "Activate",
-    "name": "Activate",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Lock": {
-    "literal": "Lock",
-    "name": "Lock",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Charge": {
-    "literal": "Charge",
-    "name": "Charge",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Setting": {
-    "literal": "Setting",
-    "name": "Setting",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Reagents": {
-    "literal": "Reagents",
-    "name": "Reagents",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "RatioOxygen": {
-    "literal": "RatioOxygen",
-    "name": "RatioOxygen",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "RatioCarbonDioxide": {
-    "literal": "RatioCarbonDioxide",
-    "name": "RatioCarbonDioxide",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "RatioNitrogen": {
-    "literal": "RatioNitrogen",
-    "name": "RatioNitrogen",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "RatioPollutant": {
-    "literal": "RatioPollutant",
-    "name": "RatioPollutant",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "RatioVolatiles": {
-    "literal": "RatioVolatiles",
-    "name": "RatioVolatiles",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "RatioWater": {
-    "literal": "RatioWater",
-    "name": "RatioWater",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Horizontal": {
-    "literal": "Horizontal",
-    "name": "Horizontal",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Vertical": {
-    "literal": "Vertical",
-    "name": "Vertical",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "SolarAngle": {
-    "literal": "SolarAngle",
-    "name": "SolarAngle",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Maximum": {
-    "literal": "Maximum",
-    "name": "Maximum",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Ratio": {
-    "literal": "Ratio",
-    "name": "Ratio",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "PowerPotential": {
-    "literal": "PowerPotential",
-    "name": "PowerPotential",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "PowerActual": {
-    "literal": "PowerActual",
-    "name": "PowerActual",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Quantity": {
-    "literal": "Quantity",
-    "name": "Quantity",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "On": {
-    "literal": "On",
-    "name": "On",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "ImportQuantity": {
-    "literal": "ImportQuantity",
-    "name": "ImportQuantity",
+  "LogicType.None": {
+    "literal": "LogicType.None",
+    "name": "LogicType.None",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "ImportSlotOccupant": {
-    "literal": "ImportSlotOccupant",
-    "name": "ImportSlotOccupant",
+  "LogicType.Power": {
+    "literal": "LogicType.Power",
+    "name": "LogicType.Power",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Open": {
+    "literal": "LogicType.Open",
+    "name": "LogicType.Open",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Mode": {
+    "literal": "LogicType.Mode",
+    "name": "LogicType.Mode",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Error": {
+    "literal": "LogicType.Error",
+    "name": "LogicType.Error",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Pressure": {
+    "literal": "LogicType.Pressure",
+    "name": "LogicType.Pressure",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Temperature": {
+    "literal": "LogicType.Temperature",
+    "name": "LogicType.Temperature",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.PressureExternal": {
+    "literal": "LogicType.PressureExternal",
+    "name": "LogicType.PressureExternal",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.PressureInternal": {
+    "literal": "LogicType.PressureInternal",
+    "name": "LogicType.PressureInternal",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Activate": {
+    "literal": "LogicType.Activate",
+    "name": "LogicType.Activate",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Lock": {
+    "literal": "LogicType.Lock",
+    "name": "LogicType.Lock",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Charge": {
+    "literal": "LogicType.Charge",
+    "name": "LogicType.Charge",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Setting": {
+    "literal": "LogicType.Setting",
+    "name": "LogicType.Setting",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Reagents": {
+    "literal": "LogicType.Reagents",
+    "name": "LogicType.Reagents",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.RatioOxygen": {
+    "literal": "LogicType.RatioOxygen",
+    "name": "LogicType.RatioOxygen",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.RatioCarbonDioxide": {
+    "literal": "LogicType.RatioCarbonDioxide",
+    "name": "LogicType.RatioCarbonDioxide",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.RatioNitrogen": {
+    "literal": "LogicType.RatioNitrogen",
+    "name": "LogicType.RatioNitrogen",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.RatioPollutant": {
+    "literal": "LogicType.RatioPollutant",
+    "name": "LogicType.RatioPollutant",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.RatioVolatiles": {
+    "literal": "LogicType.RatioVolatiles",
+    "name": "LogicType.RatioVolatiles",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.RatioWater": {
+    "literal": "LogicType.RatioWater",
+    "name": "LogicType.RatioWater",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Horizontal": {
+    "literal": "LogicType.Horizontal",
+    "name": "LogicType.Horizontal",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Vertical": {
+    "literal": "LogicType.Vertical",
+    "name": "LogicType.Vertical",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.SolarAngle": {
+    "literal": "LogicType.SolarAngle",
+    "name": "LogicType.SolarAngle",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Maximum": {
+    "literal": "LogicType.Maximum",
+    "name": "LogicType.Maximum",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Ratio": {
+    "literal": "LogicType.Ratio",
+    "name": "LogicType.Ratio",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.PowerPotential": {
+    "literal": "LogicType.PowerPotential",
+    "name": "LogicType.PowerPotential",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.PowerActual": {
+    "literal": "LogicType.PowerActual",
+    "name": "LogicType.PowerActual",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Quantity": {
+    "literal": "LogicType.Quantity",
+    "name": "LogicType.Quantity",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.On": {
+    "literal": "LogicType.On",
+    "name": "LogicType.On",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.ImportQuantity": {
+    "literal": "LogicType.ImportQuantity",
+    "name": "LogicType.ImportQuantity",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "ExportQuantity": {
-    "literal": "ExportQuantity",
-    "name": "ExportQuantity",
+  "LogicType.ImportSlotOccupant": {
+    "literal": "LogicType.ImportSlotOccupant",
+    "name": "LogicType.ImportSlotOccupant",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "ExportSlotOccupant": {
-    "literal": "ExportSlotOccupant",
-    "name": "ExportSlotOccupant",
+  "LogicType.ExportQuantity": {
+    "literal": "LogicType.ExportQuantity",
+    "name": "LogicType.ExportQuantity",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "RequiredPower": {
-    "literal": "RequiredPower",
-    "name": "RequiredPower",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "HorizontalRatio": {
-    "literal": "HorizontalRatio",
-    "name": "HorizontalRatio",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "VerticalRatio": {
-    "literal": "VerticalRatio",
-    "name": "VerticalRatio",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "PowerRequired": {
-    "literal": "PowerRequired",
-    "name": "PowerRequired",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Idle": {
-    "literal": "Idle",
-    "name": "Idle",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "Color": {
-    "literal": "Color",
-    "name": "Color",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "ElevatorSpeed": {
-    "literal": "ElevatorSpeed",
-    "name": "ElevatorSpeed",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "ElevatorLevel": {
-    "literal": "ElevatorLevel",
-    "name": "ElevatorLevel",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "RecipeHash": {
-    "literal": "RecipeHash",
-    "name": "RecipeHash",
-    "referenceType": "Enum",
-    "description": "",
-    "depricated": false
-  },
-  "ExportSlotHash": {
-    "literal": "ExportSlotHash",
-    "name": "ExportSlotHash",
+  "LogicType.ExportSlotOccupant": {
+    "literal": "LogicType.ExportSlotOccupant",
+    "name": "LogicType.ExportSlotOccupant",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "ImportSlotHash": {
-    "literal": "ImportSlotHash",
-    "name": "ImportSlotHash",
+  "LogicType.RequiredPower": {
+    "literal": "LogicType.RequiredPower",
+    "name": "LogicType.RequiredPower",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.HorizontalRatio": {
+    "literal": "LogicType.HorizontalRatio",
+    "name": "LogicType.HorizontalRatio",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.VerticalRatio": {
+    "literal": "LogicType.VerticalRatio",
+    "name": "LogicType.VerticalRatio",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.PowerRequired": {
+    "literal": "LogicType.PowerRequired",
+    "name": "LogicType.PowerRequired",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Idle": {
+    "literal": "LogicType.Idle",
+    "name": "LogicType.Idle",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Color": {
+    "literal": "LogicType.Color",
+    "name": "LogicType.Color",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.ElevatorSpeed": {
+    "literal": "LogicType.ElevatorSpeed",
+    "name": "LogicType.ElevatorSpeed",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.ElevatorLevel": {
+    "literal": "LogicType.ElevatorLevel",
+    "name": "LogicType.ElevatorLevel",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.RecipeHash": {
+    "literal": "LogicType.RecipeHash",
+    "name": "LogicType.RecipeHash",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.ExportSlotHash": {
+    "literal": "LogicType.ExportSlotHash",
+    "name": "LogicType.ExportSlotHash",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "PlantHealth1": {
-    "literal": "PlantHealth1",
-    "name": "PlantHealth1",
+  "LogicType.ImportSlotHash": {
+    "literal": "LogicType.ImportSlotHash",
+    "name": "LogicType.ImportSlotHash",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "PlantHealth2": {
-    "literal": "PlantHealth2",
-    "name": "PlantHealth2",
+  "LogicType.PlantHealth1": {
+    "literal": "LogicType.PlantHealth1",
+    "name": "LogicType.PlantHealth1",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "PlantHealth3": {
-    "literal": "PlantHealth3",
-    "name": "PlantHealth3",
+  "LogicType.PlantHealth2": {
+    "literal": "LogicType.PlantHealth2",
+    "name": "LogicType.PlantHealth2",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "PlantHealth4": {
-    "literal": "PlantHealth4",
-    "name": "PlantHealth4",
+  "LogicType.PlantHealth3": {
+    "literal": "LogicType.PlantHealth3",
+    "name": "LogicType.PlantHealth3",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "PlantGrowth1": {
-    "literal": "PlantGrowth1",
-    "name": "PlantGrowth1",
+  "LogicType.PlantHealth4": {
+    "literal": "LogicType.PlantHealth4",
+    "name": "LogicType.PlantHealth4",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "PlantGrowth2": {
-    "literal": "PlantGrowth2",
-    "name": "PlantGrowth2",
+  "LogicType.PlantGrowth1": {
+    "literal": "LogicType.PlantGrowth1",
+    "name": "LogicType.PlantGrowth1",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "PlantGrowth3": {
-    "literal": "PlantGrowth3",
-    "name": "PlantGrowth3",
+  "LogicType.PlantGrowth2": {
+    "literal": "LogicType.PlantGrowth2",
+    "name": "LogicType.PlantGrowth2",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "PlantGrowth4": {
-    "literal": "PlantGrowth4",
-    "name": "PlantGrowth4",
+  "LogicType.PlantGrowth3": {
+    "literal": "LogicType.PlantGrowth3",
+    "name": "LogicType.PlantGrowth3",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "PlantEfficiency1": {
-    "literal": "PlantEfficiency1",
-    "name": "PlantEfficiency1",
+  "LogicType.PlantGrowth4": {
+    "literal": "LogicType.PlantGrowth4",
+    "name": "LogicType.PlantGrowth4",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "PlantEfficiency2": {
-    "literal": "PlantEfficiency2",
-    "name": "PlantEfficiency2",
+  "LogicType.PlantEfficiency1": {
+    "literal": "LogicType.PlantEfficiency1",
+    "name": "LogicType.PlantEfficiency1",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "PlantEfficiency3": {
-    "literal": "PlantEfficiency3",
-    "name": "PlantEfficiency3",
+  "LogicType.PlantEfficiency2": {
+    "literal": "LogicType.PlantEfficiency2",
+    "name": "LogicType.PlantEfficiency2",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "PlantEfficiency4": {
-    "literal": "PlantEfficiency4",
-    "name": "PlantEfficiency4",
+  "LogicType.PlantEfficiency3": {
+    "literal": "LogicType.PlantEfficiency3",
+    "name": "LogicType.PlantEfficiency3",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "PlantHash1": {
-    "literal": "PlantHash1",
-    "name": "PlantHash1",
+  "LogicType.PlantEfficiency4": {
+    "literal": "LogicType.PlantEfficiency4",
+    "name": "LogicType.PlantEfficiency4",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "PlantHash2": {
-    "literal": "PlantHash2",
-    "name": "PlantHash2",
+  "LogicType.PlantHash1": {
+    "literal": "LogicType.PlantHash1",
+    "name": "LogicType.PlantHash1",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "PlantHash3": {
-    "literal": "PlantHash3",
-    "name": "PlantHash3",
+  "LogicType.PlantHash2": {
+    "literal": "LogicType.PlantHash2",
+    "name": "LogicType.PlantHash2",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "PlantHash4": {
-    "literal": "PlantHash4",
-    "name": "PlantHash4",
+  "LogicType.PlantHash3": {
+    "literal": "LogicType.PlantHash3",
+    "name": "LogicType.PlantHash3",
     "referenceType": "Enum",
     "description": "",
     "depricated": true
   },
-  "RequestHash": {
-    "literal": "RequestHash",
-    "name": "RequestHash",
+  "LogicType.PlantHash4": {
+    "literal": "LogicType.PlantHash4",
+    "name": "LogicType.PlantHash4",
     "referenceType": "Enum",
     "description": "",
+    "depricated": true
+  },
+  "LogicType.RequestHash": {
+    "literal": "LogicType.RequestHash",
+    "name": "LogicType.RequestHash",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.CompletionRatio": {
+    "literal": "LogicType.CompletionRatio",
+    "name": "LogicType.CompletionRatio",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.ClearMemory": {
+    "literal": "LogicType.ClearMemory",
+    "name": "LogicType.ClearMemory",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.ExportCount": {
+    "literal": "LogicType.ExportCount",
+    "name": "LogicType.ExportCount",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.ImportCount": {
+    "literal": "LogicType.ImportCount",
+    "name": "LogicType.ImportCount",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.PowerGeneration": {
+    "literal": "LogicType.PowerGeneration",
+    "name": "LogicType.PowerGeneration",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.TotalMoles": {
+    "literal": "LogicType.TotalMoles",
+    "name": "LogicType.TotalMoles",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Volume": {
+    "literal": "LogicType.Volume",
+    "name": "LogicType.Volume",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Plant": {
+    "literal": "LogicType.Plant",
+    "name": "LogicType.Plant",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Harvest": {
+    "literal": "LogicType.Harvest",
+    "name": "LogicType.Harvest",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.Output": {
+    "literal": "LogicType.Output",
+    "name": "LogicType.Output",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.PressureSetting": {
+    "literal": "LogicType.PressureSetting",
+    "name": "LogicType.PressureSetting",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "LogicType.TemperatureSetting": {
+    "literal": "LogicType.TemperatureSetting",
+    "name": "LogicType.TemperatureSetting",
+    "referenceType": "Enum",
+    "description": "",
     "depricated": false
   },
-  "CompletionRatio": {
-    "literal": "CompletionRatio",
-    "name": "CompletionRatio",
+  "LogicType.TemperatureExternal": {
+    "literal": "LogicType.TemperatureExternal",
+    "name": "LogicType.TemperatureExternal",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "ClearMemory": {
-    "literal": "ClearMemory",
-    "name": "ClearMemory",
+  "LogicType.Filtration": {
+    "literal": "LogicType.Filtration",
+    "name": "LogicType.Filtration",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "ExportCount": {
-    "literal": "ExportCount",
-    "name": "ExportCount",
+  "LogicType.AirRelease": {
+    "literal": "LogicType.AirRelease",
+    "name": "LogicType.AirRelease",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "ImportCount": {
-    "literal": "ImportCount",
-    "name": "ImportCount",
+  "LogicType.PositionX": {
+    "literal": "LogicType.PositionX",
+    "name": "LogicType.PositionX",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "PowerGeneration": {
-    "literal": "PowerGeneration",
-    "name": "PowerGeneration",
+  "LogicType.PositionY": {
+    "literal": "LogicType.PositionY",
+    "name": "LogicType.PositionY",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TotalMoles": {
-    "literal": "TotalMoles",
-    "name": "TotalMoles",
+  "LogicType.PositionZ": {
+    "literal": "LogicType.PositionZ",
+    "name": "LogicType.PositionZ",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Volume": {
-    "literal": "Volume",
-    "name": "Volume",
+  "LogicType.VelocityMagnitude": {
+    "literal": "LogicType.VelocityMagnitude",
+    "name": "LogicType.VelocityMagnitude",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Plant": {
-    "literal": "Plant",
-    "name": "Plant",
+  "LogicType.VelocityRelativeX": {
+    "literal": "LogicType.VelocityRelativeX",
+    "name": "LogicType.VelocityRelativeX",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Harvest": {
-    "literal": "Harvest",
-    "name": "Harvest",
+  "LogicType.VelocityRelativeY": {
+    "literal": "LogicType.VelocityRelativeY",
+    "name": "LogicType.VelocityRelativeY",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Output": {
-    "literal": "Output",
-    "name": "Output",
+  "LogicType.VelocityRelativeZ": {
+    "literal": "LogicType.VelocityRelativeZ",
+    "name": "LogicType.VelocityRelativeZ",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "PressureSetting": {
-    "literal": "PressureSetting",
-    "name": "PressureSetting",
+  "LogicType.RatioNitrousOxide": {
+    "literal": "LogicType.RatioNitrousOxide",
+    "name": "LogicType.RatioNitrousOxide",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TemperatureSetting": {
-    "literal": "TemperatureSetting",
-    "name": "TemperatureSetting",
+  "LogicType.PrefabHash": {
+    "literal": "LogicType.PrefabHash",
+    "name": "LogicType.PrefabHash",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TemperatureExternal": {
-    "literal": "TemperatureExternal",
-    "name": "TemperatureExternal",
+  "LogicType.ForceWrite": {
+    "literal": "LogicType.ForceWrite",
+    "name": "LogicType.ForceWrite",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Filtration": {
-    "literal": "Filtration",
-    "name": "Filtration",
+  "LogicType.SignalStrength": {
+    "literal": "LogicType.SignalStrength",
+    "name": "LogicType.SignalStrength",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "AirRelease": {
-    "literal": "AirRelease",
-    "name": "AirRelease",
+  "LogicType.SignalID": {
+    "literal": "LogicType.SignalID",
+    "name": "LogicType.SignalID",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "PositionX": {
-    "literal": "PositionX",
-    "name": "PositionX",
+  "LogicType.TargetX": {
+    "literal": "LogicType.TargetX",
+    "name": "LogicType.TargetX",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "PositionY": {
-    "literal": "PositionY",
-    "name": "PositionY",
+  "LogicType.TargetY": {
+    "literal": "LogicType.TargetY",
+    "name": "LogicType.TargetY",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "PositionZ": {
-    "literal": "PositionZ",
-    "name": "PositionZ",
+  "LogicType.TargetZ": {
+    "literal": "LogicType.TargetZ",
+    "name": "LogicType.TargetZ",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "VelocityMagnitude": {
-    "literal": "VelocityMagnitude",
-    "name": "VelocityMagnitude",
+  "LogicType.SettingInput": {
+    "literal": "LogicType.SettingInput",
+    "name": "LogicType.SettingInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "VelocityRelativeX": {
-    "literal": "VelocityRelativeX",
-    "name": "VelocityRelativeX",
+  "LogicType.SettingOutput": {
+    "literal": "LogicType.SettingOutput",
+    "name": "LogicType.SettingOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "VelocityRelativeY": {
-    "literal": "VelocityRelativeY",
-    "name": "VelocityRelativeY",
+  "LogicType.CurrentResearchPodType": {
+    "literal": "LogicType.CurrentResearchPodType",
+    "name": "LogicType.CurrentResearchPodType",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "VelocityRelativeZ": {
-    "literal": "VelocityRelativeZ",
-    "name": "VelocityRelativeZ",
+  "LogicType.ManualResearchRequiredPod": {
+    "literal": "LogicType.ManualResearchRequiredPod",
+    "name": "LogicType.ManualResearchRequiredPod",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioNitrousOxide": {
-    "literal": "RatioNitrousOxide",
-    "name": "RatioNitrousOxide",
+  "LogicType.MineablesInVicinity": {
+    "literal": "LogicType.MineablesInVicinity",
+    "name": "LogicType.MineablesInVicinity",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "PrefabHash": {
-    "literal": "PrefabHash",
-    "name": "PrefabHash",
+  "LogicType.MineablesInQueue": {
+    "literal": "LogicType.MineablesInQueue",
+    "name": "LogicType.MineablesInQueue",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "ForceWrite": {
-    "literal": "ForceWrite",
-    "name": "ForceWrite",
+  "LogicType.NextWeatherEventTime": {
+    "literal": "LogicType.NextWeatherEventTime",
+    "name": "LogicType.NextWeatherEventTime",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "SignalStrength": {
-    "literal": "SignalStrength",
-    "name": "SignalStrength",
+  "LogicType.Combustion": {
+    "literal": "LogicType.Combustion",
+    "name": "LogicType.Combustion",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "SignalID": {
-    "literal": "SignalID",
-    "name": "SignalID",
+  "LogicType.Fuel": {
+    "literal": "LogicType.Fuel",
+    "name": "LogicType.Fuel",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TargetX": {
-    "literal": "TargetX",
-    "name": "TargetX",
+  "LogicType.ReturnFuelCost": {
+    "literal": "LogicType.ReturnFuelCost",
+    "name": "LogicType.ReturnFuelCost",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TargetY": {
-    "literal": "TargetY",
-    "name": "TargetY",
+  "LogicType.CollectableGoods": {
+    "literal": "LogicType.CollectableGoods",
+    "name": "LogicType.CollectableGoods",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TargetZ": {
-    "literal": "TargetZ",
-    "name": "TargetZ",
+  "LogicType.Time": {
+    "literal": "LogicType.Time",
+    "name": "LogicType.Time",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "SettingInput": {
-    "literal": "SettingInput",
-    "name": "SettingInput",
+  "LogicType.Bpm": {
+    "literal": "LogicType.Bpm",
+    "name": "LogicType.Bpm",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "SettingOutput": {
-    "literal": "SettingOutput",
-    "name": "SettingOutput",
+  "LogicType.EnvironmentEfficiency": {
+    "literal": "LogicType.EnvironmentEfficiency",
+    "name": "LogicType.EnvironmentEfficiency",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "CurrentResearchPodType": {
-    "literal": "CurrentResearchPodType",
-    "name": "CurrentResearchPodType",
+  "LogicType.WorkingGasEfficiency": {
+    "literal": "LogicType.WorkingGasEfficiency",
+    "name": "LogicType.WorkingGasEfficiency",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "ManualResearchRequiredPod": {
-    "literal": "ManualResearchRequiredPod",
-    "name": "ManualResearchRequiredPod",
+  "LogicType.PressureInput": {
+    "literal": "LogicType.PressureInput",
+    "name": "LogicType.PressureInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "MineablesInVicinity": {
-    "literal": "MineablesInVicinity",
-    "name": "MineablesInVicinity",
+  "LogicType.TemperatureInput": {
+    "literal": "LogicType.TemperatureInput",
+    "name": "LogicType.TemperatureInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "MineablesInQueue": {
-    "literal": "MineablesInQueue",
-    "name": "MineablesInQueue",
+  "LogicType.RatioOxygenInput": {
+    "literal": "LogicType.RatioOxygenInput",
+    "name": "LogicType.RatioOxygenInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "NextWeatherEventTime": {
-    "literal": "NextWeatherEventTime",
-    "name": "NextWeatherEventTime",
+  "LogicType.RatioCarbonDioxideInput": {
+    "literal": "LogicType.RatioCarbonDioxideInput",
+    "name": "LogicType.RatioCarbonDioxideInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Combustion": {
-    "literal": "Combustion",
-    "name": "Combustion",
+  "LogicType.RatioNitrogenInput": {
+    "literal": "LogicType.RatioNitrogenInput",
+    "name": "LogicType.RatioNitrogenInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Fuel": {
-    "literal": "Fuel",
-    "name": "Fuel",
+  "LogicType.RatioPollutantInput": {
+    "literal": "LogicType.RatioPollutantInput",
+    "name": "LogicType.RatioPollutantInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "ReturnFuelCost": {
-    "literal": "ReturnFuelCost",
-    "name": "ReturnFuelCost",
+  "LogicType.RatioVolatilesInput": {
+    "literal": "LogicType.RatioVolatilesInput",
+    "name": "LogicType.RatioVolatilesInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "CollectableGoods": {
-    "literal": "CollectableGoods",
-    "name": "CollectableGoods",
+  "LogicType.RatioWaterInput": {
+    "literal": "LogicType.RatioWaterInput",
+    "name": "LogicType.RatioWaterInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Time": {
-    "literal": "Time",
-    "name": "Time",
+  "LogicType.RatioNitrousOxideInput": {
+    "literal": "LogicType.RatioNitrousOxideInput",
+    "name": "LogicType.RatioNitrousOxideInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Bpm": {
-    "literal": "Bpm",
-    "name": "Bpm",
+  "LogicType.TotalMolesInput": {
+    "literal": "LogicType.TotalMolesInput",
+    "name": "LogicType.TotalMolesInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "EnvironmentEfficiency": {
-    "literal": "EnvironmentEfficiency",
-    "name": "EnvironmentEfficiency",
+  "LogicType.PressureInput2": {
+    "literal": "LogicType.PressureInput2",
+    "name": "LogicType.PressureInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "WorkingGasEfficiency": {
-    "literal": "WorkingGasEfficiency",
-    "name": "WorkingGasEfficiency",
+  "LogicType.TemperatureInput2": {
+    "literal": "LogicType.TemperatureInput2",
+    "name": "LogicType.TemperatureInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "PressureInput": {
-    "literal": "PressureInput",
-    "name": "PressureInput",
+  "LogicType.RatioOxygenInput2": {
+    "literal": "LogicType.RatioOxygenInput2",
+    "name": "LogicType.RatioOxygenInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TemperatureInput": {
-    "literal": "TemperatureInput",
-    "name": "TemperatureInput",
+  "LogicType.RatioCarbonDioxideInput2": {
+    "literal": "LogicType.RatioCarbonDioxideInput2",
+    "name": "LogicType.RatioCarbonDioxideInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioOxygenInput": {
-    "literal": "RatioOxygenInput",
-    "name": "RatioOxygenInput",
+  "LogicType.RatioNitrogenInput2": {
+    "literal": "LogicType.RatioNitrogenInput2",
+    "name": "LogicType.RatioNitrogenInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioCarbonDioxideInput": {
-    "literal": "RatioCarbonDioxideInput",
-    "name": "RatioCarbonDioxideInput",
+  "LogicType.RatioPollutantInput2": {
+    "literal": "LogicType.RatioPollutantInput2",
+    "name": "LogicType.RatioPollutantInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioNitrogenInput": {
-    "literal": "RatioNitrogenInput",
-    "name": "RatioNitrogenInput",
+  "LogicType.RatioVolatilesInput2": {
+    "literal": "LogicType.RatioVolatilesInput2",
+    "name": "LogicType.RatioVolatilesInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioPollutantInput": {
-    "literal": "RatioPollutantInput",
-    "name": "RatioPollutantInput",
+  "LogicType.RatioWaterInput2": {
+    "literal": "LogicType.RatioWaterInput2",
+    "name": "LogicType.RatioWaterInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioVolatilesInput": {
-    "literal": "RatioVolatilesInput",
-    "name": "RatioVolatilesInput",
+  "LogicType.RatioNitrousOxideInput2": {
+    "literal": "LogicType.RatioNitrousOxideInput2",
+    "name": "LogicType.RatioNitrousOxideInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioWaterInput": {
-    "literal": "RatioWaterInput",
-    "name": "RatioWaterInput",
+  "LogicType.TotalMolesInput2": {
+    "literal": "LogicType.TotalMolesInput2",
+    "name": "LogicType.TotalMolesInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioNitrousOxideInput": {
-    "literal": "RatioNitrousOxideInput",
-    "name": "RatioNitrousOxideInput",
+  "LogicType.PressureOutput": {
+    "literal": "LogicType.PressureOutput",
+    "name": "LogicType.PressureOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TotalMolesInput": {
-    "literal": "TotalMolesInput",
-    "name": "TotalMolesInput",
+  "LogicType.TemperatureOutput": {
+    "literal": "LogicType.TemperatureOutput",
+    "name": "LogicType.TemperatureOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "PressureInput2": {
-    "literal": "PressureInput2",
-    "name": "PressureInput2",
+  "LogicType.RatioOxygenOutput": {
+    "literal": "LogicType.RatioOxygenOutput",
+    "name": "LogicType.RatioOxygenOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TemperatureInput2": {
-    "literal": "TemperatureInput2",
-    "name": "TemperatureInput2",
+  "LogicType.RatioCarbonDioxideOutput": {
+    "literal": "LogicType.RatioCarbonDioxideOutput",
+    "name": "LogicType.RatioCarbonDioxideOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioOxygenInput2": {
-    "literal": "RatioOxygenInput2",
-    "name": "RatioOxygenInput2",
+  "LogicType.RatioNitrogenOutput": {
+    "literal": "LogicType.RatioNitrogenOutput",
+    "name": "LogicType.RatioNitrogenOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioCarbonDioxideInput2": {
-    "literal": "RatioCarbonDioxideInput2",
-    "name": "RatioCarbonDioxideInput2",
+  "LogicType.RatioPollutantOutput": {
+    "literal": "LogicType.RatioPollutantOutput",
+    "name": "LogicType.RatioPollutantOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioNitrogenInput2": {
-    "literal": "RatioNitrogenInput2",
-    "name": "RatioNitrogenInput2",
+  "LogicType.RatioVolatilesOutput": {
+    "literal": "LogicType.RatioVolatilesOutput",
+    "name": "LogicType.RatioVolatilesOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioPollutantInput2": {
-    "literal": "RatioPollutantInput2",
-    "name": "RatioPollutantInput2",
+  "LogicType.RatioWaterOutput": {
+    "literal": "LogicType.RatioWaterOutput",
+    "name": "LogicType.RatioWaterOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioVolatilesInput2": {
-    "literal": "RatioVolatilesInput2",
-    "name": "RatioVolatilesInput2",
+  "LogicType.RatioNitrousOxideOutput": {
+    "literal": "LogicType.RatioNitrousOxideOutput",
+    "name": "LogicType.RatioNitrousOxideOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioWaterInput2": {
-    "literal": "RatioWaterInput2",
-    "name": "RatioWaterInput2",
+  "LogicType.TotalMolesOutput": {
+    "literal": "LogicType.TotalMolesOutput",
+    "name": "LogicType.TotalMolesOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioNitrousOxideInput2": {
-    "literal": "RatioNitrousOxideInput2",
-    "name": "RatioNitrousOxideInput2",
+  "LogicType.PressureOutput2": {
+    "literal": "LogicType.PressureOutput2",
+    "name": "LogicType.PressureOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TotalMolesInput2": {
-    "literal": "TotalMolesInput2",
-    "name": "TotalMolesInput2",
+  "LogicType.TemperatureOutput2": {
+    "literal": "LogicType.TemperatureOutput2",
+    "name": "LogicType.TemperatureOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "PressureOutput": {
-    "literal": "PressureOutput",
-    "name": "PressureOutput",
+  "LogicType.RatioOxygenOutput2": {
+    "literal": "LogicType.RatioOxygenOutput2",
+    "name": "LogicType.RatioOxygenOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TemperatureOutput": {
-    "literal": "TemperatureOutput",
-    "name": "TemperatureOutput",
+  "LogicType.RatioCarbonDioxideOutput2": {
+    "literal": "LogicType.RatioCarbonDioxideOutput2",
+    "name": "LogicType.RatioCarbonDioxideOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioOxygenOutput": {
-    "literal": "RatioOxygenOutput",
-    "name": "RatioOxygenOutput",
+  "LogicType.RatioNitrogenOutput2": {
+    "literal": "LogicType.RatioNitrogenOutput2",
+    "name": "LogicType.RatioNitrogenOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioCarbonDioxideOutput": {
-    "literal": "RatioCarbonDioxideOutput",
-    "name": "RatioCarbonDioxideOutput",
+  "LogicType.RatioPollutantOutput2": {
+    "literal": "LogicType.RatioPollutantOutput2",
+    "name": "LogicType.RatioPollutantOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioNitrogenOutput": {
-    "literal": "RatioNitrogenOutput",
-    "name": "RatioNitrogenOutput",
+  "LogicType.RatioVolatilesOutput2": {
+    "literal": "LogicType.RatioVolatilesOutput2",
+    "name": "LogicType.RatioVolatilesOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioPollutantOutput": {
-    "literal": "RatioPollutantOutput",
-    "name": "RatioPollutantOutput",
+  "LogicType.RatioWaterOutput2": {
+    "literal": "LogicType.RatioWaterOutput2",
+    "name": "LogicType.RatioWaterOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioVolatilesOutput": {
-    "literal": "RatioVolatilesOutput",
-    "name": "RatioVolatilesOutput",
+  "LogicType.RatioNitrousOxideOutput2": {
+    "literal": "LogicType.RatioNitrousOxideOutput2",
+    "name": "LogicType.RatioNitrousOxideOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioWaterOutput": {
-    "literal": "RatioWaterOutput",
-    "name": "RatioWaterOutput",
+  "LogicType.TotalMolesOutput2": {
+    "literal": "LogicType.TotalMolesOutput2",
+    "name": "LogicType.TotalMolesOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioNitrousOxideOutput": {
-    "literal": "RatioNitrousOxideOutput",
-    "name": "RatioNitrousOxideOutput",
+  "LogicType.CombustionInput": {
+    "literal": "LogicType.CombustionInput",
+    "name": "LogicType.CombustionInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TotalMolesOutput": {
-    "literal": "TotalMolesOutput",
-    "name": "TotalMolesOutput",
+  "LogicType.CombustionInput2": {
+    "literal": "LogicType.CombustionInput2",
+    "name": "LogicType.CombustionInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "PressureOutput2": {
-    "literal": "PressureOutput2",
-    "name": "PressureOutput2",
+  "LogicType.CombustionOutput": {
+    "literal": "LogicType.CombustionOutput",
+    "name": "LogicType.CombustionOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TemperatureOutput2": {
-    "literal": "TemperatureOutput2",
-    "name": "TemperatureOutput2",
+  "LogicType.CombustionOutput2": {
+    "literal": "LogicType.CombustionOutput2",
+    "name": "LogicType.CombustionOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioOxygenOutput2": {
-    "literal": "RatioOxygenOutput2",
-    "name": "RatioOxygenOutput2",
+  "LogicType.OperationalTemperatureEfficiency": {
+    "literal": "LogicType.OperationalTemperatureEfficiency",
+    "name": "LogicType.OperationalTemperatureEfficiency",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioCarbonDioxideOutput2": {
-    "literal": "RatioCarbonDioxideOutput2",
-    "name": "RatioCarbonDioxideOutput2",
+  "LogicType.TemperatureDifferentialEfficiency": {
+    "literal": "LogicType.TemperatureDifferentialEfficiency",
+    "name": "LogicType.TemperatureDifferentialEfficiency",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioNitrogenOutput2": {
-    "literal": "RatioNitrogenOutput2",
-    "name": "RatioNitrogenOutput2",
+  "LogicType.PressureEfficiency": {
+    "literal": "LogicType.PressureEfficiency",
+    "name": "LogicType.PressureEfficiency",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioPollutantOutput2": {
-    "literal": "RatioPollutantOutput2",
-    "name": "RatioPollutantOutput2",
+  "LogicType.CombustionLimiter": {
+    "literal": "LogicType.CombustionLimiter",
+    "name": "LogicType.CombustionLimiter",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioVolatilesOutput2": {
-    "literal": "RatioVolatilesOutput2",
-    "name": "RatioVolatilesOutput2",
+  "LogicType.Throttle": {
+    "literal": "LogicType.Throttle",
+    "name": "LogicType.Throttle",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioWaterOutput2": {
-    "literal": "RatioWaterOutput2",
-    "name": "RatioWaterOutput2",
+  "LogicType.Rpm": {
+    "literal": "LogicType.Rpm",
+    "name": "LogicType.Rpm",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioNitrousOxideOutput2": {
-    "literal": "RatioNitrousOxideOutput2",
-    "name": "RatioNitrousOxideOutput2",
+  "LogicType.Stress": {
+    "literal": "LogicType.Stress",
+    "name": "LogicType.Stress",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TotalMolesOutput2": {
-    "literal": "TotalMolesOutput2",
-    "name": "TotalMolesOutput2",
+  "LogicType.InterrogationProgress": {
+    "literal": "LogicType.InterrogationProgress",
+    "name": "LogicType.InterrogationProgress",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "CombustionInput": {
-    "literal": "CombustionInput",
-    "name": "CombustionInput",
+  "LogicType.TargetPadIndex": {
+    "literal": "LogicType.TargetPadIndex",
+    "name": "LogicType.TargetPadIndex",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "CombustionInput2": {
-    "literal": "CombustionInput2",
-    "name": "CombustionInput2",
+  "LogicType.SizeX": {
+    "literal": "LogicType.SizeX",
+    "name": "LogicType.SizeX",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "CombustionOutput": {
-    "literal": "CombustionOutput",
-    "name": "CombustionOutput",
+  "LogicType.SizeY": {
+    "literal": "LogicType.SizeY",
+    "name": "LogicType.SizeY",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "CombustionOutput2": {
-    "literal": "CombustionOutput2",
-    "name": "CombustionOutput2",
+  "LogicType.SizeZ": {
+    "literal": "LogicType.SizeZ",
+    "name": "LogicType.SizeZ",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "OperationalTemperatureEfficiency": {
-    "literal": "OperationalTemperatureEfficiency",
-    "name": "OperationalTemperatureEfficiency",
+  "LogicType.MinimumWattsToContact": {
+    "literal": "LogicType.MinimumWattsToContact",
+    "name": "LogicType.MinimumWattsToContact",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TemperatureDifferentialEfficiency": {
-    "literal": "TemperatureDifferentialEfficiency",
-    "name": "TemperatureDifferentialEfficiency",
+  "LogicType.WattsReachingContact": {
+    "literal": "LogicType.WattsReachingContact",
+    "name": "LogicType.WattsReachingContact",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "PressureEfficiency": {
-    "literal": "PressureEfficiency",
-    "name": "PressureEfficiency",
+  "LogicType.Channel0": {
+    "literal": "LogicType.Channel0",
+    "name": "LogicType.Channel0",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "CombustionLimiter": {
-    "literal": "CombustionLimiter",
-    "name": "CombustionLimiter",
+  "LogicType.Channel1": {
+    "literal": "LogicType.Channel1",
+    "name": "LogicType.Channel1",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Throttle": {
-    "literal": "Throttle",
-    "name": "Throttle",
+  "LogicType.Channel2": {
+    "literal": "LogicType.Channel2",
+    "name": "LogicType.Channel2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Rpm": {
-    "literal": "Rpm",
-    "name": "Rpm",
+  "LogicType.Channel3": {
+    "literal": "LogicType.Channel3",
+    "name": "LogicType.Channel3",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Stress": {
-    "literal": "Stress",
-    "name": "Stress",
+  "LogicType.Channel4": {
+    "literal": "LogicType.Channel4",
+    "name": "LogicType.Channel4",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "InterrogationProgress": {
-    "literal": "InterrogationProgress",
-    "name": "InterrogationProgress",
+  "LogicType.Channel5": {
+    "literal": "LogicType.Channel5",
+    "name": "LogicType.Channel5",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TargetPadIndex": {
-    "literal": "TargetPadIndex",
-    "name": "TargetPadIndex",
+  "LogicType.Channel6": {
+    "literal": "LogicType.Channel6",
+    "name": "LogicType.Channel6",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "SizeX": {
-    "literal": "SizeX",
-    "name": "SizeX",
+  "LogicType.Channel7": {
+    "literal": "LogicType.Channel7",
+    "name": "LogicType.Channel7",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "SizeY": {
-    "literal": "SizeY",
-    "name": "SizeY",
+  "LogicType.LineNumber": {
+    "literal": "LogicType.LineNumber",
+    "name": "LogicType.LineNumber",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "SizeZ": {
-    "literal": "SizeZ",
-    "name": "SizeZ",
+  "LogicType.Flush": {
+    "literal": "LogicType.Flush",
+    "name": "LogicType.Flush",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "MinimumWattsToContact": {
-    "literal": "MinimumWattsToContact",
-    "name": "MinimumWattsToContact",
+  "LogicType.SoundAlert": {
+    "literal": "LogicType.SoundAlert",
+    "name": "LogicType.SoundAlert",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "WattsReachingContact": {
-    "literal": "WattsReachingContact",
-    "name": "WattsReachingContact",
+  "LogicType.SolarIrradiance": {
+    "literal": "LogicType.SolarIrradiance",
+    "name": "LogicType.SolarIrradiance",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Channel0": {
-    "literal": "Channel0",
-    "name": "Channel0",
+  "LogicType.RatioLiquidNitrogen": {
+    "literal": "LogicType.RatioLiquidNitrogen",
+    "name": "LogicType.RatioLiquidNitrogen",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Channel1": {
-    "literal": "Channel1",
-    "name": "Channel1",
+  "LogicType.RatioLiquidNitrogenInput": {
+    "literal": "LogicType.RatioLiquidNitrogenInput",
+    "name": "LogicType.RatioLiquidNitrogenInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Channel2": {
-    "literal": "Channel2",
-    "name": "Channel2",
+  "LogicType.RatioLiquidNitrogenInput2": {
+    "literal": "LogicType.RatioLiquidNitrogenInput2",
+    "name": "LogicType.RatioLiquidNitrogenInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Channel3": {
-    "literal": "Channel3",
-    "name": "Channel3",
+  "LogicType.RatioLiquidNitrogenOutput": {
+    "literal": "LogicType.RatioLiquidNitrogenOutput",
+    "name": "LogicType.RatioLiquidNitrogenOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Channel4": {
-    "literal": "Channel4",
-    "name": "Channel4",
+  "LogicType.RatioLiquidNitrogenOutput2": {
+    "literal": "LogicType.RatioLiquidNitrogenOutput2",
+    "name": "LogicType.RatioLiquidNitrogenOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Channel5": {
-    "literal": "Channel5",
-    "name": "Channel5",
+  "LogicType.VolumeOfLiquid": {
+    "literal": "LogicType.VolumeOfLiquid",
+    "name": "LogicType.VolumeOfLiquid",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Channel6": {
-    "literal": "Channel6",
-    "name": "Channel6",
+  "LogicType.RatioLiquidOxygen": {
+    "literal": "LogicType.RatioLiquidOxygen",
+    "name": "LogicType.RatioLiquidOxygen",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Channel7": {
-    "literal": "Channel7",
-    "name": "Channel7",
+  "LogicType.RatioLiquidOxygenInput": {
+    "literal": "LogicType.RatioLiquidOxygenInput",
+    "name": "LogicType.RatioLiquidOxygenInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "LineNumber": {
-    "literal": "LineNumber",
-    "name": "LineNumber",
+  "LogicType.RatioLiquidOxygenInput2": {
+    "literal": "LogicType.RatioLiquidOxygenInput2",
+    "name": "LogicType.RatioLiquidOxygenInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Flush": {
-    "literal": "Flush",
-    "name": "Flush",
+  "LogicType.RatioLiquidOxygenOutput": {
+    "literal": "LogicType.RatioLiquidOxygenOutput",
+    "name": "LogicType.RatioLiquidOxygenOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "SoundAlert": {
-    "literal": "SoundAlert",
-    "name": "SoundAlert",
+  "LogicType.RatioLiquidOxygenOutput2": {
+    "literal": "LogicType.RatioLiquidOxygenOutput2",
+    "name": "LogicType.RatioLiquidOxygenOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "SolarIrradiance": {
-    "literal": "SolarIrradiance",
-    "name": "SolarIrradiance",
+  "LogicType.RatioLiquidVolatiles": {
+    "literal": "LogicType.RatioLiquidVolatiles",
+    "name": "LogicType.RatioLiquidVolatiles",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidNitrogen": {
-    "literal": "RatioLiquidNitrogen",
-    "name": "RatioLiquidNitrogen",
+  "LogicType.RatioLiquidVolatilesInput": {
+    "literal": "LogicType.RatioLiquidVolatilesInput",
+    "name": "LogicType.RatioLiquidVolatilesInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidNitrogenInput": {
-    "literal": "RatioLiquidNitrogenInput",
-    "name": "RatioLiquidNitrogenInput",
+  "LogicType.RatioLiquidVolatilesInput2": {
+    "literal": "LogicType.RatioLiquidVolatilesInput2",
+    "name": "LogicType.RatioLiquidVolatilesInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidNitrogenInput2": {
-    "literal": "RatioLiquidNitrogenInput2",
-    "name": "RatioLiquidNitrogenInput2",
+  "LogicType.RatioLiquidVolatilesOutput": {
+    "literal": "LogicType.RatioLiquidVolatilesOutput",
+    "name": "LogicType.RatioLiquidVolatilesOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidNitrogenOutput": {
-    "literal": "RatioLiquidNitrogenOutput",
-    "name": "RatioLiquidNitrogenOutput",
+  "LogicType.RatioLiquidVolatilesOutput2": {
+    "literal": "LogicType.RatioLiquidVolatilesOutput2",
+    "name": "LogicType.RatioLiquidVolatilesOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidNitrogenOutput2": {
-    "literal": "RatioLiquidNitrogenOutput2",
-    "name": "RatioLiquidNitrogenOutput2",
+  "LogicType.RatioSteam": {
+    "literal": "LogicType.RatioSteam",
+    "name": "LogicType.RatioSteam",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "VolumeOfLiquid": {
-    "literal": "VolumeOfLiquid",
-    "name": "VolumeOfLiquid",
+  "LogicType.RatioSteamInput": {
+    "literal": "LogicType.RatioSteamInput",
+    "name": "LogicType.RatioSteamInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidOxygen": {
-    "literal": "RatioLiquidOxygen",
-    "name": "RatioLiquidOxygen",
+  "LogicType.RatioSteamInput2": {
+    "literal": "LogicType.RatioSteamInput2",
+    "name": "LogicType.RatioSteamInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidOxygenInput": {
-    "literal": "RatioLiquidOxygenInput",
-    "name": "RatioLiquidOxygenInput",
+  "LogicType.RatioSteamOutput": {
+    "literal": "LogicType.RatioSteamOutput",
+    "name": "LogicType.RatioSteamOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidOxygenInput2": {
-    "literal": "RatioLiquidOxygenInput2",
-    "name": "RatioLiquidOxygenInput2",
+  "LogicType.RatioSteamOutput2": {
+    "literal": "LogicType.RatioSteamOutput2",
+    "name": "LogicType.RatioSteamOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidOxygenOutput": {
-    "literal": "RatioLiquidOxygenOutput",
-    "name": "RatioLiquidOxygenOutput",
+  "LogicType.ContactTypeId": {
+    "literal": "LogicType.ContactTypeId",
+    "name": "LogicType.ContactTypeId",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidOxygenOutput2": {
-    "literal": "RatioLiquidOxygenOutput2",
-    "name": "RatioLiquidOxygenOutput2",
+  "LogicType.RatioLiquidCarbonDioxide": {
+    "literal": "LogicType.RatioLiquidCarbonDioxide",
+    "name": "LogicType.RatioLiquidCarbonDioxide",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidVolatiles": {
-    "literal": "RatioLiquidVolatiles",
-    "name": "RatioLiquidVolatiles",
+  "LogicType.RatioLiquidCarbonDioxideInput": {
+    "literal": "LogicType.RatioLiquidCarbonDioxideInput",
+    "name": "LogicType.RatioLiquidCarbonDioxideInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidVolatilesInput": {
-    "literal": "RatioLiquidVolatilesInput",
-    "name": "RatioLiquidVolatilesInput",
+  "LogicType.RatioLiquidCarbonDioxideInput2": {
+    "literal": "LogicType.RatioLiquidCarbonDioxideInput2",
+    "name": "LogicType.RatioLiquidCarbonDioxideInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidVolatilesInput2": {
-    "literal": "RatioLiquidVolatilesInput2",
-    "name": "RatioLiquidVolatilesInput2",
+  "LogicType.RatioLiquidCarbonDioxideOutput": {
+    "literal": "LogicType.RatioLiquidCarbonDioxideOutput",
+    "name": "LogicType.RatioLiquidCarbonDioxideOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidVolatilesOutput": {
-    "literal": "RatioLiquidVolatilesOutput",
-    "name": "RatioLiquidVolatilesOutput",
+  "LogicType.RatioLiquidCarbonDioxideOutput2": {
+    "literal": "LogicType.RatioLiquidCarbonDioxideOutput2",
+    "name": "LogicType.RatioLiquidCarbonDioxideOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidVolatilesOutput2": {
-    "literal": "RatioLiquidVolatilesOutput2",
-    "name": "RatioLiquidVolatilesOutput2",
+  "LogicType.RatioLiquidPollutant": {
+    "literal": "LogicType.RatioLiquidPollutant",
+    "name": "LogicType.RatioLiquidPollutant",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioSteam": {
-    "literal": "RatioSteam",
-    "name": "RatioSteam",
+  "LogicType.RatioLiquidPollutantInput": {
+    "literal": "LogicType.RatioLiquidPollutantInput",
+    "name": "LogicType.RatioLiquidPollutantInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioSteamInput": {
-    "literal": "RatioSteamInput",
-    "name": "RatioSteamInput",
+  "LogicType.RatioLiquidPollutantInput2": {
+    "literal": "LogicType.RatioLiquidPollutantInput2",
+    "name": "LogicType.RatioLiquidPollutantInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioSteamInput2": {
-    "literal": "RatioSteamInput2",
-    "name": "RatioSteamInput2",
+  "LogicType.RatioLiquidPollutantOutput": {
+    "literal": "LogicType.RatioLiquidPollutantOutput",
+    "name": "LogicType.RatioLiquidPollutantOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioSteamOutput": {
-    "literal": "RatioSteamOutput",
-    "name": "RatioSteamOutput",
+  "LogicType.RatioLiquidPollutantOutput2": {
+    "literal": "LogicType.RatioLiquidPollutantOutput2",
+    "name": "LogicType.RatioLiquidPollutantOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioSteamOutput2": {
-    "literal": "RatioSteamOutput2",
-    "name": "RatioSteamOutput2",
+  "LogicType.RatioLiquidNitrousOxide": {
+    "literal": "LogicType.RatioLiquidNitrousOxide",
+    "name": "LogicType.RatioLiquidNitrousOxide",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "ContactTypeId": {
-    "literal": "ContactTypeId",
-    "name": "ContactTypeId",
+  "LogicType.RatioLiquidNitrousOxideInput": {
+    "literal": "LogicType.RatioLiquidNitrousOxideInput",
+    "name": "LogicType.RatioLiquidNitrousOxideInput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidCarbonDioxide": {
-    "literal": "RatioLiquidCarbonDioxide",
-    "name": "RatioLiquidCarbonDioxide",
+  "LogicType.RatioLiquidNitrousOxideInput2": {
+    "literal": "LogicType.RatioLiquidNitrousOxideInput2",
+    "name": "LogicType.RatioLiquidNitrousOxideInput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidCarbonDioxideInput": {
-    "literal": "RatioLiquidCarbonDioxideInput",
-    "name": "RatioLiquidCarbonDioxideInput",
+  "LogicType.RatioLiquidNitrousOxideOutput": {
+    "literal": "LogicType.RatioLiquidNitrousOxideOutput",
+    "name": "LogicType.RatioLiquidNitrousOxideOutput",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidCarbonDioxideInput2": {
-    "literal": "RatioLiquidCarbonDioxideInput2",
-    "name": "RatioLiquidCarbonDioxideInput2",
+  "LogicType.RatioLiquidNitrousOxideOutput2": {
+    "literal": "LogicType.RatioLiquidNitrousOxideOutput2",
+    "name": "LogicType.RatioLiquidNitrousOxideOutput2",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidCarbonDioxideOutput": {
-    "literal": "RatioLiquidCarbonDioxideOutput",
-    "name": "RatioLiquidCarbonDioxideOutput",
+  "LogicType.Progress": {
+    "literal": "LogicType.Progress",
+    "name": "LogicType.Progress",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidCarbonDioxideOutput2": {
-    "literal": "RatioLiquidCarbonDioxideOutput2",
-    "name": "RatioLiquidCarbonDioxideOutput2",
+  "LogicType.DestinationCode": {
+    "literal": "LogicType.DestinationCode",
+    "name": "LogicType.DestinationCode",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidPollutant": {
-    "literal": "RatioLiquidPollutant",
-    "name": "RatioLiquidPollutant",
+  "LogicType.Acceleration": {
+    "literal": "LogicType.Acceleration",
+    "name": "LogicType.Acceleration",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidPollutantInput": {
-    "literal": "RatioLiquidPollutantInput",
-    "name": "RatioLiquidPollutantInput",
+  "LogicType.ReferenceId": {
+    "literal": "LogicType.ReferenceId",
+    "name": "LogicType.ReferenceId",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidPollutantInput2": {
-    "literal": "RatioLiquidPollutantInput2",
-    "name": "RatioLiquidPollutantInput2",
+  "LogicType.AutoShutOff": {
+    "literal": "LogicType.AutoShutOff",
+    "name": "LogicType.AutoShutOff",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidPollutantOutput": {
-    "literal": "RatioLiquidPollutantOutput",
-    "name": "RatioLiquidPollutantOutput",
+  "LogicType.Mass": {
+    "literal": "LogicType.Mass",
+    "name": "LogicType.Mass",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidPollutantOutput2": {
-    "literal": "RatioLiquidPollutantOutput2",
-    "name": "RatioLiquidPollutantOutput2",
+  "LogicType.DryMass": {
+    "literal": "LogicType.DryMass",
+    "name": "LogicType.DryMass",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidNitrousOxide": {
-    "literal": "RatioLiquidNitrousOxide",
-    "name": "RatioLiquidNitrousOxide",
+  "LogicType.Thrust": {
+    "literal": "LogicType.Thrust",
+    "name": "LogicType.Thrust",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidNitrousOxideInput": {
-    "literal": "RatioLiquidNitrousOxideInput",
-    "name": "RatioLiquidNitrousOxideInput",
+  "LogicType.Weight": {
+    "literal": "LogicType.Weight",
+    "name": "LogicType.Weight",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidNitrousOxideInput2": {
-    "literal": "RatioLiquidNitrousOxideInput2",
-    "name": "RatioLiquidNitrousOxideInput2",
+  "LogicType.ThrustToWeight": {
+    "literal": "LogicType.ThrustToWeight",
+    "name": "LogicType.ThrustToWeight",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidNitrousOxideOutput": {
-    "literal": "RatioLiquidNitrousOxideOutput",
-    "name": "RatioLiquidNitrousOxideOutput",
+  "LogicType.TimeToDestination": {
+    "literal": "LogicType.TimeToDestination",
+    "name": "LogicType.TimeToDestination",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidNitrousOxideOutput2": {
-    "literal": "RatioLiquidNitrousOxideOutput2",
-    "name": "RatioLiquidNitrousOxideOutput2",
+  "LogicType.BurnTimeRemaining": {
+    "literal": "LogicType.BurnTimeRemaining",
+    "name": "LogicType.BurnTimeRemaining",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Progress": {
-    "literal": "Progress",
-    "name": "Progress",
+  "LogicType.AutoLand": {
+    "literal": "LogicType.AutoLand",
+    "name": "LogicType.AutoLand",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "DestinationCode": {
-    "literal": "DestinationCode",
-    "name": "DestinationCode",
+  "LogicType.ForwardX": {
+    "literal": "LogicType.ForwardX",
+    "name": "LogicType.ForwardX",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Acceleration": {
-    "literal": "Acceleration",
-    "name": "Acceleration",
+  "LogicType.ForwardY": {
+    "literal": "LogicType.ForwardY",
+    "name": "LogicType.ForwardY",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "ReferenceId": {
-    "literal": "ReferenceId",
-    "name": "ReferenceId",
+  "LogicType.ForwardZ": {
+    "literal": "LogicType.ForwardZ",
+    "name": "LogicType.ForwardZ",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "AutoShutOff": {
-    "literal": "AutoShutOff",
-    "name": "AutoShutOff",
+  "LogicType.Orientation": {
+    "literal": "LogicType.Orientation",
+    "name": "LogicType.Orientation",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Mass": {
-    "literal": "Mass",
-    "name": "Mass",
+  "LogicType.VelocityX": {
+    "literal": "LogicType.VelocityX",
+    "name": "LogicType.VelocityX",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "DryMass": {
-    "literal": "DryMass",
-    "name": "DryMass",
+  "LogicType.VelocityY": {
+    "literal": "LogicType.VelocityY",
+    "name": "LogicType.VelocityY",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Thrust": {
-    "literal": "Thrust",
-    "name": "Thrust",
+  "LogicType.VelocityZ": {
+    "literal": "LogicType.VelocityZ",
+    "name": "LogicType.VelocityZ",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Weight": {
-    "literal": "Weight",
-    "name": "Weight",
+  "LogicType.PassedMoles": {
+    "literal": "LogicType.PassedMoles",
+    "name": "LogicType.PassedMoles",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "ThrustToWeight": {
-    "literal": "ThrustToWeight",
-    "name": "ThrustToWeight",
+  "LogicType.ExhaustVelocity": {
+    "literal": "LogicType.ExhaustVelocity",
+    "name": "LogicType.ExhaustVelocity",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TimeToDestination": {
-    "literal": "TimeToDestination",
-    "name": "TimeToDestination",
+  "LogicType.FlightControlRule": {
+    "literal": "LogicType.FlightControlRule",
+    "name": "LogicType.FlightControlRule",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "BurnTimeRemaining": {
-    "literal": "BurnTimeRemaining",
-    "name": "BurnTimeRemaining",
+  "LogicType.ReEntryAltitude": {
+    "literal": "LogicType.ReEntryAltitude",
+    "name": "LogicType.ReEntryAltitude",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "AutoLand": {
-    "literal": "AutoLand",
-    "name": "AutoLand",
+  "LogicType.Apex": {
+    "literal": "LogicType.Apex",
+    "name": "LogicType.Apex",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "ForwardX": {
-    "literal": "ForwardX",
-    "name": "ForwardX",
+  "LogicType.EntityState": {
+    "literal": "LogicType.EntityState",
+    "name": "LogicType.EntityState",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "ForwardY": {
-    "literal": "ForwardY",
-    "name": "ForwardY",
+  "LogicType.DrillCondition": {
+    "literal": "LogicType.DrillCondition",
+    "name": "LogicType.DrillCondition",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "ForwardZ": {
-    "literal": "ForwardZ",
-    "name": "ForwardZ",
+  "LogicType.Index": {
+    "literal": "LogicType.Index",
+    "name": "LogicType.Index",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Orientation": {
-    "literal": "Orientation",
-    "name": "Orientation",
+  "LogicType.CelestialHash": {
+    "literal": "LogicType.CelestialHash",
+    "name": "LogicType.CelestialHash",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "VelocityX": {
-    "literal": "VelocityX",
-    "name": "VelocityX",
+  "LogicType.AlignmentError": {
+    "literal": "LogicType.AlignmentError",
+    "name": "LogicType.AlignmentError",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "VelocityY": {
-    "literal": "VelocityY",
-    "name": "VelocityY",
+  "LogicType.DistanceAu": {
+    "literal": "LogicType.DistanceAu",
+    "name": "LogicType.DistanceAu",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "VelocityZ": {
-    "literal": "VelocityZ",
-    "name": "VelocityZ",
+  "LogicType.OrbitPeriod": {
+    "literal": "LogicType.OrbitPeriod",
+    "name": "LogicType.OrbitPeriod",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "PassedMoles": {
-    "literal": "PassedMoles",
-    "name": "PassedMoles",
+  "LogicType.Inclination": {
+    "literal": "LogicType.Inclination",
+    "name": "LogicType.Inclination",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "ExhaustVelocity": {
-    "literal": "ExhaustVelocity",
-    "name": "ExhaustVelocity",
+  "LogicType.Eccentricity": {
+    "literal": "LogicType.Eccentricity",
+    "name": "LogicType.Eccentricity",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "FlightControlRule": {
-    "literal": "FlightControlRule",
-    "name": "FlightControlRule",
+  "LogicType.SemiMajorAxis": {
+    "literal": "LogicType.SemiMajorAxis",
+    "name": "LogicType.SemiMajorAxis",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "ReEntryAltitude": {
-    "literal": "ReEntryAltitude",
-    "name": "ReEntryAltitude",
+  "LogicType.DistanceKm": {
+    "literal": "LogicType.DistanceKm",
+    "name": "LogicType.DistanceKm",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Apex": {
-    "literal": "Apex",
-    "name": "Apex",
+  "LogicType.CelestialParentHash": {
+    "literal": "LogicType.CelestialParentHash",
+    "name": "LogicType.CelestialParentHash",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "EntityState": {
-    "literal": "EntityState",
-    "name": "EntityState",
+  "LogicType.TrueAnomaly": {
+    "literal": "LogicType.TrueAnomaly",
+    "name": "LogicType.TrueAnomaly",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "DrillCondition": {
-    "literal": "DrillCondition",
-    "name": "DrillCondition",
+  "LogicType.RatioHydrogen": {
+    "literal": "LogicType.RatioHydrogen",
+    "name": "LogicType.RatioHydrogen",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Index": {
-    "literal": "Index",
-    "name": "Index",
+  "LogicType.RatioLiquidHydrogen": {
+    "literal": "LogicType.RatioLiquidHydrogen",
+    "name": "LogicType.RatioLiquidHydrogen",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "CelestialHash": {
-    "literal": "CelestialHash",
-    "name": "CelestialHash",
+  "LogicType.RatioPollutedWater": {
+    "literal": "LogicType.RatioPollutedWater",
+    "name": "LogicType.RatioPollutedWater",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "AlignmentError": {
-    "literal": "AlignmentError",
-    "name": "AlignmentError",
+  "LogicType.Discover": {
+    "literal": "LogicType.Discover",
+    "name": "LogicType.Discover",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "DistanceAu": {
-    "literal": "DistanceAu",
-    "name": "DistanceAu",
+  "LogicType.Chart": {
+    "literal": "LogicType.Chart",
+    "name": "LogicType.Chart",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "OrbitPeriod": {
-    "literal": "OrbitPeriod",
-    "name": "OrbitPeriod",
+  "LogicType.Survey": {
+    "literal": "LogicType.Survey",
+    "name": "LogicType.Survey",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Inclination": {
-    "literal": "Inclination",
-    "name": "Inclination",
+  "LogicType.NavPoints": {
+    "literal": "LogicType.NavPoints",
+    "name": "LogicType.NavPoints",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Eccentricity": {
-    "literal": "Eccentricity",
-    "name": "Eccentricity",
+  "LogicType.ChartedNavPoints": {
+    "literal": "LogicType.ChartedNavPoints",
+    "name": "LogicType.ChartedNavPoints",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "SemiMajorAxis": {
-    "literal": "SemiMajorAxis",
-    "name": "SemiMajorAxis",
+  "LogicType.Sites": {
+    "literal": "LogicType.Sites",
+    "name": "LogicType.Sites",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "DistanceKm": {
-    "literal": "DistanceKm",
-    "name": "DistanceKm",
+  "LogicType.CurrentCode": {
+    "literal": "LogicType.CurrentCode",
+    "name": "LogicType.CurrentCode",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "CelestialParentHash": {
-    "literal": "CelestialParentHash",
-    "name": "CelestialParentHash",
+  "LogicType.Density": {
+    "literal": "LogicType.Density",
+    "name": "LogicType.Density",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TrueAnomaly": {
-    "literal": "TrueAnomaly",
-    "name": "TrueAnomaly",
+  "LogicType.Richness": {
+    "literal": "LogicType.Richness",
+    "name": "LogicType.Richness",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioHydrogen": {
-    "literal": "RatioHydrogen",
-    "name": "RatioHydrogen",
+  "LogicType.Size": {
+    "literal": "LogicType.Size",
+    "name": "LogicType.Size",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioLiquidHydrogen": {
-    "literal": "RatioLiquidHydrogen",
-    "name": "RatioLiquidHydrogen",
+  "LogicType.TotalQuantity": {
+    "literal": "LogicType.TotalQuantity",
+    "name": "LogicType.TotalQuantity",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "RatioPollutedWater": {
-    "literal": "RatioPollutedWater",
-    "name": "RatioPollutedWater",
+  "LogicType.MinedQuantity": {
+    "literal": "LogicType.MinedQuantity",
+    "name": "LogicType.MinedQuantity",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Discover": {
-    "literal": "Discover",
-    "name": "Discover",
+  "LogicType.BestContactFilter": {
+    "literal": "LogicType.BestContactFilter",
+    "name": "LogicType.BestContactFilter",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Chart": {
-    "literal": "Chart",
-    "name": "Chart",
+  "LogicType.NameHash": {
+    "literal": "LogicType.NameHash",
+    "name": "LogicType.NameHash",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Survey": {
-    "literal": "Survey",
-    "name": "Survey",
+  "LogicType.Altitude": {
+    "literal": "LogicType.Altitude",
+    "name": "LogicType.Altitude",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "NavPoints": {
-    "literal": "NavPoints",
-    "name": "NavPoints",
+  "LogicSlotType.None": {
+    "literal": "LogicSlotType.None",
+    "name": "LogicSlotType.None",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "ChartedNavPoints": {
-    "literal": "ChartedNavPoints",
-    "name": "ChartedNavPoints",
+  "LogicSlotType.Occupied": {
+    "literal": "LogicSlotType.Occupied",
+    "name": "LogicSlotType.Occupied",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Sites": {
-    "literal": "Sites",
-    "name": "Sites",
+  "LogicSlotType.OccupantHash": {
+    "literal": "LogicSlotType.OccupantHash",
+    "name": "LogicSlotType.OccupantHash",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "CurrentCode": {
-    "literal": "CurrentCode",
-    "name": "CurrentCode",
+  "LogicSlotType.Quantity": {
+    "literal": "LogicSlotType.Quantity",
+    "name": "LogicSlotType.Quantity",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Density": {
-    "literal": "Density",
-    "name": "Density",
+  "LogicSlotType.Damage": {
+    "literal": "LogicSlotType.Damage",
+    "name": "LogicSlotType.Damage",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Richness": {
-    "literal": "Richness",
-    "name": "Richness",
+  "LogicSlotType.Efficiency": {
+    "literal": "LogicSlotType.Efficiency",
+    "name": "LogicSlotType.Efficiency",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Size": {
-    "literal": "Size",
-    "name": "Size",
+  "LogicSlotType.Health": {
+    "literal": "LogicSlotType.Health",
+    "name": "LogicSlotType.Health",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "TotalQuantity": {
-    "literal": "TotalQuantity",
-    "name": "TotalQuantity",
+  "LogicSlotType.Growth": {
+    "literal": "LogicSlotType.Growth",
+    "name": "LogicSlotType.Growth",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "MinedQuantity": {
-    "literal": "MinedQuantity",
-    "name": "MinedQuantity",
+  "LogicSlotType.Pressure": {
+    "literal": "LogicSlotType.Pressure",
+    "name": "LogicSlotType.Pressure",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "BestContactFilter": {
-    "literal": "BestContactFilter",
-    "name": "BestContactFilter",
+  "LogicSlotType.Temperature": {
+    "literal": "LogicSlotType.Temperature",
+    "name": "LogicSlotType.Temperature",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "NameHash": {
-    "literal": "NameHash",
-    "name": "NameHash",
+  "LogicSlotType.Charge": {
+    "literal": "LogicSlotType.Charge",
+    "name": "LogicSlotType.Charge",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Altitude": {
-    "literal": "Altitude",
-    "name": "Altitude",
+  "LogicSlotType.ChargeRatio": {
+    "literal": "LogicSlotType.ChargeRatio",
+    "name": "LogicSlotType.ChargeRatio",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Occupied": {
-    "literal": "Occupied",
-    "name": "Occupied",
+  "LogicSlotType.Class": {
+    "literal": "LogicSlotType.Class",
+    "name": "LogicSlotType.Class",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "OccupantHash": {
-    "literal": "OccupantHash",
-    "name": "OccupantHash",
+  "LogicSlotType.PressureWaste": {
+    "literal": "LogicSlotType.PressureWaste",
+    "name": "LogicSlotType.PressureWaste",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Damage": {
-    "literal": "Damage",
-    "name": "Damage",
+  "LogicSlotType.PressureAir": {
+    "literal": "LogicSlotType.PressureAir",
+    "name": "LogicSlotType.PressureAir",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Efficiency": {
-    "literal": "Efficiency",
-    "name": "Efficiency",
+  "LogicSlotType.MaxQuantity": {
+    "literal": "LogicSlotType.MaxQuantity",
+    "name": "LogicSlotType.MaxQuantity",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Health": {
-    "literal": "Health",
-    "name": "Health",
+  "LogicSlotType.Mature": {
+    "literal": "LogicSlotType.Mature",
+    "name": "LogicSlotType.Mature",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Growth": {
-    "literal": "Growth",
-    "name": "Growth",
+  "LogicSlotType.PrefabHash": {
+    "literal": "LogicSlotType.PrefabHash",
+    "name": "LogicSlotType.PrefabHash",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "ChargeRatio": {
-    "literal": "ChargeRatio",
-    "name": "ChargeRatio",
+  "LogicSlotType.Seeding": {
+    "literal": "LogicSlotType.Seeding",
+    "name": "LogicSlotType.Seeding",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Class": {
-    "literal": "Class",
-    "name": "Class",
+  "LogicSlotType.LineNumber": {
+    "literal": "LogicSlotType.LineNumber",
+    "name": "LogicSlotType.LineNumber",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "PressureWaste": {
-    "literal": "PressureWaste",
-    "name": "PressureWaste",
+  "LogicSlotType.Volume": {
+    "literal": "LogicSlotType.Volume",
+    "name": "LogicSlotType.Volume",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "PressureAir": {
-    "literal": "PressureAir",
-    "name": "PressureAir",
+  "LogicSlotType.Open": {
+    "literal": "LogicSlotType.Open",
+    "name": "LogicSlotType.Open",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "MaxQuantity": {
-    "literal": "MaxQuantity",
-    "name": "MaxQuantity",
+  "LogicSlotType.On": {
+    "literal": "LogicSlotType.On",
+    "name": "LogicSlotType.On",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Mature": {
-    "literal": "Mature",
-    "name": "Mature",
+  "LogicSlotType.Lock": {
+    "literal": "LogicSlotType.Lock",
+    "name": "LogicSlotType.Lock",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "Seeding": {
-    "literal": "Seeding",
-    "name": "Seeding",
+  "LogicSlotType.SortingClass": {
+    "literal": "LogicSlotType.SortingClass",
+    "name": "LogicSlotType.SortingClass",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "SortingClass": {
-    "literal": "SortingClass",
-    "name": "SortingClass",
+  "LogicSlotType.FilterType": {
+    "literal": "LogicSlotType.FilterType",
+    "name": "LogicSlotType.FilterType",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
   },
-  "FilterType": {
-    "literal": "FilterType",
-    "name": "FilterType",
+  "LogicSlotType.ReferenceId": {
+    "literal": "LogicSlotType.ReferenceId",
+    "name": "LogicSlotType.ReferenceId",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
@@ -2088,6 +2172,13 @@
   "Minimum": {
     "literal": "Minimum",
     "name": "Minimum",
+    "referenceType": "Enum",
+    "description": "",
+    "depricated": false
+  },
+  "Maximum": {
+    "literal": "Maximum",
+    "name": "Maximum",
     "referenceType": "Enum",
     "description": "",
     "depricated": false
