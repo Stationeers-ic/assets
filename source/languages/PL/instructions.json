@@ -713,5 +713,10 @@
     "name": "clrd",
     "description": "Seeks directly for the provided device id and clears the stack memory of that device",
     "example": "clrd id(r?|num)"
+  },
+  "rmap": {
+    "name": "rmap",
+    "description": "Given a reagent hash, store the corresponding prefab hash that the device expects to fulfill the reagent requirement. For example, on an autolathe, the hash for Iron will store the hash for ItemIronIngot.",
+    "example": "rmap r? d? reagentHash(r?|num)"
   }
 }
