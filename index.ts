@@ -284,7 +284,7 @@ async function generateIndex() {
   return await Promise.all(promises);
 }
 
-await clearDist();
+// await clearDist();
 GODPromise.push(optimizeImages().then(() => moveImages()));
 GODPromise.push(moveFiles());
 GODPromise.push(moveData());
