@@ -20,136 +20,168 @@ import type {
 
 console.info("Start building...");
 
-const GODPromise: Promise<any>[] = [];
+// ---------------------------------------------- CONSTANTS ----------------------------------------------
+const ROOT_DIR = __dirname;
+const DIST_DIR = join(ROOT_DIR, "dist");
+const SRC_DIR = join(ROOT_DIR, "source");
+const SRC_LANG_DIR = join(SRC_DIR, "languages");
+const DIST_LANG_DIR = join(DIST_DIR, "languages");
+const DIST_IMAGES_DIR = join(DIST_DIR, "images");
+const DATA_JSON = "data.json";
+const PNG_IN_DIST_GLOB = "./dist/**/*.png";
+const TAGS_REGEX = /<[^>]*>?/gm;
 
+// ---------------------------------------------- UTILS ----------------------------------------------
+const stripTags = (s: string) => s.replace(TAGS_REGEX, "");
+const ensureDir = (dir: string) => mkdir(dir, { recursive: true });
+
+function cpuWorkers(): number {
+  // Используем все, кроме одного ядра. Минимум 1 поток.
+  return Math.max(1, cpus().length - 1);
+}
+
+// ---------------------------------------------- TASKS ----------------------------------------------
 async function clearDist() {
   console.time("Clear DIST");
-  await rmdir("./dist", { recursive: true });
+  await rmdir(DIST_DIR, { recursive: true });
   console.timeEnd("Clear DIST");
 }
 
 async function optimizeImages() {
-  // const x = (cpus().length + 1) >> 1;
-  let x = cpus().length - 1;
-  if (x < 1) x = 1;
-  console.log("Optimize images using", x, "cores");
+  const threads = cpuWorkers();
+  console.log("Optimize images using", threads, "cores");
   console.time("Optimize images");
-  await $`tools/oxipng -o max --strip safe --alpha ./source/images -r -q -t ${x} --dir ./dist/images`;
+  await $`tools/oxipng -o max --strip safe --alpha ./source/images -r -q -t ${threads} --dir ${DIST_IMAGES_DIR}`;
   console.timeEnd("Optimize images");
 }
 
 async function moveImages() {
   console.log("move images");
   console.time("move images");
-  const distImages = new Bun.Glob("./dist/**/*.png");
+
+  const distImages = new Bun.Glob(PNG_IN_DIST_GLOB);
   const moves: Promise<void>[] = [];
+
   for await (const file of distImages.scan(".")) {
     const name = basename(file);
-    const dir = join(__dirname, "dist", findImage(name));
-    moves.push(moveFile(file, dirname(dir)));
+    const targetPath = join(DIST_DIR, findImage(name)); // images/F/Fo/...
+    moves.push(moveFile(file, dirname(targetPath)));
   }
-  await Promise.all(moves);
+
+  if (moves.length) await Promise.all(moves);
   console.timeEnd("move images");
 }
 
 async function moveFiles() {
   console.log("move other files");
   console.time("move other files");
+
   const moves: Promise<void>[] = [
-    copyJSON("source/languages/EN/colors.json", "./dist"),
-    copyJSON("source/languages/EN/consts.json", "./dist"),
+    copyJSON(join(SRC_LANG_DIR, "EN/colors.json"), DIST_DIR),
+    copyJSON(join(SRC_LANG_DIR, "EN/consts.json"), DIST_DIR),
   ];
+
+  // Копируем constants.json и instructions.json для всех языков
   const languages = new Bun.Glob("**/{constants,instructions}.json");
-  for await (const file of languages.scan("source/languages")) {
-    moves.push(
-      copyJSON(
-        join("source", "languages", file),
-        join("dist", "languages", dirname(file)),
-      ),
-    );
+  for await (const relPath of languages.scan(SRC_LANG_DIR)) {
+    const src = join(SRC_LANG_DIR, relPath);
+    const destDir = join(DIST_LANG_DIR, dirname(relPath));
+    moves.push(copyJSON(src, destDir));
   }
-  await Promise.all(moves);
+
+  if (moves.length) await Promise.all(moves);
   console.timeEnd("move other files");
 }
 
 async function moveData() {
   console.log("move data files");
   console.time("move data files");
-  const languages = new Bun.Glob("**/data.json");
+
+  const dataGlob = new Bun.Glob(`**/${DATA_JSON}`);
   const moves: Promise<void>[] = [];
-  for await (const file of languages.scan("source/languages")) {
-    const sFile = Bun.file(join("source", "languages", file));
+
+  for await (const relPath of dataGlob.scan(SRC_LANG_DIR)) {
+    const srcFile = join(SRC_LANG_DIR, relPath);
+    const destFile = join(DIST_LANG_DIR, relPath);
+
+    const sFile = Bun.file(srcFile);
     moves.push(
       sFile.json().then(async (json) => {
         const result = strip(json);
-        await write(join("dist", "languages", file), JSON.stringify(result));
+        await ensureDir(dirname(destFile));
+        await write(destFile, JSON.stringify(result), { encoding: "utf-8" });
       }),
     );
   }
-  await Promise.all(moves);
+
+  if (moves.length) await Promise.all(moves);
   console.timeEnd("move data files");
 }
 
 async function optimizeData() {
-  //optimize data
-  const languages = new Bun.Glob("**/data.json");
-  for await (const file of languages.scan("./source/languages/")) {
+  // Преобразование data.json в структуры devices/items/reagents/logics
+  const dataGlob = new Bun.Glob(`**/${DATA_JSON}`);
+
+  for await (const relPath of dataGlob.scan(SRC_LANG_DIR)) {
     try {
-      const [languages, name] = [dirname(file), basename(file)];
-      // if (languages.length !== 2) continue
-      if (name !== "data.json") continue;
-      const sFile = Bun.file(join("source", "languages", file));
+      const langDir = dirname(relPath);
+      const baseName = basename(relPath);
+      if (baseName !== DATA_JSON) continue;
+
+      const srcFile = join(SRC_LANG_DIR, relPath);
+      const sFile = Bun.file(srcFile);
       const data = (await sFile.json()) as OldDevices;
-      // const data = require() as OldDevices
-      //OldDevice to Device TODO images
+
       const devices: Devices = { data: [], images: {} };
       const items: Items = { data: [] };
       const reagents: Reagents = { data: [] };
-      const logics: any = { data: [] };
+      const logicsCollection: any = { data: [] };
 
-      const oldDevices = Object.entries(data);
-      oldDevices.forEach(([key, oldDevice]) => {
-        if (!oldDevice.PrefabName) return true;
-        if (!oldDevice.MainImage) return true;
-        if (!oldDevice.tags.includes("hasLogic")) return true;
-        let hasChip = false;
-        if (oldDevice.tags.includes("hasChip")) hasChip = true;
-        const logics: {
-          name: string;
-          permissions: string[];
-        }[] = [];
+      const entries = Object.entries(data);
+
+      // Devices
+      for (const [key, oldDevice] of entries) {
+        if (!oldDevice.PrefabName) continue;
+        if (!oldDevice.MainImage) continue;
+        if (!oldDevice.tags.includes("hasLogic")) continue;
+
+        const hasChip = oldDevice.tags.includes("hasChip");
+
+        // Логика, которую можно вставить в девайс
+        const deviceLogics: { name: string; permissions: string[] }[] = [];
         for (const logic of oldDevice?.LogicInsert) {
-          const logicName = logic.LogicName.replace(/<[^>]*>?/gm, "");
+          const logicName = stripTags(logic.LogicName);
           const permissions = logic.LogicAccessTypes.split(" ");
-          logics.push({
-            name: logicName,
-            permissions: permissions,
-          });
+          deviceLogics.push({ name: logicName, permissions });
         }
+
+        // Слоты и сопоставление логики к слоту
         const slots: {
           SlotName: string;
           SlotType: string;
           SlotIndex: number;
           logic: string[];
         }[] = [];
+
         const slotLogic: Record<number, string[]> = {};
         oldDevice?.LogicSlotInsert?.forEach((sl) => {
-          const logicName = sl.LogicName.replace(/<[^>]*>?/gm, "");
-          const slotIndexs = sl.LogicAccessTypes.split(", ").map((index) =>
-            Number(index),
-          );
-          slotIndexs.forEach((index) => {
+          const logicName = stripTags(sl.LogicName);
+          const slotIndices = sl.LogicAccessTypes.split(", ").map(Number);
+          for (const index of slotIndices) {
             if (!slotLogic[index]) slotLogic[index] = [];
             slotLogic[index].push(logicName);
-          });
+          }
         });
+
         oldDevice?.SlotInserts?.forEach((slot) => {
           const slotName = slot.SlotName;
           const slotType = slot.SlotType;
           const slotIndex = Number(slot.SlotIndex);
+
           if (slot.image) {
             devices.images[`SlotType.${slotType}`] = findImage(slot.image);
           }
+
           slots.push({
             SlotName: slotName,
             SlotType: slotType,
@@ -157,31 +189,33 @@ async function optimizeData() {
             logic: slotLogic[slotIndex] ?? [],
           });
         });
+
         const device: Device = {
           id: oldDevice?.PrefabHash,
           Title: oldDevice?.Title ?? key,
           Key: key,
           PrefabName: oldDevice?.PrefabName,
           PrefabHash: oldDevice?.PrefabHash,
-          hasChip: hasChip,
+          hasChip,
           deviceConnectCount: oldDevice.DeviceConnectCount ?? 0,
           image: findImage(oldDevice.MainImage),
           mods: oldDevice?.ModeInsert?.map((mod) => mod.LogicName),
           connections: oldDevice?.ConnectionInsert?.map(
             (connection) => connection?.LogicName,
           ),
-          slots: slots,
+          slots,
           tags: oldDevice?.tags,
-          logics: logics,
+          logics: deviceLogics,
         };
+
         devices.data.push(device);
-        return true;
-      });
-      oldDevices.forEach(([key, oldDevice]) => {
-        //Здесь остались только item
-        if (!oldDevice.tags.includes("item")) return true;
-        if (!oldDevice.MainImage) return true;
-        if (!oldDevice.PrefabName) return true;
+      }
+
+      // Items
+      for (const [key, oldDevice] of entries) {
+        if (!oldDevice.tags.includes("item")) continue;
+        if (!oldDevice.MainImage) continue;
+        if (!oldDevice.PrefabName) continue;
 
         items.data.push({
           id: oldDevice.PrefabHash,
@@ -193,34 +227,38 @@ async function optimizeData() {
           image: findImage(oldDevice.MainImage),
           tags: oldDevice.tags,
         });
-      });
-      oldDevices.forEach(([key, oldDevice]) => {
-        //Здесь остались только item
-        if (oldDevice.TYPE !== "reagent") return true;
-        if (!oldDevice.MainImage) return true;
-        if (!oldDevice.Title) return true;
+      }
+
+      // Reagents
+      for (const [key, oldDevice] of entries) {
+        if (oldDevice.TYPE !== "reagent") continue;
+        if (!oldDevice.MainImage) continue;
+        if (!oldDevice.Title) continue;
 
         const reagentItems: ReagentItem[] = [];
 
         oldDevice.FoundInOre.forEach((item) => {
-          const name = item.NameOfThing.replaceAll(/<[^>]*>?/gm, "");
+          const name = stripTags(item.NameOfThing);
 
-          const itemData = oldDevices.find(
-            ([key, oldDevice]) => oldDevice.Title === name,
+          const itemData = entries.find(
+            ([, dev]) => dev.Title === name,
           );
-          if (!itemData) return null;
-          if (!itemData[1].Title) return null;
-          if (!itemData[1].PrefabName) return null;
-          if (!itemData[1].MainImage) return null;
-          if (!itemData[1].PrefabHash) return null;
+          if (!itemData) return;
+          const [, found] = itemData;
+
+          if (!found.Title) return;
+          if (!found.PrefabName) return;
+          if (!found.MainImage) return;
+          if (!found.PrefabHash) return;
+
           reagentItems.push({
-            title: itemData[1].Title,
-            name: itemData[1].PrefabName,
-            hash: itemData[1].PrefabHash,
+            title: found.Title,
+            name: found.PrefabName,
+            hash: found.PrefabHash,
             count: isNaN(Number(item.QuantityOfThing))
               ? 0
               : Number(item.QuantityOfThing),
-            image: findImage(itemData[1].MainImage),
+            image: findImage(found.MainImage),
           });
         });
 
@@ -231,41 +269,26 @@ async function optimizeData() {
           image: findImage(oldDevice.MainImage),
           items: reagentItems,
         });
-      });
-      oldDevices.forEach(([key, oldDevice]) => {
-        //Здесь остались только item
-        if (!oldDevice.Key.startsWith("LogicType")) return true;
+      }
 
-        const reagentItems: ReagentItem[] = [];
+      // Logics
+      for (const [key, oldDevice] of entries) {
+        if (!oldDevice.Key.startsWith("LogicType")) continue;
 
-        logics.data.push({
-          key: key,
+        logicsCollection.data.push({
+          key,
           name: oldDevice.Title,
           description: oldDevice.Description,
         });
-      });
+      }
+
       devices.data.sort((a, b) => a.Key.localeCompare(b.Key));
       items.data.sort((a, b) => a.Key.localeCompare(b.Key));
-      await writeFile(
-        "devices.json",
-        join("dist", "languages", languages),
-        devices,
-      );
-      await writeFile(
-        "items.json",
-        join("dist", "languages", languages),
-        items,
-      );
-      await writeFile(
-        "reagents.json",
-        join("dist", "languages", languages),
-        reagents,
-      );
-      await writeFile(
-        "logics.json",
-        join("dist", "languages", languages),
-        logics,
-      );
+
+      await writeFile("devices.json", join(DIST_LANG_DIR, langDir), devices);
+      await writeFile("items.json", join(DIST_LANG_DIR, langDir), items);
+      await writeFile("reagents.json", join(DIST_LANG_DIR, langDir), reagents);
+      await writeFile("logics.json", join(DIST_LANG_DIR, langDir), logicsCollection);
     } catch (e) {
       console.error(e);
     }
@@ -273,25 +296,34 @@ async function optimizeData() {
 }
 
 async function generateIndex() {
-  process.chdir(join(__dirname, "dist"));
+  process.chdir(DIST_DIR);
+
   const promises: Promise<void>[] = [];
-  // Использование:
-  promises.push(dir_index(join(__dirname, "dist"), ""));
-  walkDir("./", function (dirPath: string) {
-    promises.push(dir_index(join(__dirname, "dist"), dirPath));
+  // Индекс для корня dist
+  promises.push(dir_index(DIST_DIR, ""));
+
+  // Проходим по всем подкаталогам и генерируем индексы
+  const walkPromise = walkDir("./", (dirPath: string) => {
+    promises.push(dir_index(DIST_DIR, dirPath));
   }).catch(console.error);
 
-  return await Promise.all(promises);
+  // Ждем окончания обхода, чтобы гарантированно собрать все промисы индексации
+  await walkPromise;
+  return Promise.all(promises);
 }
 
+// ---------------------------------------------- RUN ----------------------------------------------
 // await clearDist();
-GODPromise.push(optimizeImages().then(() => moveImages()));
-GODPromise.push(moveFiles());
-GODPromise.push(moveData());
-await Promise.all(GODPromise);
+const BUILD_TASKS: Promise<any>[] = [];
+BUILD_TASKS.push(optimizeImages().then(() => moveImages()));
+BUILD_TASKS.push(moveFiles());
+BUILD_TASKS.push(moveData());
+
+await Promise.all(BUILD_TASKS);
 await optimizeData();
 await generateIndex();
-//----------------------------------------------HELPERS----------------------------------------------
+
+// ---------------------------------------------- HELPERS ----------------------------------------------
 function findImage(fileName: string): string;
 function findImage(fileName: null): null;
 function findImage(fileName: string | null): string | null {
@@ -320,27 +352,30 @@ function strip(
   });
   return r;
 }
+
 async function writeFile(file: string, dir: string, content?: {}) {
-  await mkdir(dir, { recursive: true });
+  await ensureDir(dir);
   return write(join(dir, file), JSON.stringify(content), {
     encoding: "utf-8",
   });
 }
+
 async function moveFile(file: string, dir: string, newName?: string) {
-  await mkdir(dir, { recursive: true });
+  await ensureDir(dir);
   return rename(file, join(dir, newName ?? basename(file)));
 }
+
 async function copyFile(file: string, dir: string, newName?: string) {
-  await mkdir(dir, { recursive: true });
+  await ensureDir(dir);
   return copy(file, join(dir, newName ?? basename(file)));
 }
+
 async function copyJSON(file: string, dir: string, newName?: string) {
-  const mk = mkdir(dir, { recursive: true });
+  const mk = ensureDir(dir);
   const sFile = Bun.file(file);
   const json = await sFile.json();
   await mk;
   return write(join(dir, newName ?? basename(file)), JSON.stringify(json), {
     encoding: "utf-8",
   });
-  // return copy(file, join(dir, newName ?? basename(file)))
 }
