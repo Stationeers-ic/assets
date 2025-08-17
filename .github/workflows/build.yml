@@ -16,8 +16,6 @@ on:
       - "!package.json"
       - "!bun.lockb"
       - "!**.log"
-#   pull_request:
-#     branches: [ "v4", "main" ]
 permissions:
   contents: read
   pages: write
@@ -36,8 +34,10 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Add git author
-        uses: fregante/setup-git-user@v3
+      - name: Configure git user
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Install bun
         uses: oven-sh/setup-bun@v2
@@ -50,7 +50,6 @@ jobs:
       - name: build
         run: bun run build
 
-      # Устанавливаем custom domain для Pages через CNAME внутри ./dist
       - name: Set Pages custom domain
         run: |
           case "$GITHUB_REF" in
@@ -65,17 +64,12 @@ jobs:
               ;;
           esac
 
-      #   - name: Pack
-      #     id: build
-      #     run:  echo "OUTPUT=$(npm pack)" 1> "$GITHUB_OUTPUT"
-
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload dist repository
           path: "./dist"
 
       - name: Deploy to GitHub Pages
