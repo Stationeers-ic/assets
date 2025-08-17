@@ -1,1 +1,1829 @@
-{"nan":{"literal":"nan","name":"nan","value":"NaN","referenceType":"Constant","depricated":false,"description":"A constant representing 'not a number'. This constant technically provides a 'quiet' NaN, a signal NaN from some instructions will result in an exception and halt execution"},"pinf":{"literal":"pinf","name":"pinf","value":"Infinity","referenceType":"Constant","depricated":false,"description":"A constant representing a positive infinite value"},"ninf":{"literal":"ninf","name":"ninf","value":"-Infinity","referenceType":"Constant","depricated":false,"description":"A constant representing a negative infinite value"},"pi":{"literal":"pi","name":"pi","value":3.1415926535897931,"referenceType":"Constant","depricated":false,"description":"3,14159265358979<br>A constant representing ratio of the circumference of a circle to its diameter, provided in double precision"},"tau":{"literal":"tau","name":"tau","value":6.2831853071795862,"referenceType":"Constant","depricated":false,"description":"6,28318530717959<br>A constant representing the ratio of the circumference of a circle to its radius, provided in double precision"},"deg2rad":{"literal":"deg2rad","name":"deg2rad","value":0.01745329238474369,"referenceType":"Constant","depricated":false,"description":"0,0174532923847437<br>Degrees to radians conversion constant"},"rad2deg":{"literal":"rad2deg","name":"rad2deg","value":57.295780181884766,"referenceType":"Constant","depricated":false,"description":"57,2957801818848<br>Radians to degrees conversion constant"},"epsilon":{"literal":"epsilon","name":"epsilon","value":4.94065645841247E-324,"referenceType":"Constant","depricated":false,"description":"A constant representing the smallest positive subnormal > 0"},"rgas":{"literal":"rgas","name":"rgas","value":8.31446261815324,"referenceType":"Constant","depricated":false,"description":"8,31446261815324<br>Universal gas constant (J/(mol*K))"},"Contents":{"literal":"Contents","name":"Contents","referenceType":"Enum","description":"","depricated":false},"Required":{"literal":"Required","name":"Required","referenceType":"Enum","description":"","depricated":false},"Recipe":{"literal":"Recipe","name":"Recipe","referenceType":"Enum","description":"","depricated":false},"TotalContents":{"literal":"TotalContents","name":"TotalContents","referenceType":"Enum","description":"","depricated":false},"Average":{"literal":"Average","name":"Average","referenceType":"Enum","description":"","depricated":false},"Sum":{"literal":"Sum","name":"Sum","referenceType":"Enum","description":"","depricated":false},"Minimum":{"literal":"Minimum","name":"Minimum","referenceType":"Enum","description":"","depricated":false},"Maximum":{"literal":"Maximum","name":"Maximum","referenceType":"Enum","description":"","depricated":false},"Sound.None":{"literal":"Sound.None","name":"Sound.None","referenceType":"Enum","description":"","depricated":false},"Sound.Alarm2":{"literal":"Sound.Alarm2","name":"Sound.Alarm2","referenceType":"Enum","description":"","depricated":false},"Sound.Alarm3":{"literal":"Sound.Alarm3","name":"Sound.Alarm3","referenceType":"Enum","description":"","depricated":false},"Sound.Alarm4":{"literal":"Sound.Alarm4","name":"Sound.Alarm4","referenceType":"Enum","description":"","depricated":false},"Sound.Alarm5":{"literal":"Sound.Alarm5","name":"Sound.Alarm5","referenceType":"Enum","description":"","depricated":false},"Sound.Alarm6":{"literal":"Sound.Alarm6","name":"Sound.Alarm6","referenceType":"Enum","description":"","depricated":false},"Sound.Alarm7":{"literal":"Sound.Alarm7","name":"Sound.Alarm7","referenceType":"Enum","description":"","depricated":false},"Sound.Music1":{"literal":"Sound.Music1","name":"Sound.Music1","referenceType":"Enum","description":"","depricated":false},"Sound.Music2":{"literal":"Sound.Music2","name":"Sound.Music2","referenceType":"Enum","description":"","depricated":false},"Sound.Music3":{"literal":"Sound.Music3","name":"Sound.Music3","referenceType":"Enum","description":"","depricated":false},"Sound.Alarm8":{"literal":"Sound.Alarm8","name":"Sound.Alarm8","referenceType":"Enum","description":"","depricated":false},"Sound.Alarm9":{"literal":"Sound.Alarm9","name":"Sound.Alarm9","referenceType":"Enum","description":"","depricated":false},"Sound.Alarm10":{"literal":"Sound.Alarm10","name":"Sound.Alarm10","referenceType":"Enum","description":"","depricated":false},"Sound.Alarm11":{"literal":"Sound.Alarm11","name":"Sound.Alarm11","referenceType":"Enum","description":"","depricated":false},"Sound.Alarm12":{"literal":"Sound.Alarm12","name":"Sound.Alarm12","referenceType":"Enum","description":"","depricated":false},"Sound.Danger":{"literal":"Sound.Danger","name":"Sound.Danger","referenceType":"Enum","description":"","depricated":false},"Sound.Warning":{"literal":"Sound.Warning","name":"Sound.Warning","referenceType":"Enum","description":"","depricated":false},"Sound.Alert":{"literal":"Sound.Alert","name":"Sound.Alert","referenceType":"Enum","description":"","depricated":false},"Sound.StormIncoming":{"literal":"Sound.StormIncoming","name":"Sound.StormIncoming","referenceType":"Enum","description":"","depricated":false},"Sound.IntruderAlert":{"literal":"Sound.IntruderAlert","name":"Sound.IntruderAlert","referenceType":"Enum","description":"","depricated":false},"Sound.Depressurising":{"literal":"Sound.Depressurising","name":"Sound.Depressurising","referenceType":"Enum","description":"","depricated":false},"Sound.Pressurising":{"literal":"Sound.Pressurising","name":"Sound.Pressurising","referenceType":"Enum","description":"","depricated":false},"Sound.AirlockCycling":{"literal":"Sound.AirlockCycling","name":"Sound.AirlockCycling","referenceType":"Enum","description":"","depricated":false},"Sound.PowerLow":{"literal":"Sound.PowerLow","name":"Sound.PowerLow","referenceType":"Enum","description":"","depricated":false},"Sound.SystemFailure":{"literal":"Sound.SystemFailure","name":"Sound.SystemFailure","referenceType":"Enum","description":"","depricated":false},"Sound.Welcome":{"literal":"Sound.Welcome","name":"Sound.Welcome","referenceType":"Enum","description":"","depricated":false},"Sound.MalfunctionDetected":{"literal":"Sound.MalfunctionDetected","name":"Sound.MalfunctionDetected","referenceType":"Enum","description":"","depricated":false},"Sound.HaltWhoGoesThere":{"literal":"Sound.HaltWhoGoesThere","name":"Sound.HaltWhoGoesThere","referenceType":"Enum","description":"","depricated":false},"Sound.FireFireFire":{"literal":"Sound.FireFireFire","name":"Sound.FireFireFire","referenceType":"Enum","description":"","depricated":false},"Sound.One":{"literal":"Sound.One","name":"Sound.One","referenceType":"Enum","description":"","depricated":false},"Sound.Two":{"literal":"Sound.Two","name":"Sound.Two","referenceType":"Enum","description":"","depricated":false},"Sound.Three":{"literal":"Sound.Three","name":"Sound.Three","referenceType":"Enum","description":"","depricated":false},"Sound.Four":{"literal":"Sound.Four","name":"Sound.Four","referenceType":"Enum","description":"","depricated":false},"Sound.Five":{"literal":"Sound.Five","name":"Sound.Five","referenceType":"Enum","description":"","depricated":false},"Sound.Floor":{"literal":"Sound.Floor","name":"Sound.Floor","referenceType":"Enum","description":"","depricated":false},"Sound.RocketLaunching":{"literal":"Sound.RocketLaunching","name":"Sound.RocketLaunching","referenceType":"Enum","description":"","depricated":false},"Sound.LiftOff":{"literal":"Sound.LiftOff","name":"Sound.LiftOff","referenceType":"Enum","description":"","depricated":false},"Sound.TraderIncoming":{"literal":"Sound.TraderIncoming","name":"Sound.TraderIncoming","referenceType":"Enum","description":"","depricated":false},"Sound.TraderLanded":{"literal":"Sound.TraderLanded","name":"Sound.TraderLanded","referenceType":"Enum","description":"","depricated":false},"Sound.PressureHigh":{"literal":"Sound.PressureHigh","name":"Sound.PressureHigh","referenceType":"Enum","description":"","depricated":false},"Sound.PressureLow":{"literal":"Sound.PressureLow","name":"Sound.PressureLow","referenceType":"Enum","description":"","depricated":false},"Sound.TemperatureHigh":{"literal":"Sound.TemperatureHigh","name":"Sound.TemperatureHigh","referenceType":"Enum","description":"","depricated":false},"Sound.TemperatureLow":{"literal":"Sound.TemperatureLow","name":"Sound.TemperatureLow","referenceType":"Enum","description":"","depricated":false},"Sound.PollutantsDetected":{"literal":"Sound.PollutantsDetected","name":"Sound.PollutantsDetected","referenceType":"Enum","description":"","depricated":false},"Sound.HighCarbonDioxide":{"literal":"Sound.HighCarbonDioxide","name":"Sound.HighCarbonDioxide","referenceType":"Enum","description":"","depricated":false},"Sound.Alarm1":{"literal":"Sound.Alarm1","name":"Sound.Alarm1","referenceType":"Enum","description":"","depricated":false},"TransmitterMode.Passive":{"literal":"TransmitterMode.Passive","name":"TransmitterMode.Passive","referenceType":"Enum","description":"","depricated":false},"TransmitterMode.Active":{"literal":"TransmitterMode.Active","name":"TransmitterMode.Active","referenceType":"Enum","description":"","depricated":false},"ElevatorMode.Stationary":{"literal":"ElevatorMode.Stationary","name":"ElevatorMode.Stationary","referenceType":"Enum","description":"","depricated":false},"ElevatorMode.Upward":{"literal":"ElevatorMode.Upward","name":"ElevatorMode.Upward","referenceType":"Enum","description":"","depricated":false},"ElevatorMode.Downward":{"literal":"ElevatorMode.Downward","name":"ElevatorMode.Downward","referenceType":"Enum","description":"","depricated":false},"Color.Blue":{"literal":"Color.Blue","name":"Color.Blue","referenceType":"Enum","description":"","depricated":false},"Color.Gray":{"literal":"Color.Gray","name":"Color.Gray","referenceType":"Enum","description":"","depricated":false},"Color.Green":{"literal":"Color.Green","name":"Color.Green","referenceType":"Enum","description":"","depricated":false},"Color.Orange":{"literal":"Color.Orange","name":"Color.Orange","referenceType":"Enum","description":"","depricated":false},"Color.Red":{"literal":"Color.Red","name":"Color.Red","referenceType":"Enum","description":"","depricated":false},"Color.Yellow":{"literal":"Color.Yellow","name":"Color.Yellow","referenceType":"Enum","description":"","depricated":false},"Color.White":{"literal":"Color.White","name":"Color.White","referenceType":"Enum","description":"","depricated":false},"Color.Black":{"literal":"Color.Black","name":"Color.Black","referenceType":"Enum","description":"","depricated":false},"Color.Brown":{"literal":"Color.Brown","name":"Color.Brown","referenceType":"Enum","description":"","depricated":false},"Color.Khaki":{"literal":"Color.Khaki","name":"Color.Khaki","referenceType":"Enum","description":"","depricated":false},"Color.Pink":{"literal":"Color.Pink","name":"Color.Pink","referenceType":"Enum","description":"","depricated":false},"Color.Purple":{"literal":"Color.Purple","name":"Color.Purple","referenceType":"Enum","description":"","depricated":false},"EntityState.Alive":{"literal":"EntityState.Alive","name":"EntityState.Alive","referenceType":"Enum","description":"","depricated":false},"EntityState.Dead":{"literal":"EntityState.Dead","name":"EntityState.Dead","referenceType":"Enum","description":"","depricated":false},"EntityState.Unconscious":{"literal":"EntityState.Unconscious","name":"EntityState.Unconscious","referenceType":"Enum","description":"","depricated":false},"EntityState.Decay":{"literal":"EntityState.Decay","name":"EntityState.Decay","referenceType":"Enum","description":"","depricated":false},"AirControl.None":{"literal":"AirControl.None","name":"AirControl.None","referenceType":"Enum","description":"","depricated":false},"AirControl.Offline":{"literal":"AirControl.Offline","name":"AirControl.Offline","referenceType":"Enum","description":"","depricated":false},"AirControl.Pressure":{"literal":"AirControl.Pressure","name":"AirControl.Pressure","referenceType":"Enum","description":"","depricated":false},"AirControl.Draught":{"literal":"AirControl.Draught","name":"AirControl.Draught","referenceType":"Enum","description":"","depricated":false},"DaylightSensorMode.Default":{"literal":"DaylightSensorMode.Default","name":"DaylightSensorMode.Default","referenceType":"Enum","description":"","depricated":false},"DaylightSensorMode.Horizontal":{"literal":"DaylightSensorMode.Horizontal","name":"DaylightSensorMode.Horizontal","referenceType":"Enum","description":"","depricated":false},"DaylightSensorMode.Vertical":{"literal":"DaylightSensorMode.Vertical","name":"DaylightSensorMode.Vertical","referenceType":"Enum","description":"","depricated":false},"Equals":{"literal":"Equals","name":"Equals","referenceType":"Enum","description":"","depricated":false},"Greater":{"literal":"Greater","name":"Greater","referenceType":"Enum","description":"","depricated":false},"Less":{"literal":"Less","name":"Less","referenceType":"Enum","description":"","depricated":false},"NotEquals":{"literal":"NotEquals","name":"NotEquals","referenceType":"Enum","description":"","depricated":false},"AirCon.Cold":{"literal":"AirCon.Cold","name":"AirCon.Cold","referenceType":"Enum","description":"","depricated":false},"AirCon.Hot":{"literal":"AirCon.Hot","name":"AirCon.Hot","referenceType":"Enum","description":"","depricated":false},"Vent.Outward":{"literal":"Vent.Outward","name":"Vent.Outward","referenceType":"Enum","description":"","depricated":false},"Vent.Inward":{"literal":"Vent.Inward","name":"Vent.Inward","referenceType":"Enum","description":"","depricated":false},"PowerMode.Idle":{"literal":"PowerMode.Idle","name":"PowerMode.Idle","referenceType":"Enum","description":"","depricated":false},"PowerMode.Discharged":{"literal":"PowerMode.Discharged","name":"PowerMode.Discharged","referenceType":"Enum","description":"","depricated":false},"PowerMode.Discharging":{"literal":"PowerMode.Discharging","name":"PowerMode.Discharging","referenceType":"Enum","description":"","depricated":false},"PowerMode.Charging":{"literal":"PowerMode.Charging","name":"PowerMode.Charging","referenceType":"Enum","description":"","depricated":false},"PowerMode.Charged":{"literal":"PowerMode.Charged","name":"PowerMode.Charged","referenceType":"Enum","description":"","depricated":false},"RobotMode.None":{"literal":"RobotMode.None","name":"RobotMode.None","referenceType":"Enum","description":"","depricated":false},"RobotMode.Follow":{"literal":"RobotMode.Follow","name":"RobotMode.Follow","referenceType":"Enum","description":"","depricated":false},"RobotMode.MoveToTarget":{"literal":"RobotMode.MoveToTarget","name":"RobotMode.MoveToTarget","referenceType":"Enum","description":"","depricated":false},"RobotMode.Roam":{"literal":"RobotMode.Roam","name":"RobotMode.Roam","referenceType":"Enum","description":"","depricated":false},"RobotMode.Unload":{"literal":"RobotMode.Unload","name":"RobotMode.Unload","referenceType":"Enum","description":"","depricated":false},"RobotMode.PathToTarget":{"literal":"RobotMode.PathToTarget","name":"RobotMode.PathToTarget","referenceType":"Enum","description":"","depricated":false},"RobotMode.StorageFull":{"literal":"RobotMode.StorageFull","name":"RobotMode.StorageFull","referenceType":"Enum","description":"","depricated":false},"SortingClass.Default":{"literal":"SortingClass.Default","name":"SortingClass.Default","referenceType":"Enum","description":"","depricated":false},"SortingClass.Kits":{"literal":"SortingClass.Kits","name":"SortingClass.Kits","referenceType":"Enum","description":"","depricated":false},"SortingClass.Tools":{"literal":"SortingClass.Tools","name":"SortingClass.Tools","referenceType":"Enum","description":"","depricated":false},"SortingClass.Resources":{"literal":"SortingClass.Resources","name":"SortingClass.Resources","referenceType":"Enum","description":"","depricated":false},"SortingClass.Food":{"literal":"SortingClass.Food","name":"SortingClass.Food","referenceType":"Enum","description":"","depricated":false},"SortingClass.Clothing":{"literal":"SortingClass.Clothing","name":"SortingClass.Clothing","referenceType":"Enum","description":"","depricated":false},"SortingClass.Appliances":{"literal":"SortingClass.Appliances","name":"SortingClass.Appliances","referenceType":"Enum","description":"","depricated":false},"SortingClass.Atmospherics":{"literal":"SortingClass.Atmospherics","name":"SortingClass.Atmospherics","referenceType":"Enum","description":"","depricated":false},"SortingClass.Storage":{"literal":"SortingClass.Storage","name":"SortingClass.Storage","referenceType":"Enum","description":"","depricated":false},"SortingClass.Ores":{"literal":"SortingClass.Ores","name":"SortingClass.Ores","referenceType":"Enum","description":"","depricated":false},"SortingClass.Ices":{"literal":"SortingClass.Ices","name":"SortingClass.Ices","referenceType":"Enum","description":"","depricated":false},"SlotClass.None":{"literal":"SlotClass.None","name":"SlotClass.None","referenceType":"Enum","description":"","depricated":false},"SlotClass.Helmet":{"literal":"SlotClass.Helmet","name":"SlotClass.Helmet","referenceType":"Enum","description":"","depricated":false},"SlotClass.Suit":{"literal":"SlotClass.Suit","name":"SlotClass.Suit","referenceType":"Enum","description":"","depricated":false},"SlotClass.Back":{"literal":"SlotClass.Back","name":"SlotClass.Back","referenceType":"Enum","description":"","depricated":false},"SlotClass.GasFilter":{"literal":"SlotClass.GasFilter","name":"SlotClass.GasFilter","referenceType":"Enum","description":"","depricated":false},"SlotClass.GasCanister":{"literal":"SlotClass.GasCanister","name":"SlotClass.GasCanister","referenceType":"Enum","description":"","depricated":false},"SlotClass.Motherboard":{"literal":"SlotClass.Motherboard","name":"SlotClass.Motherboard","referenceType":"Enum","description":"","depricated":false},"SlotClass.Circuitboard":{"literal":"SlotClass.Circuitboard","name":"SlotClass.Circuitboard","referenceType":"Enum","description":"","depricated":false},"SlotClass.DataDisk":{"literal":"SlotClass.DataDisk","name":"SlotClass.DataDisk","referenceType":"Enum","description":"","depricated":false},"SlotClass.Organ":{"literal":"SlotClass.Organ","name":"SlotClass.Organ","referenceType":"Enum","description":"","depricated":false},"SlotClass.Ore":{"literal":"SlotClass.Ore","name":"SlotClass.Ore","referenceType":"Enum","description":"","depricated":false},"SlotClass.Plant":{"literal":"SlotClass.Plant","name":"SlotClass.Plant","referenceType":"Enum","description":"","depricated":false},"SlotClass.Uniform":{"literal":"SlotClass.Uniform","name":"SlotClass.Uniform","referenceType":"Enum","description":"","depricated":false},"SlotClass.Entity":{"literal":"SlotClass.Entity","name":"SlotClass.Entity","referenceType":"Enum","description":"","depricated":false},"SlotClass.Battery":{"literal":"SlotClass.Battery","name":"SlotClass.Battery","referenceType":"Enum","description":"","depricated":false},"SlotClass.Egg":{"literal":"SlotClass.Egg","name":"SlotClass.Egg","referenceType":"Enum","description":"","depricated":false},"SlotClass.Belt":{"literal":"SlotClass.Belt","name":"SlotClass.Belt","referenceType":"Enum","description":"","depricated":false},"SlotClass.Tool":{"literal":"SlotClass.Tool","name":"SlotClass.Tool","referenceType":"Enum","description":"","depricated":false},"SlotClass.Appliance":{"literal":"SlotClass.Appliance","name":"SlotClass.Appliance","referenceType":"Enum","description":"","depricated":false},"SlotClass.Ingot":{"literal":"SlotClass.Ingot","name":"SlotClass.Ingot","referenceType":"Enum","description":"","depricated":false},"SlotClass.Torpedo":{"literal":"SlotClass.Torpedo","name":"SlotClass.Torpedo","referenceType":"Enum","description":"","depricated":false},"SlotClass.Cartridge":{"literal":"SlotClass.Cartridge","name":"SlotClass.Cartridge","referenceType":"Enum","description":"","depricated":false},"SlotClass.AccessCard":{"literal":"SlotClass.AccessCard","name":"SlotClass.AccessCard","referenceType":"Enum","description":"","depricated":false},"SlotClass.Magazine":{"literal":"SlotClass.Magazine","name":"SlotClass.Magazine","referenceType":"Enum","description":"","depricated":false},"SlotClass.Circuit":{"literal":"SlotClass.Circuit","name":"SlotClass.Circuit","referenceType":"Enum","description":"","depricated":false},"SlotClass.Bottle":{"literal":"SlotClass.Bottle","name":"SlotClass.Bottle","referenceType":"Enum","description":"","depricated":false},"SlotClass.ProgrammableChip":{"literal":"SlotClass.ProgrammableChip","name":"SlotClass.ProgrammableChip","referenceType":"Enum","description":"","depricated":false},"SlotClass.Glasses":{"literal":"SlotClass.Glasses","name":"SlotClass.Glasses","referenceType":"Enum","description":"","depricated":false},"SlotClass.CreditCard":{"literal":"SlotClass.CreditCard","name":"SlotClass.CreditCard","referenceType":"Enum","description":"","depricated":false},"SlotClass.DirtCanister":{"literal":"SlotClass.DirtCanister","name":"SlotClass.DirtCanister","referenceType":"Enum","description":"","depricated":false},"SlotClass.SensorProcessingUnit":{"literal":"SlotClass.SensorProcessingUnit","name":"SlotClass.SensorProcessingUnit","referenceType":"Enum","description":"","depricated":false},"SlotClass.LiquidCanister":{"literal":"SlotClass.LiquidCanister","name":"SlotClass.LiquidCanister","referenceType":"Enum","description":"","depricated":false},"SlotClass.LiquidBottle":{"literal":"SlotClass.LiquidBottle","name":"SlotClass.LiquidBottle","referenceType":"Enum","description":"","depricated":false},"SlotClass.Wreckage":{"literal":"SlotClass.Wreckage","name":"SlotClass.Wreckage","referenceType":"Enum","description":"","depricated":false},"SlotClass.SoundCartridge":{"literal":"SlotClass.SoundCartridge","name":"SlotClass.SoundCartridge","referenceType":"Enum","description":"","depricated":false},"SlotClass.DrillHead":{"literal":"SlotClass.DrillHead","name":"SlotClass.DrillHead","referenceType":"Enum","description":"","depricated":false},"SlotClass.ScanningHead":{"literal":"SlotClass.ScanningHead","name":"SlotClass.ScanningHead","referenceType":"Enum","description":"","depricated":false},"SlotClass.Flare":{"literal":"SlotClass.Flare","name":"SlotClass.Flare","referenceType":"Enum","description":"","depricated":false},"SlotClass.Blocked":{"literal":"SlotClass.Blocked","name":"SlotClass.Blocked","referenceType":"Enum","description":"","depricated":false},"SlotClass.SuitMod":{"literal":"SlotClass.SuitMod","name":"SlotClass.SuitMod","referenceType":"Enum","description":"","depricated":false},"SlotClass.Crate":{"literal":"SlotClass.Crate","name":"SlotClass.Crate","referenceType":"Enum","description":"","depricated":false},"SlotClass.Portables":{"literal":"SlotClass.Portables","name":"SlotClass.Portables","referenceType":"Enum","description":"","depricated":false},"SlotClass.RocketPayload":{"literal":"SlotClass.RocketPayload","name":"SlotClass.RocketPayload","referenceType":"Enum","description":"","depricated":false},"GasType.Undefined":{"literal":"GasType.Undefined","name":"GasType.Undefined","referenceType":"Enum","description":"","depricated":false},"GasType.Oxygen":{"literal":"GasType.Oxygen","name":"GasType.Oxygen","referenceType":"Enum","description":"","depricated":false},"GasType.Nitrogen":{"literal":"GasType.Nitrogen","name":"GasType.Nitrogen","referenceType":"Enum","description":"","depricated":false},"GasType.Air":{"literal":"GasType.Air","name":"GasType.Air","referenceType":"Enum","description":"","depricated":false},"GasType.CarbonDioxide":{"literal":"GasType.CarbonDioxide","name":"GasType.CarbonDioxide","referenceType":"Enum","description":"","depricated":false},"GasType.Volatiles":{"literal":"GasType.Volatiles","name":"GasType.Volatiles","referenceType":"Enum","description":"","depricated":false},"GasType.Fuel":{"literal":"GasType.Fuel","name":"GasType.Fuel","referenceType":"Enum","description":"","depricated":false},"GasType.Pollutant":{"literal":"GasType.Pollutant","name":"GasType.Pollutant","referenceType":"Enum","description":"","depricated":false},"GasType.Water":{"literal":"GasType.Water","name":"GasType.Water","referenceType":"Enum","description":"","depricated":false},"GasType.NitrousOxide":{"literal":"GasType.NitrousOxide","name":"GasType.NitrousOxide","referenceType":"Enum","description":"","depricated":false},"GasType.LiquidNitrogen":{"literal":"GasType.LiquidNitrogen","name":"GasType.LiquidNitrogen","referenceType":"Enum","description":"","depricated":false},"GasType.LiquidOxygen":{"literal":"GasType.LiquidOxygen","name":"GasType.LiquidOxygen","referenceType":"Enum","description":"","depricated":false},"GasType.LiquidVolatiles":{"literal":"GasType.LiquidVolatiles","name":"GasType.LiquidVolatiles","referenceType":"Enum","description":"","depricated":false},"GasType.Steam":{"literal":"GasType.Steam","name":"GasType.Steam","referenceType":"Enum","description":"","depricated":false},"GasType.LiquidCarbonDioxide":{"literal":"GasType.LiquidCarbonDioxide","name":"GasType.LiquidCarbonDioxide","referenceType":"Enum","description":"","depricated":false},"GasType.LiquidPollutant":{"literal":"GasType.LiquidPollutant","name":"GasType.LiquidPollutant","referenceType":"Enum","description":"","depricated":false},"GasType.LiquidNitrousOxide":{"literal":"GasType.LiquidNitrousOxide","name":"GasType.LiquidNitrousOxide","referenceType":"Enum","description":"","depricated":false},"GasType.Hydrogen":{"literal":"GasType.Hydrogen","name":"GasType.Hydrogen","referenceType":"Enum","description":"","depricated":false},"GasType.LiquidHydrogen":{"literal":"GasType.LiquidHydrogen","name":"GasType.LiquidHydrogen","referenceType":"Enum","description":"","depricated":false},"GasType.PollutedWater":{"literal":"GasType.PollutedWater","name":"GasType.PollutedWater","referenceType":"Enum","description":"","depricated":false},"GasType.Invalid":{"literal":"GasType.Invalid","name":"GasType.Invalid","referenceType":"Enum","description":"","depricated":false},"GasType.None":{"literal":"GasType.None","name":"GasType.None","referenceType":"Enum","description":"","depricated":false},"GasType.Mine":{"literal":"GasType.Mine","name":"GasType.Mine","referenceType":"Enum","description":"","depricated":false},"GasType.Survey":{"literal":"GasType.Survey","name":"GasType.Survey","referenceType":"Enum","description":"","depricated":false},"GasType.Discover":{"literal":"GasType.Discover","name":"GasType.Discover","referenceType":"Enum","description":"","depricated":false},"GasType.Chart":{"literal":"GasType.Chart","name":"GasType.Chart","referenceType":"Enum","description":"","depricated":false},"GasType.Deploy":{"literal":"GasType.Deploy","name":"GasType.Deploy","referenceType":"Enum","description":"","depricated":false},"ReEntryProfile.None":{"literal":"ReEntryProfile.None","name":"ReEntryProfile.None","referenceType":"Enum","description":"","depricated":false},"ReEntryProfile.Low":{"literal":"ReEntryProfile.Low","name":"ReEntryProfile.Low","referenceType":"Enum","description":"","depricated":false},"ReEntryProfile.Medium":{"literal":"ReEntryProfile.Medium","name":"ReEntryProfile.Medium","referenceType":"Enum","description":"","depricated":false},"ReEntryProfile.High":{"literal":"ReEntryProfile.High","name":"ReEntryProfile.High","referenceType":"Enum","description":"","depricated":false},"ReEntryProfile.Max":{"literal":"ReEntryProfile.Max","name":"ReEntryProfile.Max","referenceType":"Enum","description":"","depricated":false},"SorterInstruction.None":{"literal":"SorterInstruction.None","name":"SorterInstruction.None","referenceType":"Enum","description":"","depricated":false},"SorterInstruction.FilterPrefabHashEquals":{"literal":"SorterInstruction.FilterPrefabHashEquals","name":"SorterInstruction.FilterPrefabHashEquals","referenceType":"Enum","description":"","depricated":false},"SorterInstruction.FilterPrefabHashNotEquals":{"literal":"SorterInstruction.FilterPrefabHashNotEquals","name":"SorterInstruction.FilterPrefabHashNotEquals","referenceType":"Enum","description":"","depricated":false},"SorterInstruction.FilterSortingClassCompare":{"literal":"SorterInstruction.FilterSortingClassCompare","name":"SorterInstruction.FilterSortingClassCompare","referenceType":"Enum","description":"","depricated":false},"SorterInstruction.FilterSlotTypeCompare":{"literal":"SorterInstruction.FilterSlotTypeCompare","name":"SorterInstruction.FilterSlotTypeCompare","referenceType":"Enum","description":"","depricated":false},"SorterInstruction.FilterQuantityCompare":{"literal":"SorterInstruction.FilterQuantityCompare","name":"SorterInstruction.FilterQuantityCompare","referenceType":"Enum","description":"","depricated":false},"SorterInstruction.LimitNextExecutionByCount":{"literal":"SorterInstruction.LimitNextExecutionByCount","name":"SorterInstruction.LimitNextExecutionByCount","referenceType":"Enum","description":"","depricated":false}}
+{
+  "nan": {
+    "referenceType": "Constant",
+    "literal": "nan",
+    "name": "nan",
+    "value": "NaN",
+    "depricated": false,
+    "description": "A constant representing 'not a number'. This constant technically provides a 'quiet' NaN, a signal NaN from some instructions will result in an exception and halt execution"
+  },
+  "pinf": {
+    "referenceType": "Constant",
+    "literal": "pinf",
+    "name": "pinf",
+    "value": "Infinity",
+    "depricated": false,
+    "description": "A constant representing a positive infinite value"
+  },
+  "ninf": {
+    "referenceType": "Constant",
+    "literal": "ninf",
+    "name": "ninf",
+    "value": "-Infinity",
+    "depricated": false,
+    "description": "A constant representing a negative infinite value"
+  },
+  "pi": {
+    "referenceType": "Constant",
+    "literal": "pi",
+    "name": "pi",
+    "value": 3.1415926535897931,
+    "depricated": false,
+    "description": "3,14159265358979<br>A constant representing ratio of the circumference of a circle to its diameter, provided in double precision"
+  },
+  "tau": {
+    "referenceType": "Constant",
+    "literal": "tau",
+    "name": "tau",
+    "value": 6.2831853071795862,
+    "depricated": false,
+    "description": "6,28318530717959<br>A constant representing the ratio of the circumference of a circle to its radius, provided in double precision"
+  },
+  "deg2rad": {
+    "referenceType": "Constant",
+    "literal": "deg2rad",
+    "name": "deg2rad",
+    "value": 0.01745329238474369,
+    "depricated": false,
+    "description": "0,0174532923847437<br>Degrees to radians conversion constant"
+  },
+  "rad2deg": {
+    "referenceType": "Constant",
+    "literal": "rad2deg",
+    "name": "rad2deg",
+    "value": 57.295780181884766,
+    "depricated": false,
+    "description": "57,2957801818848<br>Radians to degrees conversion constant"
+  },
+  "epsilon": {
+    "referenceType": "Constant",
+    "literal": "epsilon",
+    "name": "epsilon",
+    "value": 4.94065645841247e-324,
+    "depricated": false,
+    "description": "A constant representing the smallest positive subnormal > 0"
+  },
+  "rgas": {
+    "referenceType": "Constant",
+    "literal": "rgas",
+    "name": "rgas",
+    "value": 8.31446261815324,
+    "depricated": false,
+    "description": "8,31446261815324<br>Universal gas constant (J/(mol*K))"
+  },
+  "Contents": {
+    "referenceType": "Enum",
+    "literal": "Contents",
+    "name": "Contents",
+    "prefix": null,
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "Required": {
+    "referenceType": "Enum",
+    "literal": "Required",
+    "name": "Required",
+    "prefix": null,
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "Recipe": {
+    "referenceType": "Enum",
+    "literal": "Recipe",
+    "name": "Recipe",
+    "prefix": null,
+    "value": 2,
+    "description": "",
+    "depricated": false
+  },
+  "TotalContents": {
+    "referenceType": "Enum",
+    "literal": "TotalContents",
+    "name": "TotalContents",
+    "prefix": null,
+    "value": 3,
+    "description": "",
+    "depricated": false
+  },
+  "Average": {
+    "referenceType": "Enum",
+    "literal": "Average",
+    "name": "Average",
+    "prefix": null,
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "Sum": {
+    "referenceType": "Enum",
+    "literal": "Sum",
+    "name": "Sum",
+    "prefix": null,
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "Minimum": {
+    "referenceType": "Enum",
+    "literal": "Minimum",
+    "name": "Minimum",
+    "prefix": null,
+    "value": 2,
+    "description": "",
+    "depricated": false
+  },
+  "Maximum": {
+    "referenceType": "Enum",
+    "literal": "Maximum",
+    "name": "Maximum",
+    "prefix": null,
+    "value": 3,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.None": {
+    "referenceType": "Enum",
+    "literal": "Sound.None",
+    "name": "None",
+    "prefix": "Sound",
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Alarm2": {
+    "referenceType": "Enum",
+    "literal": "Sound.Alarm2",
+    "name": "Alarm2",
+    "prefix": "Sound",
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Alarm3": {
+    "referenceType": "Enum",
+    "literal": "Sound.Alarm3",
+    "name": "Alarm3",
+    "prefix": "Sound",
+    "value": 2,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Alarm4": {
+    "referenceType": "Enum",
+    "literal": "Sound.Alarm4",
+    "name": "Alarm4",
+    "prefix": "Sound",
+    "value": 3,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Alarm5": {
+    "referenceType": "Enum",
+    "literal": "Sound.Alarm5",
+    "name": "Alarm5",
+    "prefix": "Sound",
+    "value": 4,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Alarm6": {
+    "referenceType": "Enum",
+    "literal": "Sound.Alarm6",
+    "name": "Alarm6",
+    "prefix": "Sound",
+    "value": 5,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Alarm7": {
+    "referenceType": "Enum",
+    "literal": "Sound.Alarm7",
+    "name": "Alarm7",
+    "prefix": "Sound",
+    "value": 6,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Music1": {
+    "referenceType": "Enum",
+    "literal": "Sound.Music1",
+    "name": "Music1",
+    "prefix": "Sound",
+    "value": 7,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Music2": {
+    "referenceType": "Enum",
+    "literal": "Sound.Music2",
+    "name": "Music2",
+    "prefix": "Sound",
+    "value": 8,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Music3": {
+    "referenceType": "Enum",
+    "literal": "Sound.Music3",
+    "name": "Music3",
+    "prefix": "Sound",
+    "value": 9,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Alarm8": {
+    "referenceType": "Enum",
+    "literal": "Sound.Alarm8",
+    "name": "Alarm8",
+    "prefix": "Sound",
+    "value": 10,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Alarm9": {
+    "referenceType": "Enum",
+    "literal": "Sound.Alarm9",
+    "name": "Alarm9",
+    "prefix": "Sound",
+    "value": 11,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Alarm10": {
+    "referenceType": "Enum",
+    "literal": "Sound.Alarm10",
+    "name": "Alarm10",
+    "prefix": "Sound",
+    "value": 12,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Alarm11": {
+    "referenceType": "Enum",
+    "literal": "Sound.Alarm11",
+    "name": "Alarm11",
+    "prefix": "Sound",
+    "value": 13,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Alarm12": {
+    "referenceType": "Enum",
+    "literal": "Sound.Alarm12",
+    "name": "Alarm12",
+    "prefix": "Sound",
+    "value": 14,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Danger": {
+    "referenceType": "Enum",
+    "literal": "Sound.Danger",
+    "name": "Danger",
+    "prefix": "Sound",
+    "value": 15,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Warning": {
+    "referenceType": "Enum",
+    "literal": "Sound.Warning",
+    "name": "Warning",
+    "prefix": "Sound",
+    "value": 16,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Alert": {
+    "referenceType": "Enum",
+    "literal": "Sound.Alert",
+    "name": "Alert",
+    "prefix": "Sound",
+    "value": 17,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.StormIncoming": {
+    "referenceType": "Enum",
+    "literal": "Sound.StormIncoming",
+    "name": "StormIncoming",
+    "prefix": "Sound",
+    "value": 18,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.IntruderAlert": {
+    "referenceType": "Enum",
+    "literal": "Sound.IntruderAlert",
+    "name": "IntruderAlert",
+    "prefix": "Sound",
+    "value": 19,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Depressurising": {
+    "referenceType": "Enum",
+    "literal": "Sound.Depressurising",
+    "name": "Depressurising",
+    "prefix": "Sound",
+    "value": 20,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Pressurising": {
+    "referenceType": "Enum",
+    "literal": "Sound.Pressurising",
+    "name": "Pressurising",
+    "prefix": "Sound",
+    "value": 21,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.AirlockCycling": {
+    "referenceType": "Enum",
+    "literal": "Sound.AirlockCycling",
+    "name": "AirlockCycling",
+    "prefix": "Sound",
+    "value": 22,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.PowerLow": {
+    "referenceType": "Enum",
+    "literal": "Sound.PowerLow",
+    "name": "PowerLow",
+    "prefix": "Sound",
+    "value": 23,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.SystemFailure": {
+    "referenceType": "Enum",
+    "literal": "Sound.SystemFailure",
+    "name": "SystemFailure",
+    "prefix": "Sound",
+    "value": 24,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Welcome": {
+    "referenceType": "Enum",
+    "literal": "Sound.Welcome",
+    "name": "Welcome",
+    "prefix": "Sound",
+    "value": 25,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.MalfunctionDetected": {
+    "referenceType": "Enum",
+    "literal": "Sound.MalfunctionDetected",
+    "name": "MalfunctionDetected",
+    "prefix": "Sound",
+    "value": 26,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.HaltWhoGoesThere": {
+    "referenceType": "Enum",
+    "literal": "Sound.HaltWhoGoesThere",
+    "name": "HaltWhoGoesThere",
+    "prefix": "Sound",
+    "value": 27,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.FireFireFire": {
+    "referenceType": "Enum",
+    "literal": "Sound.FireFireFire",
+    "name": "FireFireFire",
+    "prefix": "Sound",
+    "value": 28,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.One": {
+    "referenceType": "Enum",
+    "literal": "Sound.One",
+    "name": "One",
+    "prefix": "Sound",
+    "value": 29,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Two": {
+    "referenceType": "Enum",
+    "literal": "Sound.Two",
+    "name": "Two",
+    "prefix": "Sound",
+    "value": 30,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Three": {
+    "referenceType": "Enum",
+    "literal": "Sound.Three",
+    "name": "Three",
+    "prefix": "Sound",
+    "value": 31,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Four": {
+    "referenceType": "Enum",
+    "literal": "Sound.Four",
+    "name": "Four",
+    "prefix": "Sound",
+    "value": 32,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Five": {
+    "referenceType": "Enum",
+    "literal": "Sound.Five",
+    "name": "Five",
+    "prefix": "Sound",
+    "value": 33,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Floor": {
+    "referenceType": "Enum",
+    "literal": "Sound.Floor",
+    "name": "Floor",
+    "prefix": "Sound",
+    "value": 34,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.RocketLaunching": {
+    "referenceType": "Enum",
+    "literal": "Sound.RocketLaunching",
+    "name": "RocketLaunching",
+    "prefix": "Sound",
+    "value": 35,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.LiftOff": {
+    "referenceType": "Enum",
+    "literal": "Sound.LiftOff",
+    "name": "LiftOff",
+    "prefix": "Sound",
+    "value": 36,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.TraderIncoming": {
+    "referenceType": "Enum",
+    "literal": "Sound.TraderIncoming",
+    "name": "TraderIncoming",
+    "prefix": "Sound",
+    "value": 37,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.TraderLanded": {
+    "referenceType": "Enum",
+    "literal": "Sound.TraderLanded",
+    "name": "TraderLanded",
+    "prefix": "Sound",
+    "value": 38,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.PressureHigh": {
+    "referenceType": "Enum",
+    "literal": "Sound.PressureHigh",
+    "name": "PressureHigh",
+    "prefix": "Sound",
+    "value": 39,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.PressureLow": {
+    "referenceType": "Enum",
+    "literal": "Sound.PressureLow",
+    "name": "PressureLow",
+    "prefix": "Sound",
+    "value": 40,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.TemperatureHigh": {
+    "referenceType": "Enum",
+    "literal": "Sound.TemperatureHigh",
+    "name": "TemperatureHigh",
+    "prefix": "Sound",
+    "value": 41,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.TemperatureLow": {
+    "referenceType": "Enum",
+    "literal": "Sound.TemperatureLow",
+    "name": "TemperatureLow",
+    "prefix": "Sound",
+    "value": 42,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.PollutantsDetected": {
+    "referenceType": "Enum",
+    "literal": "Sound.PollutantsDetected",
+    "name": "PollutantsDetected",
+    "prefix": "Sound",
+    "value": 43,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.HighCarbonDioxide": {
+    "referenceType": "Enum",
+    "literal": "Sound.HighCarbonDioxide",
+    "name": "HighCarbonDioxide",
+    "prefix": "Sound",
+    "value": 44,
+    "description": "",
+    "depricated": false
+  },
+  "Sound.Alarm1": {
+    "referenceType": "Enum",
+    "literal": "Sound.Alarm1",
+    "name": "Alarm1",
+    "prefix": "Sound",
+    "value": 45,
+    "description": "",
+    "depricated": false
+  },
+  "TransmitterMode.Passive": {
+    "referenceType": "Enum",
+    "literal": "TransmitterMode.Passive",
+    "name": "Passive",
+    "prefix": "TransmitterMode",
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "TransmitterMode.Active": {
+    "referenceType": "Enum",
+    "literal": "TransmitterMode.Active",
+    "name": "Active",
+    "prefix": "TransmitterMode",
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "ElevatorMode.Stationary": {
+    "referenceType": "Enum",
+    "literal": "ElevatorMode.Stationary",
+    "name": "Stationary",
+    "prefix": "ElevatorMode",
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "ElevatorMode.Upward": {
+    "referenceType": "Enum",
+    "literal": "ElevatorMode.Upward",
+    "name": "Upward",
+    "prefix": "ElevatorMode",
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "ElevatorMode.Downward": {
+    "referenceType": "Enum",
+    "literal": "ElevatorMode.Downward",
+    "name": "Downward",
+    "prefix": "ElevatorMode",
+    "value": 2,
+    "description": "",
+    "depricated": false
+  },
+  "Color.Blue": {
+    "referenceType": "Enum",
+    "literal": "Color.Blue",
+    "name": "Blue",
+    "prefix": "Color",
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "Color.Gray": {
+    "referenceType": "Enum",
+    "literal": "Color.Gray",
+    "name": "Gray",
+    "prefix": "Color",
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "Color.Green": {
+    "referenceType": "Enum",
+    "literal": "Color.Green",
+    "name": "Green",
+    "prefix": "Color",
+    "value": 2,
+    "description": "",
+    "depricated": false
+  },
+  "Color.Orange": {
+    "referenceType": "Enum",
+    "literal": "Color.Orange",
+    "name": "Orange",
+    "prefix": "Color",
+    "value": 3,
+    "description": "",
+    "depricated": false
+  },
+  "Color.Red": {
+    "referenceType": "Enum",
+    "literal": "Color.Red",
+    "name": "Red",
+    "prefix": "Color",
+    "value": 4,
+    "description": "",
+    "depricated": false
+  },
+  "Color.Yellow": {
+    "referenceType": "Enum",
+    "literal": "Color.Yellow",
+    "name": "Yellow",
+    "prefix": "Color",
+    "value": 5,
+    "description": "",
+    "depricated": false
+  },
+  "Color.White": {
+    "referenceType": "Enum",
+    "literal": "Color.White",
+    "name": "White",
+    "prefix": "Color",
+    "value": 6,
+    "description": "",
+    "depricated": false
+  },
+  "Color.Black": {
+    "referenceType": "Enum",
+    "literal": "Color.Black",
+    "name": "Black",
+    "prefix": "Color",
+    "value": 7,
+    "description": "",
+    "depricated": false
+  },
+  "Color.Brown": {
+    "referenceType": "Enum",
+    "literal": "Color.Brown",
+    "name": "Brown",
+    "prefix": "Color",
+    "value": 8,
+    "description": "",
+    "depricated": false
+  },
+  "Color.Khaki": {
+    "referenceType": "Enum",
+    "literal": "Color.Khaki",
+    "name": "Khaki",
+    "prefix": "Color",
+    "value": 9,
+    "description": "",
+    "depricated": false
+  },
+  "Color.Pink": {
+    "referenceType": "Enum",
+    "literal": "Color.Pink",
+    "name": "Pink",
+    "prefix": "Color",
+    "value": 10,
+    "description": "",
+    "depricated": false
+  },
+  "Color.Purple": {
+    "referenceType": "Enum",
+    "literal": "Color.Purple",
+    "name": "Purple",
+    "prefix": "Color",
+    "value": 11,
+    "description": "",
+    "depricated": false
+  },
+  "EntityState.Alive": {
+    "referenceType": "Enum",
+    "literal": "EntityState.Alive",
+    "name": "Alive",
+    "prefix": "EntityState",
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "EntityState.Dead": {
+    "referenceType": "Enum",
+    "literal": "EntityState.Dead",
+    "name": "Dead",
+    "prefix": "EntityState",
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "EntityState.Unconscious": {
+    "referenceType": "Enum",
+    "literal": "EntityState.Unconscious",
+    "name": "Unconscious",
+    "prefix": "EntityState",
+    "value": 2,
+    "description": "",
+    "depricated": false
+  },
+  "EntityState.Decay": {
+    "referenceType": "Enum",
+    "literal": "EntityState.Decay",
+    "name": "Decay",
+    "prefix": "EntityState",
+    "value": 3,
+    "description": "",
+    "depricated": false
+  },
+  "AirControl.None": {
+    "referenceType": "Enum",
+    "literal": "AirControl.None",
+    "name": "None",
+    "prefix": "AirControl",
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "AirControl.Offline": {
+    "referenceType": "Enum",
+    "literal": "AirControl.Offline",
+    "name": "Offline",
+    "prefix": "AirControl",
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "AirControl.Pressure": {
+    "referenceType": "Enum",
+    "literal": "AirControl.Pressure",
+    "name": "Pressure",
+    "prefix": "AirControl",
+    "value": 2,
+    "description": "",
+    "depricated": false
+  },
+  "AirControl.Draught": {
+    "referenceType": "Enum",
+    "literal": "AirControl.Draught",
+    "name": "Draught",
+    "prefix": "AirControl",
+    "value": 4,
+    "description": "",
+    "depricated": false
+  },
+  "DaylightSensorMode.Default": {
+    "referenceType": "Enum",
+    "literal": "DaylightSensorMode.Default",
+    "name": "Default",
+    "prefix": "DaylightSensorMode",
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "DaylightSensorMode.Horizontal": {
+    "referenceType": "Enum",
+    "literal": "DaylightSensorMode.Horizontal",
+    "name": "Horizontal",
+    "prefix": "DaylightSensorMode",
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "DaylightSensorMode.Vertical": {
+    "referenceType": "Enum",
+    "literal": "DaylightSensorMode.Vertical",
+    "name": "Vertical",
+    "prefix": "DaylightSensorMode",
+    "value": 2,
+    "description": "",
+    "depricated": false
+  },
+  "Equals": {
+    "referenceType": "Enum",
+    "literal": "Equals",
+    "name": "Equals",
+    "prefix": null,
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "Greater": {
+    "referenceType": "Enum",
+    "literal": "Greater",
+    "name": "Greater",
+    "prefix": null,
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "Less": {
+    "referenceType": "Enum",
+    "literal": "Less",
+    "name": "Less",
+    "prefix": null,
+    "value": 2,
+    "description": "",
+    "depricated": false
+  },
+  "NotEquals": {
+    "referenceType": "Enum",
+    "literal": "NotEquals",
+    "name": "NotEquals",
+    "prefix": null,
+    "value": 3,
+    "description": "",
+    "depricated": false
+  },
+  "AirCon.Cold": {
+    "referenceType": "Enum",
+    "literal": "AirCon.Cold",
+    "name": "Cold",
+    "prefix": "AirCon",
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "AirCon.Hot": {
+    "referenceType": "Enum",
+    "literal": "AirCon.Hot",
+    "name": "Hot",
+    "prefix": "AirCon",
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "Vent.Outward": {
+    "referenceType": "Enum",
+    "literal": "Vent.Outward",
+    "name": "Outward",
+    "prefix": "Vent",
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "Vent.Inward": {
+    "referenceType": "Enum",
+    "literal": "Vent.Inward",
+    "name": "Inward",
+    "prefix": "Vent",
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "PowerMode.Idle": {
+    "referenceType": "Enum",
+    "literal": "PowerMode.Idle",
+    "name": "Idle",
+    "prefix": "PowerMode",
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "PowerMode.Discharged": {
+    "referenceType": "Enum",
+    "literal": "PowerMode.Discharged",
+    "name": "Discharged",
+    "prefix": "PowerMode",
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "PowerMode.Discharging": {
+    "referenceType": "Enum",
+    "literal": "PowerMode.Discharging",
+    "name": "Discharging",
+    "prefix": "PowerMode",
+    "value": 2,
+    "description": "",
+    "depricated": false
+  },
+  "PowerMode.Charging": {
+    "referenceType": "Enum",
+    "literal": "PowerMode.Charging",
+    "name": "Charging",
+    "prefix": "PowerMode",
+    "value": 3,
+    "description": "",
+    "depricated": false
+  },
+  "PowerMode.Charged": {
+    "referenceType": "Enum",
+    "literal": "PowerMode.Charged",
+    "name": "Charged",
+    "prefix": "PowerMode",
+    "value": 4,
+    "description": "",
+    "depricated": false
+  },
+  "RobotMode.None": {
+    "referenceType": "Enum",
+    "literal": "RobotMode.None",
+    "name": "None",
+    "prefix": "RobotMode",
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "RobotMode.Follow": {
+    "referenceType": "Enum",
+    "literal": "RobotMode.Follow",
+    "name": "Follow",
+    "prefix": "RobotMode",
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "RobotMode.MoveToTarget": {
+    "referenceType": "Enum",
+    "literal": "RobotMode.MoveToTarget",
+    "name": "MoveToTarget",
+    "prefix": "RobotMode",
+    "value": 2,
+    "description": "",
+    "depricated": false
+  },
+  "RobotMode.Roam": {
+    "referenceType": "Enum",
+    "literal": "RobotMode.Roam",
+    "name": "Roam",
+    "prefix": "RobotMode",
+    "value": 3,
+    "description": "",
+    "depricated": false
+  },
+  "RobotMode.Unload": {
+    "referenceType": "Enum",
+    "literal": "RobotMode.Unload",
+    "name": "Unload",
+    "prefix": "RobotMode",
+    "value": 4,
+    "description": "",
+    "depricated": false
+  },
+  "RobotMode.PathToTarget": {
+    "referenceType": "Enum",
+    "literal": "RobotMode.PathToTarget",
+    "name": "PathToTarget",
+    "prefix": "RobotMode",
+    "value": 5,
+    "description": "",
+    "depricated": false
+  },
+  "RobotMode.StorageFull": {
+    "referenceType": "Enum",
+    "literal": "RobotMode.StorageFull",
+    "name": "StorageFull",
+    "prefix": "RobotMode",
+    "value": 6,
+    "description": "",
+    "depricated": false
+  },
+  "SortingClass.Default": {
+    "referenceType": "Enum",
+    "literal": "SortingClass.Default",
+    "name": "Default",
+    "prefix": "SortingClass",
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "SortingClass.Kits": {
+    "referenceType": "Enum",
+    "literal": "SortingClass.Kits",
+    "name": "Kits",
+    "prefix": "SortingClass",
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "SortingClass.Tools": {
+    "referenceType": "Enum",
+    "literal": "SortingClass.Tools",
+    "name": "Tools",
+    "prefix": "SortingClass",
+    "value": 2,
+    "description": "",
+    "depricated": false
+  },
+  "SortingClass.Resources": {
+    "referenceType": "Enum",
+    "literal": "SortingClass.Resources",
+    "name": "Resources",
+    "prefix": "SortingClass",
+    "value": 3,
+    "description": "",
+    "depricated": false
+  },
+  "SortingClass.Food": {
+    "referenceType": "Enum",
+    "literal": "SortingClass.Food",
+    "name": "Food",
+    "prefix": "SortingClass",
+    "value": 4,
+    "description": "",
+    "depricated": false
+  },
+  "SortingClass.Clothing": {
+    "referenceType": "Enum",
+    "literal": "SortingClass.Clothing",
+    "name": "Clothing",
+    "prefix": "SortingClass",
+    "value": 5,
+    "description": "",
+    "depricated": false
+  },
+  "SortingClass.Appliances": {
+    "referenceType": "Enum",
+    "literal": "SortingClass.Appliances",
+    "name": "Appliances",
+    "prefix": "SortingClass",
+    "value": 6,
+    "description": "",
+    "depricated": false
+  },
+  "SortingClass.Atmospherics": {
+    "referenceType": "Enum",
+    "literal": "SortingClass.Atmospherics",
+    "name": "Atmospherics",
+    "prefix": "SortingClass",
+    "value": 7,
+    "description": "",
+    "depricated": false
+  },
+  "SortingClass.Storage": {
+    "referenceType": "Enum",
+    "literal": "SortingClass.Storage",
+    "name": "Storage",
+    "prefix": "SortingClass",
+    "value": 8,
+    "description": "",
+    "depricated": false
+  },
+  "SortingClass.Ores": {
+    "referenceType": "Enum",
+    "literal": "SortingClass.Ores",
+    "name": "Ores",
+    "prefix": "SortingClass",
+    "value": 9,
+    "description": "",
+    "depricated": false
+  },
+  "SortingClass.Ices": {
+    "referenceType": "Enum",
+    "literal": "SortingClass.Ices",
+    "name": "Ices",
+    "prefix": "SortingClass",
+    "value": 10,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.None": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.None",
+    "name": "None",
+    "prefix": "SlotClass",
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Helmet": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Helmet",
+    "name": "Helmet",
+    "prefix": "SlotClass",
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Suit": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Suit",
+    "name": "Suit",
+    "prefix": "SlotClass",
+    "value": 2,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Back": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Back",
+    "name": "Back",
+    "prefix": "SlotClass",
+    "value": 3,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.GasFilter": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.GasFilter",
+    "name": "GasFilter",
+    "prefix": "SlotClass",
+    "value": 4,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.GasCanister": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.GasCanister",
+    "name": "GasCanister",
+    "prefix": "SlotClass",
+    "value": 5,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Motherboard": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Motherboard",
+    "name": "Motherboard",
+    "prefix": "SlotClass",
+    "value": 6,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Circuitboard": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Circuitboard",
+    "name": "Circuitboard",
+    "prefix": "SlotClass",
+    "value": 7,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.DataDisk": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.DataDisk",
+    "name": "DataDisk",
+    "prefix": "SlotClass",
+    "value": 8,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Organ": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Organ",
+    "name": "Organ",
+    "prefix": "SlotClass",
+    "value": 9,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Ore": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Ore",
+    "name": "Ore",
+    "prefix": "SlotClass",
+    "value": 10,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Plant": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Plant",
+    "name": "Plant",
+    "prefix": "SlotClass",
+    "value": 11,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Uniform": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Uniform",
+    "name": "Uniform",
+    "prefix": "SlotClass",
+    "value": 12,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Entity": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Entity",
+    "name": "Entity",
+    "prefix": "SlotClass",
+    "value": 13,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Battery": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Battery",
+    "name": "Battery",
+    "prefix": "SlotClass",
+    "value": 14,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Egg": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Egg",
+    "name": "Egg",
+    "prefix": "SlotClass",
+    "value": 15,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Belt": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Belt",
+    "name": "Belt",
+    "prefix": "SlotClass",
+    "value": 16,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Tool": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Tool",
+    "name": "Tool",
+    "prefix": "SlotClass",
+    "value": 17,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Appliance": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Appliance",
+    "name": "Appliance",
+    "prefix": "SlotClass",
+    "value": 18,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Ingot": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Ingot",
+    "name": "Ingot",
+    "prefix": "SlotClass",
+    "value": 19,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Torpedo": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Torpedo",
+    "name": "Torpedo",
+    "prefix": "SlotClass",
+    "value": 20,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Cartridge": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Cartridge",
+    "name": "Cartridge",
+    "prefix": "SlotClass",
+    "value": 21,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.AccessCard": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.AccessCard",
+    "name": "AccessCard",
+    "prefix": "SlotClass",
+    "value": 22,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Magazine": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Magazine",
+    "name": "Magazine",
+    "prefix": "SlotClass",
+    "value": 23,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Circuit": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Circuit",
+    "name": "Circuit",
+    "prefix": "SlotClass",
+    "value": 24,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Bottle": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Bottle",
+    "name": "Bottle",
+    "prefix": "SlotClass",
+    "value": 25,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.ProgrammableChip": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.ProgrammableChip",
+    "name": "ProgrammableChip",
+    "prefix": "SlotClass",
+    "value": 26,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Glasses": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Glasses",
+    "name": "Glasses",
+    "prefix": "SlotClass",
+    "value": 27,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.CreditCard": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.CreditCard",
+    "name": "CreditCard",
+    "prefix": "SlotClass",
+    "value": 28,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.DirtCanister": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.DirtCanister",
+    "name": "DirtCanister",
+    "prefix": "SlotClass",
+    "value": 29,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.SensorProcessingUnit": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.SensorProcessingUnit",
+    "name": "SensorProcessingUnit",
+    "prefix": "SlotClass",
+    "value": 30,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.LiquidCanister": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.LiquidCanister",
+    "name": "LiquidCanister",
+    "prefix": "SlotClass",
+    "value": 31,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.LiquidBottle": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.LiquidBottle",
+    "name": "LiquidBottle",
+    "prefix": "SlotClass",
+    "value": 32,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Wreckage": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Wreckage",
+    "name": "Wreckage",
+    "prefix": "SlotClass",
+    "value": 33,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.SoundCartridge": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.SoundCartridge",
+    "name": "SoundCartridge",
+    "prefix": "SlotClass",
+    "value": 34,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.DrillHead": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.DrillHead",
+    "name": "DrillHead",
+    "prefix": "SlotClass",
+    "value": 35,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.ScanningHead": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.ScanningHead",
+    "name": "ScanningHead",
+    "prefix": "SlotClass",
+    "value": 36,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Flare": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Flare",
+    "name": "Flare",
+    "prefix": "SlotClass",
+    "value": 37,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Blocked": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Blocked",
+    "name": "Blocked",
+    "prefix": "SlotClass",
+    "value": 38,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.SuitMod": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.SuitMod",
+    "name": "SuitMod",
+    "prefix": "SlotClass",
+    "value": 39,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Crate": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Crate",
+    "name": "Crate",
+    "prefix": "SlotClass",
+    "value": 40,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.Portables": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.Portables",
+    "name": "Portables",
+    "prefix": "SlotClass",
+    "value": 41,
+    "description": "",
+    "depricated": false
+  },
+  "SlotClass.RocketPayload": {
+    "referenceType": "Enum",
+    "literal": "SlotClass.RocketPayload",
+    "name": "RocketPayload",
+    "prefix": "SlotClass",
+    "value": 42,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.Undefined": {
+    "referenceType": "Enum",
+    "literal": "GasType.Undefined",
+    "name": "Undefined",
+    "prefix": "GasType",
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.Oxygen": {
+    "referenceType": "Enum",
+    "literal": "GasType.Oxygen",
+    "name": "Oxygen",
+    "prefix": "GasType",
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.Nitrogen": {
+    "referenceType": "Enum",
+    "literal": "GasType.Nitrogen",
+    "name": "Nitrogen",
+    "prefix": "GasType",
+    "value": 2,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.Air": {
+    "referenceType": "Enum",
+    "literal": "GasType.Air",
+    "name": "Air",
+    "prefix": "GasType",
+    "value": 3,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.CarbonDioxide": {
+    "referenceType": "Enum",
+    "literal": "GasType.CarbonDioxide",
+    "name": "CarbonDioxide",
+    "prefix": "GasType",
+    "value": 4,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.Volatiles": {
+    "referenceType": "Enum",
+    "literal": "GasType.Volatiles",
+    "name": "Volatiles",
+    "prefix": "GasType",
+    "value": 8,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.Fuel": {
+    "referenceType": "Enum",
+    "literal": "GasType.Fuel",
+    "name": "Fuel",
+    "prefix": "GasType",
+    "value": 9,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.Pollutant": {
+    "referenceType": "Enum",
+    "literal": "GasType.Pollutant",
+    "name": "Pollutant",
+    "prefix": "GasType",
+    "value": 16,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.Water": {
+    "referenceType": "Enum",
+    "literal": "GasType.Water",
+    "name": "Water",
+    "prefix": "GasType",
+    "value": 32,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.NitrousOxide": {
+    "referenceType": "Enum",
+    "literal": "GasType.NitrousOxide",
+    "name": "NitrousOxide",
+    "prefix": "GasType",
+    "value": 64,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.LiquidNitrogen": {
+    "referenceType": "Enum",
+    "literal": "GasType.LiquidNitrogen",
+    "name": "LiquidNitrogen",
+    "prefix": "GasType",
+    "value": 128,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.LiquidOxygen": {
+    "referenceType": "Enum",
+    "literal": "GasType.LiquidOxygen",
+    "name": "LiquidOxygen",
+    "prefix": "GasType",
+    "value": 256,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.LiquidVolatiles": {
+    "referenceType": "Enum",
+    "literal": "GasType.LiquidVolatiles",
+    "name": "LiquidVolatiles",
+    "prefix": "GasType",
+    "value": 512,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.Steam": {
+    "referenceType": "Enum",
+    "literal": "GasType.Steam",
+    "name": "Steam",
+    "prefix": "GasType",
+    "value": 1024,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.LiquidCarbonDioxide": {
+    "referenceType": "Enum",
+    "literal": "GasType.LiquidCarbonDioxide",
+    "name": "LiquidCarbonDioxide",
+    "prefix": "GasType",
+    "value": 2048,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.LiquidPollutant": {
+    "referenceType": "Enum",
+    "literal": "GasType.LiquidPollutant",
+    "name": "LiquidPollutant",
+    "prefix": "GasType",
+    "value": 4096,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.LiquidNitrousOxide": {
+    "referenceType": "Enum",
+    "literal": "GasType.LiquidNitrousOxide",
+    "name": "LiquidNitrousOxide",
+    "prefix": "GasType",
+    "value": 8192,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.Hydrogen": {
+    "referenceType": "Enum",
+    "literal": "GasType.Hydrogen",
+    "name": "Hydrogen",
+    "prefix": "GasType",
+    "value": 16384,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.LiquidHydrogen": {
+    "referenceType": "Enum",
+    "literal": "GasType.LiquidHydrogen",
+    "name": "LiquidHydrogen",
+    "prefix": "GasType",
+    "value": 32768,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.PollutedWater": {
+    "referenceType": "Enum",
+    "literal": "GasType.PollutedWater",
+    "name": "PollutedWater",
+    "prefix": "GasType",
+    "value": 65536,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.Invalid": {
+    "referenceType": "Enum",
+    "literal": "GasType.Invalid",
+    "name": "Invalid",
+    "prefix": "GasType",
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.None": {
+    "referenceType": "Enum",
+    "literal": "GasType.None",
+    "name": "None",
+    "prefix": "GasType",
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.Mine": {
+    "referenceType": "Enum",
+    "literal": "GasType.Mine",
+    "name": "Mine",
+    "prefix": "GasType",
+    "value": 2,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.Survey": {
+    "referenceType": "Enum",
+    "literal": "GasType.Survey",
+    "name": "Survey",
+    "prefix": "GasType",
+    "value": 3,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.Discover": {
+    "referenceType": "Enum",
+    "literal": "GasType.Discover",
+    "name": "Discover",
+    "prefix": "GasType",
+    "value": 4,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.Chart": {
+    "referenceType": "Enum",
+    "literal": "GasType.Chart",
+    "name": "Chart",
+    "prefix": "GasType",
+    "value": 5,
+    "description": "",
+    "depricated": false
+  },
+  "GasType.Deploy": {
+    "referenceType": "Enum",
+    "literal": "GasType.Deploy",
+    "name": "Deploy",
+    "prefix": "GasType",
+    "value": 6,
+    "description": "",
+    "depricated": false
+  },
+  "ReEntryProfile.None": {
+    "referenceType": "Enum",
+    "literal": "ReEntryProfile.None",
+    "name": "None",
+    "prefix": "ReEntryProfile",
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "ReEntryProfile.Low": {
+    "referenceType": "Enum",
+    "literal": "ReEntryProfile.Low",
+    "name": "Low",
+    "prefix": "ReEntryProfile",
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "ReEntryProfile.Medium": {
+    "referenceType": "Enum",
+    "literal": "ReEntryProfile.Medium",
+    "name": "Medium",
+    "prefix": "ReEntryProfile",
+    "value": 2,
+    "description": "",
+    "depricated": false
+  },
+  "ReEntryProfile.High": {
+    "referenceType": "Enum",
+    "literal": "ReEntryProfile.High",
+    "name": "High",
+    "prefix": "ReEntryProfile",
+    "value": 3,
+    "description": "",
+    "depricated": false
+  },
+  "ReEntryProfile.Max": {
+    "referenceType": "Enum",
+    "literal": "ReEntryProfile.Max",
+    "name": "Max",
+    "prefix": "ReEntryProfile",
+    "value": 4,
+    "description": "",
+    "depricated": false
+  },
+  "SorterInstruction.None": {
+    "referenceType": "Enum",
+    "literal": "SorterInstruction.None",
+    "name": "None",
+    "prefix": "SorterInstruction",
+    "value": 0,
+    "description": "",
+    "depricated": false
+  },
+  "SorterInstruction.FilterPrefabHashEquals": {
+    "referenceType": "Enum",
+    "literal": "SorterInstruction.FilterPrefabHashEquals",
+    "name": "FilterPrefabHashEquals",
+    "prefix": "SorterInstruction",
+    "value": 1,
+    "description": "",
+    "depricated": false
+  },
+  "SorterInstruction.FilterPrefabHashNotEquals": {
+    "referenceType": "Enum",
+    "literal": "SorterInstruction.FilterPrefabHashNotEquals",
+    "name": "FilterPrefabHashNotEquals",
+    "prefix": "SorterInstruction",
+    "value": 2,
+    "description": "",
+    "depricated": false
+  },
+  "SorterInstruction.FilterSortingClassCompare": {
+    "referenceType": "Enum",
+    "literal": "SorterInstruction.FilterSortingClassCompare",
+    "name": "FilterSortingClassCompare",
+    "prefix": "SorterInstruction",
+    "value": 3,
+    "description": "",
+    "depricated": false
+  },
+  "SorterInstruction.FilterSlotTypeCompare": {
+    "referenceType": "Enum",
+    "literal": "SorterInstruction.FilterSlotTypeCompare",
+    "name": "FilterSlotTypeCompare",
+    "prefix": "SorterInstruction",
+    "value": 4,
+    "description": "",
+    "depricated": false
+  },
+  "SorterInstruction.FilterQuantityCompare": {
+    "referenceType": "Enum",
+    "literal": "SorterInstruction.FilterQuantityCompare",
+    "name": "FilterQuantityCompare",
+    "prefix": "SorterInstruction",
+    "value": 5,
+    "description": "",
+    "depricated": false
+  },
+  "SorterInstruction.LimitNextExecutionByCount": {
+    "referenceType": "Enum",
+    "literal": "SorterInstruction.LimitNextExecutionByCount",
+    "name": "LimitNextExecutionByCount",
+    "prefix": "SorterInstruction",
+    "value": 6,
+    "description": "",
+    "depricated": false
+  }
+}
