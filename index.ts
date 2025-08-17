@@ -106,7 +106,7 @@ async function buildConstant() {
   Object.entries(file).forEach(([_, data]) => {
     consts[data.literal] = data.value;
   });
-  await writeFile("consts.json", DIST_LANG_DIR, consts);
+  await writeFile("consts.json", DIST_DIR, consts);
   console.timeEnd("build consts files");
 }
 
@@ -334,10 +334,10 @@ async function generateIndex() {
 // ---------------------------------------------- RUN ----------------------------------------------
 await clearDist();
 const BUILD_TASKS: Promise<any>[] = [];
-BUILD_TASKS.push(optimizeImages().then(() => moveImages()));
 BUILD_TASKS.push(moveFiles());
 BUILD_TASKS.push(moveData());
 BUILD_TASKS.push(buildConstant());
+BUILD_TASKS.push(optimizeImages().then(() => moveImages()));
 
 await Promise.all(BUILD_TASKS);
 await optimizeData();
