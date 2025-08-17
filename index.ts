@@ -17,6 +17,7 @@ import type {
   ReagentItem,
   Reagents,
 } from "./tools/types";
+import type { ConstantMap } from "./types";
 
 console.info("Start building...");
 
@@ -78,7 +79,6 @@ async function moveFiles() {
 
   const moves: Promise<void>[] = [
     copyJSON(join(SRC_LANG_DIR, "EN/colors.json"), DIST_DIR),
-    copyJSON(join(SRC_LANG_DIR, "EN/consts.json"), DIST_DIR),
   ];
 
   // Копируем constants.json и instructions.json для всех языков
@@ -91,6 +91,19 @@ async function moveFiles() {
 
   if (moves.length) await Promise.all(moves);
   console.timeEnd("move other files");
+}
+
+async function buildConstant() {
+  console.time("build consts files");
+  const file = (await Bun.file(
+    join(SRC_LANG_DIR, "EN/constants.json")
+  ).json()) as ConstantMap;
+  const consts: { [key: string]: number | string } = {};
+  Object.entries(file).forEach(([key, data]) => {
+    consts[data.literal] = data.value;
+  });
+  await writeFile("consts.json", DIST_LANG_DIR, consts);
+  console.timeEnd("build consts files");
 }
 
 async function moveData() {
@@ -110,7 +123,7 @@ async function moveData() {
         const result = strip(json);
         await ensureDir(dirname(destFile));
         await write(destFile, JSON.stringify(result), { encoding: "utf-8" });
-      }),
+      })
     );
   }
 
@@ -201,7 +214,7 @@ async function optimizeData() {
           image: findImage(oldDevice.MainImage),
           mods: oldDevice?.ModeInsert?.map((mod) => mod.LogicName),
           connections: oldDevice?.ConnectionInsert?.map(
-            (connection) => connection?.LogicName,
+            (connection) => connection?.LogicName
           ),
           slots,
           tags: oldDevice?.tags,
@@ -240,9 +253,7 @@ async function optimizeData() {
         oldDevice.FoundInOre.forEach((item) => {
           const name = stripTags(item.NameOfThing);
 
-          const itemData = entries.find(
-            ([, dev]) => dev.Title === name,
-          );
+          const itemData = entries.find(([, dev]) => dev.Title === name);
           if (!itemData) return;
           const [, found] = itemData;
 
@@ -288,7 +299,11 @@ async function optimizeData() {
       await writeFile("devices.json", join(DIST_LANG_DIR, langDir), devices);
       await writeFile("items.json", join(DIST_LANG_DIR, langDir), items);
       await writeFile("reagents.json", join(DIST_LANG_DIR, langDir), reagents);
-      await writeFile("logics.json", join(DIST_LANG_DIR, langDir), logicsCollection);
+      await writeFile(
+        "logics.json",
+        join(DIST_LANG_DIR, langDir),
+        logicsCollection
+      );
     } catch (e) {
       console.error(e);
     }
@@ -313,11 +328,12 @@ async function generateIndex() {
 }
 
 // ---------------------------------------------- RUN ----------------------------------------------
-// await clearDist();
+await clearDist();
 const BUILD_TASKS: Promise<any>[] = [];
 BUILD_TASKS.push(optimizeImages().then(() => moveImages()));
 BUILD_TASKS.push(moveFiles());
 BUILD_TASKS.push(moveData());
+BUILD_TASKS.push(buildConstant());
 
 await Promise.all(BUILD_TASKS);
 await optimizeData();
@@ -335,7 +351,7 @@ function findImage(fileName: string | null): string | null {
 }
 
 function strip(
-  obj: Record<string, Record<string, any>>,
+  obj: Record<string, Record<string, any>>
 ): Record<string, Record<string, any>> {
   const r: Record<string, any> = {};
   Object.entries(obj).forEach(([key, o]) => {

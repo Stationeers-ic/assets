@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "wiki_data"
+    "liveServer.settings.multiRootWorkspaceName": "wiki_data",
+    "liveServer.settings.port": 5501
 }
