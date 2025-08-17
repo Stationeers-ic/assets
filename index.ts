@@ -3,11 +3,11 @@ import {
   copyFile as copy,
   mkdir,
   rename,
-  rmdir,
+  rm,
   writeFile as write,
 } from "node:fs/promises";
 import { cpus } from "node:os";
-import { basename, dirname, join } from "path";
+import { basename, dirname, join, resolve } from "path";
 import { dir_index, walkDir } from "./tools/dir_index";
 import type {
   Device,
@@ -29,7 +29,7 @@ const SRC_LANG_DIR = join(SRC_DIR, "languages");
 const DIST_LANG_DIR = join(DIST_DIR, "languages");
 const DIST_IMAGES_DIR = join(DIST_DIR, "images");
 const DATA_JSON = "data.json";
-const PNG_IN_DIST_GLOB = "./dist/**/*.png";
+const PNG_IN_DIST_GLOB = "./dist/images/**/*.png";
 const TAGS_REGEX = /<[^>]*>?/gm;
 
 // ---------------------------------------------- UTILS ----------------------------------------------
@@ -44,7 +44,7 @@ function cpuWorkers(): number {
 // ---------------------------------------------- TASKS ----------------------------------------------
 async function clearDist() {
   console.time("Clear DIST");
-  await rmdir(DIST_DIR, { recursive: true });
+  await rm(DIST_DIR, { recursive: true, force: true });
   console.timeEnd("Clear DIST");
 }
 
@@ -65,8 +65,12 @@ async function moveImages() {
 
   for await (const file of distImages.scan(".")) {
     const name = basename(file);
-    const targetPath = join(DIST_DIR, findImage(name)); // images/F/Fo/...
-    moves.push(moveFile(file, dirname(targetPath)));
+    const destPath = join(DIST_DIR, findImage(name)); // images/F/Fo/...
+
+    // Если файл уже на своём месте — пропускаем
+    if (resolve(file) === resolve(destPath)) continue;
+
+    moves.push(moveFile(file, dirname(destPath), basename(destPath)));
   }
 
   if (moves.length) await Promise.all(moves);
@@ -99,7 +103,7 @@ async function buildConstant() {
     join(SRC_LANG_DIR, "EN/constants.json")
   ).json()) as ConstantMap;
   const consts: { [key: string]: number | string } = {};
-  Object.entries(file).forEach(([key, data]) => {
+  Object.entries(file).forEach(([_, data]) => {
     consts[data.literal] = data.value;
   });
   await writeFile("consts.json", DIST_LANG_DIR, consts);
@@ -361,7 +365,13 @@ function strip(
       if (v === undefined) return;
       if (v === "") return;
       if (Array.isArray(v) && v.length === 0) return;
-      if (Object.keys(v).length === 0) return;
+      if (
+        typeof v === "object" &&
+        v !== null &&
+        !Array.isArray(v) &&
+        Object.keys(v).length === 0
+      )
+        return;
       newO[k] = v;
     });
     r[key] = newO;
@@ -378,7 +388,26 @@ async function writeFile(file: string, dir: string, content?: {}) {
 
 async function moveFile(file: string, dir: string, newName?: string) {
   await ensureDir(dir);
-  return rename(file, join(dir, newName ?? basename(file)));
+  const dest = join(dir, newName ?? basename(file));
+
+  try {
+    await rename(file, dest);
+  } catch (err: any) {
+    // EEXIST — цель уже есть; EPERM/EXDEV — типичные проблемы Windows/других дисков
+    if (err?.code === "EEXIST" || err?.code === "EPERM" || err?.code === "EXDEV") {
+      try {
+        await rm(dest, { force: true });
+      } catch {}
+      try {
+        await rename(file, dest);
+      } catch {
+        await copy(file, dest);
+        await rm(file, { force: true });
+      }
+    } else {
+      throw err;
+    }
+  }
 }
 
 async function copyFile(file: string, dir: string, newName?: string) {
