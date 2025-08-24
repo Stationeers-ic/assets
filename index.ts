@@ -100,7 +100,7 @@ async function moveFiles() {
 async function buildConstant() {
   console.time("build consts files");
   const file = (await Bun.file(
-    join(SRC_LANG_DIR, "EN/constants.json")
+    join(SRC_LANG_DIR, "EN/constants.json"),
   ).json()) as ConstantMap;
   const consts: { [key: string]: number | string } = {};
   Object.entries(file).forEach(([_, data]) => {
@@ -127,7 +127,7 @@ async function moveData() {
         const result = strip(json);
         await ensureDir(dirname(destFile));
         await write(destFile, JSON.stringify(result), { encoding: "utf-8" });
-      })
+      }),
     );
   }
 
@@ -218,7 +218,7 @@ async function optimizeData() {
           image: findImage(oldDevice.MainImage),
           mods: oldDevice?.ModeInsert?.map((mod) => mod.LogicName),
           connections: oldDevice?.ConnectionInsert?.map(
-            (connection) => connection?.LogicName
+            (connection) => connection?.LogicName,
           ),
           slots,
           tags: oldDevice?.tags,
@@ -306,7 +306,7 @@ async function optimizeData() {
       await writeFile(
         "logics.json",
         join(DIST_LANG_DIR, langDir),
-        logicsCollection
+        logicsCollection,
       );
     } catch (e) {
       console.error(e);
@@ -355,7 +355,7 @@ function findImage(fileName: string | null): string | null {
 }
 
 function strip(
-  obj: Record<string, Record<string, any>>
+  obj: Record<string, Record<string, any>>,
 ): Record<string, Record<string, any>> {
   const r: Record<string, any> = {};
   Object.entries(obj).forEach(([key, o]) => {
@@ -394,7 +394,11 @@ async function moveFile(file: string, dir: string, newName?: string) {
     await rename(file, dest);
   } catch (err: any) {
     // EEXIST — цель уже есть; EPERM/EXDEV — типичные проблемы Windows/других дисков
-    if (err?.code === "EEXIST" || err?.code === "EPERM" || err?.code === "EXDEV") {
+    if (
+      err?.code === "EEXIST" ||
+      err?.code === "EPERM" ||
+      err?.code === "EXDEV"
+    ) {
       try {
         await rm(dest, { force: true });
       } catch {}

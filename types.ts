@@ -1,4 +1,4 @@
-export type ReferenceType = 'Constant' | 'Enum';
+export type ReferenceType = "Constant" | "Enum";
 
 export interface BaseEntry {
   referenceType: ReferenceType;
@@ -11,13 +11,13 @@ export interface BaseEntry {
 }
 
 export interface ConstantEntry extends BaseEntry {
-  referenceType: 'Constant';
+  referenceType: "Constant";
   // у констант значение может быть числом или строкой (NaN, Infinity и т.п.)
   value: number | string;
 }
 
 export interface EnumEntry extends BaseEntry {
-  referenceType: 'Enum';
+  referenceType: "Enum";
   // у enum-значений в примере — числа
   value: number;
   prefix: string;
