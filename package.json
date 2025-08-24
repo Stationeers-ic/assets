@@ -9,7 +9,8 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "build": "bun index.ts"
+    "format": "bunx prettier . --write",
+    "build": "bun run format && bun index.ts"
   },
   "type": "module",
   "dependencies": {

@@ -6294,6 +6294,7 @@
       "hasMode",
       "paintable",
       "hasPrefab",
+      "hasChip",
       "hasImage"
     ],
     "ID": "StructureAirConditioner"
@@ -41109,6 +41110,7 @@
       "hasMode",
       "paintable",
       "hasPrefab",
+      "hasChip",
       "hasImage"
     ],
     "ID": "StructureElectrolyzer"
@@ -46987,6 +46989,7 @@
       "hasMode",
       "paintable",
       "hasPrefab",
+      "hasChip",
       "hasImage"
     ],
     "ID": "StructureFiltration"
@@ -54692,6 +54695,7 @@
       "hasMode",
       "paintable",
       "hasPrefab",
+      "hasChip",
       "hasImage"
     ],
     "ID": "H2Combustor"
@@ -61862,6 +61866,7 @@
       "hasMode",
       "paintable",
       "hasPrefab",
+      "hasChip",
       "hasImage"
     ],
     "ID": "StructureCircuitHousing"
@@ -62065,6 +62070,7 @@
       "hasMode",
       "paintable",
       "hasPrefab",
+      "hasChip",
       "hasImage"
     ],
     "ID": "StructureCircuitHousingCompact"
@@ -138891,6 +138897,7 @@
       "hasMode",
       "paintable",
       "hasPrefab",
+      "hasChip",
       "hasImage"
     ],
     "ID": "StructureNitrolyzer"
@@ -158702,6 +158709,7 @@
       "hasMode",
       "paintable",
       "hasPrefab",
+      "hasChip",
       "hasImage"
     ],
     "ID": "StructureRocketCircuitHousing"
