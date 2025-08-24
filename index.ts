@@ -21,7 +21,13 @@ import type {
 import type { ConstantMap } from "./types";
 import { generateGallery } from "./tools/gallery_generator";
 import { argv, argv0 } from "node:process";
-import { urlJoin, strip, cpuWorkers, stripTags, ensureDir } from "./tools/helpers";
+import {
+  urlJoin,
+  strip,
+  cpuWorkers,
+  stripTags,
+  ensureDir,
+} from "./tools/helpers";
 
 console.info("Start building...");
 
@@ -95,7 +101,7 @@ async function moveFiles() {
 async function buildConstant() {
   console.time("build consts files");
   const file = (await Bun.file(
-    join(SRC_LANG_DIR, "EN/constants.json")
+    join(SRC_LANG_DIR, "EN/constants.json"),
   ).json()) as ConstantMap;
   const consts: { [key: string]: number | string } = {};
   Object.entries(file).forEach(([_, data]) => {
@@ -122,7 +128,7 @@ async function moveData() {
         const result = strip(json);
         await ensureDir(dirname(destFile));
         await write(destFile, JSON.stringify(result), { encoding: "utf-8" });
-      })
+      }),
     );
   }
 
@@ -213,7 +219,7 @@ async function optimizeData() {
           image: findImage(oldDevice.MainImage),
           mods: oldDevice?.ModeInsert?.map((mod) => mod.LogicName),
           connections: oldDevice?.ConnectionInsert?.map(
-            (connection) => connection?.LogicName
+            (connection) => connection?.LogicName,
           ),
           slots,
           tags: oldDevice?.tags,
@@ -301,7 +307,7 @@ async function optimizeData() {
       await writeFile(
         "logics.json",
         join(DIST_LANG_DIR, langDir),
-        logicsCollection
+        logicsCollection,
       );
     } catch (e) {
       console.error(e);
@@ -365,7 +371,7 @@ if (!argv.includes("--dev")) {
   BUILD_TASKS.push(optimizeImages().then(() => moveImages()));
 } else {
   BUILD_TASKS.push(
-    copyDir(join(SRC_DIR, "images"), DIST_IMAGES_DIR).then(() => moveImages())
+    copyDir(join(SRC_DIR, "images"), DIST_IMAGES_DIR).then(() => moveImages()),
   );
 }
 

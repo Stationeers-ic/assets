@@ -2423,7 +2423,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/4/d/4d663af16544981c6849f76c8c20393e.png",
-    "tags": ["hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasPrefab", "hasImage"],
     "ID": "ShuttlecraftMkII"
   },
   "Robot": {
@@ -2735,10 +2735,10 @@
     "MainImage": "wiki_data/source/images/d/a/dacb55e6fde28f92ae094fdac63a7305.png",
     "tags": [
       "hasLogic",
-      "hasSlot",
       "hasMode",
       "paintable",
       "hasPrefab",
+      "hasChip",
       "hasImage"
     ],
     "ID": "Robot"
@@ -3016,7 +3016,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/1/8/184812866256d64c243e30645fc3c750.png",
-    "tags": ["item", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasPrefab", "hasImage"],
     "ID": "ItemEmergencyToolBelt"
   },
   "ItemEmergencyArcWelder": {
@@ -3144,7 +3144,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/5/b/5b39728f2c4d592e5f2a2d6100aa1e5d.png",
-    "tags": ["item", "hasLogic", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasLogic", "hasPrefab", "hasImage"],
     "ID": "ItemEmergencyArcWelder"
   },
   "ItemEmergencyAngleGrinder": {
@@ -3272,7 +3272,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/6/7/67ec171263a96b31dfc3ffa388e9619a.png",
-    "tags": ["item", "hasLogic", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasLogic", "hasPrefab", "hasImage"],
     "ID": "ItemEmergencyAngleGrinder"
   },
   "ItemEmergencyEvaSuit": {
@@ -3380,7 +3380,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/0/4/044b65df486c30eaa1f04dc0670d1326.png",
-    "tags": ["item", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasPrefab", "hasImage"],
     "ID": "ItemEmergencyEvaSuit"
   },
   "ItemEmergencyPickaxe": {
@@ -3650,7 +3650,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/c/f/cfb07febf01d3086b8033270fec0154f.png",
-    "tags": ["item", "hasLogic", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasLogic", "hasPrefab", "hasImage"],
     "ID": "ItemEmergencyDrill"
   },
   "ItemEmergencyWireCutters": {
@@ -4580,7 +4580,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -5015,7 +5014,6 @@
       "structure",
       "hasLogic",
       "hasLogicInstructions",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasReciepe",
@@ -5612,7 +5610,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -8458,7 +8455,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/6/2/6282c85d04f30b66d3c6cc8e4321845b.png",
-    "tags": ["item", "hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["item", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemToolBelt"
   },
   "ToolPrinterMod": {
@@ -9496,7 +9493,6 @@
       "structure",
       "hasLogic",
       "hasLogicInstructions",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasReciepe",
@@ -10094,7 +10090,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/6/5/65bfb0f7d0d1982211278f7e965fa598.png",
-    "tags": ["hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasPrefab", "hasImage"],
     "ID": "ApplianceSeedTray"
   },
   "ItemTerrainManipulator": {
@@ -10261,7 +10257,6 @@
     "tags": [
       "item",
       "hasLogic",
-      "hasSlot",
       "hasMode",
       "paintable",
       "hasPrefab",
@@ -10652,7 +10647,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasReciepe",
@@ -10795,14 +10789,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/1/6/16af0d5def2c0af727be0cfbe8370eb2.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemArcWelder"
   },
   "ElevatorCarrage": {
@@ -11925,7 +11912,6 @@
       "structure",
       "hasLogic",
       "hasLogicInstructions",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasReciepe",
@@ -12441,7 +12427,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -12788,14 +12773,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/c/b/cbcf918dabdff187220d9111a319e45e.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemAngleGrinder"
   },
   "CartridgeNetworkAnalyser": {
@@ -14015,7 +13993,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/6/b/6ba3dbc8930c507843befcb534fbc54e.png",
-    "tags": ["item", "hasLogic", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasLogic", "hasPrefab", "hasChip", "hasImage"],
     "ID": "ItemHardSuit"
   },
   "ItemHardJetpack": {
@@ -14222,14 +14200,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/4/0/4054db7ec830a8d317244f9df4fdab9d.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemHardJetpack"
   },
   "ItemHardBackpack": {
@@ -14404,14 +14375,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/7/f/7fcc00a30e39cf2f1e139cedb2f4926d.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemHardBackpack"
   },
   "StructureCableJunctionH": {
@@ -15972,7 +15936,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/e/a/eaf3b301fb64f8b5b630b1966d68dff3.png",
-    "tags": ["hasSlot", "paintable", "hasReciepe", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasReciepe", "hasPrefab", "hasImage"],
     "ID": "AppliancePackagingMachine"
   },
   "ItemBasketBall": {
@@ -17162,7 +17126,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -17347,7 +17310,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -17532,7 +17494,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -17717,7 +17678,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -17922,7 +17882,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -18289,7 +18248,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -20761,7 +20719,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -21376,7 +21333,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -21913,7 +21869,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -22158,7 +22113,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -24334,7 +24288,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -24797,7 +24750,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -25754,7 +25706,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/2/c/2c3ff8141074393537f1d5852bec2464.png",
-    "tags": ["item", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasPrefab", "hasImage"],
     "ID": "ItemCerealBarBag"
   },
   "ItemCerealBarBox": {
@@ -25856,7 +25808,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/c/a/cafc7ae0eacd367c751e48ea230e5b9e.png",
-    "tags": ["item", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasPrefab", "hasImage"],
     "ID": "ItemCerealBarBox"
   },
   "ItemGoldOre": {
@@ -27129,7 +27081,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -27281,7 +27232,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -27433,7 +27383,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -27585,7 +27534,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -27737,7 +27685,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -27889,7 +27836,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -28041,7 +27987,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -28412,14 +28357,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/f/a/fa3743885407b39b2095cd38351abd14.png",
-    "tags": [
-      "structure",
-      "hasSlot",
-      "buildable",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab", "hasImage"],
     "ID": "StructureChuteStraight10"
   },
   "StructureChuteStraight3": {
@@ -28521,14 +28459,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/f/a/fa3743885407b39b2095cd38351abd14.png",
-    "tags": [
-      "structure",
-      "hasSlot",
-      "buildable",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab", "hasImage"],
     "ID": "StructureChuteStraight3"
   },
   "StructureChuteStraight5": {
@@ -28630,14 +28561,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/f/a/fa3743885407b39b2095cd38351abd14.png",
-    "tags": [
-      "structure",
-      "hasSlot",
-      "buildable",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab", "hasImage"],
     "ID": "StructureChuteStraight5"
   },
   "StructureChuteDigitalFlipFlopSplitterLeft": {
@@ -28837,7 +28761,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -29043,7 +28966,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -29236,7 +29158,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -29428,7 +29349,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -29612,7 +29532,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -29734,7 +29653,6 @@
     "MainImage": "wiki_data/source/images/2/b/2b4bb84a40595dc067fb02abcc311b0c.png",
     "tags": [
       "structure",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -29846,14 +29764,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/0/e/0e99e0dd8d796d7ec600f2a56640a028.png",
-    "tags": [
-      "structure",
-      "hasSlot",
-      "buildable",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab", "hasImage"],
     "ID": "StructureChuteOverflow"
   },
   "StructureChuteValve": {
@@ -29955,14 +29866,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/6/8/68f9ff0147cbd0942e761c84844052fe.png",
-    "tags": [
-      "structure",
-      "hasSlot",
-      "buildable",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab", "hasImage"],
     "ID": "StructureChuteValve"
   },
   "DevicePage": {
@@ -30117,7 +30021,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/6/c/6c6108ef7fa87e03b216c0f03bc8c054.png",
-    "tags": ["hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["hasPrefab", "hasImage"],
     "ID": "NpcChick"
   },
   "ItemCocoaTree": {
@@ -31072,10 +30976,10 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
+      "hasChip",
       "hasImage"
     ],
     "ID": "StructureCombustionCentrifuge"
@@ -31805,7 +31709,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -31998,7 +31901,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -32203,7 +32105,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -33561,7 +33462,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -34273,7 +34173,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -34554,7 +34453,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -35522,7 +35420,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -36455,7 +36352,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/c/7/c76db3d2f949b4e71063d06780b04f28.png",
-    "tags": ["item", "hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["item", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemMarineHelmet"
   },
   "ItemMarineBodyArmor": {
@@ -36556,7 +36453,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/f/9/f9a6a5a34a1a65041e6c9e38847fb0c4.png",
-    "tags": ["item", "hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["item", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemMarineBodyArmor"
   },
   "UniformMarine": {
@@ -36659,7 +36556,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/5/3/534a376f4d5c28b60fd316fda46b8bc8.png",
-    "tags": ["hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["hasPrefab", "hasImage"],
     "ID": "UniformMarine"
   },
   "DeviceStepUnit": {
@@ -37865,7 +37762,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/5/5/5515ce1d4c26c1f7197df48b23ff538a.png",
-    "tags": ["hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasPrefab", "hasImage"],
     "ID": "DynamicCrate"
   },
   "ItemSpaceOre": {
@@ -38556,7 +38453,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -38730,7 +38626,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -51719,7 +51614,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -55592,7 +55486,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -55901,7 +55794,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -56906,7 +56798,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -57331,14 +57222,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/3/c/3c54049ee606202972e056a68fe8bd36.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemDrill"
   },
   "ItemTablet": {
@@ -57485,14 +57369,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/f/0/f0ba1d7d2bd4161f7319843c9ebe6feb.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemTablet"
   },
   "Electrum": {
@@ -58029,7 +57906,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -59218,7 +59094,6 @@
       "structure",
       "hasLogic",
       "hasLogicInstructions",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasReciepe",
@@ -59682,7 +59557,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/0/a/0aa4ad8da2a108099811d6bd0d3afb0e.png",
-    "tags": ["item", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasPrefab", "hasImage"],
     "ID": "ItemEmergencySuppliesBox"
   },
   "StructureEngineMountTypeA1": {
@@ -60981,14 +60856,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/b/a/ba7c7da7488ebca1cf9c34c637ac481b.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemLabeller"
   },
   "ItemEvaSuit": {
@@ -61113,7 +60981,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/9/7/9763237624b6636c2113da8df59ac07a.png",
-    "tags": ["item", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasPrefab", "hasImage"],
     "ID": "ItemEvaSuit"
   },
   "StructureEvaporationChamber": {
@@ -63193,7 +63061,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/c/e/cee1536b899d6e42b942722496e117f7.png",
-    "tags": ["item", "hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["item", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemReusableFireExtinguisher"
   },
   "StructureFireExtinguisherStorage": {
@@ -63286,14 +63154,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/5/f/5f510adaa5afc0c5a7410b3f4284a059.png",
-    "tags": [
-      "structure",
-      "hasSlot",
-      "buildable",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab", "hasImage"],
     "ID": "StructureFireExtinguisherStorage"
   },
   "FlareGun": {
@@ -63384,7 +63245,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/5/8/58d7ba45f82b87a229ca59ff4a61995f.png",
-    "tags": ["hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasPrefab", "hasImage"],
     "ID": "FlareGun"
   },
   "ItemFlashlight": {
@@ -63537,7 +63398,6 @@
     "tags": [
       "item",
       "hasLogic",
-      "hasSlot",
       "hasMode",
       "paintable",
       "hasPrefab",
@@ -64225,7 +64085,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -64530,7 +64389,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -65459,7 +65317,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -66565,14 +66422,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/4/f/4f75734a2a5b58ee13c5c3284200426c.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemGasMask"
   },
   "StructureGasMaskStorage": {
@@ -66665,14 +66515,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/8/5/8529b78771733eebc8915da82eb4b409.png",
-    "tags": [
-      "structure",
-      "hasSlot",
-      "buildable",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab", "hasImage"],
     "ID": "StructureGasMaskStorage"
   },
   "GeneGasProduction": {
@@ -67391,7 +67234,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -67489,7 +67331,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/b/b/bb9e88b447d1e89fc00605b6838d4cc1.png",
-    "tags": ["hasSlot", "hasMode", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["hasMode", "paintable", "hasPrefab", "hasImage"],
     "ID": "DynamicGasTankAdvanced"
   },
   "StructureGasGenerator": {
@@ -67941,14 +67783,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/6/8/689233329c47967cbe211bfdca92231e.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemNVG"
   },
   "StructureAdvancedFurnace": {
@@ -68337,7 +68172,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -68611,10 +68445,10 @@
     "tags": [
       "item",
       "hasLogic",
-      "hasSlot",
       "hasMode",
       "paintable",
       "hasPrefab",
+      "hasChip",
       "hasImage"
     ],
     "ID": "ItemAdvancedTablet"
@@ -68972,7 +68806,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -69217,7 +69050,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -71934,7 +71766,6 @@
       "structure",
       "hasLogic",
       "hasLogicInstructions",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasReciepe",
@@ -72095,7 +71926,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -72711,7 +72541,6 @@
     "MainImage": "wiki_data/source/images/3/e/3e6dcb3cc6a3bc67cb9518778a9ccd74.png",
     "tags": [
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -73889,7 +73718,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/7/6/766436958eb8e54d141722deadce21d3.png",
-    "tags": ["item", "hasLogic", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasLogic", "hasPrefab", "hasImage"],
     "ID": "ItemHardHat"
   },
   "ItemHardMiningBackPack": {
@@ -74138,7 +73967,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/5/2/52594428cb33487752ceaf9efd4c6fc4.png",
-    "tags": ["item", "hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["item", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemHardMiningBackPack"
   },
   "StructureMotionSensor": {
@@ -74497,7 +74326,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -76251,7 +76079,6 @@
       "structure",
       "hasLogic",
       "hasLogicInstructions",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasReciepe",
@@ -76535,7 +76362,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -76649,14 +76475,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/0/8/088c8bc3b9d0691528bd8b2209458b76.png",
-    "tags": [
-      "structure",
-      "hasSlot",
-      "buildable",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab", "hasImage"],
     "ID": "StructureHydroponicsTray"
   },
   "StructureHydroponicsStation": {
@@ -77042,7 +76861,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -77897,7 +77715,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -78105,7 +77922,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -78426,7 +78242,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/8/a/8acf4e688d75ed9ba5fac702f31b6dcb.png",
-    "tags": ["item", "hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["item", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemIcarusSuit"
   },
   "ItemNitrice": {
@@ -79594,7 +79410,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/8/4/84b0a579843db860114cf26b5256a1bb.png",
-    "tags": ["item", "hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["item", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemInsulatedCanisterPackage"
   },
   "StructureInsulatedPipeLiquidCrossJunction": {
@@ -81173,14 +80989,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/c/1/c19477e7de60a226c908bb1bc3259453.png",
-    "tags": [
-      "structure",
-      "hasSlot",
-      "buildable",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab", "hasImage"],
     "ID": "StructureInsulatedTankConnector"
   },
   "StructureInsulatedTankConnectorLiquid": {
@@ -81271,14 +81080,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/c/1/c189cb02a95c77f38d3a46a2fe25725a.png",
-    "tags": [
-      "structure",
-      "hasSlot",
-      "buildable",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab", "hasImage"],
     "ID": "StructureInsulatedTankConnectorLiquid"
   },
   "StructureInteriorDoorGlass": {
@@ -82114,7 +81916,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -83736,7 +83537,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/7/7/774a49567eef575094b5c95e9b43aaa6.png",
-    "tags": ["item", "hasLogic", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasLogic", "hasPrefab", "hasImage"],
     "ID": "ItemWearLamp"
   },
   "ItemCoffeeMug": {
@@ -84044,14 +83845,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/7/0/70f163bfce063b336a810907a341d12c.png",
-    "tags": [
-      "structure",
-      "hasSlot",
-      "buildable",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab", "hasImage"],
     "ID": "StructureChuteJunction"
   },
   "StructureChuteStraight": {
@@ -84153,14 +83947,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/f/a/fa3743885407b39b2095cd38351abd14.png",
-    "tags": [
-      "structure",
-      "hasSlot",
-      "buildable",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab", "hasImage"],
     "ID": "StructureChuteStraight"
   },
   "StructureChuteCorner": {
@@ -84262,14 +84049,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/4/c/4cc5053849178cf7350a042680b8841c.png",
-    "tags": [
-      "structure",
-      "hasSlot",
-      "buildable",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab", "hasImage"],
     "ID": "StructureChuteCorner"
   },
   "StructureChuteWindow": {
@@ -84371,14 +84151,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/7/9/79d57f139dc9edf05f318dcfbe816747.png",
-    "tags": [
-      "structure",
-      "hasSlot",
-      "buildable",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab", "hasImage"],
     "ID": "StructureChuteWindow"
   },
   "StructureChuteInlet": {
@@ -84545,7 +84318,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -84729,7 +84501,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -84905,7 +84676,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -85369,7 +85139,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/b/d/bd140a3e28d920ac621696e6b22940bc.png",
-    "tags": ["hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["hasPrefab", "hasImage"],
     "ID": "CardboardBox"
   },
   "CartridgeAccessController": {
@@ -85536,7 +85306,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/1/f/1fdbba0265b7f0a2e585c1db68cd6015.png",
-    "tags": ["item", "hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["item", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemWeldingTorch"
   },
   "ResourcePage": {
@@ -85917,7 +85687,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/a/6/a6978d613fd83ed1e119f7ce75875bca.png",
-    "tags": ["hasSlot", "paintable", "hasReciepe", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasReciepe", "hasPrefab", "hasImage"],
     "ID": "ApplianceChemistryStation"
   },
   "ItemChemLightWhite": {
@@ -96091,7 +95861,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -96401,7 +96170,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -96553,7 +96321,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -96752,7 +96519,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -96951,7 +96717,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -97154,7 +96919,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -97328,14 +97092,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/6/1/6187565b88ec763a6de7eb833f40b121.png",
-    "tags": [
-      "structure",
-      "hasSlot",
-      "buildable",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab", "hasImage"],
     "ID": "StructureCrateMount"
   },
   "StructureRailing": {
@@ -102097,7 +101854,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -102491,7 +102247,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -102861,7 +102616,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -103189,7 +102943,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -103420,7 +103173,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -106999,9 +106751,9 @@
     "tags": [
       "item",
       "hasLogic",
-      "hasSlot",
       "paintable",
       "hasPrefab",
+      "hasChip",
       "hasImage"
     ],
     "ID": "ItemLaptop"
@@ -112703,7 +112455,6 @@
     "tags": [
       "item",
       "hasLogic",
-      "hasSlot",
       "hasMode",
       "paintable",
       "hasPrefab",
@@ -113510,7 +113261,6 @@
       "structure",
       "hasLogic",
       "hasLogicInstructions",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -113727,7 +113477,6 @@
     "MainImage": "wiki_data/source/images/d/b/db6231bed7561aafae4e6b0498fbc137.png",
     "tags": [
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -135267,7 +135016,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/f/1/f1677044dc9967d902063e527a5c43c9.png",
-    "tags": ["item", "hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["item", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemMiningBelt"
   },
   "ItemMiningDrill": {
@@ -135428,7 +135177,6 @@
     "tags": [
       "item",
       "hasLogic",
-      "hasSlot",
       "hasMode",
       "paintable",
       "hasPrefab",
@@ -135594,7 +135342,6 @@
     "tags": [
       "item",
       "hasLogic",
-      "hasSlot",
       "hasMode",
       "paintable",
       "hasPrefab",
@@ -140189,7 +139936,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/8/7/87d787f873b8244b5098d373f77c4733.png",
-    "tags": ["hasSlot", "paintable", "hasReciepe", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasReciepe", "hasPrefab", "hasImage"],
     "ID": "ApplianceMicrowave"
   },
   "ItemMiningBackPack": {
@@ -140414,7 +140161,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/0/5/0545bfa88b5200ae326618dd7022e95e.png",
-    "tags": ["item", "hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["item", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemMiningBackPack"
   },
   "ItemMiningBeltMKII": {
@@ -140619,14 +140366,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/d/b/db8a79555a49db234bb3804476abaf5e.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemMiningBeltMKII"
   },
   "ItemMiningCharge": {
@@ -140825,7 +140565,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/7/6/769b86461ab0909b9dce4c45896f772a.png",
-    "tags": ["item", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasPrefab", "hasImage"],
     "ID": "ItemMiningPackage"
   },
   "ItemRocketMiningDrillHead": {
@@ -141564,14 +141304,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/b/1/b1febd2860031c69db2d052635a34185.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemMKIIArcWelder"
   },
   "ItemMKIIAngleGrinder": {
@@ -141708,14 +141441,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/d/d/dd5610040c37fc61545c27d9419831a0.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemMKIIAngleGrinder"
   },
   "ItemMKIIDuctTape": {
@@ -142036,7 +141762,6 @@
     "tags": [
       "item",
       "hasLogic",
-      "hasSlot",
       "hasMode",
       "paintable",
       "hasPrefab",
@@ -142178,14 +141903,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/5/e/5ea2c5c02ce2c5f511e348c5901ed36e.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemMKIIDrill"
   },
   "ItemMKIIWireCutters": {
@@ -143802,7 +143520,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -144192,7 +143909,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -145958,7 +145674,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -146191,7 +145906,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -146938,7 +146652,6 @@
       "structure",
       "hasLogic",
       "hasLogicInstructions",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasReciepe",
@@ -147183,7 +146896,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -147387,7 +147099,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -150338,7 +150049,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -150616,7 +150326,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -152275,7 +151984,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/9/b/9bd18efa33af942438bbb92441931a8a.png",
-    "tags": ["hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasPrefab", "hasImage"],
     "ID": "AppliancePlantGeneticAnalyzer"
   },
   "AppliancePlantGeneticSplicer": {
@@ -152368,7 +152077,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/b/8/b84f23b65e5e3131b892ee035a60392b.png",
-    "tags": ["hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasPrefab", "hasImage"],
     "ID": "AppliancePlantGeneticSplicer"
   },
   "AppliancePlantGeneticStabilizer": {
@@ -152464,7 +152173,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/7/4/740ff57bf4d1c6ef88ff917a0eb27d6f.png",
-    "tags": ["hasSlot", "hasMode", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["hasMode", "paintable", "hasPrefab", "hasImage"],
     "ID": "AppliancePlantGeneticStabilizer"
   },
   "ItemPlantSampler": {
@@ -152621,7 +152330,6 @@
     "tags": [
       "item",
       "hasLogic",
-      "hasSlot",
       "hasMode",
       "paintable",
       "hasPrefab",
@@ -152731,14 +152439,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/f/c/fc0ccc59c1e9a515b264ae541f04c5c5.png",
-    "tags": [
-      "structure",
-      "hasSlot",
-      "buildable",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab", "hasImage"],
     "ID": "StructurePlanter"
   },
   "ReagentPlastik": {
@@ -152974,7 +152675,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": null,
-    "tags": ["structure", "hasSlot", "buildable", "paintable", "hasPrefab"],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab"],
     "ID": "StructurePlinth"
   },
   "ItemMiningDrillPneumatic": {
@@ -153070,14 +152771,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/e/2/e270e7d7b070b7268b043880350579cb.png",
-    "tags": [
-      "item",
-      "hasSlot",
-      "hasMode",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasMode", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemMiningDrillPneumatic"
   },
   "GasPollutedWater": {
@@ -153264,7 +152958,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/8/f/8f497d7fbb623a18e0465139dd7abe17.png",
-    "tags": ["hasSlot", "hasMode", "hasPrefab", "hasImage"],
+    "tags": ["hasMode", "hasPrefab", "hasImage"],
     "ID": "PortableComposter"
   },
   "DynamicLiquidCanisterEmpty": {
@@ -153348,7 +153042,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/0/d/0d971f9c69dffb03a3e27e5ee235dcab.png",
-    "tags": ["hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasPrefab", "hasImage"],
     "ID": "DynamicLiquidCanisterEmpty"
   },
   "DynamicMKIILiquidCanisterEmpty": {
@@ -153432,7 +153126,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/4/e/4e751a8321312db03c75e500a21b8ee6.png",
-    "tags": ["hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasPrefab", "hasImage"],
     "ID": "DynamicMKIILiquidCanisterEmpty"
   },
   "DynamicMKIILiquidCanisterWater": {
@@ -153509,7 +153203,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/4/5/452269988e7f2b379b4b9468f8c36517.png",
-    "tags": ["hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasPrefab", "hasImage"],
     "ID": "DynamicMKIILiquidCanisterWater"
   },
   "StructurePortablesConnector": {
@@ -153680,7 +153374,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -153787,7 +153480,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/f/b/fbca270c280fab7b93fdf7b4aba48f1d.png",
-    "tags": ["item", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasPrefab", "hasImage"],
     "ID": "ItemPortablesPackage"
   },
   "StructureBasketHoop": {
@@ -154392,7 +154085,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -158931,14 +158623,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/9/f/9f4299a0fbe4f7d4257571f424997326.png",
-    "tags": [
-      "structure",
-      "hasSlot",
-      "buildable",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["structure", "buildable", "paintable", "hasPrefab", "hasImage"],
     "ID": "StructureShelf"
   },
   "StructureStairs4x2Rails": {
@@ -159570,7 +159255,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/6/7/67efb4ce0130c03a8a1f9766116f809c.png",
-    "tags": ["hasSlot", "paintable", "hasReciepe", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasReciepe", "hasPrefab", "hasImage"],
     "ID": "ApplianceReagentProcessor"
   },
   "Recurso": {
@@ -160461,7 +160146,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -161083,7 +160767,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/a/f/af4bfd014189bf713b89763a7727b9b2.png",
-    "tags": ["item", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasPrefab", "hasImage"],
     "ID": "ItemResidentialPackage"
   },
   "StructurePictureFrameThinMountLandscapeLarge": {
@@ -162448,7 +162132,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -163276,7 +162959,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -163805,7 +163487,6 @@
       "structure",
       "hasLogic",
       "hasLogicInstructions",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasReciepe",
@@ -164019,7 +163700,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -164203,7 +163883,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -164755,7 +164434,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": null,
-    "tags": ["hasLogic", "hasSlot", "paintable", "hasPrefab"],
+    "tags": ["hasLogic", "paintable", "hasPrefab"],
     "ID": "Rover_MkI"
   },
   "RubbishPage": {
@@ -165163,7 +164842,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -165351,7 +165029,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -165605,7 +165282,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -165811,7 +165487,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/8/a/8aba764ba342be1651bbd4c0e68c5845.png",
-    "tags": ["hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasPrefab", "hasImage"],
     "ID": "CrateMkII"
   },
   "StructureCentrifuge": {
@@ -166104,7 +165780,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasReciepe",
@@ -166394,14 +166069,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/3/6/36c14519c7687428e632e4aebe3eb759.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemSensorLenses"
   },
   "ItemSensorProcessingUnitCelestialScanner": {
@@ -166861,7 +166529,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -167025,7 +166692,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -167229,7 +166895,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -168189,7 +167854,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -168510,7 +168174,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -168761,7 +168424,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -169012,7 +168674,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -171083,7 +170744,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/a/1/a1a3d6037819b1bee240cf86d2caddb4.png",
-    "tags": ["item", "hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["item", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemSprayGun"
   },
   "StructureStairwellBackLeft": {
@@ -172903,7 +172564,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -174957,7 +174617,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -175146,14 +174805,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/d/b/db0b09e94499163c2906efbcdd3c5a0d.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemSpacepack"
   },
   "ItemJetpackBasic": {
@@ -175335,14 +174987,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/4/7/4718a8b5d2a0d95d14a82bb725c4b31b.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemJetpackBasic"
   },
   "StructureWaterPipeMeter": {
@@ -176614,7 +176259,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -176988,7 +176632,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -177283,7 +176926,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/4/5/456cda05a0541303cd0aa9f9f139c4d6.png",
-    "tags": ["hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasPrefab", "hasImage"],
     "ID": "ApplianceTabletDock"
   },
   "ItemCerealBar": {
@@ -178071,7 +177714,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/4/8/48e8d551be6da7d53cecca472544dd38.png",
-    "tags": ["hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["hasPrefab", "hasImage"],
     "ID": "NpcChicken"
   },
   "PortableSolarPanel": {
@@ -178204,7 +177847,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/9/b/9b4c225033b6003dca7e2745132b475b.png",
-    "tags": ["hasLogic", "hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "PortableSolarPanel"
   },
   "DynamicScrubber": {
@@ -178301,7 +177944,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/c/0/c0f39c8db44aa56f3ec1d1762d317aac.png",
-    "tags": ["hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasPrefab", "hasImage"],
     "ID": "DynamicScrubber"
   },
   "DynamicHydroponics": {
@@ -178433,7 +178076,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/b/b/bb6acb74b84fc0bc1c4d1b0403e902b4.png",
-    "tags": ["hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasPrefab", "hasImage"],
     "ID": "DynamicHydroponics"
   },
   "DynamicLight": {
@@ -178578,7 +178221,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/9/a/9a9141eb627a0e630b49dbd3bc8183ba.png",
-    "tags": ["hasLogic", "hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "DynamicLight"
   },
   "DynamicGenerator": {
@@ -178669,7 +178312,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/7/c/7c8c600d80c0cf6f1d569e5e43aa6107.png",
-    "tags": ["hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasPrefab", "hasImage"],
     "ID": "DynamicGenerator"
   },
   "DynamicAirConditioner": {
@@ -178768,7 +178411,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/1/3/13f490285a61ce7020095fd5dbed52c1.png",
-    "tags": ["hasSlot", "hasMode", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["hasMode", "paintable", "hasPrefab", "hasImage"],
     "ID": "DynamicAirConditioner"
   },
   "DynamicGasCanisterEmpty": {
@@ -178852,7 +178495,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/2/b/2b20f120a4cb389d9f26d5edbca5407d.png",
-    "tags": ["gascanister", "hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["gascanister", "paintable", "hasPrefab", "hasImage"],
     "ID": "DynamicGasCanisterEmpty"
   },
   "ItemWireCutters": {
@@ -179663,7 +179306,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -179815,7 +179457,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -180076,14 +179717,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/4/b/4b053067109f2adb9ff777e3750323d7.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemMkIIToolbelt"
   },
   "ItemDirtCanister": {
@@ -181654,7 +181288,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/e/1/e14cb5cc963d01c17a22ed91322d7e71.png",
-    "tags": ["suit", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["suit", "hasPrefab", "hasImage"],
     "ID": "UniformOrangeJumpSuit"
   },
   "StructureTurboVolumePump": {
@@ -182370,7 +182004,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -183025,7 +182658,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -183541,7 +183173,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -184660,7 +184291,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -184830,7 +184460,6 @@
     "tags": [
       "item",
       "hasLogic",
-      "hasSlot",
       "hasMode",
       "paintable",
       "hasPrefab",
@@ -185903,7 +185532,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/5/c/5ce4ed4b14916a649374e0da60282f7b.png",
-    "tags": ["item", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasPrefab", "hasImage"],
     "ID": "ItemWaterBottleBag"
   },
   "ItemWaterBottlePackage": {
@@ -186005,7 +185634,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/2/5/25b10ed7ef562a0167ab2e92f9d8762e.png",
-    "tags": ["item", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasPrefab", "hasImage"],
     "ID": "ItemWaterBottlePackage"
   },
   "StructureWaterPurifier": {
@@ -186224,7 +185853,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -186496,7 +186124,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -186697,7 +186324,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "paintable",
       "hasPrefab",
@@ -190762,7 +190388,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/6/5/650f7f353432f05879e7992268d58c0e.png",
-    "tags": ["item", "hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["item", "hasPrefab", "hasImage"],
     "ID": "ItemEggCarton"
   },
   "StructureLogicSlotReader": {
@@ -191454,7 +191080,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/a/6/a685bd14620a45349d646cb01a5b3132.png",
-    "tags": ["hasLogic", "hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "DynamicGPR"
   },
   "Steel": {
@@ -192288,7 +191914,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/a/1/a169719319f0d545e4a5833d2c7776a7.png",
-    "tags": ["hasSlot", "hasPrefab", "hasImage"],
+    "tags": ["hasPrefab", "hasImage"],
     "ID": "UniformCommander"
   },
   "ItemWrench": {
@@ -192485,7 +192111,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/7/f/7fef22e91e855dfa6d37219f9c219361.png",
-    "tags": ["hasSlot", "paintable", "hasPrefab", "hasImage"],
+    "tags": ["paintable", "hasPrefab", "hasImage"],
     "ID": "Lander"
   },
   "HumanSkull": {
@@ -192929,7 +192555,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -193161,7 +192786,6 @@
     "tags": [
       "structure",
       "hasLogic",
-      "hasSlot",
       "buildable",
       "hasMode",
       "paintable",
@@ -193522,14 +193146,7 @@
     "LifeRequirements": [],
     "DeviceConnectCount": 0,
     "MainImage": "wiki_data/source/images/9/b/9b0ad7987f1a0874b12873c3e33eeca2.png",
-    "tags": [
-      "item",
-      "hasLogic",
-      "hasSlot",
-      "paintable",
-      "hasPrefab",
-      "hasImage"
-    ],
+    "tags": ["item", "hasLogic", "paintable", "hasPrefab", "hasImage"],
     "ID": "ItemBeacon"
   },
   "ItemRoadFlare": {

@@ -1,10 +1,8 @@
-import {
-  mkdir
-} from "node:fs/promises";
+import { mkdir } from "node:fs/promises";
 import { cpus } from "node:os";
 
 export function strip(
-  obj: Record<string, Record<string, any>>
+  obj: Record<string, Record<string, any>>,
 ): Record<string, Record<string, any>> {
   const r: Record<string, any> = {};
   Object.entries(obj).forEach(([key, o]) => {
@@ -31,12 +29,12 @@ export function strip(
 export function urlJoin(...parts: (string | undefined | null)[]): string {
   return parts
     .map((part, i) => {
-      if (!part) return ''; // если часть пустая, возвращаем пустую строку
-      if (i === 0) return part.replace(/\/+$/, '');
-      return part.replace(/^\/+|\/+$/g, '');
+      if (!part) return ""; // если часть пустая, возвращаем пустую строку
+      if (i === 0) return part.replace(/\/+$/, "");
+      return part.replace(/^\/+|\/+$/g, "");
     })
     .filter(Boolean)
-    .join('/');
+    .join("/");
 }
 
 const TAGS_REGEX = /<[^>]*>?/gm;
