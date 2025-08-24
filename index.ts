@@ -2,6 +2,7 @@ import Bun, { $ } from "bun";
 import {
   copyFile as copy,
   mkdir,
+  readdir,
   rename,
   rm,
   writeFile as write,
@@ -18,6 +19,9 @@ import type {
   Reagents,
 } from "./tools/types";
 import type { ConstantMap } from "./types";
+import { generateGallery } from "./tools/gallery_generator";
+import { argv, argv0 } from "node:process";
+import { urlJoin, strip, cpuWorkers, stripTags, ensureDir } from "./tools/helpers";
 
 console.info("Start building...");
 
@@ -30,16 +34,7 @@ const DIST_LANG_DIR = join(DIST_DIR, "languages");
 const DIST_IMAGES_DIR = join(DIST_DIR, "images");
 const DATA_JSON = "data.json";
 const PNG_IN_DIST_GLOB = "./dist/images/**/*.png";
-const TAGS_REGEX = /<[^>]*>?/gm;
-
-// ---------------------------------------------- UTILS ----------------------------------------------
-const stripTags = (s: string) => s.replace(TAGS_REGEX, "");
-const ensureDir = (dir: string) => mkdir(dir, { recursive: true });
-
-function cpuWorkers(): number {
-  // Используем все, кроме одного ядра. Минимум 1 поток.
-  return Math.max(1, cpus().length - 1);
-}
+const DIST_GALLERY_DIR = join(DIST_DIR, "gallery");
 
 // ---------------------------------------------- TASKS ----------------------------------------------
 async function clearDist() {
@@ -100,7 +95,7 @@ async function moveFiles() {
 async function buildConstant() {
   console.time("build consts files");
   const file = (await Bun.file(
-    join(SRC_LANG_DIR, "EN/constants.json"),
+    join(SRC_LANG_DIR, "EN/constants.json")
   ).json()) as ConstantMap;
   const consts: { [key: string]: number | string } = {};
   Object.entries(file).forEach(([_, data]) => {
@@ -127,7 +122,7 @@ async function moveData() {
         const result = strip(json);
         await ensureDir(dirname(destFile));
         await write(destFile, JSON.stringify(result), { encoding: "utf-8" });
-      }),
+      })
     );
   }
 
@@ -218,7 +213,7 @@ async function optimizeData() {
           image: findImage(oldDevice.MainImage),
           mods: oldDevice?.ModeInsert?.map((mod) => mod.LogicName),
           connections: oldDevice?.ConnectionInsert?.map(
-            (connection) => connection?.LogicName,
+            (connection) => connection?.LogicName
           ),
           slots,
           tags: oldDevice?.tags,
@@ -306,7 +301,7 @@ async function optimizeData() {
       await writeFile(
         "logics.json",
         join(DIST_LANG_DIR, langDir),
-        logicsCollection,
+        logicsCollection
       );
     } catch (e) {
       console.error(e);
@@ -323,6 +318,9 @@ async function generateIndex() {
 
   // Проходим по всем подкаталогам и генерируем индексы
   const walkPromise = walkDir("./", (dirPath: string) => {
+    if (dirPath.includes("gallery")) {
+      return;
+    }
     promises.push(dir_index(DIST_DIR, dirPath));
   }).catch(console.error);
 
@@ -331,16 +329,49 @@ async function generateIndex() {
   return Promise.all(promises);
 }
 
+async function generateImageGallery() {
+  console.time("Generate image gallery");
+  ensureDir(DIST_GALLERY_DIR);
+  await generateGallery({
+    imageDir: DIST_IMAGES_DIR,
+    outputDir: DIST_GALLERY_DIR,
+    title: "Image Gallery",
+    basePath: "/images/",
+  });
+  console.timeEnd("Generate image gallery");
+}
+// Рекурсивное копирование папки
+async function copyDir(src: string, dest: string) {
+  await ensureDir(dest);
+  const entries = await readdir(src, { withFileTypes: true });
+  for (const entry of entries) {
+    const srcPath = join(src, entry.name);
+    const destPath = join(dest, entry.name);
+    if (entry.isDirectory()) {
+      await copyDir(srcPath, destPath);
+    } else if (entry.isFile()) {
+      await copyFile(srcPath, dest, entry.name);
+    }
+  }
+}
+
 // ---------------------------------------------- RUN ----------------------------------------------
 await clearDist();
 const BUILD_TASKS: Promise<any>[] = [];
 BUILD_TASKS.push(moveFiles());
 BUILD_TASKS.push(moveData());
 BUILD_TASKS.push(buildConstant());
-BUILD_TASKS.push(optimizeImages().then(() => moveImages()));
+if (!argv.includes("--dev")) {
+  BUILD_TASKS.push(optimizeImages().then(() => moveImages()));
+} else {
+  BUILD_TASKS.push(
+    copyDir(join(SRC_DIR, "images"), DIST_IMAGES_DIR).then(() => moveImages())
+  );
+}
 
 await Promise.all(BUILD_TASKS);
 await optimizeData();
+await generateImageGallery();
 await generateIndex();
 
 // ---------------------------------------------- HELPERS ----------------------------------------------
@@ -348,35 +379,10 @@ function findImage(fileName: string): string;
 function findImage(fileName: null): null;
 function findImage(fileName: string | null): string | null {
   if (!fileName) return null;
-  if (fileName.includes("/") || fileName.includes("\\")) return fileName;
+  fileName = basename(fileName);
   const firstLetter = fileName[0];
   const secondLetter = fileName[1];
-  return join("images", firstLetter, secondLetter, fileName);
-}
-
-function strip(
-  obj: Record<string, Record<string, any>>,
-): Record<string, Record<string, any>> {
-  const r: Record<string, any> = {};
-  Object.entries(obj).forEach(([key, o]) => {
-    const newO: Record<string, any> = {};
-    Object.entries(o).forEach(([k, v]) => {
-      if (v === null) return;
-      if (v === undefined) return;
-      if (v === "") return;
-      if (Array.isArray(v) && v.length === 0) return;
-      if (
-        typeof v === "object" &&
-        v !== null &&
-        !Array.isArray(v) &&
-        Object.keys(v).length === 0
-      )
-        return;
-      newO[k] = v;
-    });
-    r[key] = newO;
-  });
-  return r;
+  return "/" + urlJoin("images", firstLetter, secondLetter, fileName);
 }
 
 async function writeFile(file: string, dir: string, content?: {}) {

@@ -10,7 +10,8 @@
   },
   "scripts": {
     "format": "bunx prettier . --write",
-    "build": "bun run format && bun index.ts"
+    "build": "bun index.ts",
+    "dev": "bun index.ts --dev"
   },
   "type": "module",
   "dependencies": {
