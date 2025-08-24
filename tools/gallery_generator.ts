@@ -19,7 +19,7 @@ function toWebPath(p: string) {
 
 async function findImages(
   rootDir: string,
-  currentDir: string
+  currentDir: string,
 ): Promise<string[]> {
   const items = await readdir(currentDir);
   const images: string[] = [];
@@ -42,7 +42,7 @@ export async function loadDevicesByImage(languagesRoot: string) {
 
   for (const file of ["devices.json", "items.json"]) {
     const { data }: { data: DeviceOrItem[] } = await Bun.file(
-      join(languagesRoot, file)
+      join(languagesRoot, file),
     ).json();
     for (const entry of data) {
       if (entry.image) {
@@ -56,7 +56,7 @@ export async function loadDevicesByImage(languagesRoot: string) {
 
 function escapeHTML(s: string) {
   return s.replace(/[&<>]/g, (c) =>
-    c === "&" ? "&amp;" : c === "<" ? "&lt;" : "&gt;"
+    c === "&" ? "&amp;" : c === "<" ? "&lt;" : "&gt;",
   );
 }
 
