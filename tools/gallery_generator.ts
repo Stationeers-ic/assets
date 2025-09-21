@@ -17,7 +17,10 @@ function toWebPath(p: string) {
   return p.replace(/\\/g, "/");
 }
 
-async function findImages(rootDir: string, currentDir: string): Promise<string[]> {
+async function findImages(
+  rootDir: string,
+  currentDir: string,
+): Promise<string[]> {
   const items = await readdir(currentDir);
   const images: string[] = [];
 
@@ -74,8 +77,8 @@ export async function loadDevicesByImage(languagesRoot: string) {
     const entries: DeviceOrItem[] = Array.isArray(json?.data)
       ? json.data
       : Array.isArray(json)
-      ? json
-      : [];
+        ? json
+        : [];
 
     for (const entry of entries) {
       if (!entry || !entry.image) continue;
@@ -140,7 +143,8 @@ export async function generateGallery(options: GalleryOptions) {
   const imagesRel = await findImages(imageDir, imageDir);
   const imagesSet = new Set(imagesRel.map(toWebPath));
 
-  const { imageToDevices, all, dedupStats } = await loadDevicesByImage(languagesDir);
+  const { imageToDevices, all, dedupStats } =
+    await loadDevicesByImage(languagesDir);
 
   // Собираем данные для шаблона (на всякий случай повторно гарантим уникальность по id)
   const images = imagesRel.map((imageRel) => {
@@ -211,13 +215,17 @@ export async function generateGallery(options: GalleryOptions) {
   console.log(`Total images found: ${totalImages}`);
   console.log(`Total device entries loaded: ${totalDevicesLoaded}`);
   console.log(`Device entries linked to existing images: ${mappedDevices}`);
-  console.log(`Device entries referencing missing images (orphans): ${orphanDevices.length}`);
+  console.log(
+    `Device entries referencing missing images (orphans): ${orphanDevices.length}`,
+  );
   console.log("");
   console.log(`Images with 0 devices: ${imagesWith0}`);
   console.log(`Images with 1 device: ${imagesWith1}`);
   console.log(`Images with >1 devices: ${imagesWithMany}`);
   console.log("");
-  console.log(`Duplicates by id removed (total): ${dedupStats.totalDuplicatesById}`);
+  console.log(
+    `Duplicates by id removed (total): ${dedupStats.totalDuplicatesById}`,
+  );
   if (dedupStats.duplicatesPerImage.size > 0) {
     const top = [...dedupStats.duplicatesPerImage.entries()]
       .sort((a, b) => b[1] - a[1])
