@@ -4677,48 +4677,48 @@
 		"LogicInstructions": [
 			{
 				"Text": "PrinterInstruction.StackPointer OP_CODE: 1",
-				"Index": 1,
-				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 1
 			},
 			{
 				"Text": "PrinterInstruction.ExecuteRecipe OP_CODE: 2",
-				"Index": 2,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 2
 			},
 			{
 				"Text": "PrinterInstruction.WaitUntilNextValid OP_CODE: 3",
-				"Index": 3,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |",
+				"Index": 3
 			},
 			{
 				"Text": "PrinterInstruction.JumpIfNextInvalid OP_CODE: 4",
-				"Index": 4,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 4
 			},
 			{
 				"Text": "PrinterInstruction.JumpToAddress OP_CODE: 5",
-				"Index": 5,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 5
 			},
 			{
 				"Text": "PrinterInstruction.DeviceSetLock OP_CODE: 6",
-				"Index": 6,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | LOCK\\_STATE                   | BOOL\\_8     |\r\n| 16-63    | UNUSED                       | 48         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | LOCK\\_STATE                   | BOOL\\_8     |\r\n| 16-63    | UNUSED                       | 48         |",
+				"Index": 6
 			},
 			{
 				"Text": "PrinterInstruction.EjectReagent OP_CODE: 7",
-				"Index": 7,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | REAGENT\\_HASH                 | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | REAGENT\\_HASH                 | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": 7
 			},
 			{
 				"Text": "PrinterInstruction.EjectAllReagents OP_CODE: 8",
-				"Index": 8,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |",
+				"Index": 8
 			},
 			{
 				"Text": "PrinterInstruction.MissingRecipeReagent OP_CODE: 9",
-				"Index": 9,
-				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY\\_CEIL                | BYTE\\_8     |\r\n| 16-47    | REAGENT\\_HASH                 | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY\\_CEIL                | BYTE\\_8     |\r\n| 16-47    | REAGENT\\_HASH                 | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 9
 			}
 		],
 		"ModeInsert": [],
@@ -6094,7 +6094,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Astroloy"
 	},
 	"ItemAstroloySheets": {
@@ -6621,48 +6621,48 @@
 		"LogicInstructions": [
 			{
 				"Text": "PrinterInstruction.StackPointer OP_CODE: 1",
-				"Index": 1,
-				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 1
 			},
 			{
 				"Text": "PrinterInstruction.ExecuteRecipe OP_CODE: 2",
-				"Index": 2,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 2
 			},
 			{
 				"Text": "PrinterInstruction.WaitUntilNextValid OP_CODE: 3",
-				"Index": 3,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |",
+				"Index": 3
 			},
 			{
 				"Text": "PrinterInstruction.JumpIfNextInvalid OP_CODE: 4",
-				"Index": 4,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 4
 			},
 			{
 				"Text": "PrinterInstruction.JumpToAddress OP_CODE: 5",
-				"Index": 5,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 5
 			},
 			{
 				"Text": "PrinterInstruction.DeviceSetLock OP_CODE: 6",
-				"Index": 6,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | LOCK\\_STATE                   | BOOL\\_8     |\r\n| 16-63    | UNUSED                       | 48         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | LOCK\\_STATE                   | BOOL\\_8     |\r\n| 16-63    | UNUSED                       | 48         |",
+				"Index": 6
 			},
 			{
 				"Text": "PrinterInstruction.EjectReagent OP_CODE: 7",
-				"Index": 7,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | REAGENT\\_HASH                 | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | REAGENT\\_HASH                 | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": 7
 			},
 			{
 				"Text": "PrinterInstruction.EjectAllReagents OP_CODE: 8",
-				"Index": 8,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |",
+				"Index": 8
 			},
 			{
 				"Text": "PrinterInstruction.MissingRecipeReagent OP_CODE: 9",
-				"Index": 9,
-				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY\\_CEIL                | BYTE\\_8     |\r\n| 16-47    | REAGENT\\_HASH                 | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY\\_CEIL                | BYTE\\_8     |\r\n| 16-47    | REAGENT\\_HASH                 | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 9
 			}
 		],
 		"ModeInsert": [],
@@ -9603,7 +9603,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Biomass"
 	},
 	"ItemBiomass": {
@@ -17370,7 +17370,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Cobalt"
 	},
 	"Cocoa": {
@@ -17450,7 +17450,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Cocoa"
 	},
 	"ItemCocoaTree": {
@@ -20958,7 +20958,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Corn"
 	},
 	"SeedBag_Corn": {
@@ -27904,7 +27904,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Fenoxitone"
 	},
 	"SeedBag_Fern": {
@@ -35520,7 +35520,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Hastelloy"
 	},
 	"ItemCropHay": {
@@ -39660,7 +39660,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Inconel"
 	},
 	"ItemInsulatedCanisterPackage": {
@@ -70461,33 +70461,33 @@
 		"LogicInstructions": [
 			{
 				"Text": "SorterInstruction.FilterPrefabHashEquals OP_CODE: 1",
-				"Index": 1,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | PREFAB\\_HASH                  | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | PREFAB\\_HASH                  | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": 1
 			},
 			{
 				"Text": "SorterInstruction.FilterPrefabHashNotEquals OP_CODE: 2",
-				"Index": 2,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | PREFAB\\_HASH                  | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | PREFAB\\_HASH                  | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": 2
 			},
 			{
 				"Text": "SorterInstruction.FilterSortingClassCompare OP_CODE: 3",
-				"Index": 3,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | CONDITION\\_OPERATION          | BYTE\\_8     |\r\n| 16-31    | SORTING\\_CLASS                | USHORT\\_16  |\r\n| 32-63    | UNUSED                       | 32         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | CONDITION\\_OPERATION          | BYTE\\_8     |\r\n| 16-31    | SORTING\\_CLASS                | USHORT\\_16  |\r\n| 32-63    | UNUSED                       | 32         |",
+				"Index": 3
 			},
 			{
 				"Text": "SorterInstruction.FilterSlotTypeCompare OP_CODE: 4",
-				"Index": 4,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | CONDITION\\_OPERATION          | BYTE\\_8     |\r\n| 16-31    | SLOT\\_TYPE                    | USHORT\\_16  |\r\n| 32-63    | UNUSED                       | 32         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | CONDITION\\_OPERATION          | BYTE\\_8     |\r\n| 16-31    | SLOT\\_TYPE                    | USHORT\\_16  |\r\n| 32-63    | UNUSED                       | 32         |",
+				"Index": 4
 			},
 			{
 				"Text": "SorterInstruction.FilterQuantityCompare OP_CODE: 5",
-				"Index": 5,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | CONDITION\\_OPERATION          | BYTE\\_8     |\r\n| 16-31    | QUANTITY                     | USHORT\\_16  |\r\n| 32-63    | UNUSED                       | 32         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | CONDITION\\_OPERATION          | BYTE\\_8     |\r\n| 16-31    | QUANTITY                     | USHORT\\_16  |\r\n| 32-63    | UNUSED                       | 32         |",
+				"Index": 5
 			},
 			{
 				"Text": "SorterInstruction.LimitNextExecutionByCount OP_CODE: 6",
-				"Index": 6,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | COUNT                        | UINT\\_32    |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | COUNT                        | UINT\\_32    |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": 6
 			}
 		],
 		"ModeInsert": [
@@ -94437,93 +94437,93 @@
 		"LogicInstructions": [
 			{
 				"Text": "TraderInstruction.WriteTraderData OP_CODE: 1",
-				"Index": 1,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | WRITE\\_INDEX                  | BYTE\\_8     |\r\n| 16-63    | UNUSED                       | 48         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | WRITE\\_INDEX                  | BYTE\\_8     |\r\n| 16-63    | UNUSED                       | 48         |",
+				"Index": 1
 			},
 			{
 				"Text": "TraderInstruction.StrongestContactIdHash OP_CODE: 2",
-				"Index": 2,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | TRADER\\_ID\\_HASH               | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | TRADER\\_ID\\_HASH               | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": 2
 			},
 			{
 				"Text": "TraderInstruction.StrongestContactMetaData OP_CODE: 3",
-				"Index": 3,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | SHUTTLE\\_TYPE                 | BYTE\\_8     |\r\n| 16-23    | CONTACT\\_TIER                 | BYTE\\_8     |\r\n| 24-31    | CONTACTED                    | BOOL\\_8     |\r\n| 32-63    | UNUSED                       | 32         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | SHUTTLE\\_TYPE                 | BYTE\\_8     |\r\n| 16-23    | CONTACT\\_TIER                 | BYTE\\_8     |\r\n| 24-31    | CONTACTED                    | BOOL\\_8     |\r\n| 32-63    | UNUSED                       | 32         |",
+				"Index": 3
 			},
 			{
 				"Text": "TraderInstruction.StrongestContactSignalData OP_CODE: 4",
-				"Index": 4,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | WATTS\\_TO\\_RESOLVE             | USHORT\\_16  |\r\n| 24-39    | LIFETIME                     | USHORT\\_16  |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | WATTS\\_TO\\_RESOLVE             | USHORT\\_16  |\r\n| 24-39    | LIFETIME                     | USHORT\\_16  |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": 4
 			},
 			{
 				"Text": "TraderInstruction.WriteTraderBuyData OP_CODE: 5",
-				"Index": 5,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | WRITE\\_INDEX                  | BYTE\\_8     |\r\n| 16-23    | WRITE\\_COUNT                  | BYTE\\_8     |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | WRITE\\_INDEX                  | BYTE\\_8     |\r\n| 16-23    | WRITE\\_COUNT                  | BYTE\\_8     |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 5
 			},
 			{
 				"Text": "TraderInstruction.WriteTraderSellData OP_CODE: 6",
-				"Index": 6,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | WRITE\\_INDEX                  | BYTE\\_8     |\r\n| 16-23    | WRITE\\_COUNT                  | BYTE\\_8     |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | WRITE\\_INDEX                  | BYTE\\_8     |\r\n| 16-23    | WRITE\\_COUNT                  | BYTE\\_8     |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 6
 			},
 			{
 				"Text": "TraderInstruction.TraderBuyThingData OP_CODE: 7",
-				"Index": 7,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 7
 			},
 			{
 				"Text": "TraderInstruction.TraderBuyThingChildData OP_CODE: 8",
-				"Index": 8,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 8
 			},
 			{
 				"Text": "TraderInstruction.TraderBuyGasData OP_CODE: 9",
-				"Index": 9,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | GAS\\_TYPES\\_BITFLAG            | UINT\\_32    |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | GAS\\_TYPES\\_BITFLAG            | UINT\\_32    |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 9
 			},
 			{
 				"Text": "TraderInstruction.TraderSellThingData OP_CODE: 10",
-				"Index": "A",
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": "A"
 			},
 			{
 				"Text": "TraderInstruction.TraderSellGasData OP_CODE: 11",
-				"Index": "B",
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | GAS\\_TYPES\\_BITFLAG            | UINT\\_32    |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | GAS\\_TYPES\\_BITFLAG            | UINT\\_32    |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": "B"
 			},
 			{
 				"Text": "TraderInstruction.TraderSellThingChildData OP_CODE: 12",
-				"Index": "C",
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": "C"
 			},
 			{
 				"Text": "TraderInstruction.FilterPrefabHashEquals OP_CODE: 13",
-				"Index": "D",
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | PREFAB\\_HASH                  | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | PREFAB\\_HASH                  | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": "D"
 			},
 			{
 				"Text": "TraderInstruction.FilterPrefabHashNotEquals OP_CODE: 14",
-				"Index": "E",
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | PREFAB\\_HASH                  | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | PREFAB\\_HASH                  | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": "E"
 			},
 			{
 				"Text": "TraderInstruction.FilterSortingClassCompare OP_CODE: 15",
-				"Index": "F",
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | CONDITION\\_OPERATION          | BYTE\\_8     |\r\n| 16-31    | SORTING\\_CLASS                | USHORT\\_16  |\r\n| 32-63    | UNUSED                       | 32         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | CONDITION\\_OPERATION          | BYTE\\_8     |\r\n| 16-31    | SORTING\\_CLASS                | USHORT\\_16  |\r\n| 32-63    | UNUSED                       | 32         |",
+				"Index": "F"
 			},
 			{
 				"Text": "TraderInstruction.FilterQuantityCompare OP_CODE: 16",
-				"Index": 10,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | CONDITION\\_OPERATION          | BYTE\\_8     |\r\n| 16-31    | QUANTITY                     | USHORT\\_16  |\r\n| 32-63    | UNUSED                       | 32         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | CONDITION\\_OPERATION          | BYTE\\_8     |\r\n| 16-31    | QUANTITY                     | USHORT\\_16  |\r\n| 32-63    | UNUSED                       | 32         |",
+				"Index": 10
 			},
 			{
 				"Text": "TraderInstruction.FilterGasContains OP_CODE: 17",
-				"Index": 11,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | GAS\\_TYPES\\_BITFLAG            | UINT\\_32    |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | GAS\\_TYPES\\_BITFLAG            | UINT\\_32    |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": 11
 			},
 			{
 				"Text": "TraderInstruction.FilterGasNotContains OP_CODE: 18",
-				"Index": 12,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | GAS\\_TYPES\\_BITFLAG            | UINT\\_32    |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | GAS\\_TYPES\\_BITFLAG            | UINT\\_32    |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": 12
 			}
 		],
 		"ModeInsert": [],
@@ -97460,7 +97460,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Mushroom"
 	},
 	"SeedBag_Mushroom": {
@@ -107175,7 +107175,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Pumpkin"
 	},
 	"ItemPumpkinPie": {
@@ -112048,7 +112048,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Rice"
 	},
 	"SeedBag_Rice": {
@@ -112442,23 +112442,23 @@
 		"LogicInstructions": [
 			{
 				"Text": "RocketAvionicsInstruction.StackPointer OP_CODE: 1",
-				"Index": 1,
-				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 1
 			},
 			{
 				"Text": "RocketAvionicsInstruction.JumpToAddress OP_CODE: 4",
-				"Index": 2,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 2
 			},
 			{
 				"Text": "RocketAvionicsInstruction.ChildResourceSite OP_CODE: 5",
-				"Index": 3,
-				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | RESOURCE\\_TYPE                | BYTE\\_8     |\r\n| 16-23    | DENSITY\\_RATIO\\_10             | BYTE\\_8     |\r\n| 24-31    | RICHNESS\\_RATIO\\_10            | BYTE\\_8     |\r\n| 32-39    | SIZE\\_RATIO\\_10                | BYTE\\_8     |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | RESOURCE\\_TYPE                | BYTE\\_8     |\r\n| 16-23    | DENSITY\\_RATIO\\_10             | BYTE\\_8     |\r\n| 24-31    | RICHNESS\\_RATIO\\_10            | BYTE\\_8     |\r\n| 32-39    | SIZE\\_RATIO\\_10                | BYTE\\_8     |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": 3
 			},
 			{
 				"Text": "RocketAvionicsInstruction.ChildSurveySite OP_CODE: 6",
-				"Index": 4,
-				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | RESOURCE\\_TYPE                | BYTE\\_8     |\r\n| 16-31    | SURVEY\\_PROGRESS              | USHORT\\_16  |\r\n| 32-63    | UNUSED                       | 32         |"
+				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | RESOURCE\\_TYPE                | BYTE\\_8     |\r\n| 16-31    | SURVEY\\_PROGRESS              | USHORT\\_16  |\r\n| 32-63    | UNUSED                       | 32         |",
+				"Index": 4
 			}
 		],
 		"ModeInsert": [
@@ -112658,8 +112658,8 @@
 		"LogicInstructions": [
 			{
 				"Text": "CelestialTracking.BodyOrientation OP_CODE: 1",
-				"Index": 1,
-				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | CELESTIAL\\_INDEX              | BYTE\\_8     |\r\n| 16-31    | HORIZONTAL\\_DECI\\_DEGREES      | SHORT\\_16   |\r\n| 32-47    | VERTICAL\\_DECI\\_DEGREES        | SHORT\\_16   |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | CELESTIAL\\_INDEX              | BYTE\\_8     |\r\n| 16-31    | HORIZONTAL\\_DECI\\_DEGREES      | SHORT\\_16   |\r\n| 32-47    | VERTICAL\\_DECI\\_DEGREES        | SHORT\\_16   |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 1
 			}
 		],
 		"ModeInsert": [],
@@ -113950,48 +113950,48 @@
 		"LogicInstructions": [
 			{
 				"Text": "PrinterInstruction.StackPointer OP_CODE: 1",
-				"Index": 1,
-				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 1
 			},
 			{
 				"Text": "PrinterInstruction.ExecuteRecipe OP_CODE: 2",
-				"Index": 2,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 2
 			},
 			{
 				"Text": "PrinterInstruction.WaitUntilNextValid OP_CODE: 3",
-				"Index": 3,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |",
+				"Index": 3
 			},
 			{
 				"Text": "PrinterInstruction.JumpIfNextInvalid OP_CODE: 4",
-				"Index": 4,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 4
 			},
 			{
 				"Text": "PrinterInstruction.JumpToAddress OP_CODE: 5",
-				"Index": 5,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 5
 			},
 			{
 				"Text": "PrinterInstruction.DeviceSetLock OP_CODE: 6",
-				"Index": 6,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | LOCK\\_STATE                   | BOOL\\_8     |\r\n| 16-63    | UNUSED                       | 48         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | LOCK\\_STATE                   | BOOL\\_8     |\r\n| 16-63    | UNUSED                       | 48         |",
+				"Index": 6
 			},
 			{
 				"Text": "PrinterInstruction.EjectReagent OP_CODE: 7",
-				"Index": 7,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | REAGENT\\_HASH                 | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | REAGENT\\_HASH                 | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": 7
 			},
 			{
 				"Text": "PrinterInstruction.EjectAllReagents OP_CODE: 8",
-				"Index": 8,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |",
+				"Index": 8
 			},
 			{
 				"Text": "PrinterInstruction.MissingRecipeReagent OP_CODE: 9",
-				"Index": 9,
-				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY\\_CEIL                | BYTE\\_8     |\r\n| 16-47    | REAGENT\\_HASH                 | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY\\_CEIL                | BYTE\\_8     |\r\n| 16-47    | REAGENT\\_HASH                 | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 9
 			}
 		],
 		"ModeInsert": [],
@@ -120556,7 +120556,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Soy"
 	},
 	"SeedBag_Soybean": {
@@ -122509,7 +122509,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Stellite"
 	},
 	"ItemStelliteGlassSheets": {
@@ -123562,48 +123562,48 @@
 		"LogicInstructions": [
 			{
 				"Text": "PrinterInstruction.StackPointer OP_CODE: 1",
-				"Index": 1,
-				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 1
 			},
 			{
 				"Text": "PrinterInstruction.ExecuteRecipe OP_CODE: 2",
-				"Index": 2,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 2
 			},
 			{
 				"Text": "PrinterInstruction.WaitUntilNextValid OP_CODE: 3",
-				"Index": 3,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |",
+				"Index": 3
 			},
 			{
 				"Text": "PrinterInstruction.JumpIfNextInvalid OP_CODE: 4",
-				"Index": 4,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 4
 			},
 			{
 				"Text": "PrinterInstruction.JumpToAddress OP_CODE: 5",
-				"Index": 5,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 5
 			},
 			{
 				"Text": "PrinterInstruction.DeviceSetLock OP_CODE: 6",
-				"Index": 6,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | LOCK\\_STATE                   | BOOL\\_8     |\r\n| 16-63    | UNUSED                       | 48         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | LOCK\\_STATE                   | BOOL\\_8     |\r\n| 16-63    | UNUSED                       | 48         |",
+				"Index": 6
 			},
 			{
 				"Text": "PrinterInstruction.EjectReagent OP_CODE: 7",
-				"Index": 7,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | REAGENT\\_HASH                 | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | REAGENT\\_HASH                 | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": 7
 			},
 			{
 				"Text": "PrinterInstruction.EjectAllReagents OP_CODE: 8",
-				"Index": 8,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |",
+				"Index": 8
 			},
 			{
 				"Text": "PrinterInstruction.MissingRecipeReagent OP_CODE: 9",
-				"Index": 9,
-				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY\\_CEIL                | BYTE\\_8     |\r\n| 16-47    | REAGENT\\_HASH                 | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY\\_CEIL                | BYTE\\_8     |\r\n| 16-47    | REAGENT\\_HASH                 | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 9
 			}
 		],
 		"ModeInsert": [],
@@ -123993,7 +123993,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Sugar"
 	},
 	"ItemSugarCane": {
@@ -125966,7 +125966,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Tomato"
 	},
 	"SeedBag_Tomato": {
@@ -134717,7 +134717,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Waspaloy"
 	},
 	"ItemWaterBottle": {
@@ -136222,7 +136222,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Wheat"
 	},
 	"SeedBag_Wheet": {
@@ -138946,7 +138946,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Potato"
 	},
 	"Steel": {
@@ -139026,7 +139026,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Steel"
 	},
 	"ItemSteelFrames": {
@@ -142115,48 +142115,48 @@
 		"LogicInstructions": [
 			{
 				"Text": "PrinterInstruction.StackPointer OP_CODE: 1",
-				"Index": 1,
-				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 1
 			},
 			{
 				"Text": "PrinterInstruction.ExecuteRecipe OP_CODE: 2",
-				"Index": 2,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 2
 			},
 			{
 				"Text": "PrinterInstruction.WaitUntilNextValid OP_CODE: 3",
-				"Index": 3,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |",
+				"Index": 3
 			},
 			{
 				"Text": "PrinterInstruction.JumpIfNextInvalid OP_CODE: 4",
-				"Index": 4,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 4
 			},
 			{
 				"Text": "PrinterInstruction.JumpToAddress OP_CODE: 5",
-				"Index": 5,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 5
 			},
 			{
 				"Text": "PrinterInstruction.DeviceSetLock OP_CODE: 6",
-				"Index": 6,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | LOCK\\_STATE                   | BOOL\\_8     |\r\n| 16-63    | UNUSED                       | 48         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | LOCK\\_STATE                   | BOOL\\_8     |\r\n| 16-63    | UNUSED                       | 48         |",
+				"Index": 6
 			},
 			{
 				"Text": "PrinterInstruction.EjectReagent OP_CODE: 7",
-				"Index": 7,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | REAGENT\\_HASH                 | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | REAGENT\\_HASH                 | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": 7
 			},
 			{
 				"Text": "PrinterInstruction.EjectAllReagents OP_CODE: 8",
-				"Index": 8,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |",
+				"Index": 8
 			},
 			{
 				"Text": "PrinterInstruction.MissingRecipeReagent OP_CODE: 9",
-				"Index": 9,
-				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY\\_CEIL                | BYTE\\_8     |\r\n| 16-47    | REAGENT\\_HASH                 | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY\\_CEIL                | BYTE\\_8     |\r\n| 16-47    | REAGENT\\_HASH                 | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 9
 			}
 		],
 		"ModeInsert": [],
@@ -144164,7 +144164,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Copper"
 	},
 	"ItemPotatoBaked": {
@@ -144887,7 +144887,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Gold"
 	},
 	"StructureActiveVent": {
@@ -145316,7 +145316,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Lead"
 	},
 	"Nickel": {
@@ -145396,7 +145396,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Nickel"
 	},
 	"StructureLogicDial": {
@@ -146408,7 +146408,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Egg"
 	},
 	"ItemEggCarton": {
@@ -151175,7 +151175,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Flour"
 	},
 	"StructureSolidFuelGenerator": {
@@ -158286,7 +158286,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Oil"
 	},
 	"StructureLogicSelect": {
@@ -161568,7 +161568,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Silicon"
 	},
 	"ItemPillStun": {
@@ -163361,7 +163361,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Solder"
 	},
 	"GasPollutant": {
@@ -164298,7 +164298,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Uranium"
 	},
 	"Milk": {
@@ -164378,7 +164378,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Milk"
 	},
 	"ItemMilk": {
@@ -165900,48 +165900,48 @@
 		"LogicInstructions": [
 			{
 				"Text": "PrinterInstruction.StackPointer OP_CODE: 1",
-				"Index": 1,
-				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 1
 			},
 			{
 				"Text": "PrinterInstruction.ExecuteRecipe OP_CODE: 2",
-				"Index": 2,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 2
 			},
 			{
 				"Text": "PrinterInstruction.WaitUntilNextValid OP_CODE: 3",
-				"Index": 3,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |",
+				"Index": 3
 			},
 			{
 				"Text": "PrinterInstruction.JumpIfNextInvalid OP_CODE: 4",
-				"Index": 4,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 4
 			},
 			{
 				"Text": "PrinterInstruction.JumpToAddress OP_CODE: 5",
-				"Index": 5,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 5
 			},
 			{
 				"Text": "PrinterInstruction.DeviceSetLock OP_CODE: 6",
-				"Index": 6,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | LOCK\\_STATE                   | BOOL\\_8     |\r\n| 16-63    | UNUSED                       | 48         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | LOCK\\_STATE                   | BOOL\\_8     |\r\n| 16-63    | UNUSED                       | 48         |",
+				"Index": 6
 			},
 			{
 				"Text": "PrinterInstruction.EjectReagent OP_CODE: 7",
-				"Index": 7,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | REAGENT\\_HASH                 | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | REAGENT\\_HASH                 | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": 7
 			},
 			{
 				"Text": "PrinterInstruction.EjectAllReagents OP_CODE: 8",
-				"Index": 8,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |",
+				"Index": 8
 			},
 			{
 				"Text": "PrinterInstruction.MissingRecipeReagent OP_CODE: 9",
-				"Index": 9,
-				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY\\_CEIL                | BYTE\\_8     |\r\n| 16-47    | REAGENT\\_HASH                 | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY\\_CEIL                | BYTE\\_8     |\r\n| 16-47    | REAGENT\\_HASH                 | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 9
 			}
 		],
 		"ModeInsert": [],
@@ -166767,7 +166767,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Silver"
 	},
 	"StructureChair": {
@@ -167173,7 +167173,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Invar"
 	},
 	"StructureLogicBatchWriter": {
@@ -167389,7 +167389,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Electrum"
 	},
 	"StructureLogicReader": {
@@ -167771,48 +167771,48 @@
 		"LogicInstructions": [
 			{
 				"Text": "PrinterInstruction.StackPointer OP_CODE: 1",
-				"Index": 1,
-				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 1
 			},
 			{
 				"Text": "PrinterInstruction.ExecuteRecipe OP_CODE: 2",
-				"Index": 2,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 2
 			},
 			{
 				"Text": "PrinterInstruction.WaitUntilNextValid OP_CODE: 3",
-				"Index": 3,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |",
+				"Index": 3
 			},
 			{
 				"Text": "PrinterInstruction.JumpIfNextInvalid OP_CODE: 4",
-				"Index": 4,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 4
 			},
 			{
 				"Text": "PrinterInstruction.JumpToAddress OP_CODE: 5",
-				"Index": 5,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 5
 			},
 			{
 				"Text": "PrinterInstruction.DeviceSetLock OP_CODE: 6",
-				"Index": 6,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | LOCK\\_STATE                   | BOOL\\_8     |\r\n| 16-63    | UNUSED                       | 48         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | LOCK\\_STATE                   | BOOL\\_8     |\r\n| 16-63    | UNUSED                       | 48         |",
+				"Index": 6
 			},
 			{
 				"Text": "PrinterInstruction.EjectReagent OP_CODE: 7",
-				"Index": 7,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | REAGENT\\_HASH                 | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | REAGENT\\_HASH                 | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": 7
 			},
 			{
 				"Text": "PrinterInstruction.EjectAllReagents OP_CODE: 8",
-				"Index": 8,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |",
+				"Index": 8
 			},
 			{
 				"Text": "PrinterInstruction.MissingRecipeReagent OP_CODE: 9",
-				"Index": 9,
-				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY\\_CEIL                | BYTE\\_8     |\r\n| 16-47    | REAGENT\\_HASH                 | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY\\_CEIL                | BYTE\\_8     |\r\n| 16-47    | REAGENT\\_HASH                 | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 9
 			}
 		],
 		"ModeInsert": [],
@@ -172814,48 +172814,48 @@
 		"LogicInstructions": [
 			{
 				"Text": "PrinterInstruction.StackPointer OP_CODE: 1",
-				"Index": 1,
-				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESS 63                             | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | INDEX                        | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 1
 			},
 			{
 				"Text": "PrinterInstruction.ExecuteRecipe OP_CODE: 2",
-				"Index": 2,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY                     | BYTE\\_8     |\r\n| 16-47    | PREFAB\\_HASH                  | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 2
 			},
 			{
 				"Text": "PrinterInstruction.WaitUntilNextValid OP_CODE: 3",
-				"Index": 3,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |",
+				"Index": 3
 			},
 			{
 				"Text": "PrinterInstruction.JumpIfNextInvalid OP_CODE: 4",
-				"Index": 4,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 4
 			},
 			{
 				"Text": "PrinterInstruction.JumpToAddress OP_CODE: 5",
-				"Index": 5,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-23     | STACK\\_ADDRESS                | USHORT\\_16  |\r\n| 24-63    | UNUSED                       | 40         |",
+				"Index": 5
 			},
 			{
 				"Text": "PrinterInstruction.DeviceSetLock OP_CODE: 6",
-				"Index": 6,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | LOCK\\_STATE                   | BOOL\\_8     |\r\n| 16-63    | UNUSED                       | 48         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | LOCK\\_STATE                   | BOOL\\_8     |\r\n| 16-63    | UNUSED                       | 48         |",
+				"Index": 6
 			},
 			{
 				"Text": "PrinterInstruction.EjectReagent OP_CODE: 7",
-				"Index": 7,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | REAGENT\\_HASH                 | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-39     | REAGENT\\_HASH                 | INT\\_32     |\r\n| 40-63    | UNUSED                       | 24         |",
+				"Index": 7
 			},
 			{
 				"Text": "PrinterInstruction.EjectAllReagents OP_CODE: 8",
-				"Index": 8,
-				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |"
+				"Info": "| VALID ONLY AT ADDRESSES 0 TO 53                      | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-63     | UNUSED                       | 56         |",
+				"Index": 8
 			},
 			{
 				"Text": "PrinterInstruction.MissingRecipeReagent OP_CODE: 9",
-				"Index": 9,
-				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY\\_CEIL                | BYTE\\_8     |\r\n| 16-47    | REAGENT\\_HASH                 | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |"
+				"Info": "| VALID ONLY AT ADDRESSES 54 TO 62                     | | 0-7      | OP\\_CODE                      | BYTE\\_8     |\r\n| 8-15     | QUANTITY\\_CEIL                | BYTE\\_8     |\r\n| 16-47    | REAGENT\\_HASH                 | INT\\_32     |\r\n| 48-63    | UNUSED                       | 16         |",
+				"Index": 9
 			}
 		],
 		"ModeInsert": [],
@@ -183141,7 +183141,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Iron"
 	},
 	"ItemIronSheets": {
@@ -184844,7 +184844,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Constantan"
 	},
 	"ItemSoybean": {
@@ -186569,7 +186569,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Carbon"
 	},
 	"Hydrocarbon": {
@@ -186649,7 +186649,7 @@
 		"LifeRequirements": [],
 		"DeviceConnectCount": 0,
 		"MainImage": "wiki_data/source/images/e/c/ec5933ff93493a82e8fc54ed717a8dee.png",
-		"tags": ["reagent", "hasOre", "hasPrefab", "hasImage"],
+		"tags": ["reagent", "hasOre", "hasImage"],
 		"ID": "Hydrocarbon"
 	},
 	"StructureDaylightSensor": {

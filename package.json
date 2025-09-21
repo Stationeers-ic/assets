@@ -10,7 +10,7 @@
 		"typescript": "^5.0.0"
 	},
 	"scripts": {
-		"format": "bunx biome format --write",
+		"format": "bunx --bun biome format --write",
 		"fix": "bunx --bun biome check --write --unsafe",
 		"build": "bun index.ts",
 		"dev": "bun index.ts --dev"
