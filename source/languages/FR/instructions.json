@@ -1,752 +1,752 @@
 ﻿{
-  "l": {
-    "name": "l",
-    "description": "Registre = la valeur logique (logicType) en utilisant la valeur d'index du support IC10 (d?).",
-    "example": "l r? device(d?|r?|id) logicType"
-  },
-  "s": {
-    "name": "s",
-    "description": "Stocke la valeur du registre dans la valeur logique (logicType) de l'appareil en utilisant sa valeur d'index du support IC10 (d?).",
-    "example": "s device(d?|r?|id) logicType r?"
-  },
-  "ls": {
-    "name": "ls",
-    "description": "Registre = le type de \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) sur l'appareil en utilisant sa valeur d'index du support IC10 (d?).",
-    "example": "ls r? device(d?|r?|id) slotIndex logicSlotType"
-  },
-  "lr": {
-    "name": "lr",
-    "description": "Registre = le type de réactif (ReagentMode) de l'appareil en utilisant sa valeur d'index du support IC10 (d?) où un Hash du type de réactif est vérifié. Le type de réactif peut être soit :  0 = Contenu (Contents), 1 = Requis (Required), 2 = Recette (Recipe).  Peut utiliser soit le chiffre, soit le mot (en anglais).",
-    "example": "lr r? device(d?|r?|id) reagentMode int"
-  },
-  "sb": {
-    "name": "sb",
-    "description": "Stocke la valeur du registre dans la valeur logique (logicType) de tous les appareils réseau qui correspondent au type du Hash.",
-    "example": "sb deviceHash logicType r?"
-  },
-  "lb": {
-    "name": "lb",
-    "description": "Registre = la valeur logique (logicType) de tous les appareils réseau qui correspondent au type du Hash en utilisant le mode groupé indiqué : 0 = Moyenne (Average), 1 = Somme (Sum), 2 = Minimum (Minimum), 3 = Maximum (Maximum).  Peut utiliser soit le chiffre, soit le mot (en anglais).",
-    "example": "lb r? deviceHash logicType batchMode"
-  },
-  "alias": {
-    "name": "alias",
-    "description": "Étiquette le registre ou la référence de l'appareil avec un nom, les références d'appareils affectent également ce qui s'affiche sur les vis du support IC10 (d?).",
-    "example": "alias str r?|d?"
-  },
-  "move": {
-    "name": "move",
-    "description": "Registre = numéro fourni ou valeur du registre.",
-    "example": "move r? a(r?|num)"
-  },
-  "add": {
-    "name": "add",
-    "description": "Registre = a + b",
-    "example": "add r? a(r?|num) b(r?|num)"
-  },
-  "sub": {
-    "name": "sub",
-    "description": "Registre = a - b",
-    "example": "sub r? a(r?|num) b(r?|num)"
-  },
-  "sdse": {
-    "name": "sdse",
-    "description": "Registre = 1 si l'appareil est configuré, sinon 0",
-    "example": "sdse r? device(d?|r?|id)"
-  },
-  "sdns": {
-    "name": "sdns",
-    "description": "Registre = 1 si l'appareil n'est pas configuré, sinon 0",
-    "example": "sdns r? device(d?|r?|id)"
-  },
-  "slt": {
-    "name": "slt",
-    "description": "Registre = 1 si a < b, sinon 0",
-    "example": "slt r? a(r?|num) b(r?|num)"
-  },
-  "sgt": {
-    "name": "sgt",
-    "description": "Registre = 1 si a > b, sinon 0",
-    "example": "sgt r? a(r?|num) b(r?|num)"
-  },
-  "sle": {
-    "name": "sle",
-    "description": "Registre = 1 si a <= b, sinon 0",
-    "example": "sle r? a(r?|num) b(r?|num)"
-  },
-  "sge": {
-    "name": "sge",
-    "description": "Registre = 1 si a >= b, sinon 0",
-    "example": "sge r? a(r?|num) b(r?|num)"
-  },
-  "seq": {
-    "name": "seq",
-    "description": "Registre = 1 si a == b, sinon 0",
-    "example": "seq r? a(r?|num) b(r?|num)"
-  },
-  "sne": {
-    "name": "sne",
-    "description": "Registre = 1 si a != b, sinon 0",
-    "example": "sne r? a(r?|num) b(r?|num)"
-  },
-  "sap": {
-    "name": "sap",
-    "description": "Registre = 1 si abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
-    "example": "sap r? a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "sna": {
-    "name": "sna",
-    "description": "Registre = 1 si abs(a - b) > max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
-    "example": "sna r? a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "and": {
-    "name": "and",
-    "description": "Effectue une opération logique \"AND\" (ET) : le registre de sortie = 1 uniquement si tous les bits d'entrée sont 1. Sinon, le registre de sortie = 0.",
-    "example": "and r? a(r?|num) b(r?|num)"
-  },
-  "or": {
-    "name": "or",
-    "description": "Effectue une opération logique \"OR\" (OU) : le registre de sortie = 1 si au moins un bit d'entrée est 1. Sinon, le registre de sortie = 0.",
-    "example": "or r? a(r?|num) b(r?|num)"
-  },
-  "xor": {
-    "name": "xor",
-    "description": "Effectue une opération logique \"XOR\" (OU exclusif) : le registre de sortie = 1 si une seule des entrées est 1. Si les entrées sont identiques, le registre de sortie = 0.",
-    "example": "xor r? a(r?|num) b(r?|num)"
-  },
-  "nor": {
-    "name": "nor",
-    "description": "Effectue une opération logique \"NOR\" (NON OU) : le registre de sortie = 1 uniquement si tous les bits d'entrée sont 0. Sinon, le registre de sortie = 0.",
-    "example": "nor r? a(r?|num) b(r?|num)"
-  },
-  "mul": {
-    "name": "mul",
-    "description": "Registre = a \\* b",
-    "example": "mul r? a(r?|num) b(r?|num)"
-  },
-  "div": {
-    "name": "div",
-    "description": "Registre = a / b",
-    "example": "div r? a(r?|num) b(r?|num)"
-  },
-  "mod": {
-    "name": "mod",
-    "description": "Registre = a mod b (note : différent de a % b)",
-    "example": "mod r? a(r?|num) b(r?|num)"
-  },
-  "j": {
-    "name": "j",
-    "description": "Saute à la ligne a",
-    "example": "j int"
-  },
-  "bltz": {
-    "name": "bltz",
-    "description": "Saute à la ligne b si a < 0",
-    "example": "bltz a(r?|num) b(r?|num)"
-  },
-  "bgez": {
-    "name": "bgez",
-    "description": "Saute à la ligne b si a >= 0",
-    "example": "bgez a(r?|num) b(r?|num)"
-  },
-  "blez": {
-    "name": "blez",
-    "description": "Saute à la ligne b si a <= 0",
-    "example": "blez a(r?|num) b(r?|num)"
-  },
-  "bgtz": {
-    "name": "bgtz",
-    "description": "Saute à la ligne b si a > 0",
-    "example": "bgtz a(r?|num) b(r?|num)"
-  },
-  "bdse": {
-    "name": "bdse",
-    "description": "Saute à la ligne a si l'appareil d est configuré",
-    "example": "bdse device(d?|r?|id) a(r?|num)"
-  },
-  "bdns": {
-    "name": "bdns",
-    "description": "Saute à la ligne a si l'appareil d n'est pas configuré",
-    "example": "bdns device(d?|r?|id) a(r?|num)"
-  },
-  "beq": {
-    "name": "beq",
-    "description": "Saute à la ligne c si a == b",
-    "example": "beq a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "bne": {
-    "name": "bne",
-    "description": "Saute à la ligne c si a != b",
-    "example": "bne a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "bap": {
-    "name": "bap",
-    "description": "Saute à la ligne d si abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
-    "example": "bap a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
-  },
-  "bna": {
-    "name": "bna",
-    "description": "Saute à la ligne d si abs(a - b) > max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
-    "example": "bna a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
-  },
-  "jal": {
-    "name": "jal",
-    "description": "Saute à la ligne a et stocke le numéro de la ligne suivante dans ra",
-    "example": "jal int"
-  },
-  "brdse": {
-    "name": "brdse",
-    "description": "Fait un saut relatif de a lignes si l'appareil est configuré",
-    "example": "brdse device(d?|r?|id) a(r?|num)"
-  },
-  "brdns": {
-    "name": "brdns",
-    "description": "Fait un saut relatif de a lignes si l'appareil n'est pas configuré",
-    "example": "brdns device(d?|r?|id) a(r?|num)"
-  },
-  "bltzal": {
-    "name": "bltzal",
-    "description": "Saute à la ligne b si a < 0 et stocke le numéro de la ligne suivante dans ra",
-    "example": "bltzal a(r?|num) b(r?|num)"
-  },
-  "bgezal": {
-    "name": "bgezal",
-    "description": "Saute à la ligne b si a >= 0 et stocke le numéro de la ligne suivante dans ra",
-    "example": "bgezal a(r?|num) b(r?|num)"
-  },
-  "blezal": {
-    "name": "blezal",
-    "description": "Saute à la ligne b si a <= 0 et stocke le numéro de la ligne suivante dans ra",
-    "example": "blezal a(r?|num) b(r?|num)"
-  },
-  "bgtzal": {
-    "name": "bgtzal",
-    "description": "Saute à la ligne b si a > 0 et stocke le numéro de la ligne suivante dans ra",
-    "example": "bgtzal a(r?|num) b(r?|num)"
-  },
-  "beqal": {
-    "name": "beqal",
-    "description": "Saute à la ligne c si a == b et stocke le numéro de la ligne suivante dans ra",
-    "example": "beqal a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "bneal": {
-    "name": "bneal",
-    "description": "Saute à la ligne c si a != b et stocke le numéro de la ligne suivante dans ra",
-    "example": "bneal a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "jr": {
-    "name": "jr",
-    "description": "Fait un saut relatif de a lignes",
-    "example": "jr int"
-  },
-  "bdseal": {
-    "name": "bdseal",
-    "description": "Saute à la ligne a si l'appareil d est configuré et stocke le numéro de la ligne suivante dans ra",
-    "example": "bdseal device(d?|r?|id) a(r?|num)"
-  },
-  "bdnsal": {
-    "name": "bdnsal",
-    "description": "Saute à la ligne a si l'appareil d n'est pas configuré et stocke le numéro de la ligne suivante dans ra",
-    "example": "bdnsal device(d?|r?|id) a(r?|num)"
-  },
-  "brltz": {
-    "name": "brltz",
-    "description": "Fait un saut relatif de b lignes si a < 0",
-    "example": "brltz a(r?|num) b(r?|num)"
-  },
-  "brgez": {
-    "name": "brgez",
-    "description": "Fait un saut relatif de b lignes si a >= 0",
-    "example": "brgez a(r?|num) b(r?|num)"
-  },
-  "brlez": {
-    "name": "brlez",
-    "description": "Fait un saut relatif de b lignes si a <= 0",
-    "example": "brlez a(r?|num) b(r?|num)"
-  },
-  "brgtz": {
-    "name": "brgtz",
-    "description": "Fait un saut relatif de b lignes si a > 0",
-    "example": "brgtz a(r?|num) b(r?|num)"
-  },
-  "breq": {
-    "name": "breq",
-    "description": "Fait un saut relatif de c lignes si a == b",
-    "example": "breq a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "brne": {
-    "name": "brne",
-    "description": "Fait un saut relatif de c lignes si a != b",
-    "example": "brne a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "brap": {
-    "name": "brap",
-    "description": "Fait un saut relatif de d lignes si abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
-    "example": "brap a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
-  },
-  "brna": {
-    "name": "brna",
-    "description": "Fait un saut relatif de d lignes si abs(a - b) > max(c \\* max (abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
-    "example": "brna a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
-  },
-  "sqrt": {
-    "name": "sqrt",
-    "description": "Registre = racine carrée de a",
-    "example": "sqrt r? a(r?|num)"
-  },
-  "round": {
-    "name": "round",
-    "description": "Register = a arrondi à l'entier le plus proche",
-    "example": "round r? a(r?|num)"
-  },
-  "trunc": {
-    "name": "trunc",
-    "description": "Register = a sans la partie décimale (entier obtenu par troncature)",
-    "example": "trunc r? a(r?|num)"
-  },
-  "ceil": {
-    "name": "ceil",
-    "description": "Register = plus petit entier supérieur ou égal à a",
-    "example": "ceil r? a(r?|num)"
-  },
-  "floor": {
-    "name": "floor",
-    "description": "Register = plus grand entier inférieur ou égal à a",
-    "example": "floor r? a(r?|num)"
-  },
-  "max": {
-    "name": "max",
-    "description": "Registre = la valeur maximum entre a et b",
-    "example": "max r? a(r?|num) b(r?|num)"
-  },
-  "min": {
-    "name": "min",
-    "description": "Registre = la valeur minimum entre a et b",
-    "example": "min r? a(r?|num) b(r?|num)"
-  },
-  "abs": {
-    "name": "abs",
-    "description": "Registre = la valeur absolue de a",
-    "example": "abs r? a(r?|num)"
-  },
-  "log": {
-    "name": "log",
-    "description": "Registre = log(a)",
-    "example": "log r? a(r?|num)"
-  },
-  "exp": {
-    "name": "exp",
-    "description": "Registre = exp(a)",
-    "example": "exp r? a(r?|num)"
-  },
-  "rand": {
-    "name": "rand",
-    "description": "Registre = une valeur aléatoire x avec 0 <= x < 1",
-    "example": "rand r?"
-  },
-  "yield": {
-    "name": "yield",
-    "description": "Pause de l'exécution pour 1 cycle de 0,5 seconde (tick)",
-    "example": "yield"
-  },
-  "label": {
-    "name": "label",
-    "description": "OBSOLÈTE",
-    "example": "label d? str"
-  },
-  "peek": {
-    "name": "peek",
-    "description": "Registre = la valeur en haut du tableau",
-    "example": "peek r?"
-  },
-  "push": {
-    "name": "push",
-    "description": "Ajoute la valeur de a en haut du tableau et incrémente sp (sp c'est le registre contenant l'index du tableau, entre 0 et 512)",
-    "example": "push a(r?|num)"
-  },
-  "pop": {
-    "name": "pop",
-    "description": "Registre = la valeur en haut du tableau et décrémente sp (sp c'est le registre contenant l'index du tableau, entre 0 et 512)",
-    "example": "pop r?"
-  },
-  "hcf": {
-    "name": "hcf",
-    "description": "Arrêt et prise de feu",
-    "example": "hcf"
-  },
-  "select": {
-    "name": "select",
-    "description": "Registre = b si a est non nul, sinon c",
-    "example": "select r? a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "blt": {
-    "name": "blt",
-    "description": "Saute à la ligne c si a < b",
-    "example": "blt a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "bgt": {
-    "name": "bgt",
-    "description": "Saute à la ligne c si a > b",
-    "example": "bgt a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "ble": {
-    "name": "ble",
-    "description": "Saute à la ligne c si a <= b",
-    "example": "ble a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "bge": {
-    "name": "bge",
-    "description": "Saute à la ligne c si a >= b",
-    "example": "bge a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "brlt": {
-    "name": "brlt",
-    "description": "Fait un saut relatif de c lignes si a < b",
-    "example": "brlt a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "brgt": {
-    "name": "brgt",
-    "description": "Fait un saut relatif de c lignes si a > b",
-    "example": "brgt a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "brle": {
-    "name": "brle",
-    "description": "Fait un saut relatif de c lignes si a <= b",
-    "example": "brle a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "brge": {
-    "name": "brge",
-    "description": "Fait un saut relatif de c lignes si a >= b",
-    "example": "brge a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "bltal": {
-    "name": "bltal",
-    "description": "Saute à la ligne c si a < b et stocke le numéro de la ligne suivante dans ra",
-    "example": "bltal a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "bgtal": {
-    "name": "bgtal",
-    "description": "Saute à la ligne c si a > b et stocke le numéro de la ligne suivante dans ra",
-    "example": "bgtal a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "bleal": {
-    "name": "bleal",
-    "description": "Saute à la ligne c si a <= b et stocke le numéro de la ligne suivante dans ra",
-    "example": "bleal a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "bgeal": {
-    "name": "bgeal",
-    "description": "Saute à la ligne c si a >= b et stocke le numéro de la ligne suivante dans ra",
-    "example": "bgeal a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "bapal": {
-    "name": "bapal",
-    "description": "Saute à la ligne c si a != b et stocke le numéro de la ligne suivante dans ra",
-    "example": "bapal a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
-  },
-  "bnaal": {
-    "name": "bnaal",
-    "description": "Saute à la ligne d si abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) et stocke le numéro de la ligne suivante dans ra (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
-    "example": "bnaal a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
-  },
-  "beqz": {
-    "name": "beqz",
-    "description": "Saute à la ligne b si a == 0",
-    "example": "beqz a(r?|num) b(r?|num)"
-  },
-  "bnez": {
-    "name": "bnez",
-    "description": "Saute à la ligne b si a != 0",
-    "example": "bnez a(r?|num) b(r?|num)"
-  },
-  "bapz": {
-    "name": "bapz",
-    "description": "Saute à la ligne b si abs(a) <= float.epsilon \\* 8 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
-    "example": "bapz a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "bnaz": {
-    "name": "bnaz",
-    "description": "Saute à la ligne b si abs(a) > float.epsilon (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
-    "example": "bnaz a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "breqz": {
-    "name": "breqz",
-    "description": "Fait un saut relatif de b lignes si a == 0",
-    "example": "breqz a(r?|num) b(r?|num)"
-  },
-  "brnez": {
-    "name": "brnez",
-    "description": "Fait un saut relatif de b lignes si a != 0",
-    "example": "brnez a(r?|num) b(r?|num)"
-  },
-  "brapz": {
-    "name": "brapz",
-    "description": "Fait un saut relatif de c lignes si abs(a) <= float.epsilon \\* 8 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
-    "example": "brapz a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "brnaz": {
-    "name": "brnaz",
-    "description": "Fait un saut relatif de c lignes si abs(a) > float.epsilon \\* 8 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
-    "example": "brnaz a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "beqzal": {
-    "name": "beqzal",
-    "description": "Saute à la ligne b si a == 0 et stocke le numéro de la ligne suivante dans ra",
-    "example": "beqzal a(r?|num) b(r?|num)"
-  },
-  "bnezal": {
-    "name": "bnezal",
-    "description": "Saute à la ligne b si a != 0 et stocke le numéro de la ligne suivante dans ra",
-    "example": "bnezal a(r?|num) b(r?|num)"
-  },
-  "bapzal": {
-    "name": "bapzal",
-    "description": "Saute à la ligne c si abs(a) <= float.epsilon \\* 8 et stocke le numéro de la ligne suivante dans ra (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
-    "example": "bapzal a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "bnazal": {
-    "name": "bnazal",
-    "description": "Saute à la ligne c si abs(a) > float.epsilon \\* 8 et stocke le numéro de la ligne suivante dans ra (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
-    "example": "bnazal a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "sltz": {
-    "name": "sltz",
-    "description": "Registre = 1 si a < 0, sinon 0",
-    "example": "sltz r? a(r?|num)"
-  },
-  "sgtz": {
-    "name": "sgtz",
-    "description": "Registre = 1 si a > 0, sinon 0",
-    "example": "sgtz r? a(r?|num)"
-  },
-  "slez": {
-    "name": "slez",
-    "description": "Registre = 1 si a <= 0, sinon 0",
-    "example": "slez r? a(r?|num)"
-  },
-  "sgez": {
-    "name": "sgez",
-    "description": "Registre = 1 si a >= 0, sinon 0",
-    "example": "sgez r? a(r?|num)"
-  },
-  "seqz": {
-    "name": "seqz",
-    "description": "Registre = 1 si a == 0, sinon 0",
-    "example": "seqz r? a(r?|num)"
-  },
-  "snez": {
-    "name": "snez",
-    "description": "Registre = 1 si a != 0, sinon 0",
-    "example": "snez r? a(r?|num)"
-  },
-  "sapz": {
-    "name": "sapz",
-    "description": "Registre = 1 si abs(a) <= float.epsilon \\* 8, sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
-    "example": "sapz r? a(r?|num) b(r?|num)"
-  },
-  "snaz": {
-    "name": "snaz",
-    "description": "Registre = 1 si abs(a) > float.epsilon, sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
-    "example": "snaz r? a(r?|num) b(r?|num)"
-  },
-  "define": {
-    "name": "define",
-    "description": "Crée une étiquette qui sera remplacée dans tout le programme par la valeur fournie.",
-    "example": "define str num"
-  },
-  "sleep": {
-    "name": "sleep",
-    "description": "Pause de l'exécution pendant a secondes",
-    "example": "sleep a(r?|num)"
-  },
-  "sin": {
-    "name": "sin",
-    "description": "Registe = le sinus de l'angle a (en radians)",
-    "example": "sin r? a(r?|num)"
-  },
-  "asin": {
-    "name": "asin",
-    "description": "Registe = l'angle (en radians) dont le sinus est a",
-    "example": "asin r? a(r?|num)"
-  },
-  "tan": {
-    "name": "tan",
-    "description": "Registe = la tangente de l'angle a (en radians)",
-    "example": "tan r? a(r?|num)"
-  },
-  "atan": {
-    "name": "atan",
-    "description": "Registe = l'angle (en radians) dont la tangente est a",
-    "example": "atan r? a(r?|num)"
-  },
-  "cos": {
-    "name": "cos",
-    "description": "Registe = le cosinus de l'angle a (en radians)",
-    "example": "cos r? a(r?|num)"
-  },
-  "acos": {
-    "name": "acos",
-    "description": "Registe = le cosinus de l'angle a (en radians)",
-    "example": "acos r? a(r?|num)"
-  },
-  "atan2": {
-    "name": "atan2",
-    "description": "Registe = l'angle (en radians) dont la tangente est le quotient des deux : a(y) et b(x)",
-    "example": "atan2 r? a(r?|num) b(r?|num)"
-  },
-  "brnan": {
-    "name": "brnan",
-    "description": "Fait un saut relatif de b lignes si a n'est pas un nombre (NaN)",
-    "example": "brnan a(r?|num) b(r?|num)"
-  },
-  "bnan": {
-    "name": "bnan",
-    "description": "Saute à la ligne b si a n'est pas un nombre (NaN)",
-    "example": "bnan a(r?|num) b(r?|num)"
-  },
-  "snan": {
-    "name": "snan",
-    "description": "Registre = 1 si a est NaN, sinon 0",
-    "example": "snan r? a(r?|num)"
-  },
-  "snanz": {
-    "name": "snanz",
-    "description": "Registre = 0 si a est NaN, sinon 1",
-    "example": "snanz r? a(r?|num)"
-  },
-  "lbs": {
-    "name": "lbs",
-    "description": "Registre = la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) de tous les appareils réseau qui correspondent au type du Hash en utilisant le mode groupé indiqué : 0 = Moyenne (Average), 1 = Somme (Sum), 2 = Minimum (Minimum), 3 = Maximum (Maximum).  Peut utiliser soit le chiffre, soit le mot (en anglais).",
-    "example": "lbs r? deviceHash slotIndex logicSlotType batchMode"
-  },
-  "lbn": {
-    "name": "lbn",
-    "description": "Registre = la valeur logique (logicType) de tous les appareils réseau qui correspondent au type du Hash et au nom fournis en utilisant le mode groupé indiqué : 0 = Moyenne (Average), 1 = Somme (Sum), 2 = Minimum (Minimum), 3 = Maximum (Maximum).  Peut utiliser soit le chiffre, soit le mot (en anglais).",
-    "example": "lbn r? deviceHash nameHash logicType batchMode"
-  },
-  "sbn": {
-    "name": "sbn",
-    "description": "Stocke la valeur du registre dans la valeur logique (logicType) sur tous les appareils réseau de sortie avec le Hash de type et le nom fournis.",
-    "example": "sbn deviceHash nameHash logicType r?"
-  },
-  "lbns": {
-    "name": "lbns",
-    "description": "Registre = la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) de tous les appareils réseau qui correspondent au type du Hash et au nom fournis en utilisant le mode groupé indiqué : 0 = Moyenne (Average), 1 = Somme (Sum), 2 = Minimum (Minimum), 3 = Maximum (Maximum).  Peut utiliser soit le chiffre, soit le mot (en anglais).",
-    "example": "lbns r? deviceHash nameHash slotIndex logicSlotType batchMode"
-  },
-  "ss": {
-    "name": "ss",
-    "description": "Stocke la valeur du registre dans la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) de l'appareil en utilisant sa valeur d'index du support IC10 (d?).",
-    "example": "ss device(d?|r?|id) slotIndex logicSlotType r?"
-  },
-  "sbs": {
-    "name": "sbs",
-    "description": "Stocke la valeur du registre dans la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) de tous les appareils réseau qui correspondent au type du Hash.",
-    "example": "sbs deviceHash slotIndex logicSlotType r?"
-  },
-  "srl": {
-    "name": "srl",
-    "description": "Effectue une opération de décalage logique vers la droite sur la représentation binaire d'une valeur. Elle décale les bits vers la droite et remplit les bits les plus à gauche vides avec des zéros.",
-    "example": "srl r? a(r?|num) b(r?|num)"
-  },
-  "sra": {
-    "name": "sra",
-    "description": "Effectue une opération de décalage arithmétique vers la droite sur la représentation binaire d'une valeur. Elle décale les bits vers la droite et remplit les bits les plus à gauche vides avec une copie du bit de signe (le bit le plus significatif).",
-    "example": "sra r? a(r?|num) b(r?|num)"
-  },
-  "sll": {
-    "name": "sll",
-    "description": "Effectue une opération de décalage logique vers la gauche sur la représentation binaire d'une valeur. Elle décale les bits vers la gauche et remplit les bits les plus à droite vides avec des zéros.",
-    "example": "sll r? a(r?|num) b(r?|num)"
-  },
-  "sla": {
-    "name": "sla",
-    "description": "Effectue une opération de décalage arithmétique vers la gauche sur la représentation binaire d'une valeur. Elle décale les bits vers la gauche et remplit les bits les plus à droite vides avec une copie du bit de signe (le bit le plus significatif).",
-    "example": "sla r? a(r?|num) b(r?|num)"
-  },
-  "not": {
-    "name": "not",
-    "description": "Effectue une opération logique \"NOT\" (NON) : le registre de sortie = l'inverse du bit de la valeur d'entrée. Si le bit est 0, il devient 1, et vice versa.",
-    "example": "not r? a(r?|num)"
-  },
-  "ld": {
-    "name": "ld",
-    "description": "Registre = la valeur logique (logicType) en utilisant la référence directe à l'ID  (IDentifiant unique de cet objet en particulier, qui commence par \"$\").",
-    "example": "ld r? id(r?|id) logicType"
-  },
-  "sd": {
-    "name": "sd",
-    "description": "Stocke la valeur du registre dans la valeur logique (logicType) de l'appareil en utilisant sa référence directe à l'ID (IDentifiant unique de cet objet en particulier, qui commence par \"$\").",
-    "example": "sd id(r?|id) logicType r?"
-  },
-  "poke": {
-    "name": "poke",
-    "description": "Stocke la valeur fournie à l'adresse fournie dans le tableau.",
-    "example": "poke address(r?|num) value(r?|num)"
-  },
-  "getd": {
-    "name": "getd",
-    "description": "Registre = valeur du tableau à l'adresse fournie de l'appareil en utilisant directement l'ID. (IDentifiant unique de cet objet en particulier, qui commence par \"$\").",
-    "example": "getd r? id(r?|id) address(r?|num)"
-  },
-  "putd": {
-    "name": "putd",
-    "description": "Stocke la valeur dans le tableau à l'adresse fournie de l'appareil en utilisant directement l'ID. (IDentifiant unique de cet objet en particulier, qui commence par \"$\").",
-    "example": "putd id(r?|id) address(r?|num) value(r?|num)"
-  },
-  "get": {
-    "name": "get",
-    "description": "Registre = valeur du tableau à l'adresse fournie de l'appareil en utilisant la valeur d'index du support IC10 (d?).",
-    "example": "get r? device(d?|r?|id) address(r?|num)"
-  },
-  "put": {
-    "name": "put",
-    "description": "Stocke la valeur dans le tableau à l'adresse fournie de l'appareil en utilisant la valeur d'index du support IC10 (d?).",
-    "example": "put device(d?|r?|id) address(r?|num) value(r?|num)"
-  },
-  "clr": {
-    "name": "clr",
-    "description": "Efface la mémoire du tableau de l'appareil en utilisant la valeur d'index du support IC10 (d?).",
-    "example": "clr d?"
-  },
-  "clrd": {
-    "name": "clrd",
-    "description": "Efface la mémoire du tableau de l'appareil en utilisant directement l'ID. (IDentifiant unique de cet objet en particulier, qui commence par \"$\").",
-    "example": "clrd id(r?|num)"
-  },
-  "rmap": {
-    "name": "rmap",
-    "description": "Étant donné un Hash de réactif, stocke le Hash du préfabriqué correspondant que l'appareil attend pour satisfaire l'exigence du réactif. Par exemple, sur une imprimante automatique, le Hash pour Fer stockera le Hash pour ItemIronIngot (lingot de fer).",
-    "example": "rmap r? d? reagentHash(r?|num)"
-  },
-  "bdnvl": {
-    "name": "bdnvl",
-    "description": "Will branch to line a if the provided device not valid for a load instruction for the provided logic type.",
-    "example": "bdnvl device(d?|r?|id) logicType a(r?|num)"
-  },
-  "bdnvs": {
-    "name": "bdnvs",
-    "description": "Will branch to line a if the provided device not valid for a store instruction for the provided logic type.",
-    "example": "bdnvs device(d?|r?|id) logicType a(r?|num)"
-  },
-  "pow": {
-    "name": "pow",
-    "description": "Stores the result of raising a to the power of b in the register. Follows IEEE-754 standard for floating point arithmetic.",
-    "example": "pow r? a(r?|num) b(r?|num)"
-  },
-  "ext": {
-    "name": "ext",
-    "description": "Extracts a bit field from a, beginning at b for c length and placed in the provided register. Payload cannot exceed 53 bits in final length.",
-    "example": "ext r? a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "ins": {
-    "name": "ins",
-    "description": "Inserts a bit field of a into the provided register, beginning at b for c length. Payload cannot exceed 53 bits in final length.",
-    "example": "ins r? a(r?|num) b(r?|num) c(r?|num)"
-  },
-  "lerp": {
-    "name": "lerp",
-    "description": "Linearly interpolates between a and b by the ratio c, and places the result in the register provided. The ratio c will be clamped between 0 and 1.",
-    "example": "lerp r? a(r?|num) b(r?|num) c(r?|num)"
-  }
+	"l": {
+		"name": "l",
+		"description": "Registre = la valeur logique (logicType) en utilisant la valeur d'index du support IC10 (d?).",
+		"example": "l r? device(d?|r?|id) logicType"
+	},
+	"s": {
+		"name": "s",
+		"description": "Stocke la valeur du registre dans la valeur logique (logicType) de l'appareil en utilisant sa valeur d'index du support IC10 (d?).",
+		"example": "s device(d?|r?|id) logicType r?"
+	},
+	"ls": {
+		"name": "ls",
+		"description": "Registre = le type de \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) sur l'appareil en utilisant sa valeur d'index du support IC10 (d?).",
+		"example": "ls r? device(d?|r?|id) slotIndex logicSlotType"
+	},
+	"lr": {
+		"name": "lr",
+		"description": "Registre = le type de réactif (ReagentMode) de l'appareil en utilisant sa valeur d'index du support IC10 (d?) où un Hash du type de réactif est vérifié. Le type de réactif peut être soit :  0 = Contenu (Contents), 1 = Requis (Required), 2 = Recette (Recipe).  Peut utiliser soit le chiffre, soit le mot (en anglais).",
+		"example": "lr r? device(d?|r?|id) reagentMode int"
+	},
+	"sb": {
+		"name": "sb",
+		"description": "Stocke la valeur du registre dans la valeur logique (logicType) de tous les appareils réseau qui correspondent au type du Hash.",
+		"example": "sb deviceHash logicType r?"
+	},
+	"lb": {
+		"name": "lb",
+		"description": "Registre = la valeur logique (logicType) de tous les appareils réseau qui correspondent au type du Hash en utilisant le mode groupé indiqué : 0 = Moyenne (Average), 1 = Somme (Sum), 2 = Minimum (Minimum), 3 = Maximum (Maximum).  Peut utiliser soit le chiffre, soit le mot (en anglais).",
+		"example": "lb r? deviceHash logicType batchMode"
+	},
+	"alias": {
+		"name": "alias",
+		"description": "Étiquette le registre ou la référence de l'appareil avec un nom, les références d'appareils affectent également ce qui s'affiche sur les vis du support IC10 (d?).",
+		"example": "alias str r?|d?"
+	},
+	"move": {
+		"name": "move",
+		"description": "Registre = numéro fourni ou valeur du registre.",
+		"example": "move r? a(r?|num)"
+	},
+	"add": {
+		"name": "add",
+		"description": "Registre = a + b",
+		"example": "add r? a(r?|num) b(r?|num)"
+	},
+	"sub": {
+		"name": "sub",
+		"description": "Registre = a - b",
+		"example": "sub r? a(r?|num) b(r?|num)"
+	},
+	"sdse": {
+		"name": "sdse",
+		"description": "Registre = 1 si l'appareil est configuré, sinon 0",
+		"example": "sdse r? device(d?|r?|id)"
+	},
+	"sdns": {
+		"name": "sdns",
+		"description": "Registre = 1 si l'appareil n'est pas configuré, sinon 0",
+		"example": "sdns r? device(d?|r?|id)"
+	},
+	"slt": {
+		"name": "slt",
+		"description": "Registre = 1 si a < b, sinon 0",
+		"example": "slt r? a(r?|num) b(r?|num)"
+	},
+	"sgt": {
+		"name": "sgt",
+		"description": "Registre = 1 si a > b, sinon 0",
+		"example": "sgt r? a(r?|num) b(r?|num)"
+	},
+	"sle": {
+		"name": "sle",
+		"description": "Registre = 1 si a <= b, sinon 0",
+		"example": "sle r? a(r?|num) b(r?|num)"
+	},
+	"sge": {
+		"name": "sge",
+		"description": "Registre = 1 si a >= b, sinon 0",
+		"example": "sge r? a(r?|num) b(r?|num)"
+	},
+	"seq": {
+		"name": "seq",
+		"description": "Registre = 1 si a == b, sinon 0",
+		"example": "seq r? a(r?|num) b(r?|num)"
+	},
+	"sne": {
+		"name": "sne",
+		"description": "Registre = 1 si a != b, sinon 0",
+		"example": "sne r? a(r?|num) b(r?|num)"
+	},
+	"sap": {
+		"name": "sap",
+		"description": "Registre = 1 si abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"example": "sap r? a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"sna": {
+		"name": "sna",
+		"description": "Registre = 1 si abs(a - b) > max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"example": "sna r? a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"and": {
+		"name": "and",
+		"description": "Effectue une opération logique \"AND\" (ET) : le registre de sortie = 1 uniquement si tous les bits d'entrée sont 1. Sinon, le registre de sortie = 0.",
+		"example": "and r? a(r?|num) b(r?|num)"
+	},
+	"or": {
+		"name": "or",
+		"description": "Effectue une opération logique \"OR\" (OU) : le registre de sortie = 1 si au moins un bit d'entrée est 1. Sinon, le registre de sortie = 0.",
+		"example": "or r? a(r?|num) b(r?|num)"
+	},
+	"xor": {
+		"name": "xor",
+		"description": "Effectue une opération logique \"XOR\" (OU exclusif) : le registre de sortie = 1 si une seule des entrées est 1. Si les entrées sont identiques, le registre de sortie = 0.",
+		"example": "xor r? a(r?|num) b(r?|num)"
+	},
+	"nor": {
+		"name": "nor",
+		"description": "Effectue une opération logique \"NOR\" (NON OU) : le registre de sortie = 1 uniquement si tous les bits d'entrée sont 0. Sinon, le registre de sortie = 0.",
+		"example": "nor r? a(r?|num) b(r?|num)"
+	},
+	"mul": {
+		"name": "mul",
+		"description": "Registre = a \\* b",
+		"example": "mul r? a(r?|num) b(r?|num)"
+	},
+	"div": {
+		"name": "div",
+		"description": "Registre = a / b",
+		"example": "div r? a(r?|num) b(r?|num)"
+	},
+	"mod": {
+		"name": "mod",
+		"description": "Registre = a mod b (note : différent de a % b)",
+		"example": "mod r? a(r?|num) b(r?|num)"
+	},
+	"j": {
+		"name": "j",
+		"description": "Saute à la ligne a",
+		"example": "j int"
+	},
+	"bltz": {
+		"name": "bltz",
+		"description": "Saute à la ligne b si a < 0",
+		"example": "bltz a(r?|num) b(r?|num)"
+	},
+	"bgez": {
+		"name": "bgez",
+		"description": "Saute à la ligne b si a >= 0",
+		"example": "bgez a(r?|num) b(r?|num)"
+	},
+	"blez": {
+		"name": "blez",
+		"description": "Saute à la ligne b si a <= 0",
+		"example": "blez a(r?|num) b(r?|num)"
+	},
+	"bgtz": {
+		"name": "bgtz",
+		"description": "Saute à la ligne b si a > 0",
+		"example": "bgtz a(r?|num) b(r?|num)"
+	},
+	"bdse": {
+		"name": "bdse",
+		"description": "Saute à la ligne a si l'appareil d est configuré",
+		"example": "bdse device(d?|r?|id) a(r?|num)"
+	},
+	"bdns": {
+		"name": "bdns",
+		"description": "Saute à la ligne a si l'appareil d n'est pas configuré",
+		"example": "bdns device(d?|r?|id) a(r?|num)"
+	},
+	"beq": {
+		"name": "beq",
+		"description": "Saute à la ligne c si a == b",
+		"example": "beq a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"bne": {
+		"name": "bne",
+		"description": "Saute à la ligne c si a != b",
+		"example": "bne a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"bap": {
+		"name": "bap",
+		"description": "Saute à la ligne d si abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"example": "bap a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+	},
+	"bna": {
+		"name": "bna",
+		"description": "Saute à la ligne d si abs(a - b) > max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"example": "bna a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+	},
+	"jal": {
+		"name": "jal",
+		"description": "Saute à la ligne a et stocke le numéro de la ligne suivante dans ra",
+		"example": "jal int"
+	},
+	"brdse": {
+		"name": "brdse",
+		"description": "Fait un saut relatif de a lignes si l'appareil est configuré",
+		"example": "brdse device(d?|r?|id) a(r?|num)"
+	},
+	"brdns": {
+		"name": "brdns",
+		"description": "Fait un saut relatif de a lignes si l'appareil n'est pas configuré",
+		"example": "brdns device(d?|r?|id) a(r?|num)"
+	},
+	"bltzal": {
+		"name": "bltzal",
+		"description": "Saute à la ligne b si a < 0 et stocke le numéro de la ligne suivante dans ra",
+		"example": "bltzal a(r?|num) b(r?|num)"
+	},
+	"bgezal": {
+		"name": "bgezal",
+		"description": "Saute à la ligne b si a >= 0 et stocke le numéro de la ligne suivante dans ra",
+		"example": "bgezal a(r?|num) b(r?|num)"
+	},
+	"blezal": {
+		"name": "blezal",
+		"description": "Saute à la ligne b si a <= 0 et stocke le numéro de la ligne suivante dans ra",
+		"example": "blezal a(r?|num) b(r?|num)"
+	},
+	"bgtzal": {
+		"name": "bgtzal",
+		"description": "Saute à la ligne b si a > 0 et stocke le numéro de la ligne suivante dans ra",
+		"example": "bgtzal a(r?|num) b(r?|num)"
+	},
+	"beqal": {
+		"name": "beqal",
+		"description": "Saute à la ligne c si a == b et stocke le numéro de la ligne suivante dans ra",
+		"example": "beqal a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"bneal": {
+		"name": "bneal",
+		"description": "Saute à la ligne c si a != b et stocke le numéro de la ligne suivante dans ra",
+		"example": "bneal a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"jr": {
+		"name": "jr",
+		"description": "Fait un saut relatif de a lignes",
+		"example": "jr int"
+	},
+	"bdseal": {
+		"name": "bdseal",
+		"description": "Saute à la ligne a si l'appareil d est configuré et stocke le numéro de la ligne suivante dans ra",
+		"example": "bdseal device(d?|r?|id) a(r?|num)"
+	},
+	"bdnsal": {
+		"name": "bdnsal",
+		"description": "Saute à la ligne a si l'appareil d n'est pas configuré et stocke le numéro de la ligne suivante dans ra",
+		"example": "bdnsal device(d?|r?|id) a(r?|num)"
+	},
+	"brltz": {
+		"name": "brltz",
+		"description": "Fait un saut relatif de b lignes si a < 0",
+		"example": "brltz a(r?|num) b(r?|num)"
+	},
+	"brgez": {
+		"name": "brgez",
+		"description": "Fait un saut relatif de b lignes si a >= 0",
+		"example": "brgez a(r?|num) b(r?|num)"
+	},
+	"brlez": {
+		"name": "brlez",
+		"description": "Fait un saut relatif de b lignes si a <= 0",
+		"example": "brlez a(r?|num) b(r?|num)"
+	},
+	"brgtz": {
+		"name": "brgtz",
+		"description": "Fait un saut relatif de b lignes si a > 0",
+		"example": "brgtz a(r?|num) b(r?|num)"
+	},
+	"breq": {
+		"name": "breq",
+		"description": "Fait un saut relatif de c lignes si a == b",
+		"example": "breq a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"brne": {
+		"name": "brne",
+		"description": "Fait un saut relatif de c lignes si a != b",
+		"example": "brne a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"brap": {
+		"name": "brap",
+		"description": "Fait un saut relatif de d lignes si abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"example": "brap a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+	},
+	"brna": {
+		"name": "brna",
+		"description": "Fait un saut relatif de d lignes si abs(a - b) > max(c \\* max (abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"example": "brna a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+	},
+	"sqrt": {
+		"name": "sqrt",
+		"description": "Registre = racine carrée de a",
+		"example": "sqrt r? a(r?|num)"
+	},
+	"round": {
+		"name": "round",
+		"description": "Register = a arrondi à l'entier le plus proche",
+		"example": "round r? a(r?|num)"
+	},
+	"trunc": {
+		"name": "trunc",
+		"description": "Register = a sans la partie décimale (entier obtenu par troncature)",
+		"example": "trunc r? a(r?|num)"
+	},
+	"ceil": {
+		"name": "ceil",
+		"description": "Register = plus petit entier supérieur ou égal à a",
+		"example": "ceil r? a(r?|num)"
+	},
+	"floor": {
+		"name": "floor",
+		"description": "Register = plus grand entier inférieur ou égal à a",
+		"example": "floor r? a(r?|num)"
+	},
+	"max": {
+		"name": "max",
+		"description": "Registre = la valeur maximum entre a et b",
+		"example": "max r? a(r?|num) b(r?|num)"
+	},
+	"min": {
+		"name": "min",
+		"description": "Registre = la valeur minimum entre a et b",
+		"example": "min r? a(r?|num) b(r?|num)"
+	},
+	"abs": {
+		"name": "abs",
+		"description": "Registre = la valeur absolue de a",
+		"example": "abs r? a(r?|num)"
+	},
+	"log": {
+		"name": "log",
+		"description": "Registre = log(a)",
+		"example": "log r? a(r?|num)"
+	},
+	"exp": {
+		"name": "exp",
+		"description": "Registre = exp(a)",
+		"example": "exp r? a(r?|num)"
+	},
+	"rand": {
+		"name": "rand",
+		"description": "Registre = une valeur aléatoire x avec 0 <= x < 1",
+		"example": "rand r?"
+	},
+	"yield": {
+		"name": "yield",
+		"description": "Pause de l'exécution pour 1 cycle de 0,5 seconde (tick)",
+		"example": "yield"
+	},
+	"label": {
+		"name": "label",
+		"description": "OBSOLÈTE",
+		"example": "label d? str"
+	},
+	"peek": {
+		"name": "peek",
+		"description": "Registre = la valeur en haut du tableau",
+		"example": "peek r?"
+	},
+	"push": {
+		"name": "push",
+		"description": "Ajoute la valeur de a en haut du tableau et incrémente sp (sp c'est le registre contenant l'index du tableau, entre 0 et 512)",
+		"example": "push a(r?|num)"
+	},
+	"pop": {
+		"name": "pop",
+		"description": "Registre = la valeur en haut du tableau et décrémente sp (sp c'est le registre contenant l'index du tableau, entre 0 et 512)",
+		"example": "pop r?"
+	},
+	"hcf": {
+		"name": "hcf",
+		"description": "Arrêt et prise de feu",
+		"example": "hcf"
+	},
+	"select": {
+		"name": "select",
+		"description": "Registre = b si a est non nul, sinon c",
+		"example": "select r? a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"blt": {
+		"name": "blt",
+		"description": "Saute à la ligne c si a < b",
+		"example": "blt a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"bgt": {
+		"name": "bgt",
+		"description": "Saute à la ligne c si a > b",
+		"example": "bgt a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"ble": {
+		"name": "ble",
+		"description": "Saute à la ligne c si a <= b",
+		"example": "ble a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"bge": {
+		"name": "bge",
+		"description": "Saute à la ligne c si a >= b",
+		"example": "bge a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"brlt": {
+		"name": "brlt",
+		"description": "Fait un saut relatif de c lignes si a < b",
+		"example": "brlt a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"brgt": {
+		"name": "brgt",
+		"description": "Fait un saut relatif de c lignes si a > b",
+		"example": "brgt a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"brle": {
+		"name": "brle",
+		"description": "Fait un saut relatif de c lignes si a <= b",
+		"example": "brle a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"brge": {
+		"name": "brge",
+		"description": "Fait un saut relatif de c lignes si a >= b",
+		"example": "brge a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"bltal": {
+		"name": "bltal",
+		"description": "Saute à la ligne c si a < b et stocke le numéro de la ligne suivante dans ra",
+		"example": "bltal a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"bgtal": {
+		"name": "bgtal",
+		"description": "Saute à la ligne c si a > b et stocke le numéro de la ligne suivante dans ra",
+		"example": "bgtal a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"bleal": {
+		"name": "bleal",
+		"description": "Saute à la ligne c si a <= b et stocke le numéro de la ligne suivante dans ra",
+		"example": "bleal a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"bgeal": {
+		"name": "bgeal",
+		"description": "Saute à la ligne c si a >= b et stocke le numéro de la ligne suivante dans ra",
+		"example": "bgeal a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"bapal": {
+		"name": "bapal",
+		"description": "Saute à la ligne c si a != b et stocke le numéro de la ligne suivante dans ra",
+		"example": "bapal a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+	},
+	"bnaal": {
+		"name": "bnaal",
+		"description": "Saute à la ligne d si abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) et stocke le numéro de la ligne suivante dans ra (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"example": "bnaal a(r?|num) b(r?|num) c(r?|num) d(r?|num)"
+	},
+	"beqz": {
+		"name": "beqz",
+		"description": "Saute à la ligne b si a == 0",
+		"example": "beqz a(r?|num) b(r?|num)"
+	},
+	"bnez": {
+		"name": "bnez",
+		"description": "Saute à la ligne b si a != 0",
+		"example": "bnez a(r?|num) b(r?|num)"
+	},
+	"bapz": {
+		"name": "bapz",
+		"description": "Saute à la ligne b si abs(a) <= float.epsilon \\* 8 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"example": "bapz a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"bnaz": {
+		"name": "bnaz",
+		"description": "Saute à la ligne b si abs(a) > float.epsilon (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"example": "bnaz a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"breqz": {
+		"name": "breqz",
+		"description": "Fait un saut relatif de b lignes si a == 0",
+		"example": "breqz a(r?|num) b(r?|num)"
+	},
+	"brnez": {
+		"name": "brnez",
+		"description": "Fait un saut relatif de b lignes si a != 0",
+		"example": "brnez a(r?|num) b(r?|num)"
+	},
+	"brapz": {
+		"name": "brapz",
+		"description": "Fait un saut relatif de c lignes si abs(a) <= float.epsilon \\* 8 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"example": "brapz a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"brnaz": {
+		"name": "brnaz",
+		"description": "Fait un saut relatif de c lignes si abs(a) > float.epsilon \\* 8 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"example": "brnaz a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"beqzal": {
+		"name": "beqzal",
+		"description": "Saute à la ligne b si a == 0 et stocke le numéro de la ligne suivante dans ra",
+		"example": "beqzal a(r?|num) b(r?|num)"
+	},
+	"bnezal": {
+		"name": "bnezal",
+		"description": "Saute à la ligne b si a != 0 et stocke le numéro de la ligne suivante dans ra",
+		"example": "bnezal a(r?|num) b(r?|num)"
+	},
+	"bapzal": {
+		"name": "bapzal",
+		"description": "Saute à la ligne c si abs(a) <= float.epsilon \\* 8 et stocke le numéro de la ligne suivante dans ra (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"example": "bapzal a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"bnazal": {
+		"name": "bnazal",
+		"description": "Saute à la ligne c si abs(a) > float.epsilon \\* 8 et stocke le numéro de la ligne suivante dans ra (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"example": "bnazal a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"sltz": {
+		"name": "sltz",
+		"description": "Registre = 1 si a < 0, sinon 0",
+		"example": "sltz r? a(r?|num)"
+	},
+	"sgtz": {
+		"name": "sgtz",
+		"description": "Registre = 1 si a > 0, sinon 0",
+		"example": "sgtz r? a(r?|num)"
+	},
+	"slez": {
+		"name": "slez",
+		"description": "Registre = 1 si a <= 0, sinon 0",
+		"example": "slez r? a(r?|num)"
+	},
+	"sgez": {
+		"name": "sgez",
+		"description": "Registre = 1 si a >= 0, sinon 0",
+		"example": "sgez r? a(r?|num)"
+	},
+	"seqz": {
+		"name": "seqz",
+		"description": "Registre = 1 si a == 0, sinon 0",
+		"example": "seqz r? a(r?|num)"
+	},
+	"snez": {
+		"name": "snez",
+		"description": "Registre = 1 si a != 0, sinon 0",
+		"example": "snez r? a(r?|num)"
+	},
+	"sapz": {
+		"name": "sapz",
+		"description": "Registre = 1 si abs(a) <= float.epsilon \\* 8, sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"example": "sapz r? a(r?|num) b(r?|num)"
+	},
+	"snaz": {
+		"name": "snaz",
+		"description": "Registre = 1 si abs(a) > float.epsilon, sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"example": "snaz r? a(r?|num) b(r?|num)"
+	},
+	"define": {
+		"name": "define",
+		"description": "Crée une étiquette qui sera remplacée dans tout le programme par la valeur fournie.",
+		"example": "define str num"
+	},
+	"sleep": {
+		"name": "sleep",
+		"description": "Pause de l'exécution pendant a secondes",
+		"example": "sleep a(r?|num)"
+	},
+	"sin": {
+		"name": "sin",
+		"description": "Registe = le sinus de l'angle a (en radians)",
+		"example": "sin r? a(r?|num)"
+	},
+	"asin": {
+		"name": "asin",
+		"description": "Registe = l'angle (en radians) dont le sinus est a",
+		"example": "asin r? a(r?|num)"
+	},
+	"tan": {
+		"name": "tan",
+		"description": "Registe = la tangente de l'angle a (en radians)",
+		"example": "tan r? a(r?|num)"
+	},
+	"atan": {
+		"name": "atan",
+		"description": "Registe = l'angle (en radians) dont la tangente est a",
+		"example": "atan r? a(r?|num)"
+	},
+	"cos": {
+		"name": "cos",
+		"description": "Registe = le cosinus de l'angle a (en radians)",
+		"example": "cos r? a(r?|num)"
+	},
+	"acos": {
+		"name": "acos",
+		"description": "Registe = le cosinus de l'angle a (en radians)",
+		"example": "acos r? a(r?|num)"
+	},
+	"atan2": {
+		"name": "atan2",
+		"description": "Registe = l'angle (en radians) dont la tangente est le quotient des deux : a(y) et b(x)",
+		"example": "atan2 r? a(r?|num) b(r?|num)"
+	},
+	"brnan": {
+		"name": "brnan",
+		"description": "Fait un saut relatif de b lignes si a n'est pas un nombre (NaN)",
+		"example": "brnan a(r?|num) b(r?|num)"
+	},
+	"bnan": {
+		"name": "bnan",
+		"description": "Saute à la ligne b si a n'est pas un nombre (NaN)",
+		"example": "bnan a(r?|num) b(r?|num)"
+	},
+	"snan": {
+		"name": "snan",
+		"description": "Registre = 1 si a est NaN, sinon 0",
+		"example": "snan r? a(r?|num)"
+	},
+	"snanz": {
+		"name": "snanz",
+		"description": "Registre = 0 si a est NaN, sinon 1",
+		"example": "snanz r? a(r?|num)"
+	},
+	"lbs": {
+		"name": "lbs",
+		"description": "Registre = la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) de tous les appareils réseau qui correspondent au type du Hash en utilisant le mode groupé indiqué : 0 = Moyenne (Average), 1 = Somme (Sum), 2 = Minimum (Minimum), 3 = Maximum (Maximum).  Peut utiliser soit le chiffre, soit le mot (en anglais).",
+		"example": "lbs r? deviceHash slotIndex logicSlotType batchMode"
+	},
+	"lbn": {
+		"name": "lbn",
+		"description": "Registre = la valeur logique (logicType) de tous les appareils réseau qui correspondent au type du Hash et au nom fournis en utilisant le mode groupé indiqué : 0 = Moyenne (Average), 1 = Somme (Sum), 2 = Minimum (Minimum), 3 = Maximum (Maximum).  Peut utiliser soit le chiffre, soit le mot (en anglais).",
+		"example": "lbn r? deviceHash nameHash logicType batchMode"
+	},
+	"sbn": {
+		"name": "sbn",
+		"description": "Stocke la valeur du registre dans la valeur logique (logicType) sur tous les appareils réseau de sortie avec le Hash de type et le nom fournis.",
+		"example": "sbn deviceHash nameHash logicType r?"
+	},
+	"lbns": {
+		"name": "lbns",
+		"description": "Registre = la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) de tous les appareils réseau qui correspondent au type du Hash et au nom fournis en utilisant le mode groupé indiqué : 0 = Moyenne (Average), 1 = Somme (Sum), 2 = Minimum (Minimum), 3 = Maximum (Maximum).  Peut utiliser soit le chiffre, soit le mot (en anglais).",
+		"example": "lbns r? deviceHash nameHash slotIndex logicSlotType batchMode"
+	},
+	"ss": {
+		"name": "ss",
+		"description": "Stocke la valeur du registre dans la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) de l'appareil en utilisant sa valeur d'index du support IC10 (d?).",
+		"example": "ss device(d?|r?|id) slotIndex logicSlotType r?"
+	},
+	"sbs": {
+		"name": "sbs",
+		"description": "Stocke la valeur du registre dans la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) de tous les appareils réseau qui correspondent au type du Hash.",
+		"example": "sbs deviceHash slotIndex logicSlotType r?"
+	},
+	"srl": {
+		"name": "srl",
+		"description": "Effectue une opération de décalage logique vers la droite sur la représentation binaire d'une valeur. Elle décale les bits vers la droite et remplit les bits les plus à gauche vides avec des zéros.",
+		"example": "srl r? a(r?|num) b(r?|num)"
+	},
+	"sra": {
+		"name": "sra",
+		"description": "Effectue une opération de décalage arithmétique vers la droite sur la représentation binaire d'une valeur. Elle décale les bits vers la droite et remplit les bits les plus à gauche vides avec une copie du bit de signe (le bit le plus significatif).",
+		"example": "sra r? a(r?|num) b(r?|num)"
+	},
+	"sll": {
+		"name": "sll",
+		"description": "Effectue une opération de décalage logique vers la gauche sur la représentation binaire d'une valeur. Elle décale les bits vers la gauche et remplit les bits les plus à droite vides avec des zéros.",
+		"example": "sll r? a(r?|num) b(r?|num)"
+	},
+	"sla": {
+		"name": "sla",
+		"description": "Effectue une opération de décalage arithmétique vers la gauche sur la représentation binaire d'une valeur. Elle décale les bits vers la gauche et remplit les bits les plus à droite vides avec une copie du bit de signe (le bit le plus significatif).",
+		"example": "sla r? a(r?|num) b(r?|num)"
+	},
+	"not": {
+		"name": "not",
+		"description": "Effectue une opération logique \"NOT\" (NON) : le registre de sortie = l'inverse du bit de la valeur d'entrée. Si le bit est 0, il devient 1, et vice versa.",
+		"example": "not r? a(r?|num)"
+	},
+	"ld": {
+		"name": "ld",
+		"description": "Registre = la valeur logique (logicType) en utilisant la référence directe à l'ID  (IDentifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"example": "ld r? id(r?|id) logicType"
+	},
+	"sd": {
+		"name": "sd",
+		"description": "Stocke la valeur du registre dans la valeur logique (logicType) de l'appareil en utilisant sa référence directe à l'ID (IDentifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"example": "sd id(r?|id) logicType r?"
+	},
+	"poke": {
+		"name": "poke",
+		"description": "Stocke la valeur fournie à l'adresse fournie dans le tableau.",
+		"example": "poke address(r?|num) value(r?|num)"
+	},
+	"getd": {
+		"name": "getd",
+		"description": "Registre = valeur du tableau à l'adresse fournie de l'appareil en utilisant directement l'ID. (IDentifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"example": "getd r? id(r?|id) address(r?|num)"
+	},
+	"putd": {
+		"name": "putd",
+		"description": "Stocke la valeur dans le tableau à l'adresse fournie de l'appareil en utilisant directement l'ID. (IDentifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"example": "putd id(r?|id) address(r?|num) value(r?|num)"
+	},
+	"get": {
+		"name": "get",
+		"description": "Registre = valeur du tableau à l'adresse fournie de l'appareil en utilisant la valeur d'index du support IC10 (d?).",
+		"example": "get r? device(d?|r?|id) address(r?|num)"
+	},
+	"put": {
+		"name": "put",
+		"description": "Stocke la valeur dans le tableau à l'adresse fournie de l'appareil en utilisant la valeur d'index du support IC10 (d?).",
+		"example": "put device(d?|r?|id) address(r?|num) value(r?|num)"
+	},
+	"clr": {
+		"name": "clr",
+		"description": "Efface la mémoire du tableau de l'appareil en utilisant la valeur d'index du support IC10 (d?).",
+		"example": "clr d?"
+	},
+	"clrd": {
+		"name": "clrd",
+		"description": "Efface la mémoire du tableau de l'appareil en utilisant directement l'ID. (IDentifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"example": "clrd id(r?|num)"
+	},
+	"rmap": {
+		"name": "rmap",
+		"description": "Étant donné un Hash de réactif, stocke le Hash du préfabriqué correspondant que l'appareil attend pour satisfaire l'exigence du réactif. Par exemple, sur une imprimante automatique, le Hash pour Fer stockera le Hash pour ItemIronIngot (lingot de fer).",
+		"example": "rmap r? d? reagentHash(r?|num)"
+	},
+	"bdnvl": {
+		"name": "bdnvl",
+		"description": "Will branch to line a if the provided device not valid for a load instruction for the provided logic type.",
+		"example": "bdnvl device(d?|r?|id) logicType a(r?|num)"
+	},
+	"bdnvs": {
+		"name": "bdnvs",
+		"description": "Will branch to line a if the provided device not valid for a store instruction for the provided logic type.",
+		"example": "bdnvs device(d?|r?|id) logicType a(r?|num)"
+	},
+	"pow": {
+		"name": "pow",
+		"description": "Stores the result of raising a to the power of b in the register. Follows IEEE-754 standard for floating point arithmetic.",
+		"example": "pow r? a(r?|num) b(r?|num)"
+	},
+	"ext": {
+		"name": "ext",
+		"description": "Extracts a bit field from a, beginning at b for c length and placed in the provided register. Payload cannot exceed 53 bits in final length.",
+		"example": "ext r? a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"ins": {
+		"name": "ins",
+		"description": "Inserts a bit field of a into the provided register, beginning at b for c length. Payload cannot exceed 53 bits in final length.",
+		"example": "ins r? a(r?|num) b(r?|num) c(r?|num)"
+	},
+	"lerp": {
+		"name": "lerp",
+		"description": "Linearly interpolates between a and b by the ratio c, and places the result in the register provided. The ratio c will be clamped between 0 and 1.",
+		"example": "lerp r? a(r?|num) b(r?|num) c(r?|num)"
+	}
 }
