@@ -219,6 +219,36 @@
 		"referenceType": "Enum",
 		"value": 3
 	},
+	"ContactTier.Close": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "ContactTier.Close",
+		"name": "Close",
+		"prefix": "ContactTier",
+		"referenceType": "Enum",
+		"value": 0
+	},
+	"ContactTier.Far": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "ContactTier.Far",
+		"name": "Far",
+		"prefix": "ContactTier",
+		"referenceType": "Enum",
+		"value": 2
+	},
+	"ContactTier.Medium": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "ContactTier.Medium",
+		"name": "Medium",
+		"prefix": "ContactTier",
+		"referenceType": "Enum",
+		"value": 1
+	},
 	"DaylightSensorMode.Default": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -248,6 +278,156 @@
 		"prefix": "DaylightSensorMode",
 		"referenceType": "Enum",
 		"value": 2
+	},
+	"DisplayMode.Celsius": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "DisplayMode.Celsius",
+		"name": "Celsius",
+		"prefix": "DisplayMode",
+		"referenceType": "Enum",
+		"value": 4
+	},
+	"DisplayMode.Credits": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "DisplayMode.Credits",
+		"name": "Credits",
+		"prefix": "DisplayMode",
+		"referenceType": "Enum",
+		"value": 6
+	},
+	"DisplayMode.Days": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "DisplayMode.Days",
+		"name": "Days",
+		"prefix": "DisplayMode",
+		"referenceType": "Enum",
+		"value": 9
+	},
+	"DisplayMode.Default": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "DisplayMode.Default",
+		"name": "Default",
+		"prefix": "DisplayMode",
+		"referenceType": "Enum",
+		"value": 0
+	},
+	"DisplayMode.Fahrenheit": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "DisplayMode.Fahrenheit",
+		"name": "Fahrenheit",
+		"prefix": "DisplayMode",
+		"referenceType": "Enum",
+		"value": 11
+	},
+	"DisplayMode.Kelvin": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "DisplayMode.Kelvin",
+		"name": "Kelvin",
+		"prefix": "DisplayMode",
+		"referenceType": "Enum",
+		"value": 3
+	},
+	"DisplayMode.Litres": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "DisplayMode.Litres",
+		"name": "Litres",
+		"prefix": "DisplayMode",
+		"referenceType": "Enum",
+		"value": 12
+	},
+	"DisplayMode.Meters": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "DisplayMode.Meters",
+		"name": "Meters",
+		"prefix": "DisplayMode",
+		"referenceType": "Enum",
+		"value": 5
+	},
+	"DisplayMode.Minutes": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "DisplayMode.Minutes",
+		"name": "Minutes",
+		"prefix": "DisplayMode",
+		"referenceType": "Enum",
+		"value": 8
+	},
+	"DisplayMode.Mol": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "DisplayMode.Mol",
+		"name": "Mol",
+		"prefix": "DisplayMode",
+		"referenceType": "Enum",
+		"value": 13
+	},
+	"DisplayMode.Pa": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "DisplayMode.Pa",
+		"name": "Pa",
+		"prefix": "DisplayMode",
+		"referenceType": "Enum",
+		"value": 14
+	},
+	"DisplayMode.Percent": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "DisplayMode.Percent",
+		"name": "Percent",
+		"prefix": "DisplayMode",
+		"referenceType": "Enum",
+		"value": 1
+	},
+	"DisplayMode.Power": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "DisplayMode.Power",
+		"name": "Power",
+		"prefix": "DisplayMode",
+		"referenceType": "Enum",
+		"value": 2
+	},
+	"DisplayMode.Seconds": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "DisplayMode.Seconds",
+		"name": "Seconds",
+		"prefix": "DisplayMode",
+		"referenceType": "Enum",
+		"value": 7
+	},
+	"DisplayMode.String": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "DisplayMode.String",
+		"name": "String",
+		"prefix": "DisplayMode",
+		"referenceType": "Enum",
+		"value": 10
 	},
 	"ElevatorMode.Downward": {
 		"canUseAsConst": true,
@@ -518,6 +698,26 @@
 		"prefix": "GasType",
 		"referenceType": "Enum",
 		"value": 32
+	},
+	"HashType.GasLiquid": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "HashType.GasLiquid",
+		"name": "GasLiquid",
+		"prefix": "HashType",
+		"referenceType": "Enum",
+		"value": 1
+	},
+	"HashType.Prefab": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "HashType.Prefab",
+		"name": "Prefab",
+		"prefix": "HashType",
+		"referenceType": "Enum",
+		"value": 0
 	},
 	"LogicBatchMethod.Average": {
 		"canUseAsConst": true,
@@ -3759,6 +3959,106 @@
 		"referenceType": "Enum",
 		"value": 0
 	},
+	"PrinterInstruction.DeviceSetLock": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "PrinterInstruction.DeviceSetLock",
+		"name": "DeviceSetLock",
+		"prefix": "PrinterInstruction",
+		"referenceType": "Enum",
+		"value": 6
+	},
+	"PrinterInstruction.EjectAllReagents": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "PrinterInstruction.EjectAllReagents",
+		"name": "EjectAllReagents",
+		"prefix": "PrinterInstruction",
+		"referenceType": "Enum",
+		"value": 8
+	},
+	"PrinterInstruction.EjectReagent": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "PrinterInstruction.EjectReagent",
+		"name": "EjectReagent",
+		"prefix": "PrinterInstruction",
+		"referenceType": "Enum",
+		"value": 7
+	},
+	"PrinterInstruction.ExecuteRecipe": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "PrinterInstruction.ExecuteRecipe",
+		"name": "ExecuteRecipe",
+		"prefix": "PrinterInstruction",
+		"referenceType": "Enum",
+		"value": 2
+	},
+	"PrinterInstruction.JumpIfNextInvalid": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "PrinterInstruction.JumpIfNextInvalid",
+		"name": "JumpIfNextInvalid",
+		"prefix": "PrinterInstruction",
+		"referenceType": "Enum",
+		"value": 4
+	},
+	"PrinterInstruction.JumpToAddress": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "PrinterInstruction.JumpToAddress",
+		"name": "JumpToAddress",
+		"prefix": "PrinterInstruction",
+		"referenceType": "Enum",
+		"value": 5
+	},
+	"PrinterInstruction.MissingRecipeReagent": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "PrinterInstruction.MissingRecipeReagent",
+		"name": "MissingRecipeReagent",
+		"prefix": "PrinterInstruction",
+		"referenceType": "Enum",
+		"value": 9
+	},
+	"PrinterInstruction.None": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "PrinterInstruction.None",
+		"name": "None",
+		"prefix": "PrinterInstruction",
+		"referenceType": "Enum",
+		"value": 0
+	},
+	"PrinterInstruction.StackPointer": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "PrinterInstruction.StackPointer",
+		"name": "StackPointer",
+		"prefix": "PrinterInstruction",
+		"referenceType": "Enum",
+		"value": 1
+	},
+	"PrinterInstruction.WaitUntilNextValid": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "PrinterInstruction.WaitUntilNextValid",
+		"name": "WaitUntilNextValid",
+		"prefix": "PrinterInstruction",
+		"referenceType": "Enum",
+		"value": 3
+	},
 	"ReEntryProfile.High": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -3948,6 +4248,116 @@
 		"prefix": "RocketMode",
 		"referenceType": "Enum",
 		"value": 3
+	},
+	"SettingDisplayMode.Number": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "SettingDisplayMode.Number",
+		"name": "Number",
+		"prefix": "SettingDisplayMode",
+		"referenceType": "Enum",
+		"value": 0
+	},
+	"SettingDisplayMode.String": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "SettingDisplayMode.String",
+		"name": "String",
+		"prefix": "SettingDisplayMode",
+		"referenceType": "Enum",
+		"value": 1
+	},
+	"ShuttleType.Large": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "ShuttleType.Large",
+		"name": "Large",
+		"prefix": "ShuttleType",
+		"referenceType": "Enum",
+		"value": 5
+	},
+	"ShuttleType.LargeGas": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "ShuttleType.LargeGas",
+		"name": "LargeGas",
+		"prefix": "ShuttleType",
+		"referenceType": "Enum",
+		"value": 6
+	},
+	"ShuttleType.LargePlane": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "ShuttleType.LargePlane",
+		"name": "LargePlane",
+		"prefix": "ShuttleType",
+		"referenceType": "Enum",
+		"value": 8
+	},
+	"ShuttleType.Medium": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "ShuttleType.Medium",
+		"name": "Medium",
+		"prefix": "ShuttleType",
+		"referenceType": "Enum",
+		"value": 3
+	},
+	"ShuttleType.MediumGas": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "ShuttleType.MediumGas",
+		"name": "MediumGas",
+		"prefix": "ShuttleType",
+		"referenceType": "Enum",
+		"value": 4
+	},
+	"ShuttleType.MediumPlane": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "ShuttleType.MediumPlane",
+		"name": "MediumPlane",
+		"prefix": "ShuttleType",
+		"referenceType": "Enum",
+		"value": 7
+	},
+	"ShuttleType.None": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "ShuttleType.None",
+		"name": "None",
+		"prefix": "ShuttleType",
+		"referenceType": "Enum",
+		"value": 0
+	},
+	"ShuttleType.Small": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "ShuttleType.Small",
+		"name": "Small",
+		"prefix": "ShuttleType",
+		"referenceType": "Enum",
+		"value": 1
+	},
+	"ShuttleType.SmallGas": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "ShuttleType.SmallGas",
+		"name": "SmallGas",
+		"prefix": "ShuttleType",
+		"referenceType": "Enum",
+		"value": 2
 	},
 	"SlotClass.AccessCard": {
 		"canUseAsConst": true,
@@ -5018,6 +5428,196 @@
 		"prefix": "Sound",
 		"referenceType": "Enum",
 		"value": 25
+	},
+	"TraderInstruction.FilterGasContains": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.FilterGasContains",
+		"name": "FilterGasContains",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 17
+	},
+	"TraderInstruction.FilterGasNotContains": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.FilterGasNotContains",
+		"name": "FilterGasNotContains",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 18
+	},
+	"TraderInstruction.FilterPrefabHashEquals": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.FilterPrefabHashEquals",
+		"name": "FilterPrefabHashEquals",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 13
+	},
+	"TraderInstruction.FilterPrefabHashNotEquals": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.FilterPrefabHashNotEquals",
+		"name": "FilterPrefabHashNotEquals",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 14
+	},
+	"TraderInstruction.FilterQuantityCompare": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.FilterQuantityCompare",
+		"name": "FilterQuantityCompare",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 16
+	},
+	"TraderInstruction.FilterSortingClassCompare": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.FilterSortingClassCompare",
+		"name": "FilterSortingClassCompare",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 15
+	},
+	"TraderInstruction.None": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.None",
+		"name": "None",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 0
+	},
+	"TraderInstruction.StrongestContactIdHash": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.StrongestContactIdHash",
+		"name": "StrongestContactIdHash",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 2
+	},
+	"TraderInstruction.StrongestContactMetaData": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.StrongestContactMetaData",
+		"name": "StrongestContactMetaData",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 3
+	},
+	"TraderInstruction.StrongestContactSignalData": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.StrongestContactSignalData",
+		"name": "StrongestContactSignalData",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 4
+	},
+	"TraderInstruction.TraderBuyGasData": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.TraderBuyGasData",
+		"name": "TraderBuyGasData",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 9
+	},
+	"TraderInstruction.TraderBuyThingChildData": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.TraderBuyThingChildData",
+		"name": "TraderBuyThingChildData",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 8
+	},
+	"TraderInstruction.TraderBuyThingData": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.TraderBuyThingData",
+		"name": "TraderBuyThingData",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 7
+	},
+	"TraderInstruction.TraderSellGasData": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.TraderSellGasData",
+		"name": "TraderSellGasData",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 11
+	},
+	"TraderInstruction.TraderSellThingChildData": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.TraderSellThingChildData",
+		"name": "TraderSellThingChildData",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 12
+	},
+	"TraderInstruction.TraderSellThingData": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.TraderSellThingData",
+		"name": "TraderSellThingData",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 10
+	},
+	"TraderInstruction.WriteTraderBuyData": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.WriteTraderBuyData",
+		"name": "WriteTraderBuyData",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 5
+	},
+	"TraderInstruction.WriteTraderData": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.WriteTraderData",
+		"name": "WriteTraderData",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 1
+	},
+	"TraderInstruction.WriteTraderSellData": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "TraderInstruction.WriteTraderSellData",
+		"name": "WriteTraderSellData",
+		"prefix": "TraderInstruction",
+		"referenceType": "Enum",
+		"value": 6
 	},
 	"TransmitterMode.Active": {
 		"canUseAsConst": true,
