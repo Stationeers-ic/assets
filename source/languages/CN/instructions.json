@@ -1,752 +1,752 @@
 ﻿{
-  "abs": {
-    "description": "比较a的绝对值, 并保存在寄存器(r?)中",
-    "example": "abs r? a(r?|num)",
-    "name": "abs"
-  },
-  "acos": {
-    "description": "计算弧长为a的余弦值, 并保存在寄存器(r?)中",
-    "example": "acos r? a(r?|num)",
-    "name": "acos"
-  },
-  "add": {
-    "description": "计算a+b的结果并保存在寄存器(r?)中",
-    "example": "add r? a(r?|num) b(r?|num)",
-    "name": "add"
-  },
-  "alias": {
-    "description": "使用别名(alias)为寄存器(r?)或设备(d?)指定一个标签(str), 设备别名也会影响IC外壳引脚上显示的内容",
-    "example": "alias str r?|d?",
-    "name": "alias"
-  },
-  "and": {
-    "description": "对两个数值的二进制表示形式执行按位AND(与)运算. 结果中的每个位都是通过计算输入值的相应二进制位来确定的. 如果输入值中的两个位均为1, 则结果位为1. 否则, 结果位为0",
-    "example": "and r? a(r?|num) b(r?|num)",
-    "name": "and"
-  },
-  "asin": {
-    "description": "反正弦函数, 计算正弦值为a的弧长值, 并保存在寄存器(r?)中",
-    "example": "asin r? a(r?|num)",
-    "name": "asin"
-  },
-  "atan": {
-    "description": "反正切函数, 计算正切值为a的弧长值, 并保存在寄存器(r?)中",
-    "example": "atan r? a(r?|num)",
-    "name": "atan"
-  },
-  "atan2": {
-    "description": "高级反正切函数atan2, 计算两个参数a(y)和b(x)所代表的正切值的弧长, 并保存在寄存器(r?)中",
-    "example": "atan2 r? a(r?|num) b(r?|num)",
-    "name": "atan2"
-  },
-  "bap": {
-    "description": "当符合abs(a-b)<=max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号d",
-    "example": "bap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
-    "name": "bap"
-  },
-  "bapal": {
-    "description": "如果a!=b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
-    "example": "bapal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
-    "name": "bapal"
-  },
-  "bapz": {
-    "description": "当符合abs(a)<=float. epsilon\\*8, 则跳转到代码行号c",
-    "example": "bapz a(r?|num) b(r?|num) c(r?|num)",
-    "name": "bapz"
-  },
-  "bapzal": {
-    "description": "当符合abs(a)<=float. epsilon\\*8, 则跳转到代码行号c",
-    "example": "bapzal a(r?|num) b(r?|num) c(r?|num)",
-    "name": "bapzal"
-  },
-  "bdns": {
-    "description": "如果设备(d)无效, 则跳转到代码行号a",
-    "example": "bdns device(d?|r?|id) a(r?|num)",
-    "name": "bdns"
-  },
-  "bdnsal": {
-    "description": "如果设备(d)无效, 则跳转到代码行号a, 并将跳转前的行号+1并储存在寄存器ra",
-    "example": "bdnsal device(d?|r?|id) a(r?|num)",
-    "name": "bdnsal"
-  },
-  "bdnvl": {
-    "description": "Will branch to line a if the provided device not valid for a load instruction for the provided logic type.",
-    "example": "bdnvl device(d?|r?|id) logicType a(r?|num)",
-    "name": "bdnvl"
-  },
-  "bdnvs": {
-    "description": "Will branch to line a if the provided device not valid for a store instruction for the provided logic type.",
-    "example": "bdnvs device(d?|r?|id) logicType a(r?|num)",
-    "name": "bdnvs"
-  },
-  "bdse": {
-    "description": "如果设备(d)有效, 则跳转到代码行号a",
-    "example": "bdse device(d?|r?|id) a(r?|num)",
-    "name": "bdse"
-  },
-  "bdseal": {
-    "description": "如果设备(d)有效, 则跳转到代码行号a, 并将跳转前的行号+1并储存在寄存器ra",
-    "example": "bdseal device(d?|r?|id) a(r?|num)",
-    "name": "bdseal"
-  },
-  "beq": {
-    "description": "如果a==b, 则跳转到代码行号c",
-    "example": "beq a(r?|num) b(r?|num) c(r?|num)",
-    "name": "beq"
-  },
-  "beqal": {
-    "description": "如果a==b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
-    "example": "beqal a(r?|num) b(r?|num) c(r?|num)",
-    "name": "beqal"
-  },
-  "beqz": {
-    "description": "如果a==0, 则跳转到代码行号b",
-    "example": "beqz a(r?|num) b(r?|num)",
-    "name": "beqz"
-  },
-  "beqzal": {
-    "description": "如果a==0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
-    "example": "beqzal a(r?|num) b(r?|num)",
-    "name": "beqzal"
-  },
-  "bge": {
-    "description": "如果a>=b, 则跳转到代码行号c",
-    "example": "bge a(r?|num) b(r?|num) c(r?|num)",
-    "name": "bge"
-  },
-  "bgeal": {
-    "description": "如果a>=b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
-    "example": "bgeal a(r?|num) b(r?|num) c(r?|num)",
-    "name": "bgeal"
-  },
-  "bgez": {
-    "description": "如果a>=0, 则跳转到代码行号b",
-    "example": "bgez a(r?|num) b(r?|num)",
-    "name": "bgez"
-  },
-  "bgezal": {
-    "description": "如果a>=0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
-    "example": "bgezal a(r?|num) b(r?|num)",
-    "name": "bgezal"
-  },
-  "bgt": {
-    "description": "如果a>b, 则跳转到代码行号c",
-    "example": "bgt a(r?|num) b(r?|num) c(r?|num)",
-    "name": "bgt"
-  },
-  "bgtal": {
-    "description": "如果a>b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
-    "example": "bgtal a(r?|num) b(r?|num) c(r?|num)",
-    "name": "bgtal"
-  },
-  "bgtz": {
-    "description": "如果a>0, 则跳转到代码行号b",
-    "example": "bgtz a(r?|num) b(r?|num)",
-    "name": "bgtz"
-  },
-  "bgtzal": {
-    "description": "如果a>0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
-    "example": "bgtzal a(r?|num) b(r?|num)",
-    "name": "bgtzal"
-  },
-  "ble": {
-    "description": "如果a<=b, 则跳转到代码行号c",
-    "example": "ble a(r?|num) b(r?|num) c(r?|num)",
-    "name": "ble"
-  },
-  "bleal": {
-    "description": "如果a<=b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
-    "example": "bleal a(r?|num) b(r?|num) c(r?|num)",
-    "name": "bleal"
-  },
-  "blez": {
-    "description": "如果a<=0, 则跳转到代码行号b",
-    "example": "blez a(r?|num) b(r?|num)",
-    "name": "blez"
-  },
-  "blezal": {
-    "description": "如果a<=0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
-    "example": "blezal a(r?|num) b(r?|num)",
-    "name": "blezal"
-  },
-  "blt": {
-    "description": "如果a",
-    "example": "blt a(r?|num) b(r?|num) c(r?|num)",
-    "name": "blt"
-  },
-  "bltal": {
-    "description": "如果a",
-    "example": "bltal a(r?|num) b(r?|num) c(r?|num)",
-    "name": "bltal"
-  },
-  "bltz": {
-    "description": "如果a<0, 则跳转到代码行号b",
-    "example": "bltz a(r?|num) b(r?|num)",
-    "name": "bltz"
-  },
-  "bltzal": {
-    "description": "如果a<0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
-    "example": "bltzal a(r?|num) b(r?|num)",
-    "name": "bltzal"
-  },
-  "bna": {
-    "description": "当符合abs(a-b)>max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号d",
-    "example": "bna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
-    "name": "bna"
-  },
-  "bnaal": {
-    "description": "当符合abs(a-b)>max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号d行, 并将跳转前的行号+1并储存在寄存器ra",
-    "example": "bnaal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
-    "name": "bnaal"
-  },
-  "bnan": {
-    "description": "如果a==NaN, 则跳转到代码行号b",
-    "example": "bnan a(r?|num) b(r?|num)",
-    "name": "bnan"
-  },
-  "bnaz": {
-    "description": "当符合abs(a)>float. epsilon\\*8, 则跳转到代码行号c",
-    "example": "bnaz a(r?|num) b(r?|num) c(r?|num)",
-    "name": "bnaz"
-  },
-  "bnazal": {
-    "description": "当符合abs(a)>float. epsilon\\*8, 则跳转到代码行号c",
-    "example": "bnazal a(r?|num) b(r?|num) c(r?|num)",
-    "name": "bnazal"
-  },
-  "bne": {
-    "description": "如果a!=b, 则跳转到代码行号c",
-    "example": "bne a(r?|num) b(r?|num) c(r?|num)",
-    "name": "bne"
-  },
-  "bneal": {
-    "description": "如果a!=b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
-    "example": "bneal a(r?|num) b(r?|num) c(r?|num)",
-    "name": "bneal"
-  },
-  "bnez": {
-    "description": "如果a!=0, 则跳转到代码行号b",
-    "example": "bnez a(r?|num) b(r?|num)",
-    "name": "bnez"
-  },
-  "bnezal": {
-    "description": "如果a!=0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
-    "example": "bnezal a(r?|num) b(r?|num)",
-    "name": "bnezal"
-  },
-  "brap": {
-    "description": "当符合abs(a-b)<=max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号(当前行号+d)行",
-    "example": "brap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
-    "name": "brap"
-  },
-  "brapz": {
-    "description": "当符合abs(a)<=float. epsilon\\*8, 则跳转到代码行号(当前行号+c)行",
-    "example": "brapz a(r?|num) b(r?|num) c(r?|num)",
-    "name": "brapz"
-  },
-  "brdns": {
-    "description": "如果设备(d)无效, 则跳转到代码行号(当前行号+a)行",
-    "example": "brdns device(d?|r?|id) a(r?|num)",
-    "name": "brdns"
-  },
-  "brdse": {
-    "description": "如果设备(d)有效, 则跳转到代码行号(当前行号+a)行",
-    "example": "brdse device(d?|r?|id) a(r?|num)",
-    "name": "brdse"
-  },
-  "breq": {
-    "description": "如果a==b, 则跳转到代码行号(当前行号+c)行",
-    "example": "breq a(r?|num) b(r?|num) c(r?|num)",
-    "name": "breq"
-  },
-  "breqz": {
-    "description": "如果a==0, 则跳转到代码行号(当前行号+b)行",
-    "example": "breqz a(r?|num) b(r?|num)",
-    "name": "breqz"
-  },
-  "brge": {
-    "description": "如果a>=b, 则跳转到代码行号(当前行号+c)行",
-    "example": "brge a(r?|num) b(r?|num) c(r?|num)",
-    "name": "brge"
-  },
-  "brgez": {
-    "description": "如果a>=0, 则跳转到代码行号(当前行号+b)行",
-    "example": "brgez a(r?|num) b(r?|num)",
-    "name": "brgez"
-  },
-  "brgt": {
-    "description": "如果a>b, 则跳转到代码行号(当前行号+c)行",
-    "example": "brgt a(r?|num) b(r?|num) c(r?|num)",
-    "name": "brgt"
-  },
-  "brgtz": {
-    "description": "如果a>0, 则跳转到代码行号(当前行号+b)行",
-    "example": "brgtz a(r?|num) b(r?|num)",
-    "name": "brgtz"
-  },
-  "brle": {
-    "description": "如果a<=b, 则跳转到代码行号(当前行号+c)行",
-    "example": "brle a(r?|num) b(r?|num) c(r?|num)",
-    "name": "brle"
-  },
-  "brlez": {
-    "description": "如果a<=0, 则跳转到代码行号(当前行号+b)行",
-    "example": "brlez a(r?|num) b(r?|num)",
-    "name": "brlez"
-  },
-  "brlt": {
-    "description": "如果a",
-    "example": "brlt a(r?|num) b(r?|num) c(r?|num)",
-    "name": "brlt"
-  },
-  "brltz": {
-    "description": "如果a<0, 则跳转到代码行号(当前行号+b)行",
-    "example": "brltz a(r?|num) b(r?|num)",
-    "name": "brltz"
-  },
-  "brna": {
-    "description": "当符合abs(a-b)>max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号(当前行号+d)行",
-    "example": "brna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
-    "name": "brna"
-  },
-  "brnan": {
-    "description": "如果a==NaN, 则跳转到代码行号(当前行号+b)行",
-    "example": "brnan a(r?|num) b(r?|num)",
-    "name": "brnan"
-  },
-  "brnaz": {
-    "description": "当符合abs(a)>float. epsilon\\*8, 则跳转到代码行号(当前行号+c)行",
-    "example": "brnaz a(r?|num) b(r?|num) c(r?|num)",
-    "name": "brnaz"
-  },
-  "brne": {
-    "description": "如果a!=b, 则跳转到代码行号(当前行号+c)行",
-    "example": "brne a(r?|num) b(r?|num) c(r?|num)",
-    "name": "brne"
-  },
-  "brnez": {
-    "description": "如果a!=0, 则跳转到代码行号(当前行号+b)行",
-    "example": "brnez a(r?|num) b(r?|num)",
-    "name": "brnez"
-  },
-  "ceil": {
-    "description": "计算大于a的最小整数, 并保存在寄存器(r?)中",
-    "example": "ceil r? a(r?|num)",
-    "name": "ceil"
-  },
-  "clr": {
-    "description": "清除指定设备的堆栈内存",
-    "example": "clr d?",
-    "name": "clr"
-  },
-  "clrd": {
-    "description": "通过设备ID定位设备并清除其堆栈内存",
-    "example": "clrd id(r?|num)",
-    "name": "clrd"
-  },
-  "cos": {
-    "description": "计算弧长为a的余弦值, 并保存在寄存器(r?)中",
-    "example": "cos r? a(r?|num)",
-    "name": "cos"
-  },
-  "define": {
-    "description": "为指定的值(num)定义(define)一个标签(str), 在程序中出现过的所有同样的标签(str)将被替换为该值",
-    "example": "define str num",
-    "name": "define"
-  },
-  "div": {
-    "description": "计算a/b的结果并保存在寄存器(r?)中",
-    "example": "div r? a(r?|num) b(r?|num)",
-    "name": "div"
-  },
-  "exp": {
-    "description": "计算a以自然常数为底的指数exp(a), 并保存在寄存器(r?)中",
-    "example": "exp r? a(r?|num)",
-    "name": "exp"
-  },
-  "ext": {
-    "description": "Extracts a bit field from a, beginning at b for c length and placed in the provided register. Payload cannot exceed 53 bits in final length.",
-    "example": "ext r? a(r?|num) b(r?|num) c(r?|num)",
-    "name": "ext"
-  },
-  "floor": {
-    "description": "计算小于a的最大整数, 并保存在寄存器(r?)中",
-    "example": "floor r? a(r?|num)",
-    "name": "floor"
-  },
-  "get": {
-    "description": "使用指定设备尝试读取指定地址的堆栈值, 并存入寄存器(d?)",
-    "example": "get r? device(d?|r?|id) address(r?|num)",
-    "name": "get"
-  },
-  "getd": {
-    "description": "直接查找指定设备ID, 尝试读取其堆栈指定索引(index)的值并存入寄存器(d?)",
-    "example": "getd r? id(r?|id) address(r?|num)",
-    "name": "getd"
-  },
-  "hcf": {
-    "description": "Haltandcatchfire, 早期计算机的机器指令, 作用是让CPU去做循环的寻址动作, CPU不停地做读取大量数据的循环, 如果寻到不存在的内存地址(此时为Catchfire), 将会锁定计算机, 即挂起(Halt)",
-    "example": "hcf",
-    "name": "hcf"
-  },
-  "ins": {
-    "description": "Inserts a bit field of a into the provided register, beginning at b for c length. Payload cannot exceed 53 bits in final length.",
-    "example": "ins r? a(r?|num) b(r?|num) c(r?|num)",
-    "name": "ins"
-  },
-  "j": {
-    "description": "跳转到代码行号a",
-    "example": "j int",
-    "name": "j"
-  },
-  "jal": {
-    "description": "跳转到代码行号a, 并将跳转前的行号+1并储存在寄存器ra",
-    "example": "jal int",
-    "name": "jal"
-  },
-  "jr": {
-    "description": "跳转到代码行号(当前行号+a)行",
-    "example": "jr int",
-    "name": "jr"
-  },
-  "l": {
-    "description": "将逻辑引脚(d?)所对应设备的逻辑属性值(LogicType)加载到寄存器(r?)中",
-    "example": "l r? device(d?|r?|id) logicType",
-    "name": "l"
-  },
-  "label": {
-    "description": "已弃用",
-    "example": "label d? str",
-    "name": "label"
-  },
-  "lb": {
-    "description": "通过给定的设备类型哈希值(deviceHash), 将网络内所有的同类设备的逻辑属性值(LogicType)以指定的统计方式加载到寄存器中. 可用的统计方式为:Average(0)(平均), Sum(1)(求和), Minimum(2)(最小), Maximum(3)(最大). 既可以使用单词, 也可以使用数字",
-    "example": "lb r? deviceHash logicType batchMode",
-    "name": "lb"
-  },
-  "lbn": {
-    "description": "通过给定的设备类型哈希值(deviceHash)与设备名称哈希值(nameHash), 将网络内所有的符合条件的设备的逻辑属性值(LogicType)以指定的统计方式加载到寄存器中. 可用的统计方式为:Average(0)(平均), Sum(1)(求和), Minimum(2)(最小), Maximum(3)(最大). 既可以使用单词, 也可以使用数字",
-    "example": "lbn r? deviceHash nameHash logicType batchMode",
-    "name": "lbn"
-  },
-  "lbns": {
-    "description": "通过给定的设备类型哈希值(deviceHash), 槽位索引值(SlotIndex), 设备名称哈希值(nameHash), 将网络内所有的符合条件的设备的特定槽位的逻辑属性值(LogicType)以指定的统计方式加载到寄存器中. 可用的统计方式为:Average(0)(平均), Sum(1)(求和), Minimum(2)(最小), Maximum(3)(最大). 既可以使用单词, 也可以使用数字",
-    "example": "lbns r? deviceHash nameHash slotIndex logicSlotType batchMode",
-    "name": "lbns"
-  },
-  "lbs": {
-    "description": "通过给定的设备类型哈希值(deviceHash)与槽位索引值(SlotIndex), 将网络内所有的符合条件的设备中特定槽位的逻辑属性值(LogicType)以指定的统计方式加载到寄存器中. 可用的统计方式为:Average(0)(平均), Sum(1)(求和), Minimum(2)(最小), Maximum(3)(最大). 既可以使用单词, 也可以使用数字",
-    "example": "lbs r? deviceHash slotIndex logicSlotType batchMode",
-    "name": "lbs"
-  },
-  "ld": {
-    "description": "通过设备的识别ID(id)将设备的逻辑属性值(LogicType)加载到寄存器中",
-    "example": "ld r? id(r?|id) logicType",
-    "name": "ld"
-  },
-  "lerp": {
-    "description": "Linearly interpolates between a and b by the ratio c, and places the result in the register provided. The ratio c will be clamped between 0 and 1.",
-    "example": "lerp r? a(r?|num) b(r?|num) c(r?|num)",
-    "name": "lerp"
-  },
-  "log": {
-    "description": "计算a以自然常数为底的对数log(a), 并保存在寄存器(r?)中",
-    "example": "log r? a(r?|num)",
-    "name": "log"
-  },
-  "lr": {
-    "description": "将逻辑引脚(d?)对应的设备中, 通过指定的原料模式(ReagentMode), 将原料的哈希值加载到寄存器(d?)中. 可用的统计方式为:Contents(0)(内含), Required(1)(需求), Recipe(2)(配方). 既可以使用单词, 也可以使用数字",
-    "example": "lr r? device(d?|r?|id) reagentMode int",
-    "name": "lr"
-  },
-  "ls": {
-    "description": "将逻辑引脚(d?)所对应设备的槽位索引值(SlotIndex)的槽位中的物品的逻辑槽位属性值(LogicSlotType)加载到寄存器(r?)中",
-    "example": "ls r? device(d?|r?|id) slotIndex logicSlotType",
-    "name": "ls"
-  },
-  "max": {
-    "description": "比较a和b, 并将较大值保存在寄存器(r?)中",
-    "example": "max r? a(r?|num) b(r?|num)",
-    "name": "max"
-  },
-  "min": {
-    "description": "比较a和b, 并将较小值保存在寄存器(r?)中",
-    "example": "min r? a(r?|num) b(r?|num)",
-    "name": "min"
-  },
-  "mod": {
-    "description": "计算a模以b的结果并保存在寄存器(r?)中, 注意:并非a%b",
-    "example": "mod r? a(r?|num) b(r?|num)",
-    "name": "mod"
-  },
-  "move": {
-    "description": "将指定的值(寄存器或常量)赋值给寄存器(r?)",
-    "example": "move r? a(r?|num)",
-    "name": "move"
-  },
-  "mul": {
-    "description": "计算a\\*b的结果并保存在寄存器(r?)中",
-    "example": "mul r? a(r?|num) b(r?|num)",
-    "name": "mul"
-  },
-  "nor": {
-    "description": "对两个数值的二进制表示形式执行按位NOR(或非)运算. 结果中的每个位都是通过计算输入值的相应二进制位来确定的. 如果输入值中的两个位都为0, 则结果位为1. 如果两个位有任何一个为1则结果位为0",
-    "example": "nor r? a(r?|num) b(r?|num)",
-    "name": "nor"
-  },
-  "not": {
-    "description": "对一个数值的二进制表示形式进行按位NOT(非)运算. 该操作会将该数值所有二进制位分别进行NOT运算, 1会变成0, 而0会变成1",
-    "example": "not r? a(r?|num)",
-    "name": "not"
-  },
-  "or": {
-    "description": "对两个数值的二进制表示形式执行按位OR(或)运算. 结果中的每个位都是通过计算输入值的相应二进制位来确定的. 如果输入值中的两个位有任何一个为1, 则结果位为1. 否则结果位为0",
-    "example": "or r? a(r?|num) b(r?|num)",
-    "name": "or"
-  },
-  "peek": {
-    "description": "获取堆栈顶的值, 并保存在寄存器(r?)中",
-    "example": "peek r?",
-    "name": "peek"
-  },
-  "poke": {
-    "description": "将指定值存储到堆栈的指定索引(index)",
-    "example": "poke address(r?|num) value(r?|num)",
-    "name": "poke"
-  },
-  "pop": {
-    "description": "将堆栈顶的值保存在寄存器(r?)中, 并将寄存器sp的值+1",
-    "example": "pop r?",
-    "name": "pop"
-  },
-  "pow": {
-    "description": "Stores the result of raising a to the power of b in the register. Follows IEEE-754 standard for floating point arithmetic.",
-    "example": "pow r? a(r?|num) b(r?|num)",
-    "name": "pow"
-  },
-  "push": {
-    "description": "将a值压入堆栈, 并将寄存器sp的值+1",
-    "example": "push a(r?|num)",
-    "name": "push"
-  },
-  "put": {
-    "description": "尝试将指定的值写入指定设备堆栈的的指定地址",
-    "example": "put device(d?|r?|id) address(r?|num) value(r?|num)",
-    "name": "put"
-  },
-  "putd": {
-    "description": "直接查找指定设备ID, 尝试将指定值写入其堆栈的指定索引(index)",
-    "example": "putd id(r?|id) address(r?|num) value(r?|num)",
-    "name": "putd"
-  },
-  "rand": {
-    "description": "生成范围为0<=x<1的随机数, 并保存在寄存器(r?)中",
-    "example": "rand r?",
-    "name": "rand"
-  },
-  "rmap": {
-    "description": "根据给定的材料哈希值, 返回设备满足配方要求的该种材料数量（例如查询自动车床中铁的哈希值, 对应铁锭的哈希值）",
-    "example": "rmap r? d? reagentHash(r?|num)",
-    "name": "rmap"
-  },
-  "round": {
-    "description": "计算a四舍五入后的整数结果, 并保存在寄存器(r?)中",
-    "example": "round r? a(r?|num)",
-    "name": "round"
-  },
-  "s": {
-    "description": "将寄存器(r?)的值写入指定逻辑引脚(d?)所对应设备的逻辑属性值(LogicType)",
-    "example": "s device(d?|r?|id) logicType r?",
-    "name": "s"
-  },
-  "sap": {
-    "description": "当符合abs(a-b)<=max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 寄存器(r?)为1, 否则为0",
-    "example": "sap r? a(r?|num) b(r?|num) c(r?|num)",
-    "name": "sap"
-  },
-  "sapz": {
-    "description": "当符合|a|<=float. epsilon\\*8时, 寄存器(r?)为1, 否则为0",
-    "example": "sapz r? a(r?|num) b(r?|num)",
-    "name": "sapz"
-  },
-  "sb": {
-    "description": "通过给定的设备类型哈希值(deviceHash), 将寄存器(r?)的值写入到网络内所有的符合条件的设备的逻辑属性值(LogicType)",
-    "example": "sb deviceHash logicType r?",
-    "name": "sb"
-  },
-  "sbn": {
-    "description": "通过给定的设备类型哈希值(deviceHash)与设备名称哈希值(nameHash), 将寄存器(r?)的值写入到网络内所有的符合条件的设备的逻辑属性值(LogicType)",
-    "example": "sbn deviceHash nameHash logicType r?",
-    "name": "sbn"
-  },
-  "sbs": {
-    "description": "通过给定的设备类型哈希值(deviceHash)与槽位索引值(SlotIndex), 将寄存器(r?)的值写入到网络内所有的符合条件的设备中特定槽位的逻辑槽位属性值(LogicSlotType)中",
-    "example": "sbs deviceHash slotIndex logicSlotType r?",
-    "name": "sbs"
-  },
-  "sd": {
-    "description": "将寄存器(r?)的值通过设备的识别ID(id)写入设备的逻辑属性值(LogicType)",
-    "example": "sd id(r?|id) logicType r?",
-    "name": "sd"
-  },
-  "sdns": {
-    "description": "如果设备(d?)对应的引脚指向一个无效的设备, 则寄存器(r?)的值为0, 否则为1",
-    "example": "sdns r? device(d?|r?|id)",
-    "name": "sdns"
-  },
-  "sdse": {
-    "description": "如果设备(d?)对应的引脚指向一个有效的设备, 则寄存器(r?)的值为1, 否则为0",
-    "example": "sdse r? device(d?|r?|id)",
-    "name": "sdse"
-  },
-  "select": {
-    "description": "如果a不为0, 则寄存器(r?)的值为b, 否则为c",
-    "example": "select r? a(r?|num) b(r?|num) c(r?|num)",
-    "name": "select"
-  },
-  "seq": {
-    "description": "a==b时, 寄存器(r?)为1, 否则为0",
-    "example": "seq r? a(r?|num) b(r?|num)",
-    "name": "seq"
-  },
-  "seqz": {
-    "description": "a==0时, 寄存器(r?)为1, 否则为0",
-    "example": "seqz r? a(r?|num)",
-    "name": "seqz"
-  },
-  "sge": {
-    "description": "a>=b时, 寄存器(r?)为1, 否则为0",
-    "example": "sge r? a(r?|num) b(r?|num)",
-    "name": "sge"
-  },
-  "sgez": {
-    "description": "a>=0时, 寄存器(r?)为1, 否则为0",
-    "example": "sgez r? a(r?|num)",
-    "name": "sgez"
-  },
-  "sgt": {
-    "description": "a>b时, 寄存器(r?)为1, 否则为0",
-    "example": "sgt r? a(r?|num) b(r?|num)",
-    "name": "sgt"
-  },
-  "sgtz": {
-    "description": "a>0时, 寄存器(r?)为1, 否则为0",
-    "example": "sgtz r? a(r?|num)",
-    "name": "sgtz"
-  },
-  "sin": {
-    "description": "计算弧长为a的正弦值, 并保存在寄存器(r?)中",
-    "example": "sin r? a(r?|num)",
-    "name": "sin"
-  },
-  "sla": {
-    "description": "对一个数值的二进制表示形式进行左移位操作. 该操作会将所有二进制位向左移动, 并用该数值的符号位填充右侧空出的部分",
-    "example": "sla r? a(r?|num) b(r?|num)",
-    "name": "sla"
-  },
-  "sle": {
-    "description": "a<=b时, 寄存器(r?)为1, 否则为0",
-    "example": "sle r? a(r?|num) b(r?|num)",
-    "name": "sle"
-  },
-  "sleep": {
-    "description": "暂停代码运行a秒",
-    "example": "sleep a(r?|num)",
-    "name": "sleep"
-  },
-  "slez": {
-    "description": "a<=0时, 寄存器(r?)为1, 否则为0",
-    "example": "slez r? a(r?|num)",
-    "name": "slez"
-  },
-  "sll": {
-    "description": "对一个数值的二进制表示形式进行左移位操作. 该操作会将所有二进制位向左移动, 并用0填充右侧空出的部分",
-    "example": "sll r? a(r?|num) b(r?|num)",
-    "name": "sll"
-  },
-  "slt": {
-    "description": "a",
-    "example": "slt r? a(r?|num) b(r?|num)",
-    "name": "slt"
-  },
-  "sltz": {
-    "description": "a<0时, 寄存器(r?)为1, 否则为0",
-    "example": "sltz r? a(r?|num)",
-    "name": "sltz"
-  },
-  "sna": {
-    "description": "当符合abs(a-b)>max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 寄存器(r?)为1, 否则为0",
-    "example": "sna r? a(r?|num) b(r?|num) c(r?|num)",
-    "name": "sna"
-  },
-  "snan": {
-    "description": "a==NaN时, 寄存器(r?)为1, 否则为0. NaN是一个特殊常量, 当计算的结果没有意义(除以0)时, 储存计算结果的寄存器的值为NaN",
-    "example": "snan r? a(r?|num)",
-    "name": "snan"
-  },
-  "snanz": {
-    "description": "a==NaN时, 寄存器(r?)为0, 否则为1. NaN是一个特殊值, 当计算的结果没有意义(除以0)时, 储存计算结果的寄存器的值为NaN",
-    "example": "snanz r? a(r?|num)",
-    "name": "snanz"
-  },
-  "snaz": {
-    "description": "当符合|a|>float. epsilon时, 寄存器(r?)为1, 否则为0",
-    "example": "snaz r? a(r?|num) b(r?|num)",
-    "name": "snaz"
-  },
-  "sne": {
-    "description": "a!=b时, 寄存器(r?)为1, 否则为0",
-    "example": "sne r? a(r?|num) b(r?|num)",
-    "name": "sne"
-  },
-  "snez": {
-    "description": "a!=0时, 寄存器(r?)为1, 否则为0",
-    "example": "snez r? a(r?|num)",
-    "name": "snez"
-  },
-  "sqrt": {
-    "description": "计算a的平方根并将结果保存在寄存器(r?)中",
-    "example": "sqrt r? a(r?|num)",
-    "name": "sqrt"
-  },
-  "sra": {
-    "description": "对一个数值的二进制表示形式进行右移位操作. 该操作会将所有二进制位向右移动, 并用该数值的符号位填充左侧空出的部分",
-    "example": "sra r? a(r?|num) b(r?|num)",
-    "name": "sra"
-  },
-  "srl": {
-    "description": "对一个数值的二进制表示形式进行右移位操作. 该操作会将所有二进制位向右移动, 并用0填充左侧空出的部分",
-    "example": "srl r? a(r?|num) b(r?|num)",
-    "name": "srl"
-  },
-  "ss": {
-    "description": "通过逻辑引脚(d?)和槽位索引值(SlotIndex)定位到设备槽位中的设备, 然后将寄存器(r?)的值写入该设备的逻辑槽位属性值(LogicSlotType)",
-    "example": "ss device(d?|r?|id) slotIndex logicSlotType r?",
-    "name": "ss"
-  },
-  "sub": {
-    "description": "计算a-b的结果并保存在寄存器(r?)中",
-    "example": "sub r? a(r?|num) b(r?|num)",
-    "name": "sub"
-  },
-  "tan": {
-    "description": "计算弧长为a的正切值, 并保存在寄存器(r?)中",
-    "example": "tan r? a(r?|num)",
-    "name": "tan"
-  },
-  "trunc": {
-    "description": "计算a舍去小数部分后的结果, 并保存在寄存器(r?)中",
-    "example": "trunc r? a(r?|num)",
-    "name": "trunc"
-  },
-  "xor": {
-    "description": "对两个数值的二进制表示形式执行按位XOR(异或)运算. 结果中的每个位都是通过计算输入值的相应二进制位来确定的. 如果输入值中的两个位不同, 则结果位为1. 如果相同则结果位为0",
-    "example": "xor r? a(r?|num) b(r?|num)",
-    "name": "xor"
-  },
-  "yield": {
-    "description": "暂停代码运行直到当前tick结束",
-    "example": "yield",
-    "name": "yield"
-  }
+	"abs": {
+		"description": "比较a的绝对值, 并保存在寄存器(r?)中",
+		"example": "abs r? a(r?|num)",
+		"name": "abs"
+	},
+	"acos": {
+		"description": "计算弧长为a的余弦值, 并保存在寄存器(r?)中",
+		"example": "acos r? a(r?|num)",
+		"name": "acos"
+	},
+	"add": {
+		"description": "计算a+b的结果并保存在寄存器(r?)中",
+		"example": "add r? a(r?|num) b(r?|num)",
+		"name": "add"
+	},
+	"alias": {
+		"description": "使用别名(alias)为寄存器(r?)或设备(d?)指定一个标签(str), 设备别名也会影响IC外壳引脚上显示的内容",
+		"example": "alias str r?|d?",
+		"name": "alias"
+	},
+	"and": {
+		"description": "对两个数值的二进制表示形式执行按位AND(与)运算. 结果中的每个位都是通过计算输入值的相应二进制位来确定的. 如果输入值中的两个位均为1, 则结果位为1. 否则, 结果位为0",
+		"example": "and r? a(r?|num) b(r?|num)",
+		"name": "and"
+	},
+	"asin": {
+		"description": "反正弦函数, 计算正弦值为a的弧长值, 并保存在寄存器(r?)中",
+		"example": "asin r? a(r?|num)",
+		"name": "asin"
+	},
+	"atan": {
+		"description": "反正切函数, 计算正切值为a的弧长值, 并保存在寄存器(r?)中",
+		"example": "atan r? a(r?|num)",
+		"name": "atan"
+	},
+	"atan2": {
+		"description": "高级反正切函数atan2, 计算两个参数a(y)和b(x)所代表的正切值的弧长, 并保存在寄存器(r?)中",
+		"example": "atan2 r? a(r?|num) b(r?|num)",
+		"name": "atan2"
+	},
+	"bap": {
+		"description": "当符合abs(a-b)<=max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号d",
+		"example": "bap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
+		"name": "bap"
+	},
+	"bapal": {
+		"description": "如果a!=b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
+		"example": "bapal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
+		"name": "bapal"
+	},
+	"bapz": {
+		"description": "当符合abs(a)<=float. epsilon\\*8, 则跳转到代码行号c",
+		"example": "bapz a(r?|num) b(r?|num) c(r?|num)",
+		"name": "bapz"
+	},
+	"bapzal": {
+		"description": "当符合abs(a)<=float. epsilon\\*8, 则跳转到代码行号c",
+		"example": "bapzal a(r?|num) b(r?|num) c(r?|num)",
+		"name": "bapzal"
+	},
+	"bdns": {
+		"description": "如果设备(d)无效, 则跳转到代码行号a",
+		"example": "bdns device(d?|r?|id) a(r?|num)",
+		"name": "bdns"
+	},
+	"bdnsal": {
+		"description": "如果设备(d)无效, 则跳转到代码行号a, 并将跳转前的行号+1并储存在寄存器ra",
+		"example": "bdnsal device(d?|r?|id) a(r?|num)",
+		"name": "bdnsal"
+	},
+	"bdnvl": {
+		"description": "Will branch to line a if the provided device not valid for a load instruction for the provided logic type.",
+		"example": "bdnvl device(d?|r?|id) logicType a(r?|num)",
+		"name": "bdnvl"
+	},
+	"bdnvs": {
+		"description": "Will branch to line a if the provided device not valid for a store instruction for the provided logic type.",
+		"example": "bdnvs device(d?|r?|id) logicType a(r?|num)",
+		"name": "bdnvs"
+	},
+	"bdse": {
+		"description": "如果设备(d)有效, 则跳转到代码行号a",
+		"example": "bdse device(d?|r?|id) a(r?|num)",
+		"name": "bdse"
+	},
+	"bdseal": {
+		"description": "如果设备(d)有效, 则跳转到代码行号a, 并将跳转前的行号+1并储存在寄存器ra",
+		"example": "bdseal device(d?|r?|id) a(r?|num)",
+		"name": "bdseal"
+	},
+	"beq": {
+		"description": "如果a==b, 则跳转到代码行号c",
+		"example": "beq a(r?|num) b(r?|num) c(r?|num)",
+		"name": "beq"
+	},
+	"beqal": {
+		"description": "如果a==b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
+		"example": "beqal a(r?|num) b(r?|num) c(r?|num)",
+		"name": "beqal"
+	},
+	"beqz": {
+		"description": "如果a==0, 则跳转到代码行号b",
+		"example": "beqz a(r?|num) b(r?|num)",
+		"name": "beqz"
+	},
+	"beqzal": {
+		"description": "如果a==0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
+		"example": "beqzal a(r?|num) b(r?|num)",
+		"name": "beqzal"
+	},
+	"bge": {
+		"description": "如果a>=b, 则跳转到代码行号c",
+		"example": "bge a(r?|num) b(r?|num) c(r?|num)",
+		"name": "bge"
+	},
+	"bgeal": {
+		"description": "如果a>=b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
+		"example": "bgeal a(r?|num) b(r?|num) c(r?|num)",
+		"name": "bgeal"
+	},
+	"bgez": {
+		"description": "如果a>=0, 则跳转到代码行号b",
+		"example": "bgez a(r?|num) b(r?|num)",
+		"name": "bgez"
+	},
+	"bgezal": {
+		"description": "如果a>=0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
+		"example": "bgezal a(r?|num) b(r?|num)",
+		"name": "bgezal"
+	},
+	"bgt": {
+		"description": "如果a>b, 则跳转到代码行号c",
+		"example": "bgt a(r?|num) b(r?|num) c(r?|num)",
+		"name": "bgt"
+	},
+	"bgtal": {
+		"description": "如果a>b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
+		"example": "bgtal a(r?|num) b(r?|num) c(r?|num)",
+		"name": "bgtal"
+	},
+	"bgtz": {
+		"description": "如果a>0, 则跳转到代码行号b",
+		"example": "bgtz a(r?|num) b(r?|num)",
+		"name": "bgtz"
+	},
+	"bgtzal": {
+		"description": "如果a>0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
+		"example": "bgtzal a(r?|num) b(r?|num)",
+		"name": "bgtzal"
+	},
+	"ble": {
+		"description": "如果a<=b, 则跳转到代码行号c",
+		"example": "ble a(r?|num) b(r?|num) c(r?|num)",
+		"name": "ble"
+	},
+	"bleal": {
+		"description": "如果a<=b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
+		"example": "bleal a(r?|num) b(r?|num) c(r?|num)",
+		"name": "bleal"
+	},
+	"blez": {
+		"description": "如果a<=0, 则跳转到代码行号b",
+		"example": "blez a(r?|num) b(r?|num)",
+		"name": "blez"
+	},
+	"blezal": {
+		"description": "如果a<=0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
+		"example": "blezal a(r?|num) b(r?|num)",
+		"name": "blezal"
+	},
+	"blt": {
+		"description": "如果a",
+		"example": "blt a(r?|num) b(r?|num) c(r?|num)",
+		"name": "blt"
+	},
+	"bltal": {
+		"description": "如果a",
+		"example": "bltal a(r?|num) b(r?|num) c(r?|num)",
+		"name": "bltal"
+	},
+	"bltz": {
+		"description": "如果a<0, 则跳转到代码行号b",
+		"example": "bltz a(r?|num) b(r?|num)",
+		"name": "bltz"
+	},
+	"bltzal": {
+		"description": "如果a<0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
+		"example": "bltzal a(r?|num) b(r?|num)",
+		"name": "bltzal"
+	},
+	"bna": {
+		"description": "当符合abs(a-b)>max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号d",
+		"example": "bna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
+		"name": "bna"
+	},
+	"bnaal": {
+		"description": "当符合abs(a-b)>max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号d行, 并将跳转前的行号+1并储存在寄存器ra",
+		"example": "bnaal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
+		"name": "bnaal"
+	},
+	"bnan": {
+		"description": "如果a==NaN, 则跳转到代码行号b",
+		"example": "bnan a(r?|num) b(r?|num)",
+		"name": "bnan"
+	},
+	"bnaz": {
+		"description": "当符合abs(a)>float. epsilon\\*8, 则跳转到代码行号c",
+		"example": "bnaz a(r?|num) b(r?|num) c(r?|num)",
+		"name": "bnaz"
+	},
+	"bnazal": {
+		"description": "当符合abs(a)>float. epsilon\\*8, 则跳转到代码行号c",
+		"example": "bnazal a(r?|num) b(r?|num) c(r?|num)",
+		"name": "bnazal"
+	},
+	"bne": {
+		"description": "如果a!=b, 则跳转到代码行号c",
+		"example": "bne a(r?|num) b(r?|num) c(r?|num)",
+		"name": "bne"
+	},
+	"bneal": {
+		"description": "如果a!=b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
+		"example": "bneal a(r?|num) b(r?|num) c(r?|num)",
+		"name": "bneal"
+	},
+	"bnez": {
+		"description": "如果a!=0, 则跳转到代码行号b",
+		"example": "bnez a(r?|num) b(r?|num)",
+		"name": "bnez"
+	},
+	"bnezal": {
+		"description": "如果a!=0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
+		"example": "bnezal a(r?|num) b(r?|num)",
+		"name": "bnezal"
+	},
+	"brap": {
+		"description": "当符合abs(a-b)<=max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号(当前行号+d)行",
+		"example": "brap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
+		"name": "brap"
+	},
+	"brapz": {
+		"description": "当符合abs(a)<=float. epsilon\\*8, 则跳转到代码行号(当前行号+c)行",
+		"example": "brapz a(r?|num) b(r?|num) c(r?|num)",
+		"name": "brapz"
+	},
+	"brdns": {
+		"description": "如果设备(d)无效, 则跳转到代码行号(当前行号+a)行",
+		"example": "brdns device(d?|r?|id) a(r?|num)",
+		"name": "brdns"
+	},
+	"brdse": {
+		"description": "如果设备(d)有效, 则跳转到代码行号(当前行号+a)行",
+		"example": "brdse device(d?|r?|id) a(r?|num)",
+		"name": "brdse"
+	},
+	"breq": {
+		"description": "如果a==b, 则跳转到代码行号(当前行号+c)行",
+		"example": "breq a(r?|num) b(r?|num) c(r?|num)",
+		"name": "breq"
+	},
+	"breqz": {
+		"description": "如果a==0, 则跳转到代码行号(当前行号+b)行",
+		"example": "breqz a(r?|num) b(r?|num)",
+		"name": "breqz"
+	},
+	"brge": {
+		"description": "如果a>=b, 则跳转到代码行号(当前行号+c)行",
+		"example": "brge a(r?|num) b(r?|num) c(r?|num)",
+		"name": "brge"
+	},
+	"brgez": {
+		"description": "如果a>=0, 则跳转到代码行号(当前行号+b)行",
+		"example": "brgez a(r?|num) b(r?|num)",
+		"name": "brgez"
+	},
+	"brgt": {
+		"description": "如果a>b, 则跳转到代码行号(当前行号+c)行",
+		"example": "brgt a(r?|num) b(r?|num) c(r?|num)",
+		"name": "brgt"
+	},
+	"brgtz": {
+		"description": "如果a>0, 则跳转到代码行号(当前行号+b)行",
+		"example": "brgtz a(r?|num) b(r?|num)",
+		"name": "brgtz"
+	},
+	"brle": {
+		"description": "如果a<=b, 则跳转到代码行号(当前行号+c)行",
+		"example": "brle a(r?|num) b(r?|num) c(r?|num)",
+		"name": "brle"
+	},
+	"brlez": {
+		"description": "如果a<=0, 则跳转到代码行号(当前行号+b)行",
+		"example": "brlez a(r?|num) b(r?|num)",
+		"name": "brlez"
+	},
+	"brlt": {
+		"description": "如果a",
+		"example": "brlt a(r?|num) b(r?|num) c(r?|num)",
+		"name": "brlt"
+	},
+	"brltz": {
+		"description": "如果a<0, 则跳转到代码行号(当前行号+b)行",
+		"example": "brltz a(r?|num) b(r?|num)",
+		"name": "brltz"
+	},
+	"brna": {
+		"description": "当符合abs(a-b)>max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号(当前行号+d)行",
+		"example": "brna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
+		"name": "brna"
+	},
+	"brnan": {
+		"description": "如果a==NaN, 则跳转到代码行号(当前行号+b)行",
+		"example": "brnan a(r?|num) b(r?|num)",
+		"name": "brnan"
+	},
+	"brnaz": {
+		"description": "当符合abs(a)>float. epsilon\\*8, 则跳转到代码行号(当前行号+c)行",
+		"example": "brnaz a(r?|num) b(r?|num) c(r?|num)",
+		"name": "brnaz"
+	},
+	"brne": {
+		"description": "如果a!=b, 则跳转到代码行号(当前行号+c)行",
+		"example": "brne a(r?|num) b(r?|num) c(r?|num)",
+		"name": "brne"
+	},
+	"brnez": {
+		"description": "如果a!=0, 则跳转到代码行号(当前行号+b)行",
+		"example": "brnez a(r?|num) b(r?|num)",
+		"name": "brnez"
+	},
+	"ceil": {
+		"description": "计算大于a的最小整数, 并保存在寄存器(r?)中",
+		"example": "ceil r? a(r?|num)",
+		"name": "ceil"
+	},
+	"clr": {
+		"description": "清除指定设备的堆栈内存",
+		"example": "clr d?",
+		"name": "clr"
+	},
+	"clrd": {
+		"description": "通过设备ID定位设备并清除其堆栈内存",
+		"example": "clrd id(r?|num)",
+		"name": "clrd"
+	},
+	"cos": {
+		"description": "计算弧长为a的余弦值, 并保存在寄存器(r?)中",
+		"example": "cos r? a(r?|num)",
+		"name": "cos"
+	},
+	"define": {
+		"description": "为指定的值(num)定义(define)一个标签(str), 在程序中出现过的所有同样的标签(str)将被替换为该值",
+		"example": "define str num",
+		"name": "define"
+	},
+	"div": {
+		"description": "计算a/b的结果并保存在寄存器(r?)中",
+		"example": "div r? a(r?|num) b(r?|num)",
+		"name": "div"
+	},
+	"exp": {
+		"description": "计算a以自然常数为底的指数exp(a), 并保存在寄存器(r?)中",
+		"example": "exp r? a(r?|num)",
+		"name": "exp"
+	},
+	"ext": {
+		"description": "Extracts a bit field from a, beginning at b for c length and placed in the provided register. Payload cannot exceed 53 bits in final length.",
+		"example": "ext r? a(r?|num) b(r?|num) c(r?|num)",
+		"name": "ext"
+	},
+	"floor": {
+		"description": "计算小于a的最大整数, 并保存在寄存器(r?)中",
+		"example": "floor r? a(r?|num)",
+		"name": "floor"
+	},
+	"get": {
+		"description": "使用指定设备尝试读取指定地址的堆栈值, 并存入寄存器(d?)",
+		"example": "get r? device(d?|r?|id) address(r?|num)",
+		"name": "get"
+	},
+	"getd": {
+		"description": "直接查找指定设备ID, 尝试读取其堆栈指定索引(index)的值并存入寄存器(d?)",
+		"example": "getd r? id(r?|id) address(r?|num)",
+		"name": "getd"
+	},
+	"hcf": {
+		"description": "Haltandcatchfire, 早期计算机的机器指令, 作用是让CPU去做循环的寻址动作, CPU不停地做读取大量数据的循环, 如果寻到不存在的内存地址(此时为Catchfire), 将会锁定计算机, 即挂起(Halt)",
+		"example": "hcf",
+		"name": "hcf"
+	},
+	"ins": {
+		"description": "Inserts a bit field of a into the provided register, beginning at b for c length. Payload cannot exceed 53 bits in final length.",
+		"example": "ins r? a(r?|num) b(r?|num) c(r?|num)",
+		"name": "ins"
+	},
+	"j": {
+		"description": "跳转到代码行号a",
+		"example": "j int",
+		"name": "j"
+	},
+	"jal": {
+		"description": "跳转到代码行号a, 并将跳转前的行号+1并储存在寄存器ra",
+		"example": "jal int",
+		"name": "jal"
+	},
+	"jr": {
+		"description": "跳转到代码行号(当前行号+a)行",
+		"example": "jr int",
+		"name": "jr"
+	},
+	"l": {
+		"description": "将逻辑引脚(d?)所对应设备的逻辑属性值(LogicType)加载到寄存器(r?)中",
+		"example": "l r? device(d?|r?|id) logicType",
+		"name": "l"
+	},
+	"label": {
+		"description": "已弃用",
+		"example": "label d? str",
+		"name": "label"
+	},
+	"lb": {
+		"description": "通过给定的设备类型哈希值(deviceHash), 将网络内所有的同类设备的逻辑属性值(LogicType)以指定的统计方式加载到寄存器中. 可用的统计方式为:Average(0)(平均), Sum(1)(求和), Minimum(2)(最小), Maximum(3)(最大). 既可以使用单词, 也可以使用数字",
+		"example": "lb r? deviceHash logicType batchMode",
+		"name": "lb"
+	},
+	"lbn": {
+		"description": "通过给定的设备类型哈希值(deviceHash)与设备名称哈希值(nameHash), 将网络内所有的符合条件的设备的逻辑属性值(LogicType)以指定的统计方式加载到寄存器中. 可用的统计方式为:Average(0)(平均), Sum(1)(求和), Minimum(2)(最小), Maximum(3)(最大). 既可以使用单词, 也可以使用数字",
+		"example": "lbn r? deviceHash nameHash logicType batchMode",
+		"name": "lbn"
+	},
+	"lbns": {
+		"description": "通过给定的设备类型哈希值(deviceHash), 槽位索引值(SlotIndex), 设备名称哈希值(nameHash), 将网络内所有的符合条件的设备的特定槽位的逻辑属性值(LogicType)以指定的统计方式加载到寄存器中. 可用的统计方式为:Average(0)(平均), Sum(1)(求和), Minimum(2)(最小), Maximum(3)(最大). 既可以使用单词, 也可以使用数字",
+		"example": "lbns r? deviceHash nameHash slotIndex logicSlotType batchMode",
+		"name": "lbns"
+	},
+	"lbs": {
+		"description": "通过给定的设备类型哈希值(deviceHash)与槽位索引值(SlotIndex), 将网络内所有的符合条件的设备中特定槽位的逻辑属性值(LogicType)以指定的统计方式加载到寄存器中. 可用的统计方式为:Average(0)(平均), Sum(1)(求和), Minimum(2)(最小), Maximum(3)(最大). 既可以使用单词, 也可以使用数字",
+		"example": "lbs r? deviceHash slotIndex logicSlotType batchMode",
+		"name": "lbs"
+	},
+	"ld": {
+		"description": "通过设备的识别ID(id)将设备的逻辑属性值(LogicType)加载到寄存器中",
+		"example": "ld r? id(r?|id) logicType",
+		"name": "ld"
+	},
+	"lerp": {
+		"description": "Linearly interpolates between a and b by the ratio c, and places the result in the register provided. The ratio c will be clamped between 0 and 1.",
+		"example": "lerp r? a(r?|num) b(r?|num) c(r?|num)",
+		"name": "lerp"
+	},
+	"log": {
+		"description": "计算a以自然常数为底的对数log(a), 并保存在寄存器(r?)中",
+		"example": "log r? a(r?|num)",
+		"name": "log"
+	},
+	"lr": {
+		"description": "将逻辑引脚(d?)对应的设备中, 通过指定的原料模式(ReagentMode), 将原料的哈希值加载到寄存器(d?)中. 可用的统计方式为:Contents(0)(内含), Required(1)(需求), Recipe(2)(配方). 既可以使用单词, 也可以使用数字",
+		"example": "lr r? device(d?|r?|id) reagentMode int",
+		"name": "lr"
+	},
+	"ls": {
+		"description": "将逻辑引脚(d?)所对应设备的槽位索引值(SlotIndex)的槽位中的物品的逻辑槽位属性值(LogicSlotType)加载到寄存器(r?)中",
+		"example": "ls r? device(d?|r?|id) slotIndex logicSlotType",
+		"name": "ls"
+	},
+	"max": {
+		"description": "比较a和b, 并将较大值保存在寄存器(r?)中",
+		"example": "max r? a(r?|num) b(r?|num)",
+		"name": "max"
+	},
+	"min": {
+		"description": "比较a和b, 并将较小值保存在寄存器(r?)中",
+		"example": "min r? a(r?|num) b(r?|num)",
+		"name": "min"
+	},
+	"mod": {
+		"description": "计算a模以b的结果并保存在寄存器(r?)中, 注意:并非a%b",
+		"example": "mod r? a(r?|num) b(r?|num)",
+		"name": "mod"
+	},
+	"move": {
+		"description": "将指定的值(寄存器或常量)赋值给寄存器(r?)",
+		"example": "move r? a(r?|num)",
+		"name": "move"
+	},
+	"mul": {
+		"description": "计算a\\*b的结果并保存在寄存器(r?)中",
+		"example": "mul r? a(r?|num) b(r?|num)",
+		"name": "mul"
+	},
+	"nor": {
+		"description": "对两个数值的二进制表示形式执行按位NOR(或非)运算. 结果中的每个位都是通过计算输入值的相应二进制位来确定的. 如果输入值中的两个位都为0, 则结果位为1. 如果两个位有任何一个为1则结果位为0",
+		"example": "nor r? a(r?|num) b(r?|num)",
+		"name": "nor"
+	},
+	"not": {
+		"description": "对一个数值的二进制表示形式进行按位NOT(非)运算. 该操作会将该数值所有二进制位分别进行NOT运算, 1会变成0, 而0会变成1",
+		"example": "not r? a(r?|num)",
+		"name": "not"
+	},
+	"or": {
+		"description": "对两个数值的二进制表示形式执行按位OR(或)运算. 结果中的每个位都是通过计算输入值的相应二进制位来确定的. 如果输入值中的两个位有任何一个为1, 则结果位为1. 否则结果位为0",
+		"example": "or r? a(r?|num) b(r?|num)",
+		"name": "or"
+	},
+	"peek": {
+		"description": "获取堆栈顶的值, 并保存在寄存器(r?)中",
+		"example": "peek r?",
+		"name": "peek"
+	},
+	"poke": {
+		"description": "将指定值存储到堆栈的指定索引(index)",
+		"example": "poke address(r?|num) value(r?|num)",
+		"name": "poke"
+	},
+	"pop": {
+		"description": "将堆栈顶的值保存在寄存器(r?)中, 并将寄存器sp的值+1",
+		"example": "pop r?",
+		"name": "pop"
+	},
+	"pow": {
+		"description": "Stores the result of raising a to the power of b in the register. Follows IEEE-754 standard for floating point arithmetic.",
+		"example": "pow r? a(r?|num) b(r?|num)",
+		"name": "pow"
+	},
+	"push": {
+		"description": "将a值压入堆栈, 并将寄存器sp的值+1",
+		"example": "push a(r?|num)",
+		"name": "push"
+	},
+	"put": {
+		"description": "尝试将指定的值写入指定设备堆栈的的指定地址",
+		"example": "put device(d?|r?|id) address(r?|num) value(r?|num)",
+		"name": "put"
+	},
+	"putd": {
+		"description": "直接查找指定设备ID, 尝试将指定值写入其堆栈的指定索引(index)",
+		"example": "putd id(r?|id) address(r?|num) value(r?|num)",
+		"name": "putd"
+	},
+	"rand": {
+		"description": "生成范围为0<=x<1的随机数, 并保存在寄存器(r?)中",
+		"example": "rand r?",
+		"name": "rand"
+	},
+	"rmap": {
+		"description": "根据给定的材料哈希值, 返回设备满足配方要求的该种材料数量（例如查询自动车床中铁的哈希值, 对应铁锭的哈希值）",
+		"example": "rmap r? d? reagentHash(r?|num)",
+		"name": "rmap"
+	},
+	"round": {
+		"description": "计算a四舍五入后的整数结果, 并保存在寄存器(r?)中",
+		"example": "round r? a(r?|num)",
+		"name": "round"
+	},
+	"s": {
+		"description": "将寄存器(r?)的值写入指定逻辑引脚(d?)所对应设备的逻辑属性值(LogicType)",
+		"example": "s device(d?|r?|id) logicType r?",
+		"name": "s"
+	},
+	"sap": {
+		"description": "当符合abs(a-b)<=max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 寄存器(r?)为1, 否则为0",
+		"example": "sap r? a(r?|num) b(r?|num) c(r?|num)",
+		"name": "sap"
+	},
+	"sapz": {
+		"description": "当符合|a|<=float. epsilon\\*8时, 寄存器(r?)为1, 否则为0",
+		"example": "sapz r? a(r?|num) b(r?|num)",
+		"name": "sapz"
+	},
+	"sb": {
+		"description": "通过给定的设备类型哈希值(deviceHash), 将寄存器(r?)的值写入到网络内所有的符合条件的设备的逻辑属性值(LogicType)",
+		"example": "sb deviceHash logicType r?",
+		"name": "sb"
+	},
+	"sbn": {
+		"description": "通过给定的设备类型哈希值(deviceHash)与设备名称哈希值(nameHash), 将寄存器(r?)的值写入到网络内所有的符合条件的设备的逻辑属性值(LogicType)",
+		"example": "sbn deviceHash nameHash logicType r?",
+		"name": "sbn"
+	},
+	"sbs": {
+		"description": "通过给定的设备类型哈希值(deviceHash)与槽位索引值(SlotIndex), 将寄存器(r?)的值写入到网络内所有的符合条件的设备中特定槽位的逻辑槽位属性值(LogicSlotType)中",
+		"example": "sbs deviceHash slotIndex logicSlotType r?",
+		"name": "sbs"
+	},
+	"sd": {
+		"description": "将寄存器(r?)的值通过设备的识别ID(id)写入设备的逻辑属性值(LogicType)",
+		"example": "sd id(r?|id) logicType r?",
+		"name": "sd"
+	},
+	"sdns": {
+		"description": "如果设备(d?)对应的引脚指向一个无效的设备, 则寄存器(r?)的值为0, 否则为1",
+		"example": "sdns r? device(d?|r?|id)",
+		"name": "sdns"
+	},
+	"sdse": {
+		"description": "如果设备(d?)对应的引脚指向一个有效的设备, 则寄存器(r?)的值为1, 否则为0",
+		"example": "sdse r? device(d?|r?|id)",
+		"name": "sdse"
+	},
+	"select": {
+		"description": "如果a不为0, 则寄存器(r?)的值为b, 否则为c",
+		"example": "select r? a(r?|num) b(r?|num) c(r?|num)",
+		"name": "select"
+	},
+	"seq": {
+		"description": "a==b时, 寄存器(r?)为1, 否则为0",
+		"example": "seq r? a(r?|num) b(r?|num)",
+		"name": "seq"
+	},
+	"seqz": {
+		"description": "a==0时, 寄存器(r?)为1, 否则为0",
+		"example": "seqz r? a(r?|num)",
+		"name": "seqz"
+	},
+	"sge": {
+		"description": "a>=b时, 寄存器(r?)为1, 否则为0",
+		"example": "sge r? a(r?|num) b(r?|num)",
+		"name": "sge"
+	},
+	"sgez": {
+		"description": "a>=0时, 寄存器(r?)为1, 否则为0",
+		"example": "sgez r? a(r?|num)",
+		"name": "sgez"
+	},
+	"sgt": {
+		"description": "a>b时, 寄存器(r?)为1, 否则为0",
+		"example": "sgt r? a(r?|num) b(r?|num)",
+		"name": "sgt"
+	},
+	"sgtz": {
+		"description": "a>0时, 寄存器(r?)为1, 否则为0",
+		"example": "sgtz r? a(r?|num)",
+		"name": "sgtz"
+	},
+	"sin": {
+		"description": "计算弧长为a的正弦值, 并保存在寄存器(r?)中",
+		"example": "sin r? a(r?|num)",
+		"name": "sin"
+	},
+	"sla": {
+		"description": "对一个数值的二进制表示形式进行左移位操作. 该操作会将所有二进制位向左移动, 并用该数值的符号位填充右侧空出的部分",
+		"example": "sla r? a(r?|num) b(r?|num)",
+		"name": "sla"
+	},
+	"sle": {
+		"description": "a<=b时, 寄存器(r?)为1, 否则为0",
+		"example": "sle r? a(r?|num) b(r?|num)",
+		"name": "sle"
+	},
+	"sleep": {
+		"description": "暂停代码运行a秒",
+		"example": "sleep a(r?|num)",
+		"name": "sleep"
+	},
+	"slez": {
+		"description": "a<=0时, 寄存器(r?)为1, 否则为0",
+		"example": "slez r? a(r?|num)",
+		"name": "slez"
+	},
+	"sll": {
+		"description": "对一个数值的二进制表示形式进行左移位操作. 该操作会将所有二进制位向左移动, 并用0填充右侧空出的部分",
+		"example": "sll r? a(r?|num) b(r?|num)",
+		"name": "sll"
+	},
+	"slt": {
+		"description": "a",
+		"example": "slt r? a(r?|num) b(r?|num)",
+		"name": "slt"
+	},
+	"sltz": {
+		"description": "a<0时, 寄存器(r?)为1, 否则为0",
+		"example": "sltz r? a(r?|num)",
+		"name": "sltz"
+	},
+	"sna": {
+		"description": "当符合abs(a-b)>max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 寄存器(r?)为1, 否则为0",
+		"example": "sna r? a(r?|num) b(r?|num) c(r?|num)",
+		"name": "sna"
+	},
+	"snan": {
+		"description": "a==NaN时, 寄存器(r?)为1, 否则为0. NaN是一个特殊常量, 当计算的结果没有意义(除以0)时, 储存计算结果的寄存器的值为NaN",
+		"example": "snan r? a(r?|num)",
+		"name": "snan"
+	},
+	"snanz": {
+		"description": "a==NaN时, 寄存器(r?)为0, 否则为1. NaN是一个特殊值, 当计算的结果没有意义(除以0)时, 储存计算结果的寄存器的值为NaN",
+		"example": "snanz r? a(r?|num)",
+		"name": "snanz"
+	},
+	"snaz": {
+		"description": "当符合|a|>float. epsilon时, 寄存器(r?)为1, 否则为0",
+		"example": "snaz r? a(r?|num) b(r?|num)",
+		"name": "snaz"
+	},
+	"sne": {
+		"description": "a!=b时, 寄存器(r?)为1, 否则为0",
+		"example": "sne r? a(r?|num) b(r?|num)",
+		"name": "sne"
+	},
+	"snez": {
+		"description": "a!=0时, 寄存器(r?)为1, 否则为0",
+		"example": "snez r? a(r?|num)",
+		"name": "snez"
+	},
+	"sqrt": {
+		"description": "计算a的平方根并将结果保存在寄存器(r?)中",
+		"example": "sqrt r? a(r?|num)",
+		"name": "sqrt"
+	},
+	"sra": {
+		"description": "对一个数值的二进制表示形式进行右移位操作. 该操作会将所有二进制位向右移动, 并用该数值的符号位填充左侧空出的部分",
+		"example": "sra r? a(r?|num) b(r?|num)",
+		"name": "sra"
+	},
+	"srl": {
+		"description": "对一个数值的二进制表示形式进行右移位操作. 该操作会将所有二进制位向右移动, 并用0填充左侧空出的部分",
+		"example": "srl r? a(r?|num) b(r?|num)",
+		"name": "srl"
+	},
+	"ss": {
+		"description": "通过逻辑引脚(d?)和槽位索引值(SlotIndex)定位到设备槽位中的设备, 然后将寄存器(r?)的值写入该设备的逻辑槽位属性值(LogicSlotType)",
+		"example": "ss device(d?|r?|id) slotIndex logicSlotType r?",
+		"name": "ss"
+	},
+	"sub": {
+		"description": "计算a-b的结果并保存在寄存器(r?)中",
+		"example": "sub r? a(r?|num) b(r?|num)",
+		"name": "sub"
+	},
+	"tan": {
+		"description": "计算弧长为a的正切值, 并保存在寄存器(r?)中",
+		"example": "tan r? a(r?|num)",
+		"name": "tan"
+	},
+	"trunc": {
+		"description": "计算a舍去小数部分后的结果, 并保存在寄存器(r?)中",
+		"example": "trunc r? a(r?|num)",
+		"name": "trunc"
+	},
+	"xor": {
+		"description": "对两个数值的二进制表示形式执行按位XOR(异或)运算. 结果中的每个位都是通过计算输入值的相应二进制位来确定的. 如果输入值中的两个位不同, 则结果位为1. 如果相同则结果位为0",
+		"example": "xor r? a(r?|num) b(r?|num)",
+		"name": "xor"
+	},
+	"yield": {
+		"description": "暂停代码运行直到当前tick结束",
+		"example": "yield",
+		"name": "yield"
+	}
 }

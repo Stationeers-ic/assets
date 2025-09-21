@@ -17,6 +17,10 @@
     .json { background: #f7f7f7; padding: 8px; border-radius: 4px; overflow: auto; max-height: 300px; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size: 12px; line-height: 1.4; margin-top: 6px; }
     .device-count { text-align: center; color: #555; font-size: 12px; margin-top: -4px; }
   </style>
+  <!-- Измененная тема highlight.js -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/atom-one-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/languages/go.min.js"></script>
 </head>
 <body>
 
@@ -43,7 +47,7 @@
           <% image.devices.forEach(function(dev) { %>
             <details>
               <summary><%= dev.summary %></summary>
-              <pre class="json"><code lang="json"><%- dev.json %></code></pre>
+              <pre class="json"><code class="language-json" lang="json"><%- dev.json %></code></pre>
             </details>
           <% }); %>
         <% } %>
@@ -66,5 +70,6 @@
       });
     });
   </script>
+  <script>hljs.highlightAll();</script>
 </body>
 </html>
