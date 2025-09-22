@@ -40,7 +40,7 @@
 		"name": "atan2"
 	},
 	"bap": {
-		"description": "Větev na řádek D, pokud abs(A - B) <= max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8)",
+		"description": "Větev na řádek D, pokud abs(A - B) &lt;= max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8)",
 		"example": "bap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bap"
 	},
@@ -50,12 +50,12 @@
 		"name": "bapal"
 	},
 	"bapz": {
-		"description": "Větev na řádek C, pokud abs(A) <= float.epsilon \\* 8",
+		"description": "Větev na řádek C, pokud abs(A) &lt;= float.epsilon \\* 8",
 		"example": "bapz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bapz"
 	},
 	"bapzal": {
-		"description": "Větev na řádek C, pokud abs(A) <= float.epsilon \\* 8",
+		"description": "Větev na řádek C, pokud abs(A) &lt;= float.epsilon \\* 8",
 		"example": "bapzal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bapzal"
 	},
@@ -110,92 +110,92 @@
 		"name": "beqzal"
 	},
 	"bge": {
-		"description": "Větev na řádek C, pokud A >= B",
+		"description": "Větev na řádek C, pokud A &gt;= B",
 		"example": "bge a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bge"
 	},
 	"bgeal": {
-		"description": "Větev na řádek C, pokud A >= B, a uložte další číslo řádku v ra",
+		"description": "Větev na řádek C, pokud A &gt;= B, a uložte další číslo řádku v ra",
 		"example": "bgeal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgeal"
 	},
 	"bgez": {
-		"description": "Větev na řádek B, pokud A >= 0",
+		"description": "Větev na řádek B, pokud A &gt;= 0",
 		"example": "bgez a(r?|num) b(r?|num)",
 		"name": "bgez"
 	},
 	"bgezal": {
-		"description": "Větev na řádek B, pokud A >= 0, a další číslo řádku uložte do ra",
+		"description": "Větev na řádek B, pokud A &gt;= 0, a další číslo řádku uložte do ra",
 		"example": "bgezal a(r?|num) b(r?|num)",
 		"name": "bgezal"
 	},
 	"bgt": {
-		"description": "Větev na řádek C, pokud A > B",
+		"description": "Větev na řádek C, pokud A &gt; B",
 		"example": "bgt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgt"
 	},
 	"bgtal": {
-		"description": "Větev na řádek C, pokud A > B, a uložte další číslo řádku v ra",
+		"description": "Větev na řádek C, pokud A &gt; B, a uložte další číslo řádku v ra",
 		"example": "bgtal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgtal"
 	},
 	"bgtz": {
-		"description": "Větev na řádek B, pokud A > 0",
+		"description": "Větev na řádek B, pokud A &gt; 0",
 		"example": "bgtz a(r?|num) b(r?|num)",
 		"name": "bgtz"
 	},
 	"bgtzal": {
-		"description": "Větev na řádek B, pokud A > 0, a další číslo řádku uložte do ra",
+		"description": "Větev na řádek B, pokud A &gt; 0, a další číslo řádku uložte do ra",
 		"example": "bgtzal a(r?|num) b(r?|num)",
 		"name": "bgtzal"
 	},
 	"ble": {
-		"description": "Větev na řádek C, pokud A <= B",
+		"description": "Větev na řádek C, pokud A &lt;= B",
 		"example": "ble a(r?|num) b(r?|num) c(r?|num)",
 		"name": "ble"
 	},
 	"bleal": {
-		"description": "Větev na řádek C, pokud A <= B, a uložte další číslo řádku v ra",
+		"description": "Větev na řádek C, pokud A &lt;= B, a uložte další číslo řádku v ra",
 		"example": "bleal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bleal"
 	},
 	"blez": {
-		"description": "Větev na řádek B, pokud A <= 0",
+		"description": "Větev na řádek B, pokud A &lt;= 0",
 		"example": "blez a(r?|num) b(r?|num)",
 		"name": "blez"
 	},
 	"blezal": {
-		"description": "Větev na řádek B, pokud A <= 0, a další číslo řádku uložte do ra",
+		"description": "Větev na řádek B, pokud A &lt;= 0, a další číslo řádku uložte do ra",
 		"example": "blezal a(r?|num) b(r?|num)",
 		"name": "blezal"
 	},
 	"blt": {
-		"description": "Větev na řádek C, pokud A < B",
+		"description": "Větev na řádek C, pokud A &lt; B",
 		"example": "blt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "blt"
 	},
 	"bltal": {
-		"description": "Větev na řádek C, pokud A < B, a uložte další číslo řádku v ra",
+		"description": "Větev na řádek C, pokud A &lt; B, a uložte další číslo řádku v ra",
 		"example": "bltal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bltal"
 	},
 	"bltz": {
-		"description": "Větev na řádek B, pokud A < 0",
+		"description": "Větev na řádek B, pokud A &lt; 0",
 		"example": "bltz a(r?|num) b(r?|num)",
 		"name": "bltz"
 	},
 	"bltzal": {
-		"description": "Větev na řádek B, pokud A < 0, a další číslo řádku uložte do ra",
+		"description": "Větev na řádek B, pokud A &lt; 0, a další číslo řádku uložte do ra",
 		"example": "bltzal a(r?|num) b(r?|num)",
 		"name": "bltzal"
 	},
 	"bna": {
-		"description": "Větev na řádek D, pokud abs(A - B) > max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8)",
+		"description": "Větev na řádek D, pokud abs(A - B) &gt; max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8)",
 		"example": "bna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bna"
 	},
 	"bnaal": {
-		"description": "Větev na řádek D, pokud abs (A - B) <= max(c \\* max(abs(A), abs(B)), float.epsilon \\* 8) a další číslo řádku uložte do ra",
+		"description": "Větev na řádek D, pokud abs (A - B) &lt;= max(c \\* max(abs(A), abs(B)), float.epsilon \\* 8) a další číslo řádku uložte do ra",
 		"example": "bnaal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bnaal"
 	},
@@ -205,12 +205,12 @@
 		"name": "bnan"
 	},
 	"bnaz": {
-		"description": "Větev na řádek C, pokud abs(A) > float.epsilon \\* 8",
+		"description": "Větev na řádek C, pokud abs(A) &gt; float.epsilon \\* 8",
 		"example": "bnaz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bnaz"
 	},
 	"bnazal": {
-		"description": "Větev na řádek C, pokud abs(A) > float.epsilon \\* 8",
+		"description": "Větev na řádek C, pokud abs(A) &gt; float.epsilon \\* 8",
 		"example": "bnazal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bnazal"
 	},
@@ -235,12 +235,12 @@
 		"name": "bnezal"
 	},
 	"brap": {
-		"description": "Relativní větev k řádku D, pokud abs(A - B) <= max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8)",
+		"description": "Relativní větev k řádku D, pokud abs(A - B) &lt;= max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8)",
 		"example": "brap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "brap"
 	},
 	"brapz": {
-		"description": "Relativní větev k řádku C, pokud abs(A) <= float.epsilon \\* 8",
+		"description": "Relativní větev k řádku C, pokud abs(A) &lt;= float.epsilon \\* 8",
 		"example": "brapz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brapz"
 	},
@@ -265,47 +265,47 @@
 		"name": "breqz"
 	},
 	"brge": {
-		"description": "Relativní skok na řádek C, pokud A >= B",
+		"description": "Relativní skok na řádek C, pokud A &gt;= B",
 		"example": "brge a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brge"
 	},
 	"brgez": {
-		"description": "Relativní větev k řádku B, pokud A >= 0",
+		"description": "Relativní větev k řádku B, pokud A &gt;= 0",
 		"example": "brgez a(r?|num) b(r?|num)",
 		"name": "brgez"
 	},
 	"brgt": {
-		"description": "Relativní skok na čáru C, pokud A > B",
+		"description": "Relativní skok na čáru C, pokud A &gt; B",
 		"example": "brgt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brgt"
 	},
 	"brgtz": {
-		"description": "Relativní větev k řádku B, pokud A > 0",
+		"description": "Relativní větev k řádku B, pokud A &gt; 0",
 		"example": "brgtz a(r?|num) b(r?|num)",
 		"name": "brgtz"
 	},
 	"brle": {
-		"description": "Relativní skok na čáru C, pokud A <= B",
+		"description": "Relativní skok na čáru C, pokud A &lt;= B",
 		"example": "brle a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brle"
 	},
 	"brlez": {
-		"description": "Relativní větev k řádku B, pokud A <= 0",
+		"description": "Relativní větev k řádku B, pokud A &lt;= 0",
 		"example": "brlez a(r?|num) b(r?|num)",
 		"name": "brlez"
 	},
 	"brlt": {
-		"description": "Relativní skok na čáru C, pokud A < B",
+		"description": "Relativní skok na čáru C, pokud A &lt; B",
 		"example": "brlt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brlt"
 	},
 	"brltz": {
-		"description": "Relativní větev k řádku B, pokud A < 0",
+		"description": "Relativní větev k řádku B, pokud A &lt; 0",
 		"example": "brltz a(r?|num) b(r?|num)",
 		"name": "brltz"
 	},
 	"brna": {
-		"description": "Relativní větev k řádku D, pokud abs(A - B) > max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8)",
+		"description": "Relativní větev k řádku D, pokud abs(A - B) &gt; max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8)",
 		"example": "brna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "brna"
 	},
@@ -315,7 +315,7 @@
 		"name": "brnan"
 	},
 	"brnaz": {
-		"description": "Relativní větev k řádku C, pokud abs(A) > float.epsilon \\* 8",
+		"description": "Relativní větev k řádku C, pokud abs(A) &gt; float.epsilon \\* 8",
 		"example": "brnaz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brnaz"
 	},
@@ -540,7 +540,7 @@
 		"name": "putd"
 	},
 	"rand": {
-		"description": "Registr = náhodná hodnota X s 0 <= X < 1",
+		"description": "Registr = náhodná hodnota X s 0 &lt;= X &lt; 1",
 		"example": "rand r?",
 		"name": "rand"
 	},
@@ -560,12 +560,12 @@
 		"name": "s"
 	},
 	"sap": {
-		"description": "Registr = 1, pokud abs(A - B) <= max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8), jinak 0",
+		"description": "Registr = 1, pokud abs(A - B) &lt;= max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8), jinak 0",
 		"example": "sap r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "sap"
 	},
 	"sapz": {
-		"description": "Registr = 1, pokud |A| <= float.epsilon \\* 8, jinak 0",
+		"description": "Registr = 1, pokud |A| &lt;= float.epsilon \\* 8, jinak 0",
 		"example": "sapz r? a(r?|num) b(r?|num)",
 		"name": "sapz"
 	},
@@ -615,22 +615,22 @@
 		"name": "seqz"
 	},
 	"sge": {
-		"description": "Registr = 1, pokud A >= B, jinak 0",
+		"description": "Registr = 1, pokud A &gt;= B, jinak 0",
 		"example": "sge r? a(r?|num) b(r?|num)",
 		"name": "sge"
 	},
 	"sgez": {
-		"description": "Registr = 1, pokud A >= 0, jinak 0",
+		"description": "Registr = 1, pokud A &gt;= 0, jinak 0",
 		"example": "sgez r? a(r?|num)",
 		"name": "sgez"
 	},
 	"sgt": {
-		"description": "Registr = 1, pokud je A > B, jinak 0",
+		"description": "Registr = 1, pokud je A &gt; B, jinak 0",
 		"example": "sgt r? a(r?|num) b(r?|num)",
 		"name": "sgt"
 	},
 	"sgtz": {
-		"description": "Registr = 1, pokud je A > 0, jinak 0",
+		"description": "Registr = 1, pokud je A &gt; 0, jinak 0",
 		"example": "sgtz r? a(r?|num)",
 		"name": "sgtz"
 	},
@@ -645,7 +645,7 @@
 		"name": "sla"
 	},
 	"sle": {
-		"description": "Registr = 1, pokud A <= B, jinak 0",
+		"description": "Registr = 1, pokud A &lt;= B, jinak 0",
 		"example": "sle r? a(r?|num) b(r?|num)",
 		"name": "sle"
 	},
@@ -655,7 +655,7 @@
 		"name": "sleep"
 	},
 	"slez": {
-		"description": "Registr = 1, pokud A <= 0, jinak 0",
+		"description": "Registr = 1, pokud A &lt;= 0, jinak 0",
 		"example": "slez r? a(r?|num)",
 		"name": "slez"
 	},
@@ -665,17 +665,17 @@
 		"name": "sll"
 	},
 	"slt": {
-		"description": "Registr = 1, pokud je A < B, jinak 0",
+		"description": "Registr = 1, pokud je A &lt; B, jinak 0",
 		"example": "slt r? a(r?|num) b(r?|num)",
 		"name": "slt"
 	},
 	"sltz": {
-		"description": "Registr = 1, pokud je A < 0, jinak 0",
+		"description": "Registr = 1, pokud je A &lt; 0, jinak 0",
 		"example": "sltz r? a(r?|num)",
 		"name": "sltz"
 	},
 	"sna": {
-		"description": "Registr = 1, pokud abs(A - B) > max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8), jinak 0",
+		"description": "Registr = 1, pokud abs(A - B) &gt; max(C \\* max(abs(A), abs(B)), float.epsilon \\* 8), jinak 0",
 		"example": "sna r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "sna"
 	},
@@ -690,7 +690,7 @@
 		"name": "snanz"
 	},
 	"snaz": {
-		"description": "Registr = 1, pokud |A| > float.epsilon, jinak 0",
+		"description": "Registr = 1, pokud |A| &gt; float.epsilon, jinak 0",
 		"example": "snaz r? a(r?|num) b(r?|num)",
 		"name": "snaz"
 	},

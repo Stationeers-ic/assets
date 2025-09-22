@@ -40,7 +40,7 @@
 		"name": "atan2"
 	},
 	"bap": {
-		"description": "Ответвление на строку d, если abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
+		"description": "Ответвление на строку d, если abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
 		"example": "bap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bap"
 	},
@@ -50,12 +50,12 @@
 		"name": "bapal"
 	},
 	"bapz": {
-		"description": "Ответвление на строку c, если abs(a) <= float.epsilon \\* 8",
+		"description": "Ответвление на строку c, если abs(a) &lt;= float.epsilon \\* 8",
 		"example": "bapz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bapz"
 	},
 	"bapzal": {
-		"description": "Ответвление на строку c, если abs(a) <= float.epsilon \\* 8",
+		"description": "Ответвление на строку c, если abs(a) &lt;= float.epsilon \\* 8",
 		"example": "bapzal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bapzal"
 	},
@@ -110,92 +110,92 @@
 		"name": "beqzal"
 	},
 	"bge": {
-		"description": "Ответвление на строку c, если a >= b",
+		"description": "Ответвление на строку c, если a &gt;= b",
 		"example": "bge a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bge"
 	},
 	"bgeal": {
-		"description": "Ответвление на строку c, если a >= b, и сохранение номера следующей строки в ra",
+		"description": "Ответвление на строку c, если a &gt;= b, и сохранение номера следующей строки в ra",
 		"example": "bgeal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgeal"
 	},
 	"bgez": {
-		"description": "Ответвление на строку b, если a >= 0",
+		"description": "Ответвление на строку b, если a &gt;= 0",
 		"example": "bgez a(r?|num) b(r?|num)",
 		"name": "bgez"
 	},
 	"bgezal": {
-		"description": "Ответвление на строку b, если a >= 0, и сохранение номера следующей строки в ra",
+		"description": "Ответвление на строку b, если a &gt;= 0, и сохранение номера следующей строки в ra",
 		"example": "bgezal a(r?|num) b(r?|num)",
 		"name": "bgezal"
 	},
 	"bgt": {
-		"description": "Ответвление на строку c, если a > b",
+		"description": "Ответвление на строку c, если a &gt; b",
 		"example": "bgt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgt"
 	},
 	"bgtal": {
-		"description": "Ответвление на строку c, если a > b, и сохранение номера следующей строки в ra",
+		"description": "Ответвление на строку c, если a &gt; b, и сохранение номера следующей строки в ra",
 		"example": "bgtal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgtal"
 	},
 	"bgtz": {
-		"description": "Ответвление на строку b, если a > 0",
+		"description": "Ответвление на строку b, если a &gt; 0",
 		"example": "bgtz a(r?|num) b(r?|num)",
 		"name": "bgtz"
 	},
 	"bgtzal": {
-		"description": "Ответвление на строку b, если a > 0, и сохранение номера следующей строки в ra",
+		"description": "Ответвление на строку b, если a &gt; 0, и сохранение номера следующей строки в ra",
 		"example": "bgtzal a(r?|num) b(r?|num)",
 		"name": "bgtzal"
 	},
 	"ble": {
-		"description": "Ответвление на строку c, если a <= b",
+		"description": "Ответвление на строку c, если a &lt;= b",
 		"example": "ble a(r?|num) b(r?|num) c(r?|num)",
 		"name": "ble"
 	},
 	"bleal": {
-		"description": "Ответвление на строку c, если a <= b, и сохранение номера следующей строки в ra",
+		"description": "Ответвление на строку c, если a &lt;= b, и сохранение номера следующей строки в ra",
 		"example": "bleal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bleal"
 	},
 	"blez": {
-		"description": "Ответвление на строку b, если a <= 0",
+		"description": "Ответвление на строку b, если a &lt;= 0",
 		"example": "blez a(r?|num) b(r?|num)",
 		"name": "blez"
 	},
 	"blezal": {
-		"description": "Ответвление на строку b, если a <= 0, и сохранение номера следующей строки в ra",
+		"description": "Ответвление на строку b, если a &lt;= 0, и сохранение номера следующей строки в ra",
 		"example": "blezal a(r?|num) b(r?|num)",
 		"name": "blezal"
 	},
 	"blt": {
-		"description": "Ответвление на строку c, если a < b",
+		"description": "Ответвление на строку c, если a &lt; b",
 		"example": "blt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "blt"
 	},
 	"bltal": {
-		"description": "Ответвление на строку c, если a < b, и сохранение номера следующей строки в ra",
+		"description": "Ответвление на строку c, если a &lt; b, и сохранение номера следующей строки в ra",
 		"example": "bltal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bltal"
 	},
 	"bltz": {
-		"description": "Ответвление на строку b, если a < 0",
+		"description": "Ответвление на строку b, если a &lt; 0",
 		"example": "bltz a(r?|num) b(r?|num)",
 		"name": "bltz"
 	},
 	"bltzal": {
-		"description": "Ответвление на строку b, если a < 0, и сохранение номера следующей строки в ra",
+		"description": "Ответвление на строку b, если a &lt; 0, и сохранение номера следующей строки в ra",
 		"example": "bltzal a(r?|num) b(r?|num)",
 		"name": "bltzal"
 	},
 	"bna": {
-		"description": "Ответвление на строку d, если abs(a - b) > max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
+		"description": "Ответвление на строку d, если abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
 		"example": "bna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bna"
 	},
 	"bnaal": {
-		"description": "Ответвление на строку d, если abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), и сохранение номера следующей строки в ra",
+		"description": "Ответвление на строку d, если abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), и сохранение номера следующей строки в ra",
 		"example": "bnaal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bnaal"
 	},
@@ -205,12 +205,12 @@
 		"name": "bnan"
 	},
 	"bnaz": {
-		"description": "Ответвление на строку c, если abs(a) > float.epsilon \\* 8",
+		"description": "Ответвление на строку c, если abs(a) &gt; float.epsilon \\* 8",
 		"example": "bnaz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bnaz"
 	},
 	"bnazal": {
-		"description": "Ответвление на строку c, если abs(a) > float.epsilon \\* 8",
+		"description": "Ответвление на строку c, если abs(a) &gt; float.epsilon \\* 8",
 		"example": "bnazal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bnazal"
 	},
@@ -235,12 +235,12 @@
 		"name": "bnezal"
 	},
 	"brap": {
-		"description": "Относительный переход на строку d, если abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
+		"description": "Относительный переход на строку d, если abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
 		"example": "brap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "brap"
 	},
 	"brapz": {
-		"description": "Относительный переход на строку c, если abs(a) <= float.epsilon \\* 8",
+		"description": "Относительный переход на строку c, если abs(a) &lt;= float.epsilon \\* 8",
 		"example": "brapz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brapz"
 	},
@@ -265,47 +265,47 @@
 		"name": "breqz"
 	},
 	"brge": {
-		"description": "Относительный переход на строку c, если a >= b",
+		"description": "Относительный переход на строку c, если a &gt;= b",
 		"example": "brge a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brge"
 	},
 	"brgez": {
-		"description": "Относительный переход на строку b, если a >= 0",
+		"description": "Относительный переход на строку b, если a &gt;= 0",
 		"example": "brgez a(r?|num) b(r?|num)",
 		"name": "brgez"
 	},
 	"brgt": {
-		"description": "относительный переход на строку c, если a > b",
+		"description": "относительный переход на строку c, если a &gt; b",
 		"example": "brgt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brgt"
 	},
 	"brgtz": {
-		"description": "Относительный переход на строку b, если a > 0",
+		"description": "Относительный переход на строку b, если a &gt; 0",
 		"example": "brgtz a(r?|num) b(r?|num)",
 		"name": "brgtz"
 	},
 	"brle": {
-		"description": "Относительный переход на строку c, если a <= b",
+		"description": "Относительный переход на строку c, если a &lt;= b",
 		"example": "brle a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brle"
 	},
 	"brlez": {
-		"description": "Относительный переход на строку b, если a <= 0",
+		"description": "Относительный переход на строку b, если a &lt;= 0",
 		"example": "brlez a(r?|num) b(r?|num)",
 		"name": "brlez"
 	},
 	"brlt": {
-		"description": "Относительный переход на строку c, если a < b",
+		"description": "Относительный переход на строку c, если a &lt; b",
 		"example": "brlt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brlt"
 	},
 	"brltz": {
-		"description": "Относительный переход на строку b, если a < 0",
+		"description": "Относительный переход на строку b, если a &lt; 0",
 		"example": "brltz a(r?|num) b(r?|num)",
 		"name": "brltz"
 	},
 	"brna": {
-		"description": "Относительный переход на строку d, если abs(a - b) > max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
+		"description": "Относительный переход на строку d, если abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
 		"example": "brna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "brna"
 	},
@@ -315,7 +315,7 @@
 		"name": "brnan"
 	},
 	"brnaz": {
-		"description": "Относительный переход на строку c, если abs(a) > float.epsilon \\* 8",
+		"description": "Относительный переход на строку c, если abs(a) &gt; float.epsilon \\* 8",
 		"example": "brnaz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brnaz"
 	},
@@ -540,7 +540,7 @@
 		"name": "putd"
 	},
 	"rand": {
-		"description": "Регистр = случайное значение x между 0 <= x < 1",
+		"description": "Регистр = случайное значение x между 0 &lt;= x &lt; 1",
 		"example": "rand r?",
 		"name": "rand"
 	},
@@ -560,12 +560,12 @@
 		"name": "s"
 	},
 	"sap": {
-		"description": "Регистр = 1, если abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), иначе 0",
+		"description": "Регистр = 1, если abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), иначе 0",
 		"example": "sap r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "sap"
 	},
 	"sapz": {
-		"description": "Регистр = 1, если |a| <= float.epsilon \\* 8, иначе 0",
+		"description": "Регистр = 1, если |a| &lt;= float.epsilon \\* 8, иначе 0",
 		"example": "sapz r? a(r?|num) b(r?|num)",
 		"name": "sapz"
 	},
@@ -615,22 +615,22 @@
 		"name": "seqz"
 	},
 	"sge": {
-		"description": "Регистр = 1, если a >= b, иначе 0",
+		"description": "Регистр = 1, если a &gt;= b, иначе 0",
 		"example": "sge r? a(r?|num) b(r?|num)",
 		"name": "sge"
 	},
 	"sgez": {
-		"description": "Регистр = 1, если a >= 0, иначе 0",
+		"description": "Регистр = 1, если a &gt;= 0, иначе 0",
 		"example": "sgez r? a(r?|num)",
 		"name": "sgez"
 	},
 	"sgt": {
-		"description": "Регистр = 1, если a > b, иначе 0",
+		"description": "Регистр = 1, если a &gt; b, иначе 0",
 		"example": "sgt r? a(r?|num) b(r?|num)",
 		"name": "sgt"
 	},
 	"sgtz": {
-		"description": "Регистр = 1, если a > 0, иначе 0",
+		"description": "Регистр = 1, если a &gt; 0, иначе 0",
 		"example": "sgtz r? a(r?|num)",
 		"name": "sgtz"
 	},
@@ -645,7 +645,7 @@
 		"name": "sla"
 	},
 	"sle": {
-		"description": "Регистр = 1, если a <= b, иначе 0",
+		"description": "Регистр = 1, если a &lt;= b, иначе 0",
 		"example": "sle r? a(r?|num) b(r?|num)",
 		"name": "sle"
 	},
@@ -655,7 +655,7 @@
 		"name": "sleep"
 	},
 	"slez": {
-		"description": "Регистр = 1, если a <= 0, иначе 0",
+		"description": "Регистр = 1, если a &lt;= 0, иначе 0",
 		"example": "slez r? a(r?|num)",
 		"name": "slez"
 	},
@@ -665,17 +665,17 @@
 		"name": "sll"
 	},
 	"slt": {
-		"description": "Регистр = 1, если a < b, иначе 0",
+		"description": "Регистр = 1, если a &lt; b, иначе 0",
 		"example": "slt r? a(r?|num) b(r?|num)",
 		"name": "slt"
 	},
 	"sltz": {
-		"description": "Регистр = 1, если a < 0, иначе 0",
+		"description": "Регистр = 1, если a &lt; 0, иначе 0",
 		"example": "sltz r? a(r?|num)",
 		"name": "sltz"
 	},
 	"sna": {
-		"description": "Регистр = 1, если abs(a - b) > max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), иначе 0",
+		"description": "Регистр = 1, если abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), иначе 0",
 		"example": "sna r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "sna"
 	},
@@ -690,7 +690,7 @@
 		"name": "snanz"
 	},
 	"snaz": {
-		"description": "Регистр = 1, если |a| > float.epsilon, иначе 0",
+		"description": "Регистр = 1, если |a| &gt; float.epsilon, иначе 0",
 		"example": "snaz r? a(r?|num) b(r?|num)",
 		"name": "snaz"
 	},

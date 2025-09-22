@@ -40,7 +40,7 @@
 		"name": "atan2"
 	},
 	"bap": {
-		"description": "当符合abs(a-b)<=max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号d",
+		"description": "当符合abs(a-b)&lt;=max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号d",
 		"example": "bap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bap"
 	},
@@ -50,12 +50,12 @@
 		"name": "bapal"
 	},
 	"bapz": {
-		"description": "当符合abs(a)<=float. epsilon\\*8, 则跳转到代码行号c",
+		"description": "当符合abs(a)&lt;=float. epsilon\\*8, 则跳转到代码行号c",
 		"example": "bapz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bapz"
 	},
 	"bapzal": {
-		"description": "当符合abs(a)<=float. epsilon\\*8, 则跳转到代码行号c",
+		"description": "当符合abs(a)&lt;=float. epsilon\\*8, 则跳转到代码行号c",
 		"example": "bapzal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bapzal"
 	},
@@ -110,92 +110,92 @@
 		"name": "beqzal"
 	},
 	"bge": {
-		"description": "如果a>=b, 则跳转到代码行号c",
+		"description": "如果a&gt;=b, 则跳转到代码行号c",
 		"example": "bge a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bge"
 	},
 	"bgeal": {
-		"description": "如果a>=b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
+		"description": "如果a&gt;=b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
 		"example": "bgeal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgeal"
 	},
 	"bgez": {
-		"description": "如果a>=0, 则跳转到代码行号b",
+		"description": "如果a&gt;=0, 则跳转到代码行号b",
 		"example": "bgez a(r?|num) b(r?|num)",
 		"name": "bgez"
 	},
 	"bgezal": {
-		"description": "如果a>=0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
+		"description": "如果a&gt;=0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
 		"example": "bgezal a(r?|num) b(r?|num)",
 		"name": "bgezal"
 	},
 	"bgt": {
-		"description": "如果a>b, 则跳转到代码行号c",
+		"description": "如果a&gt;b, 则跳转到代码行号c",
 		"example": "bgt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgt"
 	},
 	"bgtal": {
-		"description": "如果a>b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
+		"description": "如果a&gt;b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
 		"example": "bgtal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgtal"
 	},
 	"bgtz": {
-		"description": "如果a>0, 则跳转到代码行号b",
+		"description": "如果a&gt;0, 则跳转到代码行号b",
 		"example": "bgtz a(r?|num) b(r?|num)",
 		"name": "bgtz"
 	},
 	"bgtzal": {
-		"description": "如果a>0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
+		"description": "如果a&gt;0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
 		"example": "bgtzal a(r?|num) b(r?|num)",
 		"name": "bgtzal"
 	},
 	"ble": {
-		"description": "如果a<=b, 则跳转到代码行号c",
+		"description": "如果a&lt;=b, 则跳转到代码行号c",
 		"example": "ble a(r?|num) b(r?|num) c(r?|num)",
 		"name": "ble"
 	},
 	"bleal": {
-		"description": "如果a<=b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
+		"description": "如果a&lt;=b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
 		"example": "bleal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bleal"
 	},
 	"blez": {
-		"description": "如果a<=0, 则跳转到代码行号b",
+		"description": "如果a&lt;=0, 则跳转到代码行号b",
 		"example": "blez a(r?|num) b(r?|num)",
 		"name": "blez"
 	},
 	"blezal": {
-		"description": "如果a<=0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
+		"description": "如果a&lt;=0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
 		"example": "blezal a(r?|num) b(r?|num)",
 		"name": "blezal"
 	},
 	"blt": {
-		"description": "如果a",
+		"description": "如果a&lt;b, 则跳转到代码行号c",
 		"example": "blt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "blt"
 	},
 	"bltal": {
-		"description": "如果a",
+		"description": "如果a&lt;b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
 		"example": "bltal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bltal"
 	},
 	"bltz": {
-		"description": "如果a<0, 则跳转到代码行号b",
+		"description": "如果a&lt;0, 则跳转到代码行号b",
 		"example": "bltz a(r?|num) b(r?|num)",
 		"name": "bltz"
 	},
 	"bltzal": {
-		"description": "如果a<0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
+		"description": "如果a&lt;0, 则跳转到代码行号b行, 并将跳转前的行号+1并储存在寄存器ra",
 		"example": "bltzal a(r?|num) b(r?|num)",
 		"name": "bltzal"
 	},
 	"bna": {
-		"description": "当符合abs(a-b)>max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号d",
+		"description": "当符合abs(a-b)&gt;max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号d",
 		"example": "bna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bna"
 	},
 	"bnaal": {
-		"description": "当符合abs(a-b)>max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号d行, 并将跳转前的行号+1并储存在寄存器ra",
+		"description": "当符合abs(a-b)&gt;max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号d行, 并将跳转前的行号+1并储存在寄存器ra",
 		"example": "bnaal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bnaal"
 	},
@@ -205,12 +205,12 @@
 		"name": "bnan"
 	},
 	"bnaz": {
-		"description": "当符合abs(a)>float. epsilon\\*8, 则跳转到代码行号c",
+		"description": "当符合abs(a)&gt;float. epsilon\\*8, 则跳转到代码行号c",
 		"example": "bnaz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bnaz"
 	},
 	"bnazal": {
-		"description": "当符合abs(a)>float. epsilon\\*8, 则跳转到代码行号c",
+		"description": "当符合abs(a)&gt;float. epsilon\\*8, 则跳转到代码行号c",
 		"example": "bnazal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bnazal"
 	},
@@ -235,12 +235,12 @@
 		"name": "bnezal"
 	},
 	"brap": {
-		"description": "当符合abs(a-b)<=max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号(当前行号+d)行",
+		"description": "当符合abs(a-b)&lt;=max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号(当前行号+d)行",
 		"example": "brap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "brap"
 	},
 	"brapz": {
-		"description": "当符合abs(a)<=float. epsilon\\*8, 则跳转到代码行号(当前行号+c)行",
+		"description": "当符合abs(a)&lt;=float. epsilon\\*8, 则跳转到代码行号(当前行号+c)行",
 		"example": "brapz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brapz"
 	},
@@ -265,47 +265,47 @@
 		"name": "breqz"
 	},
 	"brge": {
-		"description": "如果a>=b, 则跳转到代码行号(当前行号+c)行",
+		"description": "如果a&gt;=b, 则跳转到代码行号(当前行号+c)行",
 		"example": "brge a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brge"
 	},
 	"brgez": {
-		"description": "如果a>=0, 则跳转到代码行号(当前行号+b)行",
+		"description": "如果a&gt;=0, 则跳转到代码行号(当前行号+b)行",
 		"example": "brgez a(r?|num) b(r?|num)",
 		"name": "brgez"
 	},
 	"brgt": {
-		"description": "如果a>b, 则跳转到代码行号(当前行号+c)行",
+		"description": "如果a&gt;b, 则跳转到代码行号(当前行号+c)行",
 		"example": "brgt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brgt"
 	},
 	"brgtz": {
-		"description": "如果a>0, 则跳转到代码行号(当前行号+b)行",
+		"description": "如果a&gt;0, 则跳转到代码行号(当前行号+b)行",
 		"example": "brgtz a(r?|num) b(r?|num)",
 		"name": "brgtz"
 	},
 	"brle": {
-		"description": "如果a<=b, 则跳转到代码行号(当前行号+c)行",
+		"description": "如果a&lt;=b, 则跳转到代码行号(当前行号+c)行",
 		"example": "brle a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brle"
 	},
 	"brlez": {
-		"description": "如果a<=0, 则跳转到代码行号(当前行号+b)行",
+		"description": "如果a&lt;=0, 则跳转到代码行号(当前行号+b)行",
 		"example": "brlez a(r?|num) b(r?|num)",
 		"name": "brlez"
 	},
 	"brlt": {
-		"description": "如果a",
+		"description": "如果a&lt;b, 则跳转到代码行号(当前行号+c)行",
 		"example": "brlt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brlt"
 	},
 	"brltz": {
-		"description": "如果a<0, 则跳转到代码行号(当前行号+b)行",
+		"description": "如果a&lt;0, 则跳转到代码行号(当前行号+b)行",
 		"example": "brltz a(r?|num) b(r?|num)",
 		"name": "brltz"
 	},
 	"brna": {
-		"description": "当符合abs(a-b)>max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号(当前行号+d)行",
+		"description": "当符合abs(a-b)&gt;max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号(当前行号+d)行",
 		"example": "brna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "brna"
 	},
@@ -315,7 +315,7 @@
 		"name": "brnan"
 	},
 	"brnaz": {
-		"description": "当符合abs(a)>float. epsilon\\*8, 则跳转到代码行号(当前行号+c)行",
+		"description": "当符合abs(a)&gt;float. epsilon\\*8, 则跳转到代码行号(当前行号+c)行",
 		"example": "brnaz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brnaz"
 	},
@@ -540,7 +540,7 @@
 		"name": "putd"
 	},
 	"rand": {
-		"description": "生成范围为0<=x<1的随机数, 并保存在寄存器(r?)中",
+		"description": "生成范围为0&lt;=x&lt;1的随机数, 并保存在寄存器(r?)中",
 		"example": "rand r?",
 		"name": "rand"
 	},
@@ -560,12 +560,12 @@
 		"name": "s"
 	},
 	"sap": {
-		"description": "当符合abs(a-b)<=max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 寄存器(r?)为1, 否则为0",
+		"description": "当符合abs(a-b)&lt;=max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 寄存器(r?)为1, 否则为0",
 		"example": "sap r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "sap"
 	},
 	"sapz": {
-		"description": "当符合|a|<=float. epsilon\\*8时, 寄存器(r?)为1, 否则为0",
+		"description": "当符合|a|&lt;=float. epsilon\\*8时, 寄存器(r?)为1, 否则为0",
 		"example": "sapz r? a(r?|num) b(r?|num)",
 		"name": "sapz"
 	},
@@ -615,22 +615,22 @@
 		"name": "seqz"
 	},
 	"sge": {
-		"description": "a>=b时, 寄存器(r?)为1, 否则为0",
+		"description": "a&gt;=b时, 寄存器(r?)为1, 否则为0",
 		"example": "sge r? a(r?|num) b(r?|num)",
 		"name": "sge"
 	},
 	"sgez": {
-		"description": "a>=0时, 寄存器(r?)为1, 否则为0",
+		"description": "a&gt;=0时, 寄存器(r?)为1, 否则为0",
 		"example": "sgez r? a(r?|num)",
 		"name": "sgez"
 	},
 	"sgt": {
-		"description": "a>b时, 寄存器(r?)为1, 否则为0",
+		"description": "a&gt;b时, 寄存器(r?)为1, 否则为0",
 		"example": "sgt r? a(r?|num) b(r?|num)",
 		"name": "sgt"
 	},
 	"sgtz": {
-		"description": "a>0时, 寄存器(r?)为1, 否则为0",
+		"description": "a&gt;0时, 寄存器(r?)为1, 否则为0",
 		"example": "sgtz r? a(r?|num)",
 		"name": "sgtz"
 	},
@@ -645,7 +645,7 @@
 		"name": "sla"
 	},
 	"sle": {
-		"description": "a<=b时, 寄存器(r?)为1, 否则为0",
+		"description": "a&lt;=b时, 寄存器(r?)为1, 否则为0",
 		"example": "sle r? a(r?|num) b(r?|num)",
 		"name": "sle"
 	},
@@ -655,7 +655,7 @@
 		"name": "sleep"
 	},
 	"slez": {
-		"description": "a<=0时, 寄存器(r?)为1, 否则为0",
+		"description": "a&lt;=0时, 寄存器(r?)为1, 否则为0",
 		"example": "slez r? a(r?|num)",
 		"name": "slez"
 	},
@@ -665,17 +665,17 @@
 		"name": "sll"
 	},
 	"slt": {
-		"description": "a",
+		"description": "a&lt;b时, 寄存器(r?)为1, 否则为0",
 		"example": "slt r? a(r?|num) b(r?|num)",
 		"name": "slt"
 	},
 	"sltz": {
-		"description": "a<0时, 寄存器(r?)为1, 否则为0",
+		"description": "a&lt;0时, 寄存器(r?)为1, 否则为0",
 		"example": "sltz r? a(r?|num)",
 		"name": "sltz"
 	},
 	"sna": {
-		"description": "当符合abs(a-b)>max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 寄存器(r?)为1, 否则为0",
+		"description": "当符合abs(a-b)&gt;max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 寄存器(r?)为1, 否则为0",
 		"example": "sna r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "sna"
 	},
@@ -690,7 +690,7 @@
 		"name": "snanz"
 	},
 	"snaz": {
-		"description": "当符合|a|>float. epsilon时, 寄存器(r?)为1, 否则为0",
+		"description": "当符合|a|&gt;float. epsilon时, 寄存器(r?)为1, 否则为0",
 		"example": "snaz r? a(r?|num) b(r?|num)",
 		"name": "snaz"
 	},

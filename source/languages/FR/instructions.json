@@ -40,7 +40,7 @@
 		"name": "atan2"
 	},
 	"bap": {
-		"description": "Saute à la ligne d si abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Saute à la ligne d si abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
 		"example": "bap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bap"
 	},
@@ -50,12 +50,12 @@
 		"name": "bapal"
 	},
 	"bapz": {
-		"description": "Saute à la ligne b si abs(a) <= float.epsilon \\* 8 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Saute à la ligne b si abs(a) &lt;= float.epsilon \\* 8 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
 		"example": "bapz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bapz"
 	},
 	"bapzal": {
-		"description": "Saute à la ligne c si abs(a) <= float.epsilon \\* 8 et stocke le numéro de la ligne suivante dans ra (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Saute à la ligne c si abs(a) &lt;= float.epsilon \\* 8 et stocke le numéro de la ligne suivante dans ra (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
 		"example": "bapzal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bapzal"
 	},
@@ -110,92 +110,92 @@
 		"name": "beqzal"
 	},
 	"bge": {
-		"description": "Saute à la ligne c si a >= b",
+		"description": "Saute à la ligne c si a &gt;= b",
 		"example": "bge a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bge"
 	},
 	"bgeal": {
-		"description": "Saute à la ligne c si a >= b et stocke le numéro de la ligne suivante dans ra",
+		"description": "Saute à la ligne c si a &gt;= b et stocke le numéro de la ligne suivante dans ra",
 		"example": "bgeal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgeal"
 	},
 	"bgez": {
-		"description": "Saute à la ligne b si a >= 0",
+		"description": "Saute à la ligne b si a &gt;= 0",
 		"example": "bgez a(r?|num) b(r?|num)",
 		"name": "bgez"
 	},
 	"bgezal": {
-		"description": "Saute à la ligne b si a >= 0 et stocke le numéro de la ligne suivante dans ra",
+		"description": "Saute à la ligne b si a &gt;= 0 et stocke le numéro de la ligne suivante dans ra",
 		"example": "bgezal a(r?|num) b(r?|num)",
 		"name": "bgezal"
 	},
 	"bgt": {
-		"description": "Saute à la ligne c si a > b",
+		"description": "Saute à la ligne c si a &gt; b",
 		"example": "bgt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgt"
 	},
 	"bgtal": {
-		"description": "Saute à la ligne c si a > b et stocke le numéro de la ligne suivante dans ra",
+		"description": "Saute à la ligne c si a &gt; b et stocke le numéro de la ligne suivante dans ra",
 		"example": "bgtal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgtal"
 	},
 	"bgtz": {
-		"description": "Saute à la ligne b si a > 0",
+		"description": "Saute à la ligne b si a &gt; 0",
 		"example": "bgtz a(r?|num) b(r?|num)",
 		"name": "bgtz"
 	},
 	"bgtzal": {
-		"description": "Saute à la ligne b si a > 0 et stocke le numéro de la ligne suivante dans ra",
+		"description": "Saute à la ligne b si a &gt; 0 et stocke le numéro de la ligne suivante dans ra",
 		"example": "bgtzal a(r?|num) b(r?|num)",
 		"name": "bgtzal"
 	},
 	"ble": {
-		"description": "Saute à la ligne c si a <= b",
+		"description": "Saute à la ligne c si a &lt;= b",
 		"example": "ble a(r?|num) b(r?|num) c(r?|num)",
 		"name": "ble"
 	},
 	"bleal": {
-		"description": "Saute à la ligne c si a <= b et stocke le numéro de la ligne suivante dans ra",
+		"description": "Saute à la ligne c si a &lt;= b et stocke le numéro de la ligne suivante dans ra",
 		"example": "bleal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bleal"
 	},
 	"blez": {
-		"description": "Saute à la ligne b si a <= 0",
+		"description": "Saute à la ligne b si a &lt;= 0",
 		"example": "blez a(r?|num) b(r?|num)",
 		"name": "blez"
 	},
 	"blezal": {
-		"description": "Saute à la ligne b si a <= 0 et stocke le numéro de la ligne suivante dans ra",
+		"description": "Saute à la ligne b si a &lt;= 0 et stocke le numéro de la ligne suivante dans ra",
 		"example": "blezal a(r?|num) b(r?|num)",
 		"name": "blezal"
 	},
 	"blt": {
-		"description": "Saute à la ligne c si a < b",
+		"description": "Saute à la ligne c si a &lt; b",
 		"example": "blt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "blt"
 	},
 	"bltal": {
-		"description": "Saute à la ligne c si a < b et stocke le numéro de la ligne suivante dans ra",
+		"description": "Saute à la ligne c si a &lt; b et stocke le numéro de la ligne suivante dans ra",
 		"example": "bltal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bltal"
 	},
 	"bltz": {
-		"description": "Saute à la ligne b si a < 0",
+		"description": "Saute à la ligne b si a &lt; 0",
 		"example": "bltz a(r?|num) b(r?|num)",
 		"name": "bltz"
 	},
 	"bltzal": {
-		"description": "Saute à la ligne b si a < 0 et stocke le numéro de la ligne suivante dans ra",
+		"description": "Saute à la ligne b si a &lt; 0 et stocke le numéro de la ligne suivante dans ra",
 		"example": "bltzal a(r?|num) b(r?|num)",
 		"name": "bltzal"
 	},
 	"bna": {
-		"description": "Saute à la ligne d si abs(a - b) > max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Saute à la ligne d si abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
 		"example": "bna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bna"
 	},
 	"bnaal": {
-		"description": "Saute à la ligne d si abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) et stocke le numéro de la ligne suivante dans ra (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Saute à la ligne d si abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) et stocke le numéro de la ligne suivante dans ra (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
 		"example": "bnaal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bnaal"
 	},
@@ -205,12 +205,12 @@
 		"name": "bnan"
 	},
 	"bnaz": {
-		"description": "Saute à la ligne b si abs(a) > float.epsilon (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Saute à la ligne b si abs(a) &gt; float.epsilon (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
 		"example": "bnaz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bnaz"
 	},
 	"bnazal": {
-		"description": "Saute à la ligne c si abs(a) > float.epsilon \\* 8 et stocke le numéro de la ligne suivante dans ra (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Saute à la ligne c si abs(a) &gt; float.epsilon \\* 8 et stocke le numéro de la ligne suivante dans ra (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
 		"example": "bnazal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bnazal"
 	},
@@ -235,12 +235,12 @@
 		"name": "bnezal"
 	},
 	"brap": {
-		"description": "Fait un saut relatif de d lignes si abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Fait un saut relatif de d lignes si abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
 		"example": "brap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "brap"
 	},
 	"brapz": {
-		"description": "Fait un saut relatif de c lignes si abs(a) <= float.epsilon \\* 8 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Fait un saut relatif de c lignes si abs(a) &lt;= float.epsilon \\* 8 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
 		"example": "brapz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brapz"
 	},
@@ -265,47 +265,47 @@
 		"name": "breqz"
 	},
 	"brge": {
-		"description": "Fait un saut relatif de c lignes si a >= b",
+		"description": "Fait un saut relatif de c lignes si a &gt;= b",
 		"example": "brge a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brge"
 	},
 	"brgez": {
-		"description": "Fait un saut relatif de b lignes si a >= 0",
+		"description": "Fait un saut relatif de b lignes si a &gt;= 0",
 		"example": "brgez a(r?|num) b(r?|num)",
 		"name": "brgez"
 	},
 	"brgt": {
-		"description": "Fait un saut relatif de c lignes si a > b",
+		"description": "Fait un saut relatif de c lignes si a &gt; b",
 		"example": "brgt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brgt"
 	},
 	"brgtz": {
-		"description": "Fait un saut relatif de b lignes si a > 0",
+		"description": "Fait un saut relatif de b lignes si a &gt; 0",
 		"example": "brgtz a(r?|num) b(r?|num)",
 		"name": "brgtz"
 	},
 	"brle": {
-		"description": "Fait un saut relatif de c lignes si a <= b",
+		"description": "Fait un saut relatif de c lignes si a &lt;= b",
 		"example": "brle a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brle"
 	},
 	"brlez": {
-		"description": "Fait un saut relatif de b lignes si a <= 0",
+		"description": "Fait un saut relatif de b lignes si a &lt;= 0",
 		"example": "brlez a(r?|num) b(r?|num)",
 		"name": "brlez"
 	},
 	"brlt": {
-		"description": "Fait un saut relatif de c lignes si a < b",
+		"description": "Fait un saut relatif de c lignes si a &lt; b",
 		"example": "brlt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brlt"
 	},
 	"brltz": {
-		"description": "Fait un saut relatif de b lignes si a < 0",
+		"description": "Fait un saut relatif de b lignes si a &lt; 0",
 		"example": "brltz a(r?|num) b(r?|num)",
 		"name": "brltz"
 	},
 	"brna": {
-		"description": "Fait un saut relatif de d lignes si abs(a - b) > max(c \\* max (abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Fait un saut relatif de d lignes si abs(a - b) &gt; max(c \\* max (abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
 		"example": "brna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "brna"
 	},
@@ -315,7 +315,7 @@
 		"name": "brnan"
 	},
 	"brnaz": {
-		"description": "Fait un saut relatif de c lignes si abs(a) > float.epsilon \\* 8 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Fait un saut relatif de c lignes si abs(a) &gt; float.epsilon \\* 8 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
 		"example": "brnaz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brnaz"
 	},
@@ -540,7 +540,7 @@
 		"name": "putd"
 	},
 	"rand": {
-		"description": "Registre = une valeur aléatoire x avec 0 <= x < 1",
+		"description": "Registre = une valeur aléatoire x avec 0 &lt;= x &lt; 1",
 		"example": "rand r?",
 		"name": "rand"
 	},
@@ -560,12 +560,12 @@
 		"name": "s"
 	},
 	"sap": {
-		"description": "Registre = 1 si abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Registre = 1 si abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
 		"example": "sap r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "sap"
 	},
 	"sapz": {
-		"description": "Registre = 1 si abs(a) <= float.epsilon \\* 8, sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Registre = 1 si abs(a) &lt;= float.epsilon \\* 8, sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
 		"example": "sapz r? a(r?|num) b(r?|num)",
 		"name": "sapz"
 	},
@@ -615,22 +615,22 @@
 		"name": "seqz"
 	},
 	"sge": {
-		"description": "Registre = 1 si a >= b, sinon 0",
+		"description": "Registre = 1 si a &gt;= b, sinon 0",
 		"example": "sge r? a(r?|num) b(r?|num)",
 		"name": "sge"
 	},
 	"sgez": {
-		"description": "Registre = 1 si a >= 0, sinon 0",
+		"description": "Registre = 1 si a &gt;= 0, sinon 0",
 		"example": "sgez r? a(r?|num)",
 		"name": "sgez"
 	},
 	"sgt": {
-		"description": "Registre = 1 si a > b, sinon 0",
+		"description": "Registre = 1 si a &gt; b, sinon 0",
 		"example": "sgt r? a(r?|num) b(r?|num)",
 		"name": "sgt"
 	},
 	"sgtz": {
-		"description": "Registre = 1 si a > 0, sinon 0",
+		"description": "Registre = 1 si a &gt; 0, sinon 0",
 		"example": "sgtz r? a(r?|num)",
 		"name": "sgtz"
 	},
@@ -645,7 +645,7 @@
 		"name": "sla"
 	},
 	"sle": {
-		"description": "Registre = 1 si a <= b, sinon 0",
+		"description": "Registre = 1 si a &lt;= b, sinon 0",
 		"example": "sle r? a(r?|num) b(r?|num)",
 		"name": "sle"
 	},
@@ -655,7 +655,7 @@
 		"name": "sleep"
 	},
 	"slez": {
-		"description": "Registre = 1 si a <= 0, sinon 0",
+		"description": "Registre = 1 si a &lt;= 0, sinon 0",
 		"example": "slez r? a(r?|num)",
 		"name": "slez"
 	},
@@ -665,17 +665,17 @@
 		"name": "sll"
 	},
 	"slt": {
-		"description": "Registre = 1 si a < b, sinon 0",
+		"description": "Registre = 1 si a &lt; b, sinon 0",
 		"example": "slt r? a(r?|num) b(r?|num)",
 		"name": "slt"
 	},
 	"sltz": {
-		"description": "Registre = 1 si a < 0, sinon 0",
+		"description": "Registre = 1 si a &lt; 0, sinon 0",
 		"example": "sltz r? a(r?|num)",
 		"name": "sltz"
 	},
 	"sna": {
-		"description": "Registre = 1 si abs(a - b) > max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Registre = 1 si abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
 		"example": "sna r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "sna"
 	},
@@ -690,7 +690,7 @@
 		"name": "snanz"
 	},
 	"snaz": {
-		"description": "Registre = 1 si abs(a) > float.epsilon, sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Registre = 1 si abs(a) &gt; float.epsilon, sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
 		"example": "snaz r? a(r?|num) b(r?|num)",
 		"name": "snaz"
 	},

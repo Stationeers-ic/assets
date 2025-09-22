@@ -40,7 +40,7 @@
 		"name": "atan2"
 	},
 	"bap": {
-		"description": "Se bifurca a la línea d si abs (a - b) <= max (c \\* max (abs (a), abs (b)), float.epsilon \\* 8)",
+		"description": "Se bifurca a la línea d si abs (a - b) &lt;= max (c \\* max (abs (a), abs (b)), float.epsilon \\* 8)",
 		"example": "bap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bap"
 	},
@@ -50,12 +50,12 @@
 		"name": "bapal"
 	},
 	"bapz": {
-		"description": "Rama de la línea c si abs(a) <= float.epsilon \\* 8",
+		"description": "Rama de la línea c si abs(a) &lt;= float.epsilon \\* 8",
 		"example": "bapz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bapz"
 	},
 	"bapzal": {
-		"description": "Rama de la línea c si abs(a) <= float.epsilon \\* 8",
+		"description": "Rama de la línea c si abs(a) &lt;= float.epsilon \\* 8",
 		"example": "bapzal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bapzal"
 	},
@@ -110,92 +110,92 @@
 		"name": "beqzal"
 	},
 	"bge": {
-		"description": "Rama de a la línea c si a >= b",
+		"description": "Rama de a la línea c si a &gt;= b",
 		"example": "bge a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bge"
 	},
 	"bgeal": {
-		"description": "Bifurca a la línea c si a >= b y guarda el siguiente número de línea en ra",
+		"description": "Bifurca a la línea c si a &gt;= b y guarda el siguiente número de línea en ra",
 		"example": "bgeal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgeal"
 	},
 	"bgez": {
-		"description": "Rama de la línea b si a >= 0",
+		"description": "Rama de la línea b si a &gt;= 0",
 		"example": "bgez a(r?|num) b(r?|num)",
 		"name": "bgez"
 	},
 	"bgezal": {
-		"description": "Bifurca a la línea b si a >= 0 y almacena el siguiente número de línea en ra",
+		"description": "Bifurca a la línea b si a &gt;= 0 y almacena el siguiente número de línea en ra",
 		"example": "bgezal a(r?|num) b(r?|num)",
 		"name": "bgezal"
 	},
 	"bgt": {
-		"description": "Rama de la línea c si a > b",
+		"description": "Rama de la línea c si a &gt; b",
 		"example": "bgt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgt"
 	},
 	"bgtal": {
-		"description": "Bifurcarse a la línea c si a > b y almacenar el siguiente número de línea en ra",
+		"description": "Bifurcarse a la línea c si a &gt; b y almacenar el siguiente número de línea en ra",
 		"example": "bgtal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgtal"
 	},
 	"bgtz": {
-		"description": "Rama de la línea b si a > 0",
+		"description": "Rama de la línea b si a &gt; 0",
 		"example": "bgtz a(r?|num) b(r?|num)",
 		"name": "bgtz"
 	},
 	"bgtzal": {
-		"description": "Bifurcarse a la línea b si a > 0 y almacenar el siguiente número de línea en ra",
+		"description": "Bifurcarse a la línea b si a &gt; 0 y almacenar el siguiente número de línea en ra",
 		"example": "bgtzal a(r?|num) b(r?|num)",
 		"name": "bgtzal"
 	},
 	"ble": {
-		"description": "Rama de a la línea c si a <= b",
+		"description": "Rama de a la línea c si a &lt;= b",
 		"example": "ble a(r?|num) b(r?|num) c(r?|num)",
 		"name": "ble"
 	},
 	"bleal": {
-		"description": "Bifurca a la línea c si a <= b y guarda el siguiente número de línea en ra",
+		"description": "Bifurca a la línea c si a &lt;= b y guarda el siguiente número de línea en ra",
 		"example": "bleal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bleal"
 	},
 	"blez": {
-		"description": "Rama de la línea b si a <= 0",
+		"description": "Rama de la línea b si a &lt;= 0",
 		"example": "blez a(r?|num) b(r?|num)",
 		"name": "blez"
 	},
 	"blezal": {
-		"description": "Bifurca a la línea b si a <= 0 y guarda el siguiente número de línea en ra",
+		"description": "Bifurca a la línea b si a &lt;= 0 y guarda el siguiente número de línea en ra",
 		"example": "blezal a(r?|num) b(r?|num)",
 		"name": "blezal"
 	},
 	"blt": {
-		"description": "Rama de la línea c si a < b",
+		"description": "Rama de la línea c si a &lt; b",
 		"example": "blt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "blt"
 	},
 	"bltal": {
-		"description": "Bifurcarse a la línea c si a < b y almacenar el siguiente número de línea en ra",
+		"description": "Bifurcarse a la línea c si a &lt; b y almacenar el siguiente número de línea en ra",
 		"example": "bltal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bltal"
 	},
 	"bltz": {
-		"description": "Rama de la línea b si a < 0",
+		"description": "Rama de la línea b si a &lt; 0",
 		"example": "bltz a(r?|num) b(r?|num)",
 		"name": "bltz"
 	},
 	"bltzal": {
-		"description": "Bifurcarse a la línea b si a < 0 y almacenar el siguiente número de línea en ra",
+		"description": "Bifurcarse a la línea b si a &lt; 0 y almacenar el siguiente número de línea en ra",
 		"example": "bltzal a(r?|num) b(r?|num)",
 		"name": "bltzal"
 	},
 	"bna": {
-		"description": "Se bifurca a la línea d si abs (a - b)> max (c \\* max (abs (a), abs (b)), float.epsilon \\* 8)",
+		"description": "Se bifurca a la línea d si abs (a - b)&gt; max (c \\* max (abs (a), abs (b)), float.epsilon \\* 8)",
 		"example": "bna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bna"
 	},
 	"bnaal": {
-		"description": "Rama de la línea d si abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) y guardar el siguiente número de línea en ra",
+		"description": "Rama de la línea d si abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) y guardar el siguiente número de línea en ra",
 		"example": "bnaal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bnaal"
 	},
@@ -205,12 +205,12 @@
 		"name": "bnan"
 	},
 	"bnaz": {
-		"description": "Rama de la línea c si abs(a) > float.epsilon \\* 8",
+		"description": "Rama de la línea c si abs(a) &gt; float.epsilon \\* 8",
 		"example": "bnaz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bnaz"
 	},
 	"bnazal": {
-		"description": "Rama de la línea c si abs(a) > float.epsilon \\* 8",
+		"description": "Rama de la línea c si abs(a) &gt; float.epsilon \\* 8",
 		"example": "bnazal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bnazal"
 	},
@@ -235,12 +235,12 @@
 		"name": "bnezal"
 	},
 	"brap": {
-		"description": "Rama relativa a la línea d si abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
+		"description": "Rama relativa a la línea d si abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
 		"example": "brap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "brap"
 	},
 	"brapz": {
-		"description": "Rama relativa a la línea c si abs(a) <= float.epsilon \\* 8",
+		"description": "Rama relativa a la línea c si abs(a) &lt;= float.epsilon \\* 8",
 		"example": "brapz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brapz"
 	},
@@ -265,47 +265,47 @@
 		"name": "breqz"
 	},
 	"brge": {
-		"description": "Salto relativo a la línea c si a >= b",
+		"description": "Salto relativo a la línea c si a &gt;= b",
 		"example": "brge a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brge"
 	},
 	"brgez": {
-		"description": "Rama relativa a la línea b si a >= 0",
+		"description": "Rama relativa a la línea b si a &gt;= 0",
 		"example": "brgez a(r?|num) b(r?|num)",
 		"name": "brgez"
 	},
 	"brgt": {
-		"description": "salto relativo a la línea c si a > b",
+		"description": "salto relativo a la línea c si a &gt; b",
 		"example": "brgt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brgt"
 	},
 	"brgtz": {
-		"description": "Rama relativa a la línea b si a > 0",
+		"description": "Rama relativa a la línea b si a &gt; 0",
 		"example": "brgtz a(r?|num) b(r?|num)",
 		"name": "brgtz"
 	},
 	"brle": {
-		"description": "Salto relativo a la línea c si a <= b",
+		"description": "Salto relativo a la línea c si a &lt;= b",
 		"example": "brle a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brle"
 	},
 	"brlez": {
-		"description": "Rama relativa a la línea b si a <= 0",
+		"description": "Rama relativa a la línea b si a &lt;= 0",
 		"example": "brlez a(r?|num) b(r?|num)",
 		"name": "brlez"
 	},
 	"brlt": {
-		"description": "Salto relativo a la línea c si a < b",
+		"description": "Salto relativo a la línea c si a &lt; b",
 		"example": "brlt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brlt"
 	},
 	"brltz": {
-		"description": "Rama relativa a la línea b si a < 0",
+		"description": "Rama relativa a la línea b si a &lt; 0",
 		"example": "brltz a(r?|num) b(r?|num)",
 		"name": "brltz"
 	},
 	"brna": {
-		"description": "Rama relativa a la línea d si abs(a - b) > max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
+		"description": "Rama relativa a la línea d si abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
 		"example": "brna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "brna"
 	},
@@ -315,7 +315,7 @@
 		"name": "brnan"
 	},
 	"brnaz": {
-		"description": "Rama relativa a la línea c si abs(a) > float.epsilon \\* 8",
+		"description": "Rama relativa a la línea c si abs(a) &gt; float.epsilon \\* 8",
 		"example": "brnaz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brnaz"
 	},
@@ -540,7 +540,7 @@
 		"name": "putd"
 	},
 	"rand": {
-		"description": "Registro = un valor aleatorio x con 0 <= x < 1",
+		"description": "Registro = un valor aleatorio x con 0 &lt;= x &lt; 1",
 		"example": "rand r?",
 		"name": "rand"
 	},
@@ -560,12 +560,12 @@
 		"name": "s"
 	},
 	"sap": {
-		"description": "Registro = 1 si abs(a - b) <= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), de lo contrario 0",
+		"description": "Registro = 1 si abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), de lo contrario 0",
 		"example": "sap r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "sap"
 	},
 	"sapz": {
-		"description": "Registro = 1 si |a| <= float.epsilon \\* 8, de lo contrario 0",
+		"description": "Registro = 1 si |a| &lt;= float.epsilon \\* 8, de lo contrario 0",
 		"example": "sapz r? a(r?|num) b(r?|num)",
 		"name": "sapz"
 	},
@@ -615,22 +615,22 @@
 		"name": "seqz"
 	},
 	"sge": {
-		"description": "Registro = 1 si a >= b, de lo contrario 0",
+		"description": "Registro = 1 si a &gt;= b, de lo contrario 0",
 		"example": "sge r? a(r?|num) b(r?|num)",
 		"name": "sge"
 	},
 	"sgez": {
-		"description": "Registro = 1 si un >= 0, de lo contrario 0",
+		"description": "Registro = 1 si un &gt;= 0, de lo contrario 0",
 		"example": "sgez r? a(r?|num)",
 		"name": "sgez"
 	},
 	"sgt": {
-		"description": "Registro = 1 si a > b, de lo contrario 0",
+		"description": "Registro = 1 si a &gt; b, de lo contrario 0",
 		"example": "sgt r? a(r?|num) b(r?|num)",
 		"name": "sgt"
 	},
 	"sgtz": {
-		"description": "Registro = 1 si es > 0, de lo contrario 0",
+		"description": "Registro = 1 si es &gt; 0, de lo contrario 0",
 		"example": "sgtz r? a(r?|num)",
 		"name": "sgtz"
 	},
@@ -645,7 +645,7 @@
 		"name": "sla"
 	},
 	"sle": {
-		"description": "Registro = 1 si a <= b, de lo contrario 0",
+		"description": "Registro = 1 si a &lt;= b, de lo contrario 0",
 		"example": "sle r? a(r?|num) b(r?|num)",
 		"name": "sle"
 	},
@@ -655,7 +655,7 @@
 		"name": "sleep"
 	},
 	"slez": {
-		"description": "Registro = 1 si un <= 0, de lo contrario 0",
+		"description": "Registro = 1 si un &lt;= 0, de lo contrario 0",
 		"example": "slez r? a(r?|num)",
 		"name": "slez"
 	},
@@ -665,17 +665,17 @@
 		"name": "sll"
 	},
 	"slt": {
-		"description": "Registro = 1 si a < b, de lo contrario 0",
+		"description": "Registro = 1 si a &lt; b, de lo contrario 0",
 		"example": "slt r? a(r?|num) b(r?|num)",
 		"name": "slt"
 	},
 	"sltz": {
-		"description": "Registro = 1 si es < 0, de lo contrario 0",
+		"description": "Registro = 1 si es &lt; 0, de lo contrario 0",
 		"example": "sltz r? a(r?|num)",
 		"name": "sltz"
 	},
 	"sna": {
-		"description": "Registro = 1 si abs(a - b) > max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), en caso contrario 0",
+		"description": "Registro = 1 si abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), en caso contrario 0",
 		"example": "sna r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "sna"
 	},
@@ -690,7 +690,7 @@
 		"name": "snanz"
 	},
 	"snaz": {
-		"description": "Registro = 1 si |a| > float.epsilon, de lo contrario 0",
+		"description": "Registro = 1 si |a| &gt; float.epsilon, de lo contrario 0",
 		"example": "snaz r? a(r?|num) b(r?|num)",
 		"name": "snaz"
 	},
