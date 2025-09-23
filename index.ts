@@ -220,6 +220,12 @@ async function optimizeData() {
 					connections: oldDevice?.ConnectionInsert?.map(
 						(connection) => connection?.LogicName,
 					),
+					hasMemory: oldDevice?.HasMemory,
+					memoryAccess: oldDevice?.MemoryAccess,
+					memorySize: oldDevice?.MemorySize
+						? parseInt(oldDevice?.MemorySize.replace(/\D/g, ""), 10)
+						: null,
+					logicInstructions: oldDevice?.LogicInstructions,
 					slots,
 					tags: oldDevice?.tags,
 					logics: deviceLogics,

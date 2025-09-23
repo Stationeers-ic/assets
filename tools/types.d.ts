@@ -11,8 +11,16 @@ export type OldDevice = {
 	Key: string;
 	Title: null | string;
 	Description: string;
+	MemoryAccess: string | null;
+	MemorySize: string | null;
 	SortPriority: number;
 	ImportantPage: boolean;
+	HasMemory: boolean;
+	LogicInstructions: {
+		Index: number;
+		Info: string;
+		Text: string;
+	}[];
 	Text: string;
 	ConstructWithText: null;
 	PrefabName: null | string;
@@ -222,10 +230,14 @@ export type Device = {
 	PrefabName: string;
 	PrefabHash: number;
 	hasChip: boolean;
+	hasMemory: boolean;
 	deviceConnectCount: number;
 	image: string;
 	mods: string[];
 	connections: string[];
+	logicInstructions: any[];
+	memoryAccess: string | null;
+	memorySize: number | null;
 	slots: {
 		SlotName: string;
 		SlotType: string;
