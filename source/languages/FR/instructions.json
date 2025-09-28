@@ -60,12 +60,12 @@
 		"name": "bapzal"
 	},
 	"bdns": {
-		"description": "Saute à la ligne a si l'appareil d n'est pas configuré",
+		"description": "Saute à la ligne a si l'appareil n'est pas configuré. L'appareil est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
 		"example": "bdns device(d?|r?|id) a(r?|num)",
 		"name": "bdns"
 	},
 	"bdnsal": {
-		"description": "Saute à la ligne a si l'appareil d n'est pas configuré et stocke le numéro de la ligne suivante dans ra",
+		"description": "Saute à la ligne a si l'appareil n'est pas configuré et stocke le numéro de la ligne suivante dans ra. L'appareil est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
 		"example": "bdnsal device(d?|r?|id) a(r?|num)",
 		"name": "bdnsal"
 	},
@@ -80,12 +80,12 @@
 		"name": "bdnvs"
 	},
 	"bdse": {
-		"description": "Saute à la ligne a si l'appareil d est configuré",
+		"description": "Saute à la ligne a si l'appareil est configuré. L'appareil est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
 		"example": "bdse device(d?|r?|id) a(r?|num)",
 		"name": "bdse"
 	},
 	"bdseal": {
-		"description": "Saute à la ligne a si l'appareil d est configuré et stocke le numéro de la ligne suivante dans ra",
+		"description": "Saute à la ligne a si l'appareil est configuré et stocke le numéro de la ligne suivante dans ra. L'appareil est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
 		"example": "bdseal device(d?|r?|id) a(r?|num)",
 		"name": "bdseal"
 	},
@@ -245,12 +245,12 @@
 		"name": "brapz"
 	},
 	"brdns": {
-		"description": "Fait un saut relatif de a lignes si l'appareil n'est pas configuré",
+		"description": "Fait un saut relatif de a lignes si l'appareil n'est pas configuré L'appareil est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
 		"example": "brdns device(d?|r?|id) a(r?|num)",
 		"name": "brdns"
 	},
 	"brdse": {
-		"description": "Fait un saut relatif de a lignes si l'appareil est configuré",
+		"description": "Fait un saut relatif de a lignes si l'appareil est configuré L'appareil est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
 		"example": "brdse device(d?|r?|id) a(r?|num)",
 		"name": "brdse"
 	},
@@ -380,7 +380,7 @@
 		"name": "get"
 	},
 	"getd": {
-		"description": "Registre = valeur du tableau à l'adresse fournie de l'appareil en utilisant directement l'ID. (IDentifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Registre = valeur du tableau à l'adresse fournie d’un appareil qui est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
 		"example": "getd r? id(r?|id) address(r?|num)",
 		"name": "getd"
 	},
@@ -410,7 +410,7 @@
 		"name": "jr"
 	},
 	"l": {
-		"description": "Registre = la valeur logique (logicType) en utilisant la valeur d'index du support IC10 (d?).",
+		"description": "Registre = la valeur logique (logicType) en utilisant la référence d’un appareil qui est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
 		"example": "l r? device(d?|r?|id) logicType",
 		"name": "l"
 	},
@@ -455,12 +455,12 @@
 		"name": "log"
 	},
 	"lr": {
-		"description": "Registre = le type de réactif (ReagentMode) de l'appareil en utilisant sa valeur d'index du support IC10 (d?) où un Hash du type de réactif est vérifié. Le type de réactif peut être soit :  0 = Contenu (Contents), 1 = Requis (Required), 2 = Recette (Recipe).  Peut utiliser soit le chiffre, soit le mot (en anglais).",
+		"description": "Registre = le type de réactif (ReagentMode) de l'appareil où un Hash du type de réactif est vérifié. Le type de réactif peut être soit :  0 = Contenu (Contents), 1 = Requis (Required), 2 = Recette (Recipe).  Peut utiliser soit le chiffre, soit le mot (en anglais).  L'appareil est definie soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
 		"example": "lr r? device(d?|r?|id) reagentMode int",
 		"name": "lr"
 	},
 	"ls": {
-		"description": "Registre = le type de \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) sur l'appareil en utilisant sa valeur d'index du support IC10 (d?).",
+		"description": "Registre = le type de \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) d’un appareil qui est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
 		"example": "ls r? device(d?|r?|id) slotIndex logicSlotType",
 		"name": "ls"
 	},
@@ -530,7 +530,7 @@
 		"name": "push"
 	},
 	"put": {
-		"description": "Stocke la valeur dans le tableau à l'adresse fournie de l'appareil en utilisant la valeur d'index du support IC10 (d?).",
+		"description": "Stocke la valeur dans le tableau à l'adresse fournie d’un appareil qui est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
 		"example": "put device(d?|r?|id) address(r?|num) value(r?|num)",
 		"name": "put"
 	},
@@ -555,7 +555,7 @@
 		"name": "round"
 	},
 	"s": {
-		"description": "Stocke la valeur du registre dans la valeur logique (logicType) de l'appareil en utilisant sa valeur d'index du support IC10 (d?).",
+		"description": "Stocke la valeur du registre dans la valeur logique (logicType) d’un appareil qui est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
 		"example": "s device(d?|r?|id) logicType r?",
 		"name": "s"
 	},
@@ -590,12 +590,12 @@
 		"name": "sd"
 	},
 	"sdns": {
-		"description": "Registre = 1 si l'appareil n'est pas configuré, sinon 0",
+		"description": "Registre = 1 si l'appareil n'est pas configuré, sinon 0 L'appareil est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
 		"example": "sdns r? device(d?|r?|id)",
 		"name": "sdns"
 	},
 	"sdse": {
-		"description": "Registre = 1 si l'appareil est configuré, sinon 0",
+		"description": "Registre = 1 si l'appareil est configuré, sinon 0 L'appareil est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
 		"example": "sdse r? device(d?|r?|id)",
 		"name": "sdse"
 	},
@@ -720,7 +720,7 @@
 		"name": "srl"
 	},
 	"ss": {
-		"description": "Stocke la valeur du registre dans la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) de l'appareil en utilisant sa valeur d'index du support IC10 (d?).",
+		"description": "Stocke la valeur du registre dans la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) d’un appareil qui est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
 		"example": "ss device(d?|r?|id) slotIndex logicSlotType r?",
 		"name": "ss"
 	},

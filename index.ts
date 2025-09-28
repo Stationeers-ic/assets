@@ -5,7 +5,7 @@ import {
 	rm,
 	writeFile as write,
 } from "node:fs/promises";
-import { basename, dirname, join, resolve } from "node:path";
+import path, { basename, dirname, join, resolve } from "node:path";
 import { argv } from "node:process";
 import Bun, { $ } from "bun";
 import { dir_index, walkDir } from "./tools/dir_index";
@@ -366,6 +366,13 @@ async function copyDir(src: string, dest: string) {
 	}
 }
 
+async function copyTags() {
+	copyFile(
+		path.join(SRC_LANG_DIR, "EN", "tags.json"),
+		DIST_LANG_DIR,
+		"tags.json",
+	);
+}
 // ---------------------------------------------- RUN ----------------------------------------------
 await clearDist();
 const BUILD_TASKS: Promise<any>[] = [];
@@ -379,7 +386,7 @@ if (!argv.includes("--dev")) {
 		copyDir(join(SRC_DIR, "images"), DIST_IMAGES_DIR).then(() => moveImages()),
 	);
 }
-
+BUILD_TASKS.push(copyTags());
 await Promise.all(BUILD_TASKS);
 await optimizeData();
 await generateImageGallery();
