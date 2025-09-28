@@ -254,7 +254,7 @@ async function optimizeData() {
 
 			// Reagents
 			for (const [key, oldDevice] of entries) {
-				if (oldDevice.TYPE !== "Reagent") continue;
+				if (oldDevice.TYPE !== "reagent") continue;
 				if (!oldDevice.MainImage) continue;
 				if (!oldDevice.Title) continue;
 
