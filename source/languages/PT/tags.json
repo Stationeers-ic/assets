@@ -18,6 +18,7 @@
 	"HasMode",
 	"HasOre",
 	"HasPrefab",
+	"HasReagent",
 	"HasRecipe",
 	"Helmet",
 	"Ingot",
