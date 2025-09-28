@@ -159,9 +159,9 @@ async function optimizeData() {
 			for (const [key, oldDevice] of entries) {
 				if (!oldDevice.PrefabName) continue;
 				if (!oldDevice.MainImage) continue;
-				if (!oldDevice.tags.includes("hasLogic")) continue;
+				if (!oldDevice.tags.includes("HasLogic")) continue;
 
-				const hasChip = oldDevice.tags.includes("hasChip");
+				const hasChip = oldDevice.tags.includes("HasChip");
 
 				// Логика, которую можно вставить в девайс
 				const deviceLogics: { name: string; permissions: string[] }[] = [];
@@ -236,7 +236,7 @@ async function optimizeData() {
 
 			// Items
 			for (const [key, oldDevice] of entries) {
-				if (!oldDevice.tags.includes("item")) continue;
+				if (!oldDevice.tags.includes("Item")) continue;
 				if (!oldDevice.MainImage) continue;
 				if (!oldDevice.PrefabName) continue;
 
@@ -254,7 +254,7 @@ async function optimizeData() {
 
 			// Reagents
 			for (const [key, oldDevice] of entries) {
-				if (oldDevice.TYPE !== "reagent") continue;
+				if (oldDevice.TYPE !== "Reagent") continue;
 				if (!oldDevice.MainImage) continue;
 				if (!oldDevice.Title) continue;
 
