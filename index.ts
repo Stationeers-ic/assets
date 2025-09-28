@@ -367,11 +367,7 @@ async function copyDir(src: string, dest: string) {
 }
 
 async function copyTags() {
-	copyFile(
-		path.join(SRC_LANG_DIR, "EN", "tags.json"),
-		DIST_LANG_DIR,
-		"tags.json",
-	);
+	copyFile(path.join(SRC_LANG_DIR, "EN", "tags.json"), DIST_DIR, "tags.json");
 }
 // ---------------------------------------------- RUN ----------------------------------------------
 await clearDist();
