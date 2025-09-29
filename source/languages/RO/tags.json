@@ -5,7 +5,9 @@
 	"Buildable",
 	"Cable",
 	"CircuitBoard",
+	"Connectable",
 	"Disk",
+	"Electric",
 	"Gas",
 	"GasCanister",
 	"GasFilter",
@@ -20,6 +22,8 @@
 	"HasPrefab",
 	"HasReagent",
 	"HasRecipe",
+	"HasSlot",
+	"HasVolume",
 	"Helmet",
 	"Ingot",
 	"Item",
@@ -31,6 +35,7 @@
 	"Paintable",
 	"ProgrammableChip",
 	"Reagent",
+	"Stackable",
 	"Structure",
 	"Suit"
 ]
