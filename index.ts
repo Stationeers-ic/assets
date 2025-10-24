@@ -383,6 +383,7 @@ if (!argv.includes("--dev")) {
 	);
 }
 BUILD_TASKS.push(copyTags());
+BUILD_TASKS.push(copyDir(join(ROOT_DIR, "brend"), join(DIST_DIR, "brend")));
 await Promise.all(BUILD_TASKS);
 await optimizeData();
 await generateImageGallery();

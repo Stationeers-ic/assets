@@ -20,5 +20,14 @@
 		"titleBar.inactiveBackground": "#83256199",
 		"titleBar.inactiveForeground": "#e7e7e799"
 	},
-	"peacock.color": "#832561"
+	"peacock.color": "#832561",
+	"biome.enabled": true,
+	"biome.lsp.trace.server": "messages",
+	"biome.requireConfiguration": true,
+	"biome.lsp.bin": {
+		"linux-x64": "./tools/bin/linux-x64/biome",
+		"darwin-arm64": "./tools/bin/darwin-arm64/biome",
+		"win32-x64": "./tools/bin/win/biome.exe"
+	},
+	"i18n-ally.localesPaths": ["./nolang"]
 }

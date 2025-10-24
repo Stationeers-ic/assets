@@ -20,7 +20,7 @@ const compile = (data: {
 	return template(data);
 };
 
-type fileType = "dir" | "html" | "json" | "png";
+type fileType = "dir" | "html" | "json" | "png" | "svg";
 
 export type fileObject = {
 	name: string;
@@ -34,6 +34,7 @@ function getFileType(file: string): fileType {
 	if (file.endsWith("html")) type = "html";
 	if (file.endsWith("json")) type = "json";
 	if (file.endsWith("png")) type = "png";
+	if (file.endsWith("svg")) type = "svg";
 	return type;
 }
 
