@@ -40,7 +40,7 @@
 		"name": "atan2"
 	},
 	"bap": {
-		"description": "Saute à la ligne d si abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Saute à la ligne d si a ~ b avec une tolérance de c. Condition utilisée : abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence détectable entre deux nombres flottants. C’est la précision minimale au-delà de laquelle deux valeurs sont considérées comme distinctes.)",
 		"example": "bap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bap"
 	},
@@ -50,42 +50,42 @@
 		"name": "bapal"
 	},
 	"bapz": {
-		"description": "Saute à la ligne b si abs(a) &lt;= float.epsilon \\* 8 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Saute à la ligne b si a ~ 0. Condition utilisée : abs(a) &lt;= float.epsilon \\* 8 (float.epsilon représente la plus petite différence détectable entre deux nombres flottants. C’est la précision minimale au-delà de laquelle deux valeurs sont considérées comme distinctes.)",
 		"example": "bapz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bapz"
 	},
 	"bapzal": {
-		"description": "Saute à la ligne c si abs(a) &lt;= float.epsilon \\* 8 et stocke le numéro de la ligne suivante dans ra (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Saute à la ligne c si a ~ 0 et stocke le numéro de la ligne suivante dans ra. Condition utilisée : abs(a) &lt;= float.epsilon \\* 8 (float.epsilon représente la plus petite différence détectable entre deux nombres flottants. C’est la précision minimale au-delà de laquelle deux valeurs sont considérées comme distinctes.)",
 		"example": "bapzal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bapzal"
 	},
 	"bdns": {
-		"description": "Saute à la ligne a si l'appareil n'est pas configuré. L'appareil est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Saute à la ligne a si l'appareil n'est pas configuré. L'appareil est défini soit par :  - la valeur d'index du support IC10 (d?)  - un registre (r?)  - la référence directe à l'id (identifiant unique de cet objet en particulier).",
 		"example": "bdns device(d?|r?|id) a(r?|num)",
 		"name": "bdns"
 	},
 	"bdnsal": {
-		"description": "Saute à la ligne a si l'appareil n'est pas configuré et stocke le numéro de la ligne suivante dans ra. L'appareil est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Saute à la ligne a si l'appareil n'est pas configuré et stocke le numéro de la ligne suivante dans ra. L'appareil est défini soit par :  - la valeur d'index du support IC10 (d?)  - un registre (r?)  - la référence directe à l'id (identifiant unique de cet objet en particulier).",
 		"example": "bdnsal device(d?|r?|id) a(r?|num)",
 		"name": "bdnsal"
 	},
 	"bdnvl": {
-		"description": "Will branch to line a if the provided device not valid for a load instruction for the provided logic type.",
+		"description": "Passe à la ligne a si l'appareil fourni n'est pas valide pour une instruction de chargement du type logique fourni.",
 		"example": "bdnvl device(d?|r?|id) logicType a(r?|num)",
 		"name": "bdnvl"
 	},
 	"bdnvs": {
-		"description": "Will branch to line a if the provided device not valid for a store instruction for the provided logic type.",
+		"description": "Passe à la ligne a si l'appareil fourni n'est pas valide pour une instruction de stockage du type logique fourni.",
 		"example": "bdnvs device(d?|r?|id) logicType a(r?|num)",
 		"name": "bdnvs"
 	},
 	"bdse": {
-		"description": "Saute à la ligne a si l'appareil est configuré. L'appareil est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Saute à la ligne a si l'appareil est configuré. L'appareil est défini soit par :  - la valeur d'index du support IC10 (d?)  - un registre (r?)  - la référence directe à l'id (identifiant unique de cet objet en particulier).",
 		"example": "bdse device(d?|r?|id) a(r?|num)",
 		"name": "bdse"
 	},
 	"bdseal": {
-		"description": "Saute à la ligne a si l'appareil est configuré et stocke le numéro de la ligne suivante dans ra. L'appareil est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Saute à la ligne a si l'appareil est configuré et stocke le numéro de la ligne suivante dans ra. L'appareil est défini soit par :  - la valeur d'index du support IC10 (d?)  - un registre (r?)  - la référence directe à l'id (identifiant unique de cet objet en particulier).",
 		"example": "bdseal device(d?|r?|id) a(r?|num)",
 		"name": "bdseal"
 	},
@@ -190,7 +190,7 @@
 		"name": "bltzal"
 	},
 	"bna": {
-		"description": "Saute à la ligne d si abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Saute à la ligne d si a !~ b avec une tolérance de c. Condition utilisée : abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence détectable entre deux nombres flottants. C’est la précision minimale au-delà de laquelle deux valeurs sont considérées comme distinctes.)",
 		"example": "bna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bna"
 	},
@@ -205,12 +205,12 @@
 		"name": "bnan"
 	},
 	"bnaz": {
-		"description": "Saute à la ligne b si abs(a) &gt; float.epsilon (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Saute à la ligne b si a !~ 0. Condition utilisée : abs(a) &gt; float.epsilon \\* 8 (float.epsilon représente la plus petite différence détectable entre deux nombres flottants. C’est la précision minimale au-delà de laquelle deux valeurs sont considérées comme distinctes.)",
 		"example": "bnaz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bnaz"
 	},
 	"bnazal": {
-		"description": "Saute à la ligne c si abs(a) &gt; float.epsilon \\* 8 et stocke le numéro de la ligne suivante dans ra (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Saute à la ligne c si a !~ 0 et stocke le numéro de la ligne suivante dans ra. Condition utilisée : abs(a) &gt; float.epsilon \\* 8 (float.epsilon représente la plus petite différence détectable entre deux nombres flottants. C’est la précision minimale au-delà de laquelle deux valeurs sont considérées comme distinctes.)",
 		"example": "bnazal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bnazal"
 	},
@@ -235,77 +235,77 @@
 		"name": "bnezal"
 	},
 	"brap": {
-		"description": "Fait un saut relatif de d lignes si abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Fait un saut relatif de d lignes si a ~ b avec une tolérance de c. Condition utilisée : abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence détectable entre deux nombres flottants. C’est la précision minimale au-delà de laquelle deux valeurs sont considérées comme distinctes.) Ligne de destination = Numéro de ligne actuelle + d (avec d != 0 et != 1)",
 		"example": "brap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "brap"
 	},
 	"brapz": {
-		"description": "Fait un saut relatif de c lignes si abs(a) &lt;= float.epsilon \\* 8 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Fait un saut relatif de c lignes si a ~ 0. Condition utilisée : abs(a) &lt;= float.epsilon \\* 8 (float.epsilon représente la plus petite différence détectable entre deux nombres flottants. C’est la précision minimale au-delà de laquelle deux valeurs sont considérées comme distinctes.) Ligne de destination = Numéro de ligne actuelle + c (avec c != 0 et != 1)",
 		"example": "brapz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brapz"
 	},
 	"brdns": {
-		"description": "Fait un saut relatif de a lignes si l'appareil n'est pas configuré L'appareil est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Fait un saut relatif de a lignes si l'appareil n'est pas configuré L'appareil est défini soit par :  - la valeur d'index du support IC10 (d?)  - un registre (r?)  - la référence directe à l'id (identifiant unique de cet objet en particulier). Ligne de destination = Numéro de ligne actuelle + a (avec a != 0 et != 1)",
 		"example": "brdns device(d?|r?|id) a(r?|num)",
 		"name": "brdns"
 	},
 	"brdse": {
-		"description": "Fait un saut relatif de a lignes si l'appareil est configuré L'appareil est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Fait un saut relatif de a lignes si l'appareil est configuré L'appareil est défini soit par :  - la valeur d'index du support IC10 (d?)  - un registre (r?)  - la référence directe à l'id (identifiant unique de cet objet en particulier). Ligne de destination = Numéro de ligne actuelle + a (avec a != 0 et != 1)",
 		"example": "brdse device(d?|r?|id) a(r?|num)",
 		"name": "brdse"
 	},
 	"breq": {
-		"description": "Fait un saut relatif de c lignes si a == b",
+		"description": "Fait un saut relatif de c lignes si a == b Ligne de destination = Numéro de ligne actuelle + c (avec c != 0 et != 1)",
 		"example": "breq a(r?|num) b(r?|num) c(r?|num)",
 		"name": "breq"
 	},
 	"breqz": {
-		"description": "Fait un saut relatif de b lignes si a == 0",
+		"description": "Fait un saut relatif de b lignes si a == 0 Ligne de destination = Numéro de ligne actuelle + b (avec b != 0 et != 1)",
 		"example": "breqz a(r?|num) b(r?|num)",
 		"name": "breqz"
 	},
 	"brge": {
-		"description": "Fait un saut relatif de c lignes si a &gt;= b",
+		"description": "Fait un saut relatif de c lignes si a &gt;= b Ligne de destination = Numéro de ligne actuelle + c (avec c != 0 et != 1)",
 		"example": "brge a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brge"
 	},
 	"brgez": {
-		"description": "Fait un saut relatif de b lignes si a &gt;= 0",
+		"description": "Fait un saut relatif de b lignes si a &gt;= 0 Ligne de destination = Numéro de ligne actuelle + b (avec b != 0 et != 1)",
 		"example": "brgez a(r?|num) b(r?|num)",
 		"name": "brgez"
 	},
 	"brgt": {
-		"description": "Fait un saut relatif de c lignes si a &gt; b",
+		"description": "Fait un saut relatif de c lignes si a &gt; b Ligne de destination = Numéro de ligne actuelle + c (avec c != 0 et != 1)",
 		"example": "brgt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brgt"
 	},
 	"brgtz": {
-		"description": "Fait un saut relatif de b lignes si a &gt; 0",
+		"description": "Fait un saut relatif de b lignes si a &gt; 0 Ligne de destination = Numéro de ligne actuelle + b (avec b != 0 et != 1)",
 		"example": "brgtz a(r?|num) b(r?|num)",
 		"name": "brgtz"
 	},
 	"brle": {
-		"description": "Fait un saut relatif de c lignes si a &lt;= b",
+		"description": "Fait un saut relatif de c lignes si a &lt;= b Ligne de destination = Numéro de ligne actuelle + c (avec c != 0 et != 1)",
 		"example": "brle a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brle"
 	},
 	"brlez": {
-		"description": "Fait un saut relatif de b lignes si a &lt;= 0",
+		"description": "Fait un saut relatif de b lignes si a &lt;= 0 Ligne de destination = Numéro de ligne actuelle + b (avec b != 0 et != 1)",
 		"example": "brlez a(r?|num) b(r?|num)",
 		"name": "brlez"
 	},
 	"brlt": {
-		"description": "Fait un saut relatif de c lignes si a &lt; b",
+		"description": "Fait un saut relatif de c lignes si a &lt; b Ligne de destination = Numéro de ligne actuelle + c (avec c != 0 et != 1)",
 		"example": "brlt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brlt"
 	},
 	"brltz": {
-		"description": "Fait un saut relatif de b lignes si a &lt; 0",
+		"description": "Fait un saut relatif de b lignes si a &lt; 0 Ligne de destination = Numéro de ligne actuelle + b (avec b != 0 et != 1)",
 		"example": "brltz a(r?|num) b(r?|num)",
 		"name": "brltz"
 	},
 	"brna": {
-		"description": "Fait un saut relatif de d lignes si abs(a - b) &gt; max(c \\* max (abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Fait un saut relatif de d lignes si a !~ b avec une tolérance de c. Condition utilisée : abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence détectable entre deux nombres flottants. C’est la précision minimale au-delà de laquelle deux valeurs sont considérées comme distinctes.) Ligne de destination = Numéro de ligne actuelle + d (avec d != 0 et != 1)",
 		"example": "brna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "brna"
 	},
@@ -315,17 +315,17 @@
 		"name": "brnan"
 	},
 	"brnaz": {
-		"description": "Fait un saut relatif de c lignes si abs(a) &gt; float.epsilon \\* 8 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Fait un saut relatif de c lignes si a !~ 0. Condition utilisée : abs(a) &gt; float.epsilon \\* 8 (float.epsilon représente la plus petite différence détectable entre deux nombres flottants. C’est la précision minimale au-delà de laquelle deux valeurs sont considérées comme distinctes.) Ligne de destination = Numéro de ligne actuelle + c (avec c != 0 et != 1)",
 		"example": "brnaz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brnaz"
 	},
 	"brne": {
-		"description": "Fait un saut relatif de c lignes si a != b",
+		"description": "Fait un saut relatif de c lignes si a != b Ligne de destination = Numéro de ligne actuelle + c (avec c != 0 et != 1)",
 		"example": "brne a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brne"
 	},
 	"brnez": {
-		"description": "Fait un saut relatif de b lignes si a != 0",
+		"description": "Fait un saut relatif de b lignes si a != 0 Ligne de destination = Numéro de ligne actuelle + b (avec b != 0 et != 1)",
 		"example": "brnez a(r?|num) b(r?|num)",
 		"name": "brnez"
 	},
@@ -334,13 +334,18 @@
 		"example": "ceil r? a(r?|num)",
 		"name": "ceil"
 	},
+	"clamp": {
+		"description": "Stores a clamped to the inclusive range [min, max] in the register provided.",
+		"example": "clamp r? a(r?|num) min(r?|num) max(r?|num)",
+		"name": "clamp"
+	},
 	"clr": {
 		"description": "Efface la mémoire du tableau de l'appareil en utilisant la valeur d'index du support IC10 (d?).",
 		"example": "clr d?",
 		"name": "clr"
 	},
 	"clrd": {
-		"description": "Efface la mémoire du tableau de l'appareil en utilisant directement l'ID. (IDentifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Efface la mémoire du tableau de l'appareil en utilisant directement l'id. (IDentifiant unique de cet objet en particulier).",
 		"example": "clrd id(r?|num)",
 		"name": "clrd"
 	},
@@ -365,7 +370,7 @@
 		"name": "exp"
 	},
 	"ext": {
-		"description": "Extracts a bit field from a, beginning at b for c length and placed in the provided register. Payload cannot exceed 53 bits in final length.",
+		"description": "Extrait un champ de bits de a, commençant à b pour une longueur de c, et le place dans le registre fourni. La charge utile ne doit pas dépasser 53 bits en longueur finale.",
 		"example": "ext r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "ext"
 	},
@@ -375,22 +380,22 @@
 		"name": "floor"
 	},
 	"get": {
-		"description": "Registre = valeur du tableau à l'adresse fournie de l'appareil en utilisant la valeur d'index du support IC10 (d?).",
+		"description": "Registre = valeur du tableau à l'adresse fournie d'un appareil qui est défini soit par :  - la valeur d'index du support IC10 (d?)  - un registre (r?)  - la référence directe à l'id (identifiant unique de cet objet en particulier).",
 		"example": "get r? device(d?|r?|id) address(r?|num)",
 		"name": "get"
 	},
 	"getd": {
-		"description": "Registre = valeur du tableau à l'adresse fournie d’un appareil qui est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Registre = valeur du tableau à l'adresse fournie d'un appareil qui est défini soit par :  - la valeur d'index du support IC10 (d?)  - un registre (r?)  - la référence directe à l'id (identifiant unique de cet objet en particulier).",
 		"example": "getd r? id(r?|id) address(r?|num)",
 		"name": "getd"
 	},
 	"hcf": {
-		"description": "Arrêt et prise de feu",
+		"description": "Arrête de l'exécution et embrasement de la puce IC10...",
 		"example": "hcf",
 		"name": "hcf"
 	},
 	"ins": {
-		"description": "Inserts a bit field of a into the provided register, beginning at b for c length. Payload cannot exceed 53 bits in final length.",
+		"description": "Insère un champ de bits de a dans le registre fourni, commençant à b pour une longueur de c. La charge utile ne doit pas dépasser 53 bits en longueur finale.",
 		"example": "ins r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "ins"
 	},
@@ -405,12 +410,12 @@
 		"name": "jal"
 	},
 	"jr": {
-		"description": "Fait un saut relatif de a lignes",
+		"description": "Fait un saut relatif de a lignes Ligne de destination = Numéro de ligne actuelle + a (avec a != 0 et != 1)",
 		"example": "jr int",
 		"name": "jr"
 	},
 	"l": {
-		"description": "Registre = la valeur logique (logicType) en utilisant la référence d’un appareil qui est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Registre = la valeur logique (logicType) lue en utilisant la référence d'un appareil qui est défini soit par :  - la valeur d'index du support IC10 (d?)  - un registre (r?)  - la référence directe à l'id (identifiant unique de cet objet en particulier).",
 		"example": "l r? device(d?|r?|id) logicType",
 		"name": "l"
 	},
@@ -420,32 +425,32 @@
 		"name": "label"
 	},
 	"lb": {
-		"description": "Registre = la valeur logique (logicType) de tous les appareils réseau qui correspondent au type du Hash en utilisant le mode groupé indiqué : 0 = Moyenne (Average), 1 = Somme (Sum), 2 = Minimum (Minimum), 3 = Maximum (Maximum).  Peut utiliser soit le chiffre, soit le mot (en anglais).",
+		"description": "Registre = la valeur logique (logicType) lue de tous les appareils réseau qui correspondent au type du Hash en utilisant le mode groupé indiqué : 0 ou Average (Moyenne), 1 ou Sum (Somme), 2 ou Minimum, 3 ou Maximum. Le mode peut être spécifié soit par son chiffre, soit par son nom en anglais.",
 		"example": "lb r? deviceHash logicType batchMode",
 		"name": "lb"
 	},
 	"lbn": {
-		"description": "Registre = la valeur logique (logicType) de tous les appareils réseau qui correspondent au type du Hash et au nom fournis en utilisant le mode groupé indiqué : 0 = Moyenne (Average), 1 = Somme (Sum), 2 = Minimum (Minimum), 3 = Maximum (Maximum).  Peut utiliser soit le chiffre, soit le mot (en anglais).",
+		"description": "Registre = la valeur logique (logicType) lue de tous les appareils réseau qui correspondent au type du Hash et au nom fournis en utilisant le mode groupé indiqué : 0 ou Average (Moyenne), 1 ou Sum (Somme), 2 ou Minimum, 3 ou Maximum. Le mode peut être spécifié soit par son chiffre, soit par son nom en anglais.",
 		"example": "lbn r? deviceHash nameHash logicType batchMode",
 		"name": "lbn"
 	},
 	"lbns": {
-		"description": "Registre = la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) de tous les appareils réseau qui correspondent au type du Hash et au nom fournis en utilisant le mode groupé indiqué : 0 = Moyenne (Average), 1 = Somme (Sum), 2 = Minimum (Minimum), 3 = Maximum (Maximum).  Peut utiliser soit le chiffre, soit le mot (en anglais).",
+		"description": "Registre = la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l'emplacement\" (slotIndex) de tous les appareils réseau qui correspondent au type du Hash et au nom fournis en utilisant le mode groupé indiqué : 0 ou Average (Moyenne), 1 ou Sum (Somme), 2 ou Minimum, 3 ou Maximum. Le mode peut être spécifié soit par son chiffre, soit par son nom en anglais.",
 		"example": "lbns r? deviceHash nameHash slotIndex logicSlotType batchMode",
 		"name": "lbns"
 	},
 	"lbs": {
-		"description": "Registre = la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) de tous les appareils réseau qui correspondent au type du Hash en utilisant le mode groupé indiqué : 0 = Moyenne (Average), 1 = Somme (Sum), 2 = Minimum (Minimum), 3 = Maximum (Maximum).  Peut utiliser soit le chiffre, soit le mot (en anglais).",
+		"description": "Registre = la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l'emplacement\" (slotIndex) de tous les appareils réseau qui correspondent au type du Hash en utilisant le mode groupé indiqué : 0 ou Average (Moyenne), 1 ou Sum (Somme), 2 ou Minimum, 3 ou Maximum. Le mode peut être spécifié soit par son chiffre, soit par son nom en anglais.",
 		"example": "lbs r? deviceHash slotIndex logicSlotType batchMode",
 		"name": "lbs"
 	},
 	"ld": {
-		"description": "Registre = la valeur logique (logicType) en utilisant la référence directe à l'ID  (IDentifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Registre = la valeur logique (logicType) lue en utilisant la référence directe à l'id  (IDentifiant unique de cet objet en particulier).",
 		"example": "ld r? id(r?|id) logicType",
 		"name": "ld"
 	},
 	"lerp": {
-		"description": "Linearly interpolates between a and b by the ratio c, and places the result in the register provided. The ratio c will be clamped between 0 and 1.",
+		"description": "Effectue une interpolation linéaire entre a et b selon le ratio c, et place le résultat dans le registre fourni. Le ratio c sera limité entre 0 et 1.",
 		"example": "lerp r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "lerp"
 	},
@@ -455,12 +460,12 @@
 		"name": "log"
 	},
 	"lr": {
-		"description": "Registre = le type de réactif (ReagentMode) de l'appareil où un Hash du type de réactif est vérifié. Le type de réactif peut être soit :  0 = Contenu (Contents), 1 = Requis (Required), 2 = Recette (Recipe).  Peut utiliser soit le chiffre, soit le mot (en anglais).  L'appareil est definie soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Registre = la quantité du réactif \"int\" selon le \"reagentMode\".  reagentMode : 0 ou Contents = (Contenu), 1 ou Required (Requis), 2 ou Recipe (Recette).  Peut utiliser soit le chiffre, soit le mot en anglais.  int = HASH du reactif solide ex : -1301215609 ou HASH(\"ItemIronIngot\")  L'appareil est definie soit par :  - la valeur d'index du support IC10 (d?)  - un registre (r?)  - la référence directe à l'id (identifiant unique de cet objet en particulier).",
 		"example": "lr r? device(d?|r?|id) reagentMode int",
 		"name": "lr"
 	},
 	"ls": {
-		"description": "Registre = le type de \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) d’un appareil qui est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Registre = le type de \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l'emplacement\" (slotIndex) d'un appareil qui est défini soit par :  - la valeur d'index du support IC10 (d?)  - un registre (r?)  - la référence directe à l'id (identifiant unique de cet objet en particulier).",
 		"example": "ls r? device(d?|r?|id) slotIndex logicSlotType",
 		"name": "ls"
 	},
@@ -520,7 +525,7 @@
 		"name": "pop"
 	},
 	"pow": {
-		"description": "Stores the result of raising a to the power of b in the register. Follows IEEE-754 standard for floating point arithmetic.",
+		"description": "Stocke le résultat de l'élévation de a à la puissance b dans le registre. Suit la norme IEEE-754 pour l'arithmétique en virgule flottante.",
 		"example": "pow r? a(r?|num) b(r?|num)",
 		"name": "pow"
 	},
@@ -530,12 +535,12 @@
 		"name": "push"
 	},
 	"put": {
-		"description": "Stocke la valeur dans le tableau à l'adresse fournie d’un appareil qui est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Stocke la valeur dans le tableau à l'adresse fournie d'un appareil qui est défini soit par :  - la valeur d'index du support IC10 (d?)  - un registre (r?)  - la référence directe à l'id (identifiant unique de cet objet en particulier).",
 		"example": "put device(d?|r?|id) address(r?|num) value(r?|num)",
 		"name": "put"
 	},
 	"putd": {
-		"description": "Stocke la valeur dans le tableau à l'adresse fournie de l'appareil en utilisant directement l'ID. (IDentifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Stocke la valeur dans le tableau à l'adresse fournie de l'appareil en utilisant directement l'id. (identifiant unique de cet objet en particulier).",
 		"example": "putd id(r?|id) address(r?|num) value(r?|num)",
 		"name": "putd"
 	},
@@ -549,23 +554,33 @@
 		"example": "rmap r? d? reagentHash(r?|num)",
 		"name": "rmap"
 	},
+	"rol": {
+		"description": "Performs a bitwise left rotation on the binary representation of a by b places, wrapping the bits shifted out of the most significant position back into the least significant position.",
+		"example": "rol r? a(r?|num) b(r?|num)",
+		"name": "rol"
+	},
+	"ror": {
+		"description": "Performs a bitwise right rotation on the binary representation of a by b places, wrapping the bits shifted out of the least significant position back into the most significant position.",
+		"example": "ror r? a(r?|num) b(r?|num)",
+		"name": "ror"
+	},
 	"round": {
 		"description": "Register = a arrondi à l'entier le plus proche",
 		"example": "round r? a(r?|num)",
 		"name": "round"
 	},
 	"s": {
-		"description": "Stocke la valeur du registre dans la valeur logique (logicType) d’un appareil qui est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Stocke la valeur du registre dans la valeur logique (logicType) d'un appareil qui est défini soit par :  - la valeur d'index du support IC10 (d?)  - un registre (r?)  - la référence directe à l'id (identifiant unique de cet objet en particulier).",
 		"example": "s device(d?|r?|id) logicType r?",
 		"name": "s"
 	},
 	"sap": {
-		"description": "Registre = 1 si abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Registre = 1 si a ~ b avec une tolérance de c, sinon 0. Condition utilisée : abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)  (float.epsilon représente la plus petite différence détectable entre deux nombres flottants. C’est la précision minimale au-delà de laquelle deux valeurs sont considérées comme distinctes.)",
 		"example": "sap r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "sap"
 	},
 	"sapz": {
-		"description": "Registre = 1 si abs(a) &lt;= float.epsilon \\* 8, sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Registre = 1 si a ~ 0, sinon 0. Condition utilisée : abs(a) &lt;= float.epsilon \\* 8 (float.epsilon représente la plus petite différence détectable entre deux nombres flottants. C’est la précision minimale au-delà de laquelle deux valeurs sont considérées comme distinctes.)",
 		"example": "sapz r? a(r?|num) b(r?|num)",
 		"name": "sapz"
 	},
@@ -580,22 +595,22 @@
 		"name": "sbn"
 	},
 	"sbs": {
-		"description": "Stocke la valeur du registre dans la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) de tous les appareils réseau qui correspondent au type du Hash.",
+		"description": "Stocke la valeur du registre dans la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l'emplacement\" (slotIndex) de tous les appareils réseau qui correspondent au type du Hash.",
 		"example": "sbs deviceHash slotIndex logicSlotType r?",
 		"name": "sbs"
 	},
 	"sd": {
-		"description": "Stocke la valeur du registre dans la valeur logique (logicType) de l'appareil en utilisant sa référence directe à l'ID (IDentifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Stocke la valeur du registre dans la valeur logique (logicType) de l'appareil en utilisant sa référence directe à l'id (IDentifiant unique de cet objet en particulier).",
 		"example": "sd id(r?|id) logicType r?",
 		"name": "sd"
 	},
 	"sdns": {
-		"description": "Registre = 1 si l'appareil n'est pas configuré, sinon 0 L'appareil est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Registre = 1 si l'appareil n'est pas configuré, sinon 0 L'appareil est défini soit par :  - la valeur d'index du support IC10 (d?)  - un registre (r?)  - la référence directe à l'id (identifiant unique de cet objet en particulier).",
 		"example": "sdns r? device(d?|r?|id)",
 		"name": "sdns"
 	},
 	"sdse": {
-		"description": "Registre = 1 si l'appareil est configuré, sinon 0 L'appareil est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Registre = 1 si l'appareil est configuré, sinon 0 L'appareil est défini soit par :  - la valeur d'index du support IC10 (d?)  - un registre (r?)  - la référence directe à l'id (identifiant unique de cet objet en particulier).",
 		"example": "sdse r? device(d?|r?|id)",
 		"name": "sdse"
 	},
@@ -623,6 +638,11 @@
 		"description": "Registre = 1 si a &gt;= 0, sinon 0",
 		"example": "sgez r? a(r?|num)",
 		"name": "sgez"
+	},
+	"sgn": {
+		"description": "Stores the sign of a in the register: -1 if a is negative, 1 if positive, and 0 if a is zero (or not a number).",
+		"example": "sgn r? a(r?|num)",
+		"name": "sgn"
 	},
 	"sgt": {
 		"description": "Registre = 1 si a &gt; b, sinon 0",
@@ -675,7 +695,7 @@
 		"name": "sltz"
 	},
 	"sna": {
-		"description": "Registre = 1 si abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Registre = 1 si a !~ b avec une tolérance de c, sinon 0. Condition utilisée : abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) (float.epsilon représente la plus petite différence détectable entre deux nombres flottants. C’est la précision minimale au-delà de laquelle deux valeurs sont considérées comme distinctes.)",
 		"example": "sna r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "sna"
 	},
@@ -690,7 +710,7 @@
 		"name": "snanz"
 	},
 	"snaz": {
-		"description": "Registre = 1 si abs(a) &gt; float.epsilon, sinon 0 (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
+		"description": "Registre = 1 si a !~ 0, sinon 0. Condition utilisée : abs(a) &gt; float.epsilon \\* 8 (float.epsilon représente la plus petite différence détectable entre deux nombres flottants. C’est la précision minimale au-delà de laquelle deux valeurs sont considérées comme distinctes.)",
 		"example": "snaz r? a(r?|num) b(r?|num)",
 		"name": "snaz"
 	},
@@ -720,7 +740,7 @@
 		"name": "srl"
 	},
 	"ss": {
-		"description": "Stocke la valeur du registre dans la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l’emplacement\" (slotIndex) d’un appareil qui est defini soit par :  - la valeur d’index du support IC10 (d?)  - un registre (r?)  - la référence directe à l’ID (identifiant unique de cet objet en particulier, qui commence par \"$\").",
+		"description": "Stocke la valeur du registre dans la valeur \"logique par emplacements\" (logicSlotType) depuis le \"numéro d'index de l'emplacement\" (slotIndex) d'un appareil qui est défini soit par :  - la valeur d'index du support IC10 (d?)  - un registre (r?)  - la référence directe à l'id (identifiant unique de cet objet en particulier).",
 		"example": "ss device(d?|r?|id) slotIndex logicSlotType r?",
 		"name": "ss"
 	},

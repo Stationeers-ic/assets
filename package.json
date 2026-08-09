@@ -2,12 +2,12 @@
 	"name": "wiki_data",
 	"module": "index.ts",
 	"devDependencies": {
-		"@biomejs/biome": "2.2.4",
+		"@biomejs/biome": "^2.5.7",
 		"@types/bun": "latest",
-		"@types/node": "^24.5.2"
+		"@types/node": "^24.13.3"
 	},
 	"peerDependencies": {
-		"typescript": "^5.9.2"
+		"typescript": "^5.4.5"
 	},
 	"scripts": {
 		"format": "bunx --bun biome format --write",

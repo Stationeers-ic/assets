@@ -219,36 +219,6 @@
 		"referenceType": "Enum",
 		"value": 3
 	},
-	"ContactTier.Close": {
-		"canUseAsConst": true,
-		"deprecated": false,
-		"description": "",
-		"literal": "ContactTier.Close",
-		"name": "Close",
-		"prefix": "ContactTier",
-		"referenceType": "Enum",
-		"value": 0
-	},
-	"ContactTier.Far": {
-		"canUseAsConst": true,
-		"deprecated": false,
-		"description": "",
-		"literal": "ContactTier.Far",
-		"name": "Far",
-		"prefix": "ContactTier",
-		"referenceType": "Enum",
-		"value": 2
-	},
-	"ContactTier.Medium": {
-		"canUseAsConst": true,
-		"deprecated": false,
-		"description": "",
-		"literal": "ContactTier.Medium",
-		"name": "Medium",
-		"prefix": "ContactTier",
-		"referenceType": "Enum",
-		"value": 1
-	},
 	"DaylightSensorMode.Default": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -319,6 +289,16 @@
 		"referenceType": "Enum",
 		"value": 0
 	},
+	"DisplayMode.Degrees": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "DisplayMode.Degrees",
+		"name": "Degrees",
+		"prefix": "DisplayMode",
+		"referenceType": "Enum",
+		"value": 16
+	},
 	"DisplayMode.Fahrenheit": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -378,6 +358,16 @@
 		"prefix": "DisplayMode",
 		"referenceType": "Enum",
 		"value": 13
+	},
+	"DisplayMode.Newtons": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "DisplayMode.Newtons",
+		"name": "Newtons",
+		"prefix": "DisplayMode",
+		"referenceType": "Enum",
+		"value": 15
 	},
 	"DisplayMode.Pa": {
 		"canUseAsConst": true,
@@ -499,6 +489,26 @@
 		"referenceType": "Enum",
 		"value": 2
 	},
+	"FiltrationMode.Active": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "FiltrationMode.Active",
+		"name": "Active",
+		"prefix": "FiltrationMode",
+		"referenceType": "Enum",
+		"value": 1
+	},
+	"FiltrationMode.Idle": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "FiltrationMode.Idle",
+		"name": "Idle",
+		"prefix": "FiltrationMode",
+		"referenceType": "Enum",
+		"value": 0
+	},
 	"GasType.Air": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -529,6 +539,36 @@
 		"referenceType": "Enum",
 		"value": 9
 	},
+	"GasType.Helium": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "GasType.Helium",
+		"name": "Helium",
+		"prefix": "GasType",
+		"referenceType": "Enum",
+		"value": 1048576
+	},
+	"GasType.Hydrazine": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "GasType.Hydrazine",
+		"name": "Hydrazine",
+		"prefix": "GasType",
+		"referenceType": "Enum",
+		"value": 131072
+	},
+	"GasType.HydrochloricAcid": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "GasType.HydrochloricAcid",
+		"name": "HydrochloricAcid",
+		"prefix": "GasType",
+		"referenceType": "Enum",
+		"value": 16777216
+	},
 	"GasType.Hydrogen": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -538,6 +578,16 @@
 		"prefix": "GasType",
 		"referenceType": "Enum",
 		"value": 16384
+	},
+	"GasType.LiquidAlcohol": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "GasType.LiquidAlcohol",
+		"name": "LiquidAlcohol",
+		"prefix": "GasType",
+		"referenceType": "Enum",
+		"value": 524288
 	},
 	"GasType.LiquidCarbonDioxide": {
 		"canUseAsConst": true,
@@ -549,6 +599,26 @@
 		"referenceType": "Enum",
 		"value": 2048
 	},
+	"GasType.LiquidHydrazine": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "GasType.LiquidHydrazine",
+		"name": "LiquidHydrazine",
+		"prefix": "GasType",
+		"referenceType": "Enum",
+		"value": 262144
+	},
+	"GasType.LiquidHydrochloricAcid": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "GasType.LiquidHydrochloricAcid",
+		"name": "LiquidHydrochloricAcid",
+		"prefix": "GasType",
+		"referenceType": "Enum",
+		"value": 33554432
+	},
 	"GasType.LiquidHydrogen": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -558,6 +628,16 @@
 		"prefix": "GasType",
 		"referenceType": "Enum",
 		"value": 32768
+	},
+	"GasType.LiquidMethane": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "GasType.LiquidMethane",
+		"name": "LiquidMethane",
+		"prefix": "GasType",
+		"referenceType": "Enum",
+		"value": 512
 	},
 	"GasType.LiquidNitrogen": {
 		"canUseAsConst": true,
@@ -589,6 +669,16 @@
 		"referenceType": "Enum",
 		"value": 256
 	},
+	"GasType.LiquidOzone": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "GasType.LiquidOzone",
+		"name": "LiquidOzone",
+		"prefix": "GasType",
+		"referenceType": "Enum",
+		"value": 134217728
+	},
 	"GasType.LiquidPollutant": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -599,15 +689,35 @@
 		"referenceType": "Enum",
 		"value": 4096
 	},
-	"GasType.LiquidVolatiles": {
+	"GasType.LiquidSilanol": {
 		"canUseAsConst": true,
 		"deprecated": false,
 		"description": "",
-		"literal": "GasType.LiquidVolatiles",
-		"name": "LiquidVolatiles",
+		"literal": "GasType.LiquidSilanol",
+		"name": "LiquidSilanol",
 		"prefix": "GasType",
 		"referenceType": "Enum",
-		"value": 512
+		"value": 8388608
+	},
+	"GasType.LiquidSodiumChloride": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "GasType.LiquidSodiumChloride",
+		"name": "LiquidSodiumChloride",
+		"prefix": "GasType",
+		"referenceType": "Enum",
+		"value": 2097152
+	},
+	"GasType.Methane": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "GasType.Methane",
+		"name": "Methane",
+		"prefix": "GasType",
+		"referenceType": "Enum",
+		"value": 8
 	},
 	"GasType.Nitrogen": {
 		"canUseAsConst": true,
@@ -639,6 +749,16 @@
 		"referenceType": "Enum",
 		"value": 1
 	},
+	"GasType.Ozone": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "GasType.Ozone",
+		"name": "Ozone",
+		"prefix": "GasType",
+		"referenceType": "Enum",
+		"value": 67108864
+	},
 	"GasType.Pollutant": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -659,6 +779,16 @@
 		"referenceType": "Enum",
 		"value": 65536
 	},
+	"GasType.Silanol": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "GasType.Silanol",
+		"name": "Silanol",
+		"prefix": "GasType",
+		"referenceType": "Enum",
+		"value": 4194304
+	},
 	"GasType.Steam": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -678,16 +808,6 @@
 		"prefix": "GasType",
 		"referenceType": "Enum",
 		"value": 0
-	},
-	"GasType.Volatiles": {
-		"canUseAsConst": true,
-		"deprecated": false,
-		"description": "",
-		"literal": "GasType.Volatiles",
-		"name": "Volatiles",
-		"prefix": "GasType",
-		"referenceType": "Enum",
-		"value": 8
 	},
 	"GasType.Water": {
 		"canUseAsConst": true,
@@ -728,6 +848,16 @@
 		"prefix": "LogicBatchMethod",
 		"referenceType": "Enum",
 		"value": 0
+	},
+	"LogicBatchMethod.Count": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicBatchMethod.Count",
+		"name": "Count",
+		"prefix": "LogicBatchMethod",
+		"referenceType": "Enum",
+		"value": 4
 	},
 	"LogicBatchMethod.Maximum": {
 		"canUseAsConst": true,
@@ -858,6 +988,16 @@
 		"prefix": "LogicSlotType",
 		"referenceType": "Enum",
 		"value": 25
+	},
+	"LogicSlotType.FreeSlots": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicSlotType.FreeSlots",
+		"name": "FreeSlots",
+		"prefix": "LogicSlotType",
+		"referenceType": "Enum",
+		"value": 31
 	},
 	"LogicSlotType.Growth": {
 		"canUseAsConst": true,
@@ -1098,6 +1238,16 @@
 		"prefix": "LogicSlotType",
 		"referenceType": "Enum",
 		"value": 9
+	},
+	"LogicSlotType.TotalSlots": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicSlotType.TotalSlots",
+		"name": "TotalSlots",
+		"prefix": "LogicSlotType",
+		"referenceType": "Enum",
+		"value": 32
 	},
 	"LogicSlotType.Volume": {
 		"canUseAsConst": true,
@@ -1449,6 +1599,16 @@
 		"referenceType": "Enum",
 		"value": 61
 	},
+	"LogicType.ContactSlotIndex": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.ContactSlotIndex",
+		"name": "ContactSlotIndex",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 282
+	},
 	"LogicType.ContactTypeId": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -1468,6 +1628,16 @@
 		"prefix": "LogicType",
 		"referenceType": "Enum",
 		"value": 261
+	},
+	"LogicType.CurrentNodeType": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.CurrentNodeType",
+		"name": "CurrentNodeType",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 352
 	},
 	"LogicType.CurrentResearchPodType": {
 		"canUseAsConst": true,
@@ -1518,6 +1688,26 @@
 		"prefix": "LogicType",
 		"referenceType": "Enum",
 		"value": 255
+	},
+	"LogicType.Dispense": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.Dispense",
+		"name": "Dispense",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 356
+	},
+	"LogicType.DispenseSlot": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.DispenseSlot",
+		"name": "DispenseSlot",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 357
 	},
 	"LogicType.DistanceAu": {
 		"canUseAsConst": true,
@@ -1588,6 +1778,26 @@
 		"prefix": "LogicType",
 		"referenceType": "Enum",
 		"value": 39
+	},
+	"LogicType.EnergyConvected": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.EnergyConvected",
+		"name": "EnergyConvected",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 354
+	},
+	"LogicType.EnergyRadiated": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.EnergyRadiated",
+		"name": "EnergyRadiated",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 355
 	},
 	"LogicType.EntityState": {
 		"canUseAsConst": true,
@@ -1759,6 +1969,16 @@
 		"referenceType": "Enum",
 		"value": 99
 	},
+	"LogicType.Gravity": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.Gravity",
+		"name": "Gravity",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 358
+	},
 	"LogicType.Harvest": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -1768,6 +1988,16 @@
 		"prefix": "LogicType",
 		"referenceType": "Enum",
 		"value": 69
+	},
+	"LogicType.HealthDamage": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.HealthDamage",
+		"name": "HealthDamage",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 350
 	},
 	"LogicType.Horizontal": {
 		"canUseAsConst": true,
@@ -2028,6 +2258,16 @@
 		"prefix": "LogicType",
 		"referenceType": "Enum",
 		"value": 97
+	},
+	"LogicType.NextWeatherHash": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.NextWeatherHash",
+		"name": "NextWeatherHash",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 281
 	},
 	"LogicType.None": {
 		"canUseAsConst": true,
@@ -2549,6 +2789,156 @@
 		"referenceType": "Enum",
 		"value": 139
 	},
+	"LogicType.RatioHelium": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHelium",
+		"name": "RatioHelium",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 286
+	},
+	"LogicType.RatioHeliumInput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHeliumInput",
+		"name": "RatioHeliumInput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 318
+	},
+	"LogicType.RatioHeliumInput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHeliumInput2",
+		"name": "RatioHeliumInput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 319
+	},
+	"LogicType.RatioHeliumOutput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHeliumOutput",
+		"name": "RatioHeliumOutput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 320
+	},
+	"LogicType.RatioHeliumOutput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHeliumOutput2",
+		"name": "RatioHeliumOutput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 321
+	},
+	"LogicType.RatioHydrazine": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHydrazine",
+		"name": "RatioHydrazine",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 283
+	},
+	"LogicType.RatioHydrazineInput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHydrazineInput",
+		"name": "RatioHydrazineInput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 306
+	},
+	"LogicType.RatioHydrazineInput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHydrazineInput2",
+		"name": "RatioHydrazineInput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 307
+	},
+	"LogicType.RatioHydrazineOutput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHydrazineOutput",
+		"name": "RatioHydrazineOutput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 308
+	},
+	"LogicType.RatioHydrazineOutput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHydrazineOutput2",
+		"name": "RatioHydrazineOutput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 309
+	},
+	"LogicType.RatioHydrochloricAcid": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHydrochloricAcid",
+		"name": "RatioHydrochloricAcid",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 290
+	},
+	"LogicType.RatioHydrochloricAcidInput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHydrochloricAcidInput",
+		"name": "RatioHydrochloricAcidInput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 334
+	},
+	"LogicType.RatioHydrochloricAcidInput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHydrochloricAcidInput2",
+		"name": "RatioHydrochloricAcidInput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 335
+	},
+	"LogicType.RatioHydrochloricAcidOutput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHydrochloricAcidOutput",
+		"name": "RatioHydrochloricAcidOutput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 336
+	},
+	"LogicType.RatioHydrochloricAcidOutput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHydrochloricAcidOutput2",
+		"name": "RatioHydrochloricAcidOutput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 337
+	},
 	"LogicType.RatioHydrogen": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -2558,6 +2948,96 @@
 		"prefix": "LogicType",
 		"referenceType": "Enum",
 		"value": 252
+	},
+	"LogicType.RatioHydrogenInput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHydrogenInput",
+		"name": "RatioHydrogenInput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 294
+	},
+	"LogicType.RatioHydrogenInput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHydrogenInput2",
+		"name": "RatioHydrogenInput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 295
+	},
+	"LogicType.RatioHydrogenOutput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHydrogenOutput",
+		"name": "RatioHydrogenOutput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 296
+	},
+	"LogicType.RatioHydrogenOutput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioHydrogenOutput2",
+		"name": "RatioHydrogenOutput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 297
+	},
+	"LogicType.RatioLiquidAlcohol": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidAlcohol",
+		"name": "RatioLiquidAlcohol",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 285
+	},
+	"LogicType.RatioLiquidAlcoholInput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidAlcoholInput",
+		"name": "RatioLiquidAlcoholInput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 314
+	},
+	"LogicType.RatioLiquidAlcoholInput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidAlcoholInput2",
+		"name": "RatioLiquidAlcoholInput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 315
+	},
+	"LogicType.RatioLiquidAlcoholOutput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidAlcoholOutput",
+		"name": "RatioLiquidAlcoholOutput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 316
+	},
+	"LogicType.RatioLiquidAlcoholOutput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidAlcoholOutput2",
+		"name": "RatioLiquidAlcoholOutput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 317
 	},
 	"LogicType.RatioLiquidCarbonDioxide": {
 		"canUseAsConst": true,
@@ -2609,6 +3089,106 @@
 		"referenceType": "Enum",
 		"value": 203
 	},
+	"LogicType.RatioLiquidHydrazine": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidHydrazine",
+		"name": "RatioLiquidHydrazine",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 284
+	},
+	"LogicType.RatioLiquidHydrazineInput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidHydrazineInput",
+		"name": "RatioLiquidHydrazineInput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 310
+	},
+	"LogicType.RatioLiquidHydrazineInput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidHydrazineInput2",
+		"name": "RatioLiquidHydrazineInput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 311
+	},
+	"LogicType.RatioLiquidHydrazineOutput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidHydrazineOutput",
+		"name": "RatioLiquidHydrazineOutput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 312
+	},
+	"LogicType.RatioLiquidHydrazineOutput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidHydrazineOutput2",
+		"name": "RatioLiquidHydrazineOutput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 313
+	},
+	"LogicType.RatioLiquidHydrochloricAcid": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidHydrochloricAcid",
+		"name": "RatioLiquidHydrochloricAcid",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 291
+	},
+	"LogicType.RatioLiquidHydrochloricAcidInput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidHydrochloricAcidInput",
+		"name": "RatioLiquidHydrochloricAcidInput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 338
+	},
+	"LogicType.RatioLiquidHydrochloricAcidInput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidHydrochloricAcidInput2",
+		"name": "RatioLiquidHydrochloricAcidInput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 339
+	},
+	"LogicType.RatioLiquidHydrochloricAcidOutput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidHydrochloricAcidOutput",
+		"name": "RatioLiquidHydrochloricAcidOutput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 340
+	},
+	"LogicType.RatioLiquidHydrochloricAcidOutput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidHydrochloricAcidOutput2",
+		"name": "RatioLiquidHydrochloricAcidOutput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 341
+	},
 	"LogicType.RatioLiquidHydrogen": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -2618,6 +3198,96 @@
 		"prefix": "LogicType",
 		"referenceType": "Enum",
 		"value": 253
+	},
+	"LogicType.RatioLiquidHydrogenInput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidHydrogenInput",
+		"name": "RatioLiquidHydrogenInput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 298
+	},
+	"LogicType.RatioLiquidHydrogenInput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidHydrogenInput2",
+		"name": "RatioLiquidHydrogenInput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 299
+	},
+	"LogicType.RatioLiquidHydrogenOutput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidHydrogenOutput",
+		"name": "RatioLiquidHydrogenOutput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 300
+	},
+	"LogicType.RatioLiquidHydrogenOutput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidHydrogenOutput2",
+		"name": "RatioLiquidHydrogenOutput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 301
+	},
+	"LogicType.RatioLiquidMethane": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidMethane",
+		"name": "RatioLiquidMethane",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 188
+	},
+	"LogicType.RatioLiquidMethaneInput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidMethaneInput",
+		"name": "RatioLiquidMethaneInput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 189
+	},
+	"LogicType.RatioLiquidMethaneInput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidMethaneInput2",
+		"name": "RatioLiquidMethaneInput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 190
+	},
+	"LogicType.RatioLiquidMethaneOutput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidMethaneOutput",
+		"name": "RatioLiquidMethaneOutput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 191
+	},
+	"LogicType.RatioLiquidMethaneOutput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidMethaneOutput2",
+		"name": "RatioLiquidMethaneOutput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 192
 	},
 	"LogicType.RatioLiquidNitrogen": {
 		"canUseAsConst": true,
@@ -2769,6 +3439,56 @@
 		"referenceType": "Enum",
 		"value": 187
 	},
+	"LogicType.RatioLiquidOzone": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidOzone",
+		"name": "RatioLiquidOzone",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 293
+	},
+	"LogicType.RatioLiquidOzoneInput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidOzoneInput",
+		"name": "RatioLiquidOzoneInput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 346
+	},
+	"LogicType.RatioLiquidOzoneInput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidOzoneInput2",
+		"name": "RatioLiquidOzoneInput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 347
+	},
+	"LogicType.RatioLiquidOzoneOutput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidOzoneOutput",
+		"name": "RatioLiquidOzoneOutput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 348
+	},
+	"LogicType.RatioLiquidOzoneOutput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidOzoneOutput2",
+		"name": "RatioLiquidOzoneOutput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 349
+	},
 	"LogicType.RatioLiquidPollutant": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -2819,55 +3539,155 @@
 		"referenceType": "Enum",
 		"value": 208
 	},
-	"LogicType.RatioLiquidVolatiles": {
+	"LogicType.RatioLiquidSilanol": {
 		"canUseAsConst": true,
 		"deprecated": false,
 		"description": "",
-		"literal": "LogicType.RatioLiquidVolatiles",
-		"name": "RatioLiquidVolatiles",
+		"literal": "LogicType.RatioLiquidSilanol",
+		"name": "RatioLiquidSilanol",
 		"prefix": "LogicType",
 		"referenceType": "Enum",
-		"value": 188
+		"value": 289
 	},
-	"LogicType.RatioLiquidVolatilesInput": {
+	"LogicType.RatioLiquidSilanolInput": {
 		"canUseAsConst": true,
 		"deprecated": false,
 		"description": "",
-		"literal": "LogicType.RatioLiquidVolatilesInput",
-		"name": "RatioLiquidVolatilesInput",
+		"literal": "LogicType.RatioLiquidSilanolInput",
+		"name": "RatioLiquidSilanolInput",
 		"prefix": "LogicType",
 		"referenceType": "Enum",
-		"value": 189
+		"value": 330
 	},
-	"LogicType.RatioLiquidVolatilesInput2": {
+	"LogicType.RatioLiquidSilanolInput2": {
 		"canUseAsConst": true,
 		"deprecated": false,
 		"description": "",
-		"literal": "LogicType.RatioLiquidVolatilesInput2",
-		"name": "RatioLiquidVolatilesInput2",
+		"literal": "LogicType.RatioLiquidSilanolInput2",
+		"name": "RatioLiquidSilanolInput2",
 		"prefix": "LogicType",
 		"referenceType": "Enum",
-		"value": 190
+		"value": 331
 	},
-	"LogicType.RatioLiquidVolatilesOutput": {
+	"LogicType.RatioLiquidSilanolOutput": {
 		"canUseAsConst": true,
 		"deprecated": false,
 		"description": "",
-		"literal": "LogicType.RatioLiquidVolatilesOutput",
-		"name": "RatioLiquidVolatilesOutput",
+		"literal": "LogicType.RatioLiquidSilanolOutput",
+		"name": "RatioLiquidSilanolOutput",
 		"prefix": "LogicType",
 		"referenceType": "Enum",
-		"value": 191
+		"value": 332
 	},
-	"LogicType.RatioLiquidVolatilesOutput2": {
+	"LogicType.RatioLiquidSilanolOutput2": {
 		"canUseAsConst": true,
 		"deprecated": false,
 		"description": "",
-		"literal": "LogicType.RatioLiquidVolatilesOutput2",
-		"name": "RatioLiquidVolatilesOutput2",
+		"literal": "LogicType.RatioLiquidSilanolOutput2",
+		"name": "RatioLiquidSilanolOutput2",
 		"prefix": "LogicType",
 		"referenceType": "Enum",
-		"value": 192
+		"value": 333
+	},
+	"LogicType.RatioLiquidSodiumChloride": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidSodiumChloride",
+		"name": "RatioLiquidSodiumChloride",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 287
+	},
+	"LogicType.RatioLiquidSodiumChlorideInput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidSodiumChlorideInput",
+		"name": "RatioLiquidSodiumChlorideInput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 322
+	},
+	"LogicType.RatioLiquidSodiumChlorideInput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidSodiumChlorideInput2",
+		"name": "RatioLiquidSodiumChlorideInput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 323
+	},
+	"LogicType.RatioLiquidSodiumChlorideOutput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidSodiumChlorideOutput",
+		"name": "RatioLiquidSodiumChlorideOutput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 324
+	},
+	"LogicType.RatioLiquidSodiumChlorideOutput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioLiquidSodiumChlorideOutput2",
+		"name": "RatioLiquidSodiumChlorideOutput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 325
+	},
+	"LogicType.RatioMethane": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioMethane",
+		"name": "RatioMethane",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 18
+	},
+	"LogicType.RatioMethaneInput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioMethaneInput",
+		"name": "RatioMethaneInput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 112
+	},
+	"LogicType.RatioMethaneInput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioMethaneInput2",
+		"name": "RatioMethaneInput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 122
+	},
+	"LogicType.RatioMethaneOutput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioMethaneOutput",
+		"name": "RatioMethaneOutput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 132
+	},
+	"LogicType.RatioMethaneOutput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioMethaneOutput2",
+		"name": "RatioMethaneOutput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 142
 	},
 	"LogicType.RatioNitrogen": {
 		"canUseAsConst": true,
@@ -3019,6 +3839,56 @@
 		"referenceType": "Enum",
 		"value": 138
 	},
+	"LogicType.RatioOzone": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioOzone",
+		"name": "RatioOzone",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 292
+	},
+	"LogicType.RatioOzoneInput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioOzoneInput",
+		"name": "RatioOzoneInput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 342
+	},
+	"LogicType.RatioOzoneInput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioOzoneInput2",
+		"name": "RatioOzoneInput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 343
+	},
+	"LogicType.RatioOzoneOutput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioOzoneOutput",
+		"name": "RatioOzoneOutput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 344
+	},
+	"LogicType.RatioOzoneOutput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioOzoneOutput2",
+		"name": "RatioOzoneOutput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 345
+	},
 	"LogicType.RatioPollutant": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -3079,6 +3949,96 @@
 		"referenceType": "Enum",
 		"value": 254
 	},
+	"LogicType.RatioPollutedWaterInput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioPollutedWaterInput",
+		"name": "RatioPollutedWaterInput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 302
+	},
+	"LogicType.RatioPollutedWaterInput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioPollutedWaterInput2",
+		"name": "RatioPollutedWaterInput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 303
+	},
+	"LogicType.RatioPollutedWaterOutput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioPollutedWaterOutput",
+		"name": "RatioPollutedWaterOutput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 304
+	},
+	"LogicType.RatioPollutedWaterOutput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioPollutedWaterOutput2",
+		"name": "RatioPollutedWaterOutput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 305
+	},
+	"LogicType.RatioSilanol": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioSilanol",
+		"name": "RatioSilanol",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 288
+	},
+	"LogicType.RatioSilanolInput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioSilanolInput",
+		"name": "RatioSilanolInput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 326
+	},
+	"LogicType.RatioSilanolInput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioSilanolInput2",
+		"name": "RatioSilanolInput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 327
+	},
+	"LogicType.RatioSilanolOutput": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioSilanolOutput",
+		"name": "RatioSilanolOutput",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 328
+	},
+	"LogicType.RatioSilanolOutput2": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.RatioSilanolOutput2",
+		"name": "RatioSilanolOutput2",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 329
+	},
 	"LogicType.RatioSteam": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -3128,56 +4088,6 @@
 		"prefix": "LogicType",
 		"referenceType": "Enum",
 		"value": 197
-	},
-	"LogicType.RatioVolatiles": {
-		"canUseAsConst": true,
-		"deprecated": false,
-		"description": "",
-		"literal": "LogicType.RatioVolatiles",
-		"name": "RatioVolatiles",
-		"prefix": "LogicType",
-		"referenceType": "Enum",
-		"value": 18
-	},
-	"LogicType.RatioVolatilesInput": {
-		"canUseAsConst": true,
-		"deprecated": false,
-		"description": "",
-		"literal": "LogicType.RatioVolatilesInput",
-		"name": "RatioVolatilesInput",
-		"prefix": "LogicType",
-		"referenceType": "Enum",
-		"value": 112
-	},
-	"LogicType.RatioVolatilesInput2": {
-		"canUseAsConst": true,
-		"deprecated": false,
-		"description": "",
-		"literal": "LogicType.RatioVolatilesInput2",
-		"name": "RatioVolatilesInput2",
-		"prefix": "LogicType",
-		"referenceType": "Enum",
-		"value": 122
-	},
-	"LogicType.RatioVolatilesOutput": {
-		"canUseAsConst": true,
-		"deprecated": false,
-		"description": "",
-		"literal": "LogicType.RatioVolatilesOutput",
-		"name": "RatioVolatilesOutput",
-		"prefix": "LogicType",
-		"referenceType": "Enum",
-		"value": 132
-	},
-	"LogicType.RatioVolatilesOutput2": {
-		"canUseAsConst": true,
-		"deprecated": false,
-		"description": "",
-		"literal": "LogicType.RatioVolatilesOutput2",
-		"name": "RatioVolatilesOutput2",
-		"prefix": "LogicType",
-		"referenceType": "Enum",
-		"value": 142
 	},
 	"LogicType.RatioWater": {
 		"canUseAsConst": true,
@@ -3499,6 +4409,16 @@
 		"referenceType": "Enum",
 		"value": 156
 	},
+	"LogicType.StunDamage": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.StunDamage",
+		"name": "StunDamage",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 351
+	},
 	"LogicType.Survey": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -3508,6 +4428,16 @@
 		"prefix": "LogicType",
 		"referenceType": "Enum",
 		"value": 257
+	},
+	"LogicType.TargetNodeType": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "LogicType.TargetNodeType",
+		"name": "TargetNodeType",
+		"prefix": "LogicType",
+		"referenceType": "Enum",
+		"value": 353
 	},
 	"LogicType.TargetPadIndex": {
 		"canUseAsConst": true,
@@ -3909,6 +4839,76 @@
 		"referenceType": "Enum",
 		"value": 105
 	},
+	"NodeType.Entry": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "NodeType.Entry",
+		"name": "Entry",
+		"prefix": "NodeType",
+		"referenceType": "Enum",
+		"value": 1
+	},
+	"NodeType.Generated": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "NodeType.Generated",
+		"name": "Generated",
+		"prefix": "NodeType",
+		"referenceType": "Enum",
+		"value": 3
+	},
+	"NodeType.LaunchPad": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "NodeType.LaunchPad",
+		"name": "LaunchPad",
+		"prefix": "NodeType",
+		"referenceType": "Enum",
+		"value": 4
+	},
+	"NodeType.LowOrbitHub": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "NodeType.LowOrbitHub",
+		"name": "LowOrbitHub",
+		"prefix": "NodeType",
+		"referenceType": "Enum",
+		"value": 5
+	},
+	"NodeType.LowOrbitLaunchPad": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "NodeType.LowOrbitLaunchPad",
+		"name": "LowOrbitLaunchPad",
+		"prefix": "NodeType",
+		"referenceType": "Enum",
+		"value": 6
+	},
+	"NodeType.None": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "NodeType.None",
+		"name": "None",
+		"prefix": "NodeType",
+		"referenceType": "Enum",
+		"value": 0
+	},
+	"NodeType.Static": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "NodeType.Static",
+		"name": "Static",
+		"prefix": "NodeType",
+		"referenceType": "Enum",
+		"value": 2
+	},
 	"PowerMode.Charged": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -4239,6 +5239,16 @@
 		"referenceType": "Enum",
 		"value": 1
 	},
+	"RocketMode.SurfaceScan": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "RocketMode.SurfaceScan",
+		"name": "SurfaceScan",
+		"prefix": "RocketMode",
+		"referenceType": "Enum",
+		"value": 7
+	},
 	"RocketMode.Survey": {
 		"canUseAsConst": true,
 		"deprecated": false,
@@ -4248,6 +5258,16 @@
 		"prefix": "RocketMode",
 		"referenceType": "Enum",
 		"value": 3
+	},
+	"RocketMode.Transfer": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "RocketMode.Transfer",
+		"name": "Transfer",
+		"prefix": "RocketMode",
+		"referenceType": "Enum",
+		"value": 8
 	},
 	"SettingDisplayMode.Number": {
 		"canUseAsConst": true,
@@ -4378,6 +5398,16 @@
 		"prefix": "SlotClass",
 		"referenceType": "Enum",
 		"value": 18
+	},
+	"SlotClass.AutoInjector": {
+		"canUseAsConst": true,
+		"deprecated": false,
+		"description": "",
+		"literal": "SlotClass.AutoInjector",
+		"name": "AutoInjector",
+		"prefix": "SlotClass",
+		"referenceType": "Enum",
+		"value": 43
 	},
 	"SlotClass.Back": {
 		"canUseAsConst": true,

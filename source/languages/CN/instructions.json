@@ -15,7 +15,7 @@
 		"name": "add"
 	},
 	"alias": {
-		"description": "使用别名(alias)为寄存器(r?)或设备(d?)指定一个标签(str), 设备别名也会影响IC外壳引脚上显示的内容",
+		"description": "使用别名(alias)为寄存器(r?)或设备(d?)指定一个标签(str), 设备别名也会影响IC封装引脚上显示的内容",
 		"example": "alias str r?|d?",
 		"name": "alias"
 	},
@@ -70,12 +70,12 @@
 		"name": "bdnsal"
 	},
 	"bdnvl": {
-		"description": "Will branch to line a if the provided device not valid for a load instruction for the provided logic type.",
+		"description": "如果所提供的设备对于所提供逻辑类型的读取指令无效, 则跳转到行a",
 		"example": "bdnvl device(d?|r?|id) logicType a(r?|num)",
 		"name": "bdnvl"
 	},
 	"bdnvs": {
-		"description": "Will branch to line a if the provided device not valid for a store instruction for the provided logic type.",
+		"description": "如果所提供的设备对于所提供逻辑类型的写入指令无效, 则跳转到行a",
 		"example": "bdnvs device(d?|r?|id) logicType a(r?|num)",
 		"name": "bdnvs"
 	},
@@ -334,6 +334,11 @@
 		"example": "ceil r? a(r?|num)",
 		"name": "ceil"
 	},
+	"clamp": {
+		"description": "Stores a clamped to the inclusive range [min, max] in the register provided.",
+		"example": "clamp r? a(r?|num) min(r?|num) max(r?|num)",
+		"name": "clamp"
+	},
 	"clr": {
 		"description": "清除指定设备的堆栈内存",
 		"example": "clr d?",
@@ -365,7 +370,7 @@
 		"name": "exp"
 	},
 	"ext": {
-		"description": "Extracts a bit field from a, beginning at b for c length and placed in the provided register. Payload cannot exceed 53 bits in final length.",
+		"description": "从a中提取一段bit值, 起始位置为b, 长度为c, 并放置到提供的寄存器中. 最大有效载荷长度不得超过53位.",
 		"example": "ext r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "ext"
 	},
@@ -390,7 +395,7 @@
 		"name": "hcf"
 	},
 	"ins": {
-		"description": "Inserts a bit field of a into the provided register, beginning at b for c length. Payload cannot exceed 53 bits in final length.",
+		"description": "将a的值按bit位插入到指定的寄存器中, 起始位置为b, 长度为c. 最大有效载荷长度不得超过53位.",
 		"example": "ins r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "ins"
 	},
@@ -445,7 +450,7 @@
 		"name": "ld"
 	},
 	"lerp": {
-		"description": "Linearly interpolates between a and b by the ratio c, and places the result in the register provided. The ratio c will be clamped between 0 and 1.",
+		"description": "以比率c在a和b之间进行线性插值，并将结果放置到提供的寄存器中。比率c将被限制在0和1之间。",
 		"example": "lerp r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "lerp"
 	},
@@ -520,7 +525,7 @@
 		"name": "pop"
 	},
 	"pow": {
-		"description": "Stores the result of raising a to the power of b in the register. Follows IEEE-754 standard for floating point arithmetic.",
+		"description": "计算a的b次幂并将结果存储到寄存器中. 遵循IEEE-754浮点算术标准.",
 		"example": "pow r? a(r?|num) b(r?|num)",
 		"name": "pow"
 	},
@@ -548,6 +553,16 @@
 		"description": "根据给定的材料哈希值, 返回设备满足配方要求的该种材料数量（例如查询自动车床中铁的哈希值, 对应铁锭的哈希值）",
 		"example": "rmap r? d? reagentHash(r?|num)",
 		"name": "rmap"
+	},
+	"rol": {
+		"description": "Performs a bitwise left rotation on the binary representation of a by b places, wrapping the bits shifted out of the most significant position back into the least significant position.",
+		"example": "rol r? a(r?|num) b(r?|num)",
+		"name": "rol"
+	},
+	"ror": {
+		"description": "Performs a bitwise right rotation on the binary representation of a by b places, wrapping the bits shifted out of the least significant position back into the most significant position.",
+		"example": "ror r? a(r?|num) b(r?|num)",
+		"name": "ror"
 	},
 	"round": {
 		"description": "计算a四舍五入后的整数结果, 并保存在寄存器(r?)中",
@@ -623,6 +638,11 @@
 		"description": "a&gt;=0时, 寄存器(r?)为1, 否则为0",
 		"example": "sgez r? a(r?|num)",
 		"name": "sgez"
+	},
+	"sgn": {
+		"description": "Stores the sign of a in the register: -1 if a is negative, 1 if positive, and 0 if a is zero (or not a number).",
+		"example": "sgn r? a(r?|num)",
+		"name": "sgn"
 	},
 	"sgt": {
 		"description": "a&gt;b时, 寄存器(r?)为1, 否则为0",

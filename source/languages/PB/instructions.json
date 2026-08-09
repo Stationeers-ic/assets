@@ -1,751 +1,771 @@
 ﻿{
 	"abs": {
-		"description": "Register = the absolute value of a",
+		"description": "Registro = o valor absoluto de  a",
 		"example": "abs r? a(r?|num)",
 		"name": "abs"
 	},
 	"acos": {
-		"description": "Returns the cosine of the specified angle (radians)",
+		"description": "Retorna o cosseno do ângulo especificado (radianos)",
 		"example": "acos r? a(r?|num)",
 		"name": "acos"
 	},
 	"add": {
-		"description": "Register = a + b.",
+		"description": "Registro = a + b",
 		"example": "add r? a(r?|num) b(r?|num)",
 		"name": "add"
 	},
 	"alias": {
-		"description": "Labels register or device reference with name, device references also affect what shows on the screws on the IC base.",
+		"description": "Rotula uma referência de registro ou dispositivo com um nome e, referências de dispositivo também afetam o que é mostrado nos parafusos do Suporte de IC.",
 		"example": "alias str r?|d?",
 		"name": "alias"
 	},
 	"and": {
-		"description": "Performs a bitwise logical AND operation on the binary representation of two values. Each bit of the result is determined by evaluating the corresponding bits of the input values. If both bits are 1, the resulting bit is set to 1. Otherwise the resulting bit is set to 0.",
+		"description": "Executa uma operação lógica bit a bit do tipo AND na representação binária de dois valores. Cada bit do resultado é determinado pela avaliação dos bits correspondentes dos valores de entrada. Se ambos os bits forem 1, o bit resultante é definido como 1. Caso contrário, o bit resultante é definido como 0.",
 		"example": "and r? a(r?|num) b(r?|num)",
 		"name": "and"
 	},
 	"asin": {
-		"description": "Returns the angle (radians) whos sine is the specified value",
+		"description": "Retorna o ângulo (radianos) cujo seno é o valor especificado",
 		"example": "asin r? a(r?|num)",
 		"name": "asin"
 	},
 	"atan": {
-		"description": "Returns the angle (radians) whos tan is the specified value",
+		"description": "Retorna o ângulo (radianos) cuja tangente é o valor especificado",
 		"example": "atan r? a(r?|num)",
 		"name": "atan"
 	},
 	"atan2": {
-		"description": "Returns the angle (radians) whose tangent is the quotient of two specified values: a (y) and b (x)",
+		"description": "Retorna o ângulo (radianos) cuja tangente é o quociente de dois valores especificados: a (y) e b(x)",
 		"example": "atan2 r? a(r?|num) b(r?|num)",
 		"name": "atan2"
 	},
 	"bap": {
-		"description": "Branch to line d if abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
+		"description": "Passe para a linha d se abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
 		"example": "bap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bap"
 	},
 	"bapal": {
-		"description": "Branch to line c if a != b and store next line number in ra",
+		"description": "Passa para linha c se a != b e armazena o número da próxima linha em ra",
 		"example": "bapal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bapal"
 	},
 	"bapz": {
-		"description": "Branch to line c if abs(a) &lt;= float.epsilon \\* 8",
+		"description": "Passe para a linha c se abs(a) &lt;= float.epsilon \\* 8",
 		"example": "bapz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bapz"
 	},
 	"bapzal": {
-		"description": "Branch to line c if abs(a) &lt;= float.epsilon \\* 8",
+		"description": "Passa para linha c se abs(a) &lt;= float.epsilon \\* 8 e armazena o número da próxima linha em ra",
 		"example": "bapzal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bapzal"
 	},
 	"bdns": {
-		"description": "Branch to line a if device d isn't set",
+		"description": "Passe para a linha a se o dispositivo d não estiver definido",
 		"example": "bdns device(d?|r?|id) a(r?|num)",
 		"name": "bdns"
 	},
 	"bdnsal": {
-		"description": "Jump execution to line a and store next line number if device is not set",
+		"description": "Passa execução para linha a e armazena o número da próxima linha em ra se o dispositivo não estiver definido",
 		"example": "bdnsal device(d?|r?|id) a(r?|num)",
 		"name": "bdnsal"
 	},
 	"bdnvl": {
-		"description": "Will branch to line a if the provided device not valid for a load instruction for the provided logic type.",
+		"description": "Irá pular para a linha 'a' se o dispositivo fornecido não puder receber uma instrução de 'load' para o tipo de lógica fornecido.",
 		"example": "bdnvl device(d?|r?|id) logicType a(r?|num)",
 		"name": "bdnvl"
 	},
 	"bdnvs": {
-		"description": "Will branch to line a if the provided device not valid for a store instruction for the provided logic type.",
+		"description": "Irá pular para a linha 'a' se o dispositivo fornecido não puder receber uma instrução de 'store' para o tipo de lógica fornecido.",
 		"example": "bdnvs device(d?|r?|id) logicType a(r?|num)",
 		"name": "bdnvs"
 	},
 	"bdse": {
-		"description": "Branch to line a if device d is set",
+		"description": "Passe para a linha a se o dispositivo d estiver definido",
 		"example": "bdse device(d?|r?|id) a(r?|num)",
 		"name": "bdse"
 	},
 	"bdseal": {
-		"description": "Jump execution to line a and store next line number if device is set",
+		"description": "Passa execução para linha a e armazena o número da próxima linha em ra se o dispositivo estiver definido",
 		"example": "bdseal device(d?|r?|id) a(r?|num)",
 		"name": "bdseal"
 	},
 	"beq": {
-		"description": "Branch to line c if a == b",
+		"description": "Passe para a linha c se a == b",
 		"example": "beq a(r?|num) b(r?|num) c(r?|num)",
 		"name": "beq"
 	},
 	"beqal": {
-		"description": "Branch to line c if a == b and store next line number in ra",
+		"description": "Passa para linha c se a == b e armazena o número da próxima linha em ra",
 		"example": "beqal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "beqal"
 	},
 	"beqz": {
-		"description": "Branch to line b if a == 0",
+		"description": "Passe para a linha b se a == 0",
 		"example": "beqz a(r?|num) b(r?|num)",
 		"name": "beqz"
 	},
 	"beqzal": {
-		"description": "Branch to line b if a == 0 and store next line number in ra",
+		"description": "Passa para linha b se a == 0 e armazena o número da próxima linha em ra",
 		"example": "beqzal a(r?|num) b(r?|num)",
 		"name": "beqzal"
 	},
 	"bge": {
-		"description": "Branch to line c if a &gt;= b",
+		"description": "Passe para a linha c se a &gt;= b",
 		"example": "bge a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bge"
 	},
 	"bgeal": {
-		"description": "Branch to line c if a &gt;= b and store next line number in ra",
+		"description": "Passa para linha c se a &gt;= b e armazena o número da próxima linha em ra",
 		"example": "bgeal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgeal"
 	},
 	"bgez": {
-		"description": "Branch to line b if a &gt;= 0",
+		"description": "Passe para a linha b se a &gt;= 0",
 		"example": "bgez a(r?|num) b(r?|num)",
 		"name": "bgez"
 	},
 	"bgezal": {
-		"description": "Branch to line b if a &gt;= 0 and store next line number in ra",
+		"description": "Passa para linha b se a &gt;= 0 e armazena o número da próxima linha em ra",
 		"example": "bgezal a(r?|num) b(r?|num)",
 		"name": "bgezal"
 	},
 	"bgt": {
-		"description": "Branch to line c if a &gt; b",
+		"description": "Passe para a linha c se a &gt; b",
 		"example": "bgt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgt"
 	},
 	"bgtal": {
-		"description": "Branch to line c if a &gt; b and store next line number in ra",
+		"description": "Passa para linha c se a &gt; b e armazena o número da próxima linha em ra",
 		"example": "bgtal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bgtal"
 	},
 	"bgtz": {
-		"description": "Branch to line b if a &gt; 0",
+		"description": "Passe para a linha b se a &gt; 0",
 		"example": "bgtz a(r?|num) b(r?|num)",
 		"name": "bgtz"
 	},
 	"bgtzal": {
-		"description": "Branch to line b if a &gt; 0 and store next line number in ra",
+		"description": "Passa para linha b se a &gt; 0 e armazena o número da próxima linha em ra",
 		"example": "bgtzal a(r?|num) b(r?|num)",
 		"name": "bgtzal"
 	},
 	"ble": {
-		"description": "Branch to line c if a &lt;= b",
+		"description": "Passe para a linha c se a &lt;= b",
 		"example": "ble a(r?|num) b(r?|num) c(r?|num)",
 		"name": "ble"
 	},
 	"bleal": {
-		"description": "Branch to line c if a &lt;= b and store next line number in ra",
+		"description": "Passa para linha c se a &lt;= b e armazena o número da próxima linha em ra",
 		"example": "bleal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bleal"
 	},
 	"blez": {
-		"description": "Branch to line b if a &lt;= 0",
+		"description": "Passe para a linha b se a &lt;= 0",
 		"example": "blez a(r?|num) b(r?|num)",
 		"name": "blez"
 	},
 	"blezal": {
-		"description": "Branch to line b if a &lt;= 0 and store next line number in ra",
+		"description": "Passa para linha b se a &lt;= 0 e armazena o número da próxima linha em ra",
 		"example": "blezal a(r?|num) b(r?|num)",
 		"name": "blezal"
 	},
 	"blt": {
-		"description": "Branch to line c if a &lt; b",
+		"description": "Passe para a linha c se a &lt; b",
 		"example": "blt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "blt"
 	},
 	"bltal": {
-		"description": "Branch to line c if a &lt; b and store next line number in ra",
+		"description": "Passa para linha c se a &lt; b e armazena o número da próxima linha em ra",
 		"example": "bltal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bltal"
 	},
 	"bltz": {
-		"description": "Branch to line b if a &lt; 0",
+		"description": "Passe para a linha b se a &lt; 0",
 		"example": "bltz a(r?|num) b(r?|num)",
 		"name": "bltz"
 	},
 	"bltzal": {
-		"description": "Branch to line b if a &lt; 0 and store next line number in ra",
+		"description": "Passa para linha b se a &lt; 0 e armazena o número da próxima linha em ra",
 		"example": "bltzal a(r?|num) b(r?|num)",
 		"name": "bltzal"
 	},
 	"bna": {
-		"description": "Branch to line d if abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
+		"description": "Passe para a linha d se abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
 		"example": "bna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bna"
 	},
 	"bnaal": {
-		"description": "Branch to line d if abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) and store next line number in ra",
+		"description": "Passa para linha d se abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) e armazena o número da próxima linha em ra",
 		"example": "bnaal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bnaal"
 	},
 	"bnan": {
-		"description": "Branch to line b if a is not a number (NaN)",
+		"description": "Passe para a linha  b se a não for um número (NaN)",
 		"example": "bnan a(r?|num) b(r?|num)",
 		"name": "bnan"
 	},
 	"bnaz": {
-		"description": "Branch to line c if abs(a) &gt; float.epsilon \\* 8",
+		"description": "Passe para a linha c se abs(a) &gt; float.epsilon \\*8",
 		"example": "bnaz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bnaz"
 	},
 	"bnazal": {
-		"description": "Branch to line c if abs(a) &gt; float.epsilon \\* 8",
+		"description": "Passa para linha c se abs(a) &gt; float.epsilon \\* 8 e armazena o número da próxima linha em ra",
 		"example": "bnazal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bnazal"
 	},
 	"bne": {
-		"description": "Branch to line c if a != b",
+		"description": "Passe para a linha c se a != b",
 		"example": "bne a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bne"
 	},
 	"bneal": {
-		"description": "Branch to line c if a != b and store next line number in ra",
+		"description": "Passa para linha c se a != b e armazena o número da próxima linha em ra",
 		"example": "bneal a(r?|num) b(r?|num) c(r?|num)",
 		"name": "bneal"
 	},
 	"bnez": {
-		"description": "branch to line b if a != 0",
+		"description": "Passe para a linha b se a != 0",
 		"example": "bnez a(r?|num) b(r?|num)",
 		"name": "bnez"
 	},
 	"bnezal": {
-		"description": "Branch to line b if a != 0 and store next line number in ra",
+		"description": "Passa para linha b se a != 0 e armazena o número da próxima linha em ra",
 		"example": "bnezal a(r?|num) b(r?|num)",
 		"name": "bnezal"
 	},
 	"brap": {
-		"description": "Relative branch to line d if abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
+		"description": "Passe relativo para a linha d se abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float. epsilon \\* 8)",
 		"example": "brap a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "brap"
 	},
 	"brapz": {
-		"description": "Relative branch to line c if abs(a) &lt;= float.epsilon \\* 8",
+		"description": "Passe relativo para a linha c se abs(a) &lt;= float.epsilon \\* 8",
 		"example": "brapz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brapz"
 	},
 	"brdns": {
-		"description": "Relative jump to line a if device is not set",
+		"description": "Passe relativo para a linha a se o dispositivo não estiver definido",
 		"example": "brdns device(d?|r?|id) a(r?|num)",
 		"name": "brdns"
 	},
 	"brdse": {
-		"description": "Relative jump to line a if device is set",
+		"description": "Passe relativo para a linha a se o dispositivo estiver definido",
 		"example": "brdse device(d?|r?|id) a(r?|num)",
 		"name": "brdse"
 	},
 	"breq": {
-		"description": "Relative branch to line c if a == b",
+		"description": "Passe relativo para a linha c se a == b",
 		"example": "breq a(r?|num) b(r?|num) c(r?|num)",
 		"name": "breq"
 	},
 	"breqz": {
-		"description": "Relative branch to line b if a == 0",
+		"description": "Passe relativo para a linha b se a == 0",
 		"example": "breqz a(r?|num) b(r?|num)",
 		"name": "breqz"
 	},
 	"brge": {
-		"description": "Relative jump to line c if a &gt;= b",
+		"description": "Passe relativo para a linha c se a &gt;= b",
 		"example": "brge a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brge"
 	},
 	"brgez": {
-		"description": "Relative branch to line b if a &gt;= 0",
+		"description": "Passe relativo para a linha b se a &gt;= 0",
 		"example": "brgez a(r?|num) b(r?|num)",
 		"name": "brgez"
 	},
 	"brgt": {
-		"description": "relative jump to line c if a &gt; b",
+		"description": "Passe relativo para a linha c se a &gt; b",
 		"example": "brgt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brgt"
 	},
 	"brgtz": {
-		"description": "Relative branch to line b if a &gt; 0",
+		"description": "Passe relativo para a linha b se a &gt; 0",
 		"example": "brgtz a(r?|num) b(r?|num)",
 		"name": "brgtz"
 	},
 	"brle": {
-		"description": "Relative jump to line c if a &lt;= b",
+		"description": "Passe relativo para a linha c se a &lt;= b",
 		"example": "brle a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brle"
 	},
 	"brlez": {
-		"description": "Relative branch to line b if a &lt;= 0",
+		"description": "Passe relativo para a linha b se a &lt;= 0",
 		"example": "brlez a(r?|num) b(r?|num)",
 		"name": "brlez"
 	},
 	"brlt": {
-		"description": "Relative jump to line c if a &lt; b",
+		"description": "Passe relativo para a linha c se a &lt; b",
 		"example": "brlt a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brlt"
 	},
 	"brltz": {
-		"description": "Relative branch to line b if a &lt; 0",
+		"description": "Passe relativo para a linha b se a &lt; 0",
 		"example": "brltz a(r?|num) b(r?|num)",
 		"name": "brltz"
 	},
 	"brna": {
-		"description": "Relative branch to line d if abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
+		"description": "Passe relativo para a linha d se abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8)",
 		"example": "brna a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "brna"
 	},
 	"brnan": {
-		"description": "Relative branch to line b if a is not a number (NaN)",
+		"description": "Passe para a linha b de forma relativa se a não for um número (NaN)",
 		"example": "brnan a(r?|num) b(r?|num)",
 		"name": "brnan"
 	},
 	"brnaz": {
-		"description": "Relative branch to line c if abs(a) &gt; float.epsilon \\* 8",
+		"description": "Passe relativo para a linha c se abs(a) &gt; float.epsilon \\* 8",
 		"example": "brnaz a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brnaz"
 	},
 	"brne": {
-		"description": "Relative branch to line c if a != b",
+		"description": "Passe relativo para a linha c se a != b",
 		"example": "brne a(r?|num) b(r?|num) c(r?|num)",
 		"name": "brne"
 	},
 	"brnez": {
-		"description": "Relative branch to line b if a != 0",
+		"description": "Passe relativo para a linha b se a != 0",
 		"example": "brnez a(r?|num) b(r?|num)",
 		"name": "brnez"
 	},
 	"ceil": {
-		"description": "Register = smallest integer greater than a",
+		"description": "Registro = menor inteiro maior que a",
 		"example": "ceil r? a(r?|num)",
 		"name": "ceil"
 	},
+	"clamp": {
+		"description": "Stores a clamped to the inclusive range [min, max] in the register provided.",
+		"example": "clamp r? a(r?|num) min(r?|num) max(r?|num)",
+		"name": "clamp"
+	},
 	"clr": {
-		"description": "Clears the stack memory for the provided device.",
+		"description": "Limpa a memória da pilha do dispositivo fornecido.",
 		"example": "clr d?",
 		"name": "clr"
 	},
 	"clrd": {
-		"description": "Seeks directly for the provided device id and clears the stack memory of that device",
+		"description": "Procura diretamente o ID do dispositivo fornecido e limpa a memória da pilha desse dispositivo",
 		"example": "clrd id(r?|num)",
 		"name": "clrd"
 	},
 	"cos": {
-		"description": "Returns the cosine of the specified angle (radians)",
+		"description": "Retorna o cosseno do ângulo especificado (radianos)",
 		"example": "cos r? a(r?|num)",
 		"name": "cos"
 	},
 	"define": {
-		"description": "Creates a label that will be replaced throughout the program with the provided value.",
+		"description": "Cria um rótulo que será substituído ao longo do programa pelo valor fornecido.",
 		"example": "define str num",
 		"name": "define"
 	},
 	"div": {
-		"description": "Register = a / b",
+		"description": "Registro = a / b",
 		"example": "div r? a(r?|num) b(r?|num)",
 		"name": "div"
 	},
 	"exp": {
-		"description": "Register = exp(a)",
+		"description": "Registro = exp(a)",
 		"example": "exp r? a(r?|num)",
 		"name": "exp"
 	},
 	"ext": {
-		"description": "Extracts a bit field from a, beginning at b for c length and placed in the provided register. Payload cannot exceed 53 bits in final length.",
+		"description": "Extrai um campo de bit de 'a', começando em 'b' para comprimento 'c' e colocado no registro fornecido. A carga útil não pode exceder 53 bits no comprimento final.",
 		"example": "ext r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "ext"
 	},
 	"floor": {
-		"description": "Register = largest integer less than a",
+		"description": "Registro = maior inteiro menor que a",
 		"example": "floor r? a(r?|num)",
 		"name": "floor"
 	},
 	"get": {
-		"description": "Using the provided device, attempts to read the stack value at the provided address, and places it in the register.",
+		"description": "Usando o dispositivo fornecido, tenta ler o valor da pilha no endereço fornecido e coloca-o no registrador.",
 		"example": "get r? device(d?|r?|id) address(r?|num)",
 		"name": "get"
 	},
 	"getd": {
-		"description": "Seeks directly for the provided device id, attempts to read the stack value at the provided address, and places it in the register.",
+		"description": "Procura diretamente o ID do dispositivo fornecido, tenta ler o valor da pilha no endereço fornecido e o coloca no registrador.",
 		"example": "getd r? id(r?|id) address(r?|num)",
 		"name": "getd"
 	},
 	"hcf": {
-		"description": "Halt and catch fire",
+		"description": "Parar e pegar fogo",
 		"example": "hcf",
 		"name": "hcf"
 	},
 	"ins": {
-		"description": "Inserts a bit field of a into the provided register, beginning at b for c length. Payload cannot exceed 53 bits in final length.",
+		"description": "Insere um campo de bit de 'a' no registro fornecido, começando em 'b' para comprimento 'c'. A carga útil não pode exceder 53 bits no comprimento final.",
 		"example": "ins r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "ins"
 	},
 	"j": {
-		"description": "Jump execution to line a",
+		"description": "Pula a execução para a linha a",
 		"example": "j int",
 		"name": "j"
 	},
 	"jal": {
-		"description": "Jump execution to line a and store next line number in ra",
+		"description": "Pula execução para linha a e armazena o número da próxima linha em ra",
 		"example": "jal int",
 		"name": "jal"
 	},
 	"jr": {
-		"description": "Relative jump to line a",
+		"description": "Pulo relativo para a linha a",
 		"example": "jr int",
 		"name": "jr"
 	},
 	"l": {
-		"description": "Loads device LogicType to register by housing index value.",
+		"description": "Carrega o LogicType no registro pelo valor do índice do soquete.",
 		"example": "l r? device(d?|r?|id) logicType",
 		"name": "l"
 	},
 	"label": {
-		"description": "DEPRECATED",
+		"description": "DESCONTINUADO",
 		"example": "label d? str",
 		"name": "label"
 	},
 	"lb": {
-		"description": "Loads LogicType from all output network devices with provided type hash using the provide batch mode. Average (0), Sum (1), Minimum (2), Maximum (3). Can use either the word, or the number.",
+		"description": "Carrega LogicType de todos os dispositivos de rede de saída com hash de tipo fornecido usando o modo de lote fornecido. Média (Average - 0), Soma (Sum - 1), Mínimo (Minimum - 2), Máximo (Maximum - 3). Pode usar a palavra ou o número.",
 		"example": "lb r? deviceHash logicType batchMode",
 		"name": "lb"
 	},
 	"lbn": {
-		"description": "Loads LogicType from all output network devices with provided type and name hashes using the provide batch mode. Average (0), Sum (1), Minimum (2), Maximum (3). Can use either the word, or the number.",
+		"description": "Carrega LogicType de todos os dispositivos de rede de saída com hashes de tipo e nome fornecidos usando o modo de fornecimento em lote. Média (Average - 0), Soma (Sum - 1), Mínimo (Minimum - 2), Máximo (Maximum - 3). Pode usar a palavra ou o número.",
 		"example": "lbn r? deviceHash nameHash logicType batchMode",
 		"name": "lbn"
 	},
 	"lbns": {
-		"description": "Loads LogicSlotType from slotIndex from all output network devices with provided type and name hashes using the provide batch mode. Average (0), Sum (1), Minimum (2), Maximum (3). Can use either the word, or the number.",
+		"description": "Carrega LogicSlotType de slotIndex de todos os dispositivos de rede de saída com hashes de tipo e nome fornecidos usando o modo de fornecimento em lote. Média (Average - 0), Soma (Sum - 1), Mínimo (Minimum - 2), Máximo (Maximum - 3). Pode usar a palavra ou o número.",
 		"example": "lbns r? deviceHash nameHash slotIndex logicSlotType batchMode",
 		"name": "lbns"
 	},
 	"lbs": {
-		"description": "Loads LogicSlotType from slotIndex from all output network devices with provided type hash using the provide batch mode. Average (0), Sum (1), Minimum (2), Maximum (3). Can use either the word, or the number.",
+		"description": "Carrega LogicSlotType de slotIndex de todos os dispositivos de rede de saída com hash de tipo fornecido usando o modo de lote fornecido. Média (Average - 0), Soma (Sum - 1), Mínimo (Minimum - 2), Máximo (Maximum - 3). Pode usar a palavra ou o número.",
 		"example": "lbs r? deviceHash slotIndex logicSlotType batchMode",
 		"name": "lbs"
 	},
 	"ld": {
-		"description": "Loads device LogicType to register by direct ID reference.",
+		"description": "Carrega o LogicType no registro por referência de ID direta.",
 		"example": "ld r? id(r?|id) logicType",
 		"name": "ld"
 	},
 	"lerp": {
-		"description": "Linearly interpolates between a and b by the ratio c, and places the result in the register provided. The ratio c will be clamped between 0 and 1.",
+		"description": "Interpola linearmente entre 'a' e 'b' pela razão 'c' e coloca o resultado no registro fornecido. A razão 'c' será fixada entre 0 e 1.",
 		"example": "lerp r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "lerp"
 	},
 	"log": {
-		"description": "Register = log(a)",
+		"description": "Registro = log(a)",
 		"example": "log r? a(r?|num)",
 		"name": "log"
 	},
 	"lr": {
-		"description": "Loads reagent of device's ReagentMode where a hash of the reagent type to check for. ReagentMode can be either Contents (0), Required (1), Recipe (2). Can use either the word, or the number.",
+		"description": "Carrega o reagente do ReagentMode do dispositivo onde há um hash do tipo de reagente a ser verificado. ReagentMode pode ser Conteúdo (0 - Contents), Obrigatório (1 - Required), Receita (2 - Recipe). Pode usar a palavra ou o número.",
 		"example": "lr r? device(d?|r?|id) reagentMode int",
 		"name": "lr"
 	},
 	"ls": {
-		"description": "Loads slot LogicSlotType on device to register.",
+		"description": "Carrega o LogicSlotType do slot no dispositivo no registro.",
 		"example": "ls r? device(d?|r?|id) slotIndex logicSlotType",
 		"name": "ls"
 	},
 	"max": {
-		"description": "Register = max of a or b",
+		"description": "Registro = máximo de a ou b",
 		"example": "max r? a(r?|num) b(r?|num)",
 		"name": "max"
 	},
 	"min": {
-		"description": "Register = min of a or b",
+		"description": "Registro = mínimo de a ou b",
 		"example": "min r? a(r?|num) b(r?|num)",
 		"name": "min"
 	},
 	"mod": {
-		"description": "Register = a mod b (note: NOT a % b)",
+		"description": "Registro =  a mod b (nota: NÃO É a % b)",
 		"example": "mod r? a(r?|num) b(r?|num)",
 		"name": "mod"
 	},
 	"move": {
-		"description": "Register = provided num or register value.",
+		"description": "Registro = número fornecido ou valor de registro.",
 		"example": "move r? a(r?|num)",
 		"name": "move"
 	},
 	"mul": {
-		"description": "Register = a \\* b",
+		"description": "Registro = a \\* b",
 		"example": "mul r? a(r?|num) b(r?|num)",
 		"name": "mul"
 	},
 	"nor": {
-		"description": "Performs a bitwise logical NOR (NOT OR) operation on the binary representation of two values. Each bit of the result is determined by evaluating the corresponding bits of the input values. If both bits are 0, the resulting bit is set to 1. Otherwise, if at least one bit is 1, the resulting bit is set to 0.",
+		"description": "Executa uma operação lógica bit a bit do tipo NOR (NOT OR) na representação binária de dois valores. Cada bit do resultado é determinado pela avaliação dos bits correspondentes dos valores de entrada. Se ambos os bits forem 0, o bit resultante é definido como 1. Caso contrário, se pelo menos um bit for 1, o bit resultante é definido como 0.",
 		"example": "nor r? a(r?|num) b(r?|num)",
 		"name": "nor"
 	},
 	"not": {
-		"description": "Performs a bitwise logical NOT operation flipping each bit of the input value, resulting in a binary complement. If a bit is 1, it becomes 0, and if a bit is 0, it becomes 1.",
+		"description": "Executa uma operação lógica bit a bit do tipo NOT, invertendo cada bit do valor de entrada, resultando em um complemento binário. Se um bit for 1, ele se torna 0, e se um bit for 0, ele se torna 1.",
 		"example": "not r? a(r?|num)",
 		"name": "not"
 	},
 	"or": {
-		"description": "Performs a bitwise logical OR operation on the binary representation of two values. Each bit of the result is determined by evaluating the corresponding bits of the input values. If either bit is 1, the resulting bit is set to 1. If both bits are 0, the resulting bit is set to 0.",
+		"description": "Executa uma operação lógica bit a bit do tipo OR na representação binária de dois valores. Cada bit do resultado é determinado pela avaliação dos bits correspondentes dos valores de entrada. Se qualquer um dos bits for 1, o bit resultante é definido como 1. Se ambos os bits forem 0, o bit resultante é definido como 0.",
 		"example": "or r? a(r?|num) b(r?|num)",
 		"name": "or"
 	},
 	"peek": {
-		"description": "Register = the value at the top of the stack",
+		"description": "Registro = o valor no topo da pilha",
 		"example": "peek r?",
 		"name": "peek"
 	},
 	"poke": {
-		"description": "Stores the provided value at the provided address in the stack.",
+		"description": "Armazena o valor fornecido no endereço fornecido na pilha.",
 		"example": "poke address(r?|num) value(r?|num)",
 		"name": "poke"
 	},
 	"pop": {
-		"description": "Register = the value at the top of the stack and decrements sp",
+		"description": "Registro = o valor do topo da pilha e diminui sp",
 		"example": "pop r?",
 		"name": "pop"
 	},
 	"pow": {
-		"description": "Stores the result of raising a to the power of b in the register. Follows IEEE-754 standard for floating point arithmetic.",
+		"description": "Armazena o resultado de elevar 'a' à potência de 'b' no registro. Segue o padrão IEEE-754 para aritmética de ponto flutuante.",
 		"example": "pow r? a(r?|num) b(r?|num)",
 		"name": "pow"
 	},
 	"push": {
-		"description": "Pushes the value of a to the stack at sp and increments sp",
+		"description": "Coloca o valor de a na pilha em sp, e aumenta sp",
 		"example": "push a(r?|num)",
 		"name": "push"
 	},
 	"put": {
-		"description": "Using the provided device, attempts to write the provided value to the stack at the provided address.",
+		"description": "Usando o dispositivo fornecido, tenta gravar o valor fornecido na pilha no endereço fornecido.",
 		"example": "put device(d?|r?|id) address(r?|num) value(r?|num)",
 		"name": "put"
 	},
 	"putd": {
-		"description": "Seeks directly for the provided device id, attempts to write the provided value to the stack at the provided address.",
+		"description": "Procura diretamente o ID do dispositivo fornecido e tenta gravar o valor fornecido na pilha no endereço fornecido.",
 		"example": "putd id(r?|id) address(r?|num) value(r?|num)",
 		"name": "putd"
 	},
 	"rand": {
-		"description": "Register = a random value x with 0 &lt;= x &lt; 1",
+		"description": "Registro = um valor aleatório de x, sendo 0 &lt;= x &lt; 1",
 		"example": "rand r?",
 		"name": "rand"
 	},
 	"rmap": {
-		"description": "Given a reagent hash, store the corresponding prefab hash that the device expects to fulfill the reagent requirement. For example, on an autolathe, the hash for Iron will store the hash for ItemIronIngot.",
+		"description": "Dado um hash de reagente, armazene o hash do prefab correspondente que o dispositivo espera para atender ao requisito de reagente. Por exemplo, em um Torno Automático, o hash para Iron armazenará o hash do ItemIronIngot.",
 		"example": "rmap r? d? reagentHash(r?|num)",
 		"name": "rmap"
 	},
+	"rol": {
+		"description": "Performs a bitwise left rotation on the binary representation of a by b places, wrapping the bits shifted out of the most significant position back into the least significant position.",
+		"example": "rol r? a(r?|num) b(r?|num)",
+		"name": "rol"
+	},
+	"ror": {
+		"description": "Performs a bitwise right rotation on the binary representation of a by b places, wrapping the bits shifted out of the least significant position back into the most significant position.",
+		"example": "ror r? a(r?|num) b(r?|num)",
+		"name": "ror"
+	},
 	"round": {
-		"description": "Register = a rounded to nearest integer",
+		"description": "Registro = a arredondado para o inteiro mais próximo",
 		"example": "round r? a(r?|num)",
 		"name": "round"
 	},
 	"s": {
-		"description": "Stores register value to LogicType on device by housing index value.",
+		"description": "Armazena o valor do registro do LogicType no dispositivo pelo valor do índice do soquete.",
 		"example": "s device(d?|r?|id) logicType r?",
 		"name": "s"
 	},
 	"sap": {
-		"description": "Register = 1 if abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), otherwise 0",
+		"description": "Registro = 1 se abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), senão 0.",
 		"example": "sap r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "sap"
 	},
 	"sapz": {
-		"description": "Register = 1 if |a| &lt;= float.epsilon \\* 8, otherwise 0",
+		"description": "Registro = 1 se |a| &lt;= float.epsilon \\* 8, senão 0.",
 		"example": "sapz r? a(r?|num) b(r?|num)",
 		"name": "sapz"
 	},
 	"sb": {
-		"description": "Stores register value to LogicType on all output network devices with provided type hash.",
+		"description": "Armazena o valor de LogicType do registro em todos os dispositivos na rede de dispositivos de saída com o hash de tipo fornecido.",
 		"example": "sb deviceHash logicType r?",
 		"name": "sb"
 	},
 	"sbn": {
-		"description": "Stores register value to LogicType on all output network devices with provided type hash and name.",
+		"description": "Armazena o valor do registro de LogicType em todos os dispositivos de saída da rede com o hash de tipo e de nome fornecidos.",
 		"example": "sbn deviceHash nameHash logicType r?",
 		"name": "sbn"
 	},
 	"sbs": {
-		"description": "Stores register value to LogicSlotType on all output network devices with provided type hash in the provided slot.",
+		"description": "Armazena o valor de LogicSlotType do registro em todos os dispositivos na rede de dispositivos de saida com o hash de tipo no slot fornecido.",
 		"example": "sbs deviceHash slotIndex logicSlotType r?",
 		"name": "sbs"
 	},
 	"sd": {
-		"description": "Stores register value to LogicType on device by direct ID reference.",
+		"description": "Armazena o valor do registro do LogicType no dispositivo por referência de ID direta.",
 		"example": "sd id(r?|id) logicType r?",
 		"name": "sd"
 	},
 	"sdns": {
-		"description": "Register = 1 if device is not set, otherwise 0",
+		"description": "Registro = 1 se o dispositivo não está definido, senão 0.",
 		"example": "sdns r? device(d?|r?|id)",
 		"name": "sdns"
 	},
 	"sdse": {
-		"description": "Register = 1 if device is set, otherwise 0.",
+		"description": "Registro = 1 se o dispositivo está definido, senão 0.",
 		"example": "sdse r? device(d?|r?|id)",
 		"name": "sdse"
 	},
 	"select": {
-		"description": "Register = b if a is non-zero, otherwise c",
+		"description": "Registro = b se a não for zero, senão c",
 		"example": "select r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "select"
 	},
 	"seq": {
-		"description": "Register = 1 if a == b, otherwise 0",
+		"description": "Registro = 1 se a == b, senão 0.",
 		"example": "seq r? a(r?|num) b(r?|num)",
 		"name": "seq"
 	},
 	"seqz": {
-		"description": "Register = 1 if a == 0, otherwise 0",
+		"description": "Registro = 1 se a == 0, senão 0.",
 		"example": "seqz r? a(r?|num)",
 		"name": "seqz"
 	},
 	"sge": {
-		"description": "Register = 1 if a &gt;= b, otherwise 0",
+		"description": "Registro = 1 se a &gt;= b, senão 0.",
 		"example": "sge r? a(r?|num) b(r?|num)",
 		"name": "sge"
 	},
 	"sgez": {
-		"description": "Register = 1 if a &gt;= 0, otherwise 0",
+		"description": "Registro = 1 se a &gt;= 0, senão 0.",
 		"example": "sgez r? a(r?|num)",
 		"name": "sgez"
 	},
+	"sgn": {
+		"description": "Stores the sign of a in the register: -1 if a is negative, 1 if positive, and 0 if a is zero (or not a number).",
+		"example": "sgn r? a(r?|num)",
+		"name": "sgn"
+	},
 	"sgt": {
-		"description": "Register = 1 if a &gt; b, otherwise 0",
+		"description": "Registro = 1 se a &gt; b, senão 0.",
 		"example": "sgt r? a(r?|num) b(r?|num)",
 		"name": "sgt"
 	},
 	"sgtz": {
-		"description": "Register = 1 if a &gt; 0, otherwise 0",
+		"description": "Registro = 1 se a &gt; 0, senão 0.",
 		"example": "sgtz r? a(r?|num)",
 		"name": "sgtz"
 	},
 	"sin": {
-		"description": "Returns the sine of the specified angle (radians)",
+		"description": "Retorna o seno do ângulo especificado (radianos)",
 		"example": "sin r? a(r?|num)",
 		"name": "sin"
 	},
 	"sla": {
-		"description": "Performs a bitwise arithmetic left shift operation on the binary representation of a value. It shifts the bits to the left and fills the vacated rightmost bits with a copy of the sign bit (the most significant bit).",
+		"description": "Executa uma operação de deslocamento aritmético bit a bit para a esquerda na representação binária de um valor. Desloca os bits para a esquerda e preenche os bits mais à direita que ficaram vagos com uma cópia do bit de sinal (o bit mais significativo).",
 		"example": "sla r? a(r?|num) b(r?|num)",
 		"name": "sla"
 	},
 	"sle": {
-		"description": "Register = 1 if a &lt;= b, otherwise 0",
+		"description": "Registro = 1 se a  &lt;= b, senão 0.",
 		"example": "sle r? a(r?|num) b(r?|num)",
 		"name": "sle"
 	},
 	"sleep": {
-		"description": "Pauses execution on the IC for a seconds",
+		"description": "Pausa a execução no CI por a segundos",
 		"example": "sleep a(r?|num)",
 		"name": "sleep"
 	},
 	"slez": {
-		"description": "Register = 1 if a &lt;= 0, otherwise 0",
+		"description": "Registro = 1 se a &lt;= 0, senão 0.",
 		"example": "slez r? a(r?|num)",
 		"name": "slez"
 	},
 	"sll": {
-		"description": "Performs a bitwise logical left shift operation on the binary representation of a value. It shifts the bits to the left and fills the vacated rightmost bits with zeros.",
+		"description": "Executa uma operação de deslocamento lógico bit a bit para a esquerda na representação binária de um valor. Desloca os bits para a esquerda e preenche os bits mais à direita que ficaram vagos com zeros.",
 		"example": "sll r? a(r?|num) b(r?|num)",
 		"name": "sll"
 	},
 	"slt": {
-		"description": "Register = 1 if a &lt; b, otherwise 0",
+		"description": "Registro = 1 se a &lt; b, senão 0.",
 		"example": "slt r? a(r?|num) b(r?|num)",
 		"name": "slt"
 	},
 	"sltz": {
-		"description": "Register = 1 if a &lt; 0, otherwise 0",
+		"description": "Registro = 1 se a &lt; 0, senão 0.",
 		"example": "sltz r? a(r?|num)",
 		"name": "sltz"
 	},
 	"sna": {
-		"description": "Register = 1 if abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), otherwise 0",
+		"description": "Registro = 1 se abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), senão 0.",
 		"example": "sna r? a(r?|num) b(r?|num) c(r?|num)",
 		"name": "sna"
 	},
 	"snan": {
-		"description": "Register = 1 if a is NaN, otherwise 0",
+		"description": "Registro = 1 se a é NaN, senão 0.",
 		"example": "snan r? a(r?|num)",
 		"name": "snan"
 	},
 	"snanz": {
-		"description": "Register = 0 if a is NaN, otherwise 1",
+		"description": "Registro = 0 se a é NaN, senão 1.",
 		"example": "snanz r? a(r?|num)",
 		"name": "snanz"
 	},
 	"snaz": {
-		"description": "Register = 1 if |a| &gt; float.epsilon, otherwise 0",
+		"description": "Registro = 1 se |a| &gt; float.epsilon, senão 0.",
 		"example": "snaz r? a(r?|num) b(r?|num)",
 		"name": "snaz"
 	},
 	"sne": {
-		"description": "Register = 1 if a != b, otherwise 0",
+		"description": "Registro = 1 se a != b, senão 0.",
 		"example": "sne r? a(r?|num) b(r?|num)",
 		"name": "sne"
 	},
 	"snez": {
-		"description": "Register = 1 if a != 0, otherwise 0",
+		"description": "Registro = 1 se a != 0, senão 0.",
 		"example": "snez r? a(r?|num)",
 		"name": "snez"
 	},
 	"sqrt": {
-		"description": "Register = square root of a",
+		"description": "Registro = raiz quadrada de a",
 		"example": "sqrt r? a(r?|num)",
 		"name": "sqrt"
 	},
 	"sra": {
-		"description": "Performs a bitwise arithmetic right shift operation on the binary representation of a value. It shifts the bits to the right and fills the vacated leftmost bits with a copy of the sign bit (the most significant bit).",
+		"description": "Executa uma operação de deslocamento aritmético bit a bit para a direita na representação binária de um valor. Desloca os bits para a direita e preenche os bits mais à esquerda que ficaram vagos com uma cópia do bit de sinal (o bit mais significativo).",
 		"example": "sra r? a(r?|num) b(r?|num)",
 		"name": "sra"
 	},
 	"srl": {
-		"description": "Performs a bitwise logical right shift operation on the binary representation of a value. It shifts the bits to the right and fills the vacated leftmost bits with zeros",
+		"description": "Executa uma operação de deslocamento lógico bit a bit para a direita na representação binária de um valor. Desloca os bits para a direita e preenche os bits mais à esquerda vazios com zeros.",
 		"example": "srl r? a(r?|num) b(r?|num)",
 		"name": "srl"
 	},
 	"ss": {
-		"description": "Stores register value to device stored in a slot LogicSlotType on device.",
+		"description": "Armazena o valor do registro no dispositivo armazenado num slot de LogicSlotType no dispositivo.",
 		"example": "ss device(d?|r?|id) slotIndex logicSlotType r?",
 		"name": "ss"
 	},
 	"sub": {
-		"description": "Register = a - b.",
+		"description": "Registro = a - b",
 		"example": "sub r? a(r?|num) b(r?|num)",
 		"name": "sub"
 	},
 	"tan": {
-		"description": "Returns the tan of the specified angle (radians)",
+		"description": "Retorna a tangente do ângulo especificado (radianos)",
 		"example": "tan r? a(r?|num)",
 		"name": "tan"
 	},
 	"trunc": {
-		"description": "Register = a with fractional part removed",
+		"description": "Registro = a com a parte fracional removida",
 		"example": "trunc r? a(r?|num)",
 		"name": "trunc"
 	},
 	"xor": {
-		"description": "Performs a bitwise logical XOR (exclusive OR) operation on the binary representation of two values. Each bit of the result is determined by evaluating the corresponding bits of the input values. If the bits are different (one bit is 0 and the other is 1), the resulting bit is set to 1. If the bits are the same (both 0 or both 1), the resulting bit is set to 0.",
+		"description": "Executa uma operação lógica bit a bit do tipo XOR (OU exclusivo) na representação binária de dois valores. Cada bit do resultado é determinado pela avaliação dos bits correspondentes dos valores de entrada. Se os bits forem diferentes (um bit for 0 e o outro for 1), o bit resultante é definido como 1. Se os bits forem iguais (ambos 0 ou ambos 1), o bit resultante é definido como 0.",
 		"example": "xor r? a(r?|num) b(r?|num)",
 		"name": "xor"
 	},
 	"yield": {
-		"description": "Pauses execution for 1 tick",
+		"description": "Pausa a execução por um 1 tick",
 		"example": "yield",
 		"name": "yield"
 	}
