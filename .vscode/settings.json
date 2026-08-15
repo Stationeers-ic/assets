@@ -29,5 +29,6 @@
 		"darwin-arm64": "./tools/bin/darwin-arm64/biome",
 		"win32-x64": "./tools/bin/win/biome.exe"
 	},
-	"i18n-ally.localesPaths": ["./nolang"]
+	"i18n-ally.localesPaths": ["./nolang"],
+	"liveServer.settings.root": "./dist"
 }
