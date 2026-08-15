@@ -5,7 +5,7 @@
 		"name": "abs"
 	},
 	"acos": {
-		"description": "指定された角度 (ラジアン)のコサインを返します。",
+		"description": "指定された値に余弦が一致する角度 (ラジアン)を返します。",
 		"example": "acos r? a(r?|num)",
 		"name": "acos"
 	},
@@ -45,7 +45,7 @@
 		"name": "bap"
 	},
 	"bapal": {
-		"description": "a != b の場合は c 行に分岐し、次の行番号を ra に格納します。",
+		"description": "abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) の場合、d 行に分岐し、次の行番号を ra に格納します。",
 		"example": "bapal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bapal"
 	},

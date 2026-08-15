@@ -5,7 +5,7 @@
 		"name": "abs"
 	},
 	"acos": {
-		"description": "Gibt den Kosinus des angegebenen Winkels zurück (im Bogenmaß)",
+		"description": "Gibt den Winkel (Bogenmaß) zurück, dessen Kosinus den angegebenen Wert hat",
 		"example": "acos r? a(r?|num)",
 		"name": "acos"
 	},
@@ -45,7 +45,7 @@
 		"name": "bap"
 	},
 	"bapal": {
-		"description": "Verzweige zu Zeile c, wenn a != b und speichere die nächste Zeilennummer in ra",
+		"description": "Verzweige zu Zeile d, wenn abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) und speichere die nächste Zeilennummer in ra",
 		"example": "bapal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bapal"
 	},

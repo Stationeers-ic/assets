@@ -5,7 +5,7 @@
 		"name": "abs"
 	},
 	"acos": {
-		"description": "Registe = le cosinus de l'angle a (en radians)",
+		"description": "Registe = l'angle (en radians) dont le cosinus est a",
 		"example": "acos r? a(r?|num)",
 		"name": "acos"
 	},
@@ -45,7 +45,7 @@
 		"name": "bap"
 	},
 	"bapal": {
-		"description": "Saute à la ligne c si a != b et stocke le numéro de la ligne suivante dans ra",
+		"description": "Saute à la ligne d si abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) et stocke le numéro de la ligne suivante dans ra (float.epsilon représente la plus petite différence entre deux nombres flottants distincts. C'est essentiellement la précision minimale ou la tolérance au-delà de laquelle les nombres flottants sont considérés comme différents)",
 		"example": "bapal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bapal"
 	},

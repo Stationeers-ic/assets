@@ -5,7 +5,7 @@
 		"name": "abs"
 	},
 	"acos": {
-		"description": "Returns the cosine of the specified angle (radians)",
+		"description": "Returns the angle (radians) whos cosine is the specified value",
 		"example": "acos r? a(r?|num)",
 		"name": "acos"
 	},
@@ -45,7 +45,7 @@
 		"name": "bap"
 	},
 	"bapal": {
-		"description": "Branch to line c if a != b and store next line number in ra",
+		"description": "Branch to line d if abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) and store next line number in ra",
 		"example": "bapal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bapal"
 	},
@@ -195,7 +195,7 @@
 		"name": "bna"
 	},
 	"bnaal": {
-		"description": "Branch to line d if abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) and store next line number in ra",
+		"description": "Branch to line d if abs(a - b) &gt; max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) and store next line number in ra",
 		"example": "bnaal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bnaal"
 	},

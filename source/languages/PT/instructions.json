@@ -45,7 +45,7 @@
 		"name": "bap"
 	},
 	"bapal": {
-		"description": "Salta para linha c se a != b e guarda a próxima linha no ra",
+		"description": "Salta para linha d se abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) e guarda a próxima linha no ra",
 		"example": "bapal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bapal"
 	},

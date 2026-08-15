@@ -5,7 +5,7 @@
 		"name": "abs"
 	},
 	"acos": {
-		"description": "Vrací kosinus zadaného úhlu",
+		"description": "Vrátí úhel, jehož kosinus je zadaná hodnota",
 		"example": "acos r? a(r?|num)",
 		"name": "acos"
 	},
@@ -45,7 +45,7 @@
 		"name": "bap"
 	},
 	"bapal": {
-		"description": "Větev na řádek C, pokud A != B, a uložte další číslo řádku v ra",
+		"description": "Větev na řádek D, pokud abs (A - B) &lt;= max(c \\* max(abs(A), abs(B)), float.epsilon \\* 8) a další číslo řádku uložte do ra",
 		"example": "bapal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bapal"
 	},

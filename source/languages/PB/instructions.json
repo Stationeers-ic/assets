@@ -5,7 +5,7 @@
 		"name": "abs"
 	},
 	"acos": {
-		"description": "Retorna o cosseno do ângulo especificado (radianos)",
+		"description": "Retorna o ângulo (radianos) cujo cosseno é o valor especificado",
 		"example": "acos r? a(r?|num)",
 		"name": "acos"
 	},
@@ -45,7 +45,7 @@
 		"name": "bap"
 	},
 	"bapal": {
-		"description": "Passa para linha c se a != b e armazena o número da próxima linha em ra",
+		"description": "Passa para linha d se abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8) e armazena o número da próxima linha em ra",
 		"example": "bapal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bapal"
 	},

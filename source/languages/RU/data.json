@@ -20075,7 +20075,13 @@
 		"RocketEngineExhaustVelocity": null,
 		"RocketEngineForce": null,
 		"RocketMass": null,
-		"SlotInserts": [],
+		"SlotInserts": [
+			{
+				"SlotIndex": "0",
+				"SlotName": "",
+				"SlotType": ""
+			}
+		],
 		"SortPriority": 0,
 		"SpecificHeatText": null,
 		"StackSizeText": "50",
@@ -20087,7 +20093,7 @@
 		"UsedIn": [],
 		"Volume": null,
 		"prefab": "ItemCableCoil",
-		"tags": ["HasImage", "HasPrefab", "Item", "Stackable"]
+		"tags": ["HasImage", "HasPrefab", "HasSlot", "Item", "Stackable"]
 	},
 	"ItemCableCoilHeavy": {
 		"AutoIgnitionText": "523 K (250<sup>o</sup>C)",
@@ -20099,52 +20105,70 @@
 		"ConstructWithText": null,
 		"ConstructedByKits": [
 			{
+				"NameOfThing": "Heavy Cable (Straight 10)",
+				"PageLink": "ThingStructureCableStraightH10",
+				"PrefabHash": -1611697282,
+				"image": "wiki_data/source/images/5/6/56591e869839ab01277fa4f95f711358.png"
+			},
+			{
+				"NameOfThing": "Heavy Cable (Straight 3)",
+				"PageLink": "ThingStructureCableStraightH3",
+				"PrefabHash": -1309422980,
+				"image": "wiki_data/source/images/6/f/6f5caa27cdbf65ef7ea5de90d4c817d8.png"
+			},
+			{
+				"NameOfThing": "Heavy Cable (Straight 5)",
+				"PageLink": "ThingStructureCableStraightH5",
+				"PrefabHash": 1485860681,
+				"image": "wiki_data/source/images/2/c/2c459ed60b3670dcae1186f0587fdb69.png"
+			},
+			{
 				"NameOfThing": "Силовой кабель (3-конечный)",
 				"PageLink": "ThingStructureCableCornerH3",
 				"PrefabHash": -1843379322,
-				"image": "wiki_data/source/images/f/4/f4a1d2123e919fa7b1f23e9e6b70b032.png"
+				"image": "wiki_data/source/images/9/b/9bedc91bf533ba3f50985fb43993cd99.png"
 			},
 			{
 				"NameOfThing": "Силовой кабель (4-конечный)",
 				"PageLink": "ThingStructureCableCornerH4",
 				"PrefabHash": 205837861,
-				"image": "wiki_data/source/images/5/d/5d886729e38d4e2b1ec58a9875d29f61.png"
+				"image": "wiki_data/source/images/1/0/10395980f7dfb1d45ccd5824e1b21e5c.png"
 			},
 			{
 				"NameOfThing": "Силовой кабель (5-конечный)",
 				"PageLink": "ThingStructureCableJunctionH5",
 				"PrefabHash": -1530571426,
-				"image": "wiki_data/source/images/e/3/e3d56748a0c9a4400f53e188c1c26e5e.png"
+				"image": "wiki_data/source/images/8/c/8ccc98146f9c28e26fd27a2b6583d092.png"
 			},
 			{
 				"NameOfThing": "Силовой кабель (6-конечный)",
 				"PageLink": "ThingStructureCableJunctionH6",
 				"PrefabHash": 1036780772,
-				"image": "wiki_data/source/images/7/4/74fb4200481454b533c19380e275ba5a.png"
+				"image": "wiki_data/source/images/3/c/3c21d68d966164f59435746106e4e8b4.png"
 			},
 			{
 				"NameOfThing": "Силовой кабель (Прямой)",
 				"PageLink": "ThingStructureCableStraightH",
 				"PrefabHash": -146200530,
-				"image": "wiki_data/source/images/f/4/f459e2190f1146c97d9c569e95524e00.png"
+				"image": "wiki_data/source/images/3/6/36058a0b44e415742df9262664f21766.png"
 			},
 			{
 				"NameOfThing": "Силовой кабель (Т-образный)",
 				"PageLink": "ThingStructureCableJunctionH",
 				"PrefabHash": 469451637,
-				"image": "wiki_data/source/images/0/f/0fbd6c4403a8d1fd03bfe10b81ca692a.png"
+				"image": "wiki_data/source/images/9/a/9a3f71c9cec71e0b2849b015b3fc7188.png"
 			},
 			{
 				"NameOfThing": "Силовой кабель (Угловой)",
 				"PageLink": "ThingStructureCableCornerH",
 				"PrefabHash": -39359015,
-				"image": "wiki_data/source/images/0/5/057dceed3317e52559f5a032af9d8458.png"
+				"image": "wiki_data/source/images/2/c/2ce6a8509d8a76e82f7e7e511b21e2ab.png"
 			},
 			{
 				"NameOfThing": "Силовой кабель (Х-образный)",
 				"PageLink": "ThingStructureCableJunctionH4",
 				"PrefabHash": -742234680,
-				"image": "wiki_data/source/images/4/d/4d7f7eaf388897fe190840c07485c98c.png"
+				"image": "wiki_data/source/images/9/6/9625e3c22feb3b057b5b49342f3965a1.png"
 			}
 		],
 		"ConstructedThings": [],
@@ -20181,7 +20205,7 @@
 		"LogicInsert": [],
 		"LogicInstructions": [],
 		"LogicSlotInsert": [],
-		"MainImage": "wiki_data/source/images/4/c/4c82c8a4005a3a90a75f879ecc07b327.png",
+		"MainImage": "wiki_data/source/images/7/3/73ec85617408e88ccfbbb30a3a237adb.png",
 		"MaxLiquidTemperatureText": null,
 		"MaxPressure": null,
 		"MemoryAccess": null,
@@ -20484,6 +20508,281 @@
 		"Volume": null,
 		"prefab": "ItemCableFuse",
 		"tags": ["HasImage", "HasPrefab", "Item", "Stackable"]
+	},
+	"ItemCableGun": {
+		"AutoIgnitionText": "523 K (250<sup>o</sup>C)",
+		"BasePowerDraw": null,
+		"BoilingTemperatureText": null,
+		"BuildStates": [],
+		"CableBreakText": null,
+		"ConnectionInsert": [],
+		"ConstructWithText": null,
+		"ConstructedByKits": [],
+		"ConstructedThings": [],
+		"ConvectionFactorText": null,
+		"CustomSpriteToUse": null,
+		"Description": "Create long straight cable sections easily.\n\nWorks with <a data-href=\"ThingItemCableCoil\"><span style=\"color: green\">Моток кабеля</span></a>, <a data-href=\"ThingItemCableCoilHeavy\"><span style=\"color: green\">Моток кабеля (Силовой)</span></a> and <a data-href=\"ThingItemCableCoilSuperHeavy\"><span style=\"color: green\">Моток кабеля (Сверхтяжёлый)</span></a>. The Cable Gun will use the long cable variant pieces wherever possible.\n\nThe Cable Gun cannot merge its cables will cables that are already placed.\n\nA run can only be as long as the coil loaded in the gun allows; coils on an <a data-href=\"ThingItemCableToolBelt\"><span style=\"color: green\">Electrical Belt</span></a> do not extend it. When the loaded coil runs out, a matching coil from the belt is loaded into the gun automatically.",
+		"DeviceConnectCount": 0,
+		"DisplayFilter": 0,
+		"DrillHeadProperties": null,
+		"FlashpointText": "",
+		"FoundInGas": [],
+		"FoundInOre": [],
+		"FreezeTemperatureText": null,
+		"GasType": 0,
+		"GrowthTime": null,
+		"HasMemory": false,
+		"HowToBuild": [
+			{
+				"Description": "<span style=\"color: yellow\">2000</span> x <a data-href=\"EnergyPage\"><span style=\"color: rgba(0,128,255,1)\">Energy</span></a>\r\n<span style=\"color: yellow\">10</span> x <a data-href=\"ReagentSteel\"><span style=\"color: rgb(181,102,255)\">Сталь</span></a> из <a data-href=\"ThingItemSteelIngot\"><span style=\"color: green\">Слиток (Сталь)</span></a>\r\n<span style=\"color: yellow\">10</span> x <a data-href=\"ReagentSolder\"><span style=\"color: rgb(181,102,255)\">Припой</span></a> из <a data-href=\"ThingItemSolderIngot\"><span style=\"color: green\">Слиток (Припой)</span></a>\r\n<span style=\"color: yellow\">10</span> x <a data-href=\"ReagentAstroloy\"><span style=\"color: rgb(181,102,255)\">Астролой</span></a> из <a data-href=\"ThingItemAstroloyIngot\"><span style=\"color: green\">Слиток (Астролой)</span></a>\r\n\r\n",
+				"Details": null,
+				"PageLink": "ThingStructureToolManufactory",
+				"PrinterName": "<a data-href=\"ThingStructureToolManufactory\"><span style=\"color: green\">Фабрика инструментов</span></a>",
+				"TierName": "Второй уровнь",
+				"image": "wiki_data/source/images/8/1/81b25a167029ffc9d694378d696e69e8.png"
+			}
+		],
+		"ID": "ItemCableGun",
+		"ImportantPage": false,
+		"InternalAtmosInfoText": null,
+		"Key": "ThingItemCableGun",
+		"Lang": "RU",
+		"LatentHeatText": null,
+		"LifeRequirements": [],
+		"LogicInsert": [
+			{
+				"LogicAccessTypes": "Чтение",
+				"LogicName": "<a data-href=\"LogicTypePrefabHash\"><span style=\"color: orange\">PrefabHash</span></a>"
+			},
+			{
+				"LogicAccessTypes": "Чтение",
+				"LogicName": "<a data-href=\"LogicTypeReferenceId\"><span style=\"color: orange\">ReferenceId</span></a>"
+			},
+			{
+				"LogicAccessTypes": "Чтение/Запись",
+				"LogicName": "<a data-href=\"LogicTypeOn\"><span style=\"color: orange\">On</span></a>"
+			}
+		],
+		"LogicInstructions": [],
+		"LogicSlotInsert": [
+			{
+				"LogicAccessTypes": "0",
+				"LogicName": "<a data-href=\"LogicSlotTypeCharge\"><span style=\"color: orange\">Charge</span></a>"
+			},
+			{
+				"LogicAccessTypes": "0",
+				"LogicName": "<a data-href=\"LogicSlotTypeChargeRatio\"><span style=\"color: orange\">ChargeRatio</span></a>"
+			},
+			{
+				"LogicAccessTypes": "0, 1",
+				"LogicName": "<a data-href=\"LogicSlotTypeClass\"><span style=\"color: orange\">Class</span></a>"
+			},
+			{
+				"LogicAccessTypes": "0, 1",
+				"LogicName": "<a data-href=\"LogicSlotTypeDamage\"><span style=\"color: orange\">Damage</span></a>"
+			},
+			{
+				"LogicAccessTypes": "0, 1",
+				"LogicName": "<a data-href=\"LogicSlotTypeMaxQuantity\"><span style=\"color: orange\">MaxQuantity</span></a>"
+			},
+			{
+				"LogicAccessTypes": "0, 1",
+				"LogicName": "<a data-href=\"LogicSlotTypeOccupantHash\"><span style=\"color: orange\">OccupantHash</span></a>"
+			},
+			{
+				"LogicAccessTypes": "0, 1",
+				"LogicName": "<a data-href=\"LogicSlotTypeOccupied\"><span style=\"color: orange\">Occupied</span></a>"
+			},
+			{
+				"LogicAccessTypes": "0, 1",
+				"LogicName": "<a data-href=\"LogicSlotTypePrefabHash\"><span style=\"color: orange\">PrefabHash</span></a>"
+			},
+			{
+				"LogicAccessTypes": "0, 1",
+				"LogicName": "<a data-href=\"LogicSlotTypeQuantity\"><span style=\"color: orange\">Quantity</span></a>"
+			},
+			{
+				"LogicAccessTypes": "0, 1",
+				"LogicName": "<a data-href=\"LogicSlotTypeReferenceId\"><span style=\"color: orange\">ReferenceId</span></a>"
+			}
+		],
+		"MainImage": "wiki_data/source/images/d/e/de1b3394a2e8cf1c5ca4a4e5dd264316.png",
+		"MaxLiquidTemperatureText": null,
+		"MaxPressure": null,
+		"MemoryAccess": null,
+		"MemorySize": null,
+		"MinLiquidPressure": null,
+		"ModeInsert": [],
+		"MolesPerLitreText": null,
+		"Nutrition": null,
+		"PageCustomCategories": [],
+		"PaintableText": "Да",
+		"PlaceableInRocket": null,
+		"PrefabHash": 272902242,
+		"PrefabHashString": "272902242",
+		"PrefabName": "ItemCableGun",
+		"PressureBreakText": null,
+		"ProducedThingsInserts": [],
+		"RadiationFactorText": null,
+		"ReagentsHash": 0,
+		"ReagentsText": null,
+		"ReagentsType": null,
+		"ResourcesUsed": [],
+		"RocketEngineEfficiency": null,
+		"RocketEngineExhaustVelocity": null,
+		"RocketEngineForce": null,
+		"RocketMass": null,
+		"SlotInserts": [
+			{
+				"SlotIndex": "0",
+				"SlotName": "Батарея",
+				"SlotType": "Батарея",
+				"image": "wiki_data/source/images/8/5/85a5804ec62499f2f3ab5e6d20af01c1.png"
+			},
+			{
+				"SlotIndex": "1",
+				"SlotName": "Cable Ammo",
+				"SlotType": "Cable Ammo"
+			}
+		],
+		"SortPriority": 0,
+		"SpecificHeatText": null,
+		"StackSizeText": null,
+		"StructVersionInsert": [],
+		"TYPE": "object",
+		"Text": "",
+		"Title": "Cable Gun",
+		"UnitText": null,
+		"UsedIn": [],
+		"Volume": null,
+		"prefab": "ItemCableGun",
+		"tags": ["HasImage", "HasLogic", "HasPrefab", "HasSlot", "Item"]
+	},
+	"ItemCableToolBelt": {
+		"AutoIgnitionText": "",
+		"BasePowerDraw": null,
+		"BoilingTemperatureText": null,
+		"BuildStates": [],
+		"CableBreakText": null,
+		"ConnectionInsert": [],
+		"ConstructWithText": null,
+		"ConstructedByKits": [],
+		"ConstructedThings": [],
+		"ConvectionFactorText": null,
+		"CustomSpriteToUse": null,
+		"Description": "A belt with two tool slots and six slots restricted to <a data-href=\"ThingItemCableCoil\"><span style=\"color: green\">Моток кабеля</span></a>, <a data-href=\"ThingItemCableCoilHeavy\"><span style=\"color: green\">Моток кабеля (Силовой)</span></a> and <a data-href=\"ThingItemCableCoilSuperHeavy\"><span style=\"color: green\">Моток кабеля (Сверхтяжёлый)</span></a>.\n\nWhen worn, the belt reloads the <a data-href=\"ThingItemCableGun\"><span style=\"color: green\">Cable Gun</span></a> with a matching coil once the gun&#39;s own coil is empty, and catches deconstructed cable that will not fit in your hands.",
+		"DeviceConnectCount": 0,
+		"DisplayFilter": 0,
+		"DrillHeadProperties": null,
+		"FlashpointText": "",
+		"FoundInGas": [],
+		"FoundInOre": [],
+		"FreezeTemperatureText": null,
+		"GasType": 0,
+		"GrowthTime": null,
+		"HasMemory": false,
+		"HowToBuild": [
+			{
+				"Description": "<span style=\"color: yellow\">500</span> x <a data-href=\"EnergyPage\"><span style=\"color: rgba(0,128,255,1)\">Energy</span></a>\r\n<span style=\"color: yellow\">3</span> x <a data-href=\"ReagentIron\"><span style=\"color: rgb(181,102,255)\">Железо</span></a> из <a data-href=\"ThingItemIronIngot\"><span style=\"color: green\">Слиток (Железо)</span></a>\r\n\r\n",
+				"Details": null,
+				"PageLink": "ThingStructureToolManufactory",
+				"PrinterName": "<a data-href=\"ThingStructureToolManufactory\"><span style=\"color: green\">Фабрика инструментов</span></a>",
+				"TierName": "Первый уровень",
+				"image": "wiki_data/source/images/8/1/81b25a167029ffc9d694378d696e69e8.png"
+			}
+		],
+		"ID": "ItemCableToolBelt",
+		"ImportantPage": false,
+		"InternalAtmosInfoText": null,
+		"Key": "ThingItemCableToolBelt",
+		"Lang": "RU",
+		"LatentHeatText": null,
+		"LifeRequirements": [],
+		"LogicInsert": [],
+		"LogicInstructions": [],
+		"LogicSlotInsert": [],
+		"MainImage": "wiki_data/source/images/4/f/4f368aa2b33ac637357911f8ed188115.png",
+		"MaxLiquidTemperatureText": null,
+		"MaxPressure": null,
+		"MemoryAccess": null,
+		"MemorySize": null,
+		"MinLiquidPressure": null,
+		"ModeInsert": [],
+		"MolesPerLitreText": null,
+		"Nutrition": null,
+		"PageCustomCategories": [],
+		"PaintableText": "Да",
+		"PlaceableInRocket": null,
+		"PrefabHash": 975362046,
+		"PrefabHashString": "975362046",
+		"PrefabName": "ItemCableToolBelt",
+		"PressureBreakText": null,
+		"ProducedThingsInserts": [],
+		"RadiationFactorText": null,
+		"ReagentsHash": 0,
+		"ReagentsText": null,
+		"ReagentsType": null,
+		"ResourcesUsed": [],
+		"RocketEngineEfficiency": null,
+		"RocketEngineExhaustVelocity": null,
+		"RocketEngineForce": null,
+		"RocketMass": null,
+		"SlotInserts": [
+			{
+				"SlotIndex": "0",
+				"SlotName": "Инструмент",
+				"SlotType": "Инструмент",
+				"image": "wiki_data/source/images/c/5/c513ee0d0e958f6ffdb78a8cfef05660.png"
+			},
+			{
+				"SlotIndex": "1",
+				"SlotName": "Инструмент",
+				"SlotType": "Инструмент",
+				"image": "wiki_data/source/images/c/5/c513ee0d0e958f6ffdb78a8cfef05660.png"
+			},
+			{
+				"SlotIndex": "2",
+				"SlotName": "Cable Ammo",
+				"SlotType": "Cable Ammo"
+			},
+			{
+				"SlotIndex": "3",
+				"SlotName": "Cable Ammo",
+				"SlotType": "Cable Ammo"
+			},
+			{
+				"SlotIndex": "4",
+				"SlotName": "Cable Ammo",
+				"SlotType": "Cable Ammo"
+			},
+			{
+				"SlotIndex": "5",
+				"SlotName": "Cable Ammo",
+				"SlotType": "Cable Ammo"
+			},
+			{
+				"SlotIndex": "6",
+				"SlotName": "Cable Ammo",
+				"SlotType": "Cable Ammo"
+			},
+			{
+				"SlotIndex": "7",
+				"SlotName": "Cable Ammo",
+				"SlotType": "Cable Ammo"
+			}
+		],
+		"SortPriority": 0,
+		"SpecificHeatText": null,
+		"StackSizeText": null,
+		"StructVersionInsert": [],
+		"TYPE": "object",
+		"Text": "",
+		"Title": "Electrical Belt",
+		"UnitText": null,
+		"UsedIn": [],
+		"Volume": null,
+		"prefab": "ItemCableToolBelt",
+		"tags": ["HasImage", "HasPrefab", "HasSlot", "Item"]
 	},
 	"ItemCannedCondensedMilk": {
 		"AutoIgnitionText": "573 K (300<sup>o</sup>C)",
@@ -54102,6 +54401,102 @@
 		"UsedIn": [],
 		"Volume": null,
 		"prefab": "ItemKitPortablesConnector",
+		"tags": ["HasImage", "HasPrefab", "Item", "Kit", "Stackable"]
+	},
+	"ItemKitPowerPylon": {
+		"AutoIgnitionText": "573 K (300<sup>o</sup>C)",
+		"BasePowerDraw": null,
+		"BoilingTemperatureText": null,
+		"BuildStates": [],
+		"CableBreakText": null,
+		"ConnectionInsert": [],
+		"ConstructWithText": null,
+		"ConstructedByKits": [
+			{
+				"NameOfThing": "Power Pylon Terminus",
+				"PageLink": "ThingStructurePowerPylonTerminus",
+				"PrefabHash": -1234910677,
+				"image": "wiki_data/source/images/8/f/8fc0596418578bf741e98a09a91048af.png"
+			},
+			{
+				"NameOfThing": "Power Pylon",
+				"PageLink": "ThingStructurePowerPylon",
+				"PrefabHash": 980657345,
+				"image": "wiki_data/source/images/f/4/f4d036b79d5c063704743f29f34538ad.png"
+			}
+		],
+		"ConstructedThings": [],
+		"ConvectionFactorText": null,
+		"CustomSpriteToUse": null,
+		"Description": "Builds every part of a power pylon line.\n\nTwo kits raise a <a data-href=\"ThingStructurePowerPylon\"><span style=\"color: green\">Power Pylon</span></a>, and one kit places a <a data-href=\"ThingStructurePowerPylonTerminus\"><span style=\"color: green\">Power Pylon Terminus</span></a>.\n\nThe line itself is strung separately, using <a data-href=\"ThingItemCableCoilSuperHeavy\"><span style=\"color: green\">Моток кабеля (Сверхтяжёлый)</span></a>.",
+		"DeviceConnectCount": 0,
+		"DisplayFilter": 0,
+		"DrillHeadProperties": null,
+		"FlashpointText": "373 K (100<sup>o</sup>C)",
+		"FoundInGas": [],
+		"FoundInOre": [],
+		"FreezeTemperatureText": null,
+		"GasType": 0,
+		"GrowthTime": null,
+		"HasMemory": false,
+		"HowToBuild": [
+			{
+				"Description": "<span style=\"color: yellow\">24000</span> x <a data-href=\"EnergyPage\"><span style=\"color: rgba(0,128,255,1)\">Energy</span></a>\r\n<span style=\"color: yellow\">15</span> x <a data-href=\"ReagentSteel\"><span style=\"color: rgb(181,102,255)\">Сталь</span></a> из <a data-href=\"ThingItemSteelIngot\"><span style=\"color: green\">Слиток (Сталь)</span></a>\r\n\r\n",
+				"Details": null,
+				"PageLink": "ThingStructureElectronicsPrinter",
+				"PrinterName": "<a data-href=\"ThingStructureElectronicsPrinter\"><span style=\"color: green\">Принтер электроники</span></a>",
+				"TierName": "Второй уровнь",
+				"image": "wiki_data/source/images/1/7/179ac0ec0d0a066c49efda8616899470.png"
+			}
+		],
+		"ID": "ItemKitPowerPylon",
+		"ImportantPage": false,
+		"InternalAtmosInfoText": null,
+		"Key": "ThingItemKitPowerPylon",
+		"Lang": "RU",
+		"LatentHeatText": null,
+		"LifeRequirements": [],
+		"LogicInsert": [],
+		"LogicInstructions": [],
+		"LogicSlotInsert": [],
+		"MainImage": "wiki_data/source/images/b/2/b203d6c15fd5cec30e25ee100251adb2.png",
+		"MaxLiquidTemperatureText": null,
+		"MaxPressure": null,
+		"MemoryAccess": null,
+		"MemorySize": null,
+		"MinLiquidPressure": null,
+		"ModeInsert": [],
+		"MolesPerLitreText": null,
+		"Nutrition": null,
+		"PageCustomCategories": [],
+		"PaintableText": "Нет",
+		"PlaceableInRocket": null,
+		"PrefabHash": 824902754,
+		"PrefabHashString": "824902754",
+		"PrefabName": "ItemKitPowerPylon",
+		"PressureBreakText": null,
+		"ProducedThingsInserts": [],
+		"RadiationFactorText": null,
+		"ReagentsHash": 0,
+		"ReagentsText": null,
+		"ReagentsType": null,
+		"ResourcesUsed": [],
+		"RocketEngineEfficiency": null,
+		"RocketEngineExhaustVelocity": null,
+		"RocketEngineForce": null,
+		"RocketMass": null,
+		"SlotInserts": [],
+		"SortPriority": 0,
+		"SpecificHeatText": null,
+		"StackSizeText": "10",
+		"StructVersionInsert": [],
+		"TYPE": "object",
+		"Text": "",
+		"Title": "Kit (Power Pylon)",
+		"UnitText": null,
+		"UsedIn": [],
+		"Volume": null,
+		"prefab": "ItemKitPowerPylon",
 		"tags": ["HasImage", "HasPrefab", "Item", "Kit", "Stackable"]
 	},
 	"ItemKitPowerTransmitter": {
@@ -134617,7 +135012,7 @@
 				"PageLink": null,
 				"PrinterName": "",
 				"TierName": null,
-				"image": "wiki_data/source/images/1/7/17c1de47b3b4475697c969c926d993b9.png"
+				"image": "wiki_data/source/images/8/9/8980bb8bac0137675f5dc65ec62b38e1.png"
 			}
 		],
 		"CableBreakText": null,
@@ -134649,7 +135044,7 @@
 		"LogicInsert": [],
 		"LogicInstructions": [],
 		"LogicSlotInsert": [],
-		"MainImage": "wiki_data/source/images/1/7/17c1de47b3b4475697c969c926d993b9.png",
+		"MainImage": "wiki_data/source/images/8/9/8980bb8bac0137675f5dc65ec62b38e1.png",
 		"MaxLiquidTemperatureText": null,
 		"MaxPressure": null,
 		"MemoryAccess": null,
@@ -134897,7 +135292,7 @@
 				"PageLink": null,
 				"PrinterName": "",
 				"TierName": null,
-				"image": "wiki_data/source/images/4/e/4e9890fa785e1e26bc1d8ddfaddd8510.png"
+				"image": "wiki_data/source/images/9/2/92d97f081eced0fe05be998cf6664e8f.png"
 			}
 		],
 		"CableBreakText": null,
@@ -134929,7 +135324,7 @@
 		"LogicInsert": [],
 		"LogicInstructions": [],
 		"LogicSlotInsert": [],
-		"MainImage": "wiki_data/source/images/4/e/4e9890fa785e1e26bc1d8ddfaddd8510.png",
+		"MainImage": "wiki_data/source/images/9/2/92d97f081eced0fe05be998cf6664e8f.png",
 		"MaxLiquidTemperatureText": null,
 		"MaxPressure": null,
 		"MemoryAccess": null,
@@ -135063,7 +135458,7 @@
 				"PageLink": null,
 				"PrinterName": "",
 				"TierName": null,
-				"image": "wiki_data/source/images/0/5/057dceed3317e52559f5a032af9d8458.png"
+				"image": "wiki_data/source/images/2/c/2ce6a8509d8a76e82f7e7e511b21e2ab.png"
 			}
 		],
 		"CableBreakText": "100000W",
@@ -135084,7 +135479,7 @@
 				"NameOfThing": "Моток кабеля (Силовой)",
 				"PageLink": "ThingItemCableCoilHeavy",
 				"PrefabHash": 2060134443,
-				"image": "wiki_data/source/images/4/c/4c82c8a4005a3a90a75f879ecc07b327.png"
+				"image": "wiki_data/source/images/7/3/73ec85617408e88ccfbbb30a3a237adb.png"
 			}
 		],
 		"ConvectionFactorText": null,
@@ -135111,7 +135506,7 @@
 		"LogicInsert": [],
 		"LogicInstructions": [],
 		"LogicSlotInsert": [],
-		"MainImage": "wiki_data/source/images/0/5/057dceed3317e52559f5a032af9d8458.png",
+		"MainImage": "wiki_data/source/images/2/c/2ce6a8509d8a76e82f7e7e511b21e2ab.png",
 		"MaxLiquidTemperatureText": null,
 		"MaxPressure": null,
 		"MemoryAccess": null,
@@ -135169,7 +135564,7 @@
 				"PageLink": null,
 				"PrinterName": "",
 				"TierName": null,
-				"image": "wiki_data/source/images/f/4/f4a1d2123e919fa7b1f23e9e6b70b032.png"
+				"image": "wiki_data/source/images/9/b/9bedc91bf533ba3f50985fb43993cd99.png"
 			}
 		],
 		"CableBreakText": "100000W",
@@ -135194,7 +135589,7 @@
 				"NameOfThing": "Моток кабеля (Силовой)",
 				"PageLink": "ThingItemCableCoilHeavy",
 				"PrefabHash": 2060134443,
-				"image": "wiki_data/source/images/4/c/4c82c8a4005a3a90a75f879ecc07b327.png"
+				"image": "wiki_data/source/images/7/3/73ec85617408e88ccfbbb30a3a237adb.png"
 			}
 		],
 		"ConvectionFactorText": null,
@@ -135221,7 +135616,7 @@
 		"LogicInsert": [],
 		"LogicInstructions": [],
 		"LogicSlotInsert": [],
-		"MainImage": "wiki_data/source/images/f/4/f4a1d2123e919fa7b1f23e9e6b70b032.png",
+		"MainImage": "wiki_data/source/images/9/b/9bedc91bf533ba3f50985fb43993cd99.png",
 		"MaxLiquidTemperatureText": null,
 		"MaxPressure": null,
 		"MemoryAccess": null,
@@ -135279,7 +135674,7 @@
 				"PageLink": null,
 				"PrinterName": "",
 				"TierName": null,
-				"image": "wiki_data/source/images/5/d/5d886729e38d4e2b1ec58a9875d29f61.png"
+				"image": "wiki_data/source/images/1/0/10395980f7dfb1d45ccd5824e1b21e5c.png"
 			}
 		],
 		"CableBreakText": "100000W",
@@ -135308,7 +135703,7 @@
 				"NameOfThing": "Моток кабеля (Силовой)",
 				"PageLink": "ThingItemCableCoilHeavy",
 				"PrefabHash": 2060134443,
-				"image": "wiki_data/source/images/4/c/4c82c8a4005a3a90a75f879ecc07b327.png"
+				"image": "wiki_data/source/images/7/3/73ec85617408e88ccfbbb30a3a237adb.png"
 			}
 		],
 		"ConvectionFactorText": null,
@@ -135335,7 +135730,7 @@
 		"LogicInsert": [],
 		"LogicInstructions": [],
 		"LogicSlotInsert": [],
-		"MainImage": "wiki_data/source/images/5/d/5d886729e38d4e2b1ec58a9875d29f61.png",
+		"MainImage": "wiki_data/source/images/1/0/10395980f7dfb1d45ccd5824e1b21e5c.png",
 		"MaxLiquidTemperatureText": null,
 		"MaxPressure": null,
 		"MemoryAccess": null,
@@ -135393,7 +135788,7 @@
 				"PageLink": null,
 				"PrinterName": "",
 				"TierName": null,
-				"image": "wiki_data/source/images/d/6/d676440549ad2de543848e10624e5c2c.png"
+				"image": "wiki_data/source/images/9/2/92c214c9041e8fc06f3e089f2aeea415.png"
 			}
 		],
 		"CableBreakText": null,
@@ -135425,7 +135820,7 @@
 		"LogicInsert": [],
 		"LogicInstructions": [],
 		"LogicSlotInsert": [],
-		"MainImage": "wiki_data/source/images/d/6/d676440549ad2de543848e10624e5c2c.png",
+		"MainImage": "wiki_data/source/images/9/2/92c214c9041e8fc06f3e089f2aeea415.png",
 		"MaxLiquidTemperatureText": null,
 		"MaxPressure": null,
 		"MemoryAccess": null,
@@ -136333,7 +136728,7 @@
 				"PageLink": null,
 				"PrinterName": "",
 				"TierName": null,
-				"image": "wiki_data/source/images/3/2/32e85b469d14650f5a8c4c9d353d7006.png"
+				"image": "wiki_data/source/images/9/0/901f5b229c1e98afd763e6c96b8d3966.png"
 			}
 		],
 		"CableBreakText": null,
@@ -136365,7 +136760,7 @@
 		"LogicInsert": [],
 		"LogicInstructions": [],
 		"LogicSlotInsert": [],
-		"MainImage": "wiki_data/source/images/3/2/32e85b469d14650f5a8c4c9d353d7006.png",
+		"MainImage": "wiki_data/source/images/9/0/901f5b229c1e98afd763e6c96b8d3966.png",
 		"MaxLiquidTemperatureText": null,
 		"MaxPressure": null,
 		"MemoryAccess": null,
@@ -136822,7 +137217,7 @@
 				"PageLink": null,
 				"PrinterName": "",
 				"TierName": null,
-				"image": "wiki_data/source/images/7/c/7c85eca7d1b29ffc4c3e43992d5a37f8.png"
+				"image": "wiki_data/source/images/8/e/8e17f1afd3dc9f2dc3be0849a885ea63.png"
 			}
 		],
 		"CableBreakText": null,
@@ -136854,7 +137249,7 @@
 		"LogicInsert": [],
 		"LogicInstructions": [],
 		"LogicSlotInsert": [],
-		"MainImage": "wiki_data/source/images/7/c/7c85eca7d1b29ffc4c3e43992d5a37f8.png",
+		"MainImage": "wiki_data/source/images/8/e/8e17f1afd3dc9f2dc3be0849a885ea63.png",
 		"MaxLiquidTemperatureText": null,
 		"MaxPressure": null,
 		"MemoryAccess": null,
@@ -136988,7 +137383,7 @@
 				"PageLink": null,
 				"PrinterName": "",
 				"TierName": null,
-				"image": "wiki_data/source/images/0/f/0fbd6c4403a8d1fd03bfe10b81ca692a.png"
+				"image": "wiki_data/source/images/9/a/9a3f71c9cec71e0b2849b015b3fc7188.png"
 			}
 		],
 		"CableBreakText": "100000W",
@@ -137013,7 +137408,7 @@
 				"NameOfThing": "Моток кабеля (Силовой)",
 				"PageLink": "ThingItemCableCoilHeavy",
 				"PrefabHash": 2060134443,
-				"image": "wiki_data/source/images/4/c/4c82c8a4005a3a90a75f879ecc07b327.png"
+				"image": "wiki_data/source/images/7/3/73ec85617408e88ccfbbb30a3a237adb.png"
 			}
 		],
 		"ConvectionFactorText": null,
@@ -137040,7 +137435,7 @@
 		"LogicInsert": [],
 		"LogicInstructions": [],
 		"LogicSlotInsert": [],
-		"MainImage": "wiki_data/source/images/0/f/0fbd6c4403a8d1fd03bfe10b81ca692a.png",
+		"MainImage": "wiki_data/source/images/9/a/9a3f71c9cec71e0b2849b015b3fc7188.png",
 		"MaxLiquidTemperatureText": null,
 		"MaxPressure": null,
 		"MemoryAccess": null,
@@ -137098,7 +137493,7 @@
 				"PageLink": null,
 				"PrinterName": "",
 				"TierName": null,
-				"image": "wiki_data/source/images/4/d/4d7f7eaf388897fe190840c07485c98c.png"
+				"image": "wiki_data/source/images/9/6/9625e3c22feb3b057b5b49342f3965a1.png"
 			}
 		],
 		"CableBreakText": "100000W",
@@ -137127,7 +137522,7 @@
 				"NameOfThing": "Моток кабеля (Силовой)",
 				"PageLink": "ThingItemCableCoilHeavy",
 				"PrefabHash": 2060134443,
-				"image": "wiki_data/source/images/4/c/4c82c8a4005a3a90a75f879ecc07b327.png"
+				"image": "wiki_data/source/images/7/3/73ec85617408e88ccfbbb30a3a237adb.png"
 			}
 		],
 		"ConvectionFactorText": null,
@@ -137154,7 +137549,7 @@
 		"LogicInsert": [],
 		"LogicInstructions": [],
 		"LogicSlotInsert": [],
-		"MainImage": "wiki_data/source/images/4/d/4d7f7eaf388897fe190840c07485c98c.png",
+		"MainImage": "wiki_data/source/images/9/6/9625e3c22feb3b057b5b49342f3965a1.png",
 		"MaxLiquidTemperatureText": null,
 		"MaxPressure": null,
 		"MemoryAccess": null,
@@ -137212,7 +137607,7 @@
 				"PageLink": null,
 				"PrinterName": "",
 				"TierName": null,
-				"image": "wiki_data/source/images/e/3/e3d56748a0c9a4400f53e188c1c26e5e.png"
+				"image": "wiki_data/source/images/8/c/8ccc98146f9c28e26fd27a2b6583d092.png"
 			}
 		],
 		"CableBreakText": "100000W",
@@ -137245,7 +137640,7 @@
 				"NameOfThing": "Моток кабеля (Силовой)",
 				"PageLink": "ThingItemCableCoilHeavy",
 				"PrefabHash": 2060134443,
-				"image": "wiki_data/source/images/4/c/4c82c8a4005a3a90a75f879ecc07b327.png"
+				"image": "wiki_data/source/images/7/3/73ec85617408e88ccfbbb30a3a237adb.png"
 			}
 		],
 		"ConvectionFactorText": null,
@@ -137272,7 +137667,7 @@
 		"LogicInsert": [],
 		"LogicInstructions": [],
 		"LogicSlotInsert": [],
-		"MainImage": "wiki_data/source/images/e/3/e3d56748a0c9a4400f53e188c1c26e5e.png",
+		"MainImage": "wiki_data/source/images/8/c/8ccc98146f9c28e26fd27a2b6583d092.png",
 		"MaxLiquidTemperatureText": null,
 		"MaxPressure": null,
 		"MemoryAccess": null,
@@ -137330,7 +137725,7 @@
 				"PageLink": null,
 				"PrinterName": "",
 				"TierName": null,
-				"image": "wiki_data/source/images/1/b/1b35c255a6471803f6a6f39abf3c3eca.png"
+				"image": "wiki_data/source/images/e/8/e8cf31a7d589fa7ac3c70a1a7f66d105.png"
 			}
 		],
 		"CableBreakText": null,
@@ -137362,7 +137757,7 @@
 		"LogicInsert": [],
 		"LogicInstructions": [],
 		"LogicSlotInsert": [],
-		"MainImage": "wiki_data/source/images/1/b/1b35c255a6471803f6a6f39abf3c3eca.png",
+		"MainImage": "wiki_data/source/images/e/8/e8cf31a7d589fa7ac3c70a1a7f66d105.png",
 		"MaxLiquidTemperatureText": null,
 		"MaxPressure": null,
 		"MemoryAccess": null,
@@ -137413,7 +137808,7 @@
 				"PageLink": null,
 				"PrinterName": "",
 				"TierName": null,
-				"image": "wiki_data/source/images/7/4/74fb4200481454b533c19380e275ba5a.png"
+				"image": "wiki_data/source/images/3/c/3c21d68d966164f59435746106e4e8b4.png"
 			}
 		],
 		"CableBreakText": "100000W",
@@ -137450,7 +137845,7 @@
 				"NameOfThing": "Моток кабеля (Силовой)",
 				"PageLink": "ThingItemCableCoilHeavy",
 				"PrefabHash": 2060134443,
-				"image": "wiki_data/source/images/4/c/4c82c8a4005a3a90a75f879ecc07b327.png"
+				"image": "wiki_data/source/images/7/3/73ec85617408e88ccfbbb30a3a237adb.png"
 			}
 		],
 		"ConvectionFactorText": null,
@@ -137477,7 +137872,7 @@
 		"LogicInsert": [],
 		"LogicInstructions": [],
 		"LogicSlotInsert": [],
-		"MainImage": "wiki_data/source/images/7/4/74fb4200481454b533c19380e275ba5a.png",
+		"MainImage": "wiki_data/source/images/3/c/3c21d68d966164f59435746106e4e8b4.png",
 		"MaxLiquidTemperatureText": null,
 		"MaxPressure": null,
 		"MemoryAccess": null,
@@ -137535,7 +137930,7 @@
 				"PageLink": null,
 				"PrinterName": "",
 				"TierName": null,
-				"image": "wiki_data/source/images/0/c/0c6fadf878abead5b4a9b85a2c99caae.png"
+				"image": "wiki_data/source/images/2/6/26920fb13a74a3a05d88652bb7f91ca1.png"
 			}
 		],
 		"CableBreakText": null,
@@ -137567,7 +137962,7 @@
 		"LogicInsert": [],
 		"LogicInstructions": [],
 		"LogicSlotInsert": [],
-		"MainImage": "wiki_data/source/images/0/c/0c6fadf878abead5b4a9b85a2c99caae.png",
+		"MainImage": "wiki_data/source/images/2/6/26920fb13a74a3a05d88652bb7f91ca1.png",
 		"MaxLiquidTemperatureText": null,
 		"MaxPressure": null,
 		"MemoryAccess": null,
@@ -138374,7 +138769,7 @@
 				"PageLink": null,
 				"PrinterName": "",
 				"TierName": null,
-				"image": "wiki_data/source/images/f/4/f459e2190f1146c97d9c569e95524e00.png"
+				"image": "wiki_data/source/images/3/6/36058a0b44e415742df9262664f21766.png"
 			}
 		],
 		"CableBreakText": "100000W",
@@ -138395,7 +138790,7 @@
 				"NameOfThing": "Моток кабеля (Силовой)",
 				"PageLink": "ThingItemCableCoilHeavy",
 				"PrefabHash": 2060134443,
-				"image": "wiki_data/source/images/4/c/4c82c8a4005a3a90a75f879ecc07b327.png"
+				"image": "wiki_data/source/images/7/3/73ec85617408e88ccfbbb30a3a237adb.png"
 			}
 		],
 		"ConvectionFactorText": null,
@@ -138422,7 +138817,7 @@
 		"LogicInsert": [],
 		"LogicInstructions": [],
 		"LogicSlotInsert": [],
-		"MainImage": "wiki_data/source/images/f/4/f459e2190f1146c97d9c569e95524e00.png",
+		"MainImage": "wiki_data/source/images/3/6/36058a0b44e415742df9262664f21766.png",
 		"MaxLiquidTemperatureText": null,
 		"MaxPressure": null,
 		"MemoryAccess": null,
@@ -138469,6 +138864,573 @@
 			"Structure"
 		]
 	},
+	"StructureCableStraightH10": {
+		"AutoIgnitionText": "10,3 kK (10000<sup>o</sup>C)",
+		"BasePowerDraw": null,
+		"BoilingTemperatureText": null,
+		"BuildStates": [
+			{
+				"Description": "<span style=\"color: yellow\">7</span> x <a data-href=\"ThingItemCableCoilHeavy\"><span style=\"color: green\">Моток кабеля (Силовой)</span></a>\r\n",
+				"Details": "",
+				"PageLink": null,
+				"PrinterName": "",
+				"TierName": null,
+				"image": "wiki_data/source/images/5/6/56591e869839ab01277fa4f95f711358.png"
+			}
+		],
+		"CableBreakText": "100000W",
+		"ConnectionInsert": [
+			{
+				"LogicAccessTypes": "0",
+				"LogicName": "Соединение"
+			},
+			{
+				"LogicAccessTypes": "1",
+				"LogicName": "Соединение"
+			}
+		],
+		"ConstructWithText": null,
+		"ConstructedByKits": [],
+		"ConstructedThings": [
+			{
+				"NameOfThing": "Моток кабеля (Силовой)",
+				"PageLink": "ThingItemCableCoilHeavy",
+				"PrefabHash": 2060134443,
+				"image": "wiki_data/source/images/7/3/73ec85617408e88ccfbbb30a3a237adb.png"
+			}
+		],
+		"ConvectionFactorText": null,
+		"CustomSpriteToUse": null,
+		"Description": "",
+		"DeviceConnectCount": 0,
+		"DisplayFilter": 0,
+		"DrillHeadProperties": null,
+		"FlashpointText": "10,3 kK (10000<sup>o</sup>C)",
+		"FoundInGas": [],
+		"FoundInOre": [],
+		"FreezeTemperatureText": null,
+		"GasType": 0,
+		"GrowthTime": null,
+		"HasMemory": false,
+		"HowToBuild": [],
+		"ID": "StructureCableStraightH10",
+		"ImportantPage": false,
+		"InternalAtmosInfoText": null,
+		"Key": "ThingStructureCableStraightH10",
+		"Lang": "RU",
+		"LatentHeatText": null,
+		"LifeRequirements": [],
+		"LogicInsert": [],
+		"LogicInstructions": [],
+		"LogicSlotInsert": [],
+		"MainImage": "wiki_data/source/images/5/6/56591e869839ab01277fa4f95f711358.png",
+		"MaxLiquidTemperatureText": null,
+		"MaxPressure": null,
+		"MemoryAccess": null,
+		"MemorySize": null,
+		"MinLiquidPressure": null,
+		"ModeInsert": [],
+		"MolesPerLitreText": null,
+		"Nutrition": null,
+		"PageCustomCategories": [],
+		"PaintableText": "Да",
+		"PlaceableInRocket": "Да",
+		"PrefabHash": -1611697282,
+		"PrefabHashString": "-1611697282",
+		"PrefabName": "StructureCableStraightH10",
+		"PressureBreakText": null,
+		"ProducedThingsInserts": [],
+		"RadiationFactorText": null,
+		"ReagentsHash": 0,
+		"ReagentsText": null,
+		"ReagentsType": null,
+		"ResourcesUsed": [],
+		"RocketEngineEfficiency": null,
+		"RocketEngineExhaustVelocity": null,
+		"RocketEngineForce": null,
+		"RocketMass": null,
+		"SlotInserts": [],
+		"SortPriority": 0,
+		"SpecificHeatText": null,
+		"StackSizeText": null,
+		"StructVersionInsert": [],
+		"TYPE": "object",
+		"Text": "",
+		"Title": "Heavy Cable (Straight 10)",
+		"UnitText": null,
+		"UsedIn": [],
+		"Volume": null,
+		"prefab": "StructureCableStraightH10",
+		"tags": [
+			"Buildable",
+			"Cable",
+			"Connectable",
+			"HasImage",
+			"HasPrefab",
+			"Structure"
+		]
+	},
+	"StructureCableStraightH10Burnt": {
+		"AutoIgnitionText": "",
+		"BasePowerDraw": null,
+		"BoilingTemperatureText": null,
+		"BuildStates": [
+			{
+				"Description": "",
+				"Details": "",
+				"PageLink": null,
+				"PrinterName": "",
+				"TierName": null,
+				"image": "wiki_data/source/images/a/3/a3071d2d0b2327bbad2aa840a63a4aef.png"
+			}
+		],
+		"CableBreakText": null,
+		"ConnectionInsert": [],
+		"ConstructWithText": null,
+		"ConstructedByKits": [],
+		"ConstructedThings": [],
+		"ConvectionFactorText": null,
+		"CustomSpriteToUse": null,
+		"Description": "",
+		"DeviceConnectCount": 0,
+		"DisplayFilter": 0,
+		"DrillHeadProperties": null,
+		"FlashpointText": "",
+		"FoundInGas": [],
+		"FoundInOre": [],
+		"FreezeTemperatureText": null,
+		"GasType": 0,
+		"GrowthTime": null,
+		"HasMemory": false,
+		"HowToBuild": [],
+		"ID": "StructureCableStraightH10Burnt",
+		"ImportantPage": false,
+		"InternalAtmosInfoText": null,
+		"Key": "ThingStructureCableStraightH10Burnt",
+		"Lang": "RU",
+		"LatentHeatText": null,
+		"LifeRequirements": [],
+		"LogicInsert": [],
+		"LogicInstructions": [],
+		"LogicSlotInsert": [],
+		"MainImage": "wiki_data/source/images/a/3/a3071d2d0b2327bbad2aa840a63a4aef.png",
+		"MaxLiquidTemperatureText": null,
+		"MaxPressure": null,
+		"MemoryAccess": null,
+		"MemorySize": null,
+		"MinLiquidPressure": null,
+		"ModeInsert": [],
+		"MolesPerLitreText": null,
+		"Nutrition": null,
+		"PageCustomCategories": [],
+		"PaintableText": "Да",
+		"PlaceableInRocket": null,
+		"PrefabHash": 681358140,
+		"PrefabHashString": "681358140",
+		"PrefabName": "StructureCableStraightH10Burnt",
+		"PressureBreakText": null,
+		"ProducedThingsInserts": [],
+		"RadiationFactorText": null,
+		"ReagentsHash": 0,
+		"ReagentsText": null,
+		"ReagentsType": null,
+		"ResourcesUsed": [],
+		"RocketEngineEfficiency": null,
+		"RocketEngineExhaustVelocity": null,
+		"RocketEngineForce": null,
+		"RocketMass": null,
+		"SlotInserts": [],
+		"SortPriority": 0,
+		"SpecificHeatText": null,
+		"StackSizeText": null,
+		"StructVersionInsert": [],
+		"TYPE": "object",
+		"Text": "",
+		"Title": "Burnt Heavy Cable (Straight 10)",
+		"UnitText": null,
+		"UsedIn": [],
+		"Volume": null,
+		"prefab": "StructureCableStraightH10Burnt",
+		"tags": ["Buildable", "Cable", "HasImage", "HasPrefab", "Structure"]
+	},
+	"StructureCableStraightH3": {
+		"AutoIgnitionText": "10,3 kK (10000<sup>o</sup>C)",
+		"BasePowerDraw": null,
+		"BoilingTemperatureText": null,
+		"BuildStates": [
+			{
+				"Description": "<span style=\"color: yellow\">3</span> x <a data-href=\"ThingItemCableCoilHeavy\"><span style=\"color: green\">Моток кабеля (Силовой)</span></a>\r\n",
+				"Details": "",
+				"PageLink": null,
+				"PrinterName": "",
+				"TierName": null,
+				"image": "wiki_data/source/images/6/f/6f5caa27cdbf65ef7ea5de90d4c817d8.png"
+			}
+		],
+		"CableBreakText": "100000W",
+		"ConnectionInsert": [
+			{
+				"LogicAccessTypes": "0",
+				"LogicName": "Соединение"
+			},
+			{
+				"LogicAccessTypes": "1",
+				"LogicName": "Соединение"
+			}
+		],
+		"ConstructWithText": null,
+		"ConstructedByKits": [],
+		"ConstructedThings": [
+			{
+				"NameOfThing": "Моток кабеля (Силовой)",
+				"PageLink": "ThingItemCableCoilHeavy",
+				"PrefabHash": 2060134443,
+				"image": "wiki_data/source/images/7/3/73ec85617408e88ccfbbb30a3a237adb.png"
+			}
+		],
+		"ConvectionFactorText": null,
+		"CustomSpriteToUse": null,
+		"Description": "",
+		"DeviceConnectCount": 0,
+		"DisplayFilter": 0,
+		"DrillHeadProperties": null,
+		"FlashpointText": "10,3 kK (10000<sup>o</sup>C)",
+		"FoundInGas": [],
+		"FoundInOre": [],
+		"FreezeTemperatureText": null,
+		"GasType": 0,
+		"GrowthTime": null,
+		"HasMemory": false,
+		"HowToBuild": [],
+		"ID": "StructureCableStraightH3",
+		"ImportantPage": false,
+		"InternalAtmosInfoText": null,
+		"Key": "ThingStructureCableStraightH3",
+		"Lang": "RU",
+		"LatentHeatText": null,
+		"LifeRequirements": [],
+		"LogicInsert": [],
+		"LogicInstructions": [],
+		"LogicSlotInsert": [],
+		"MainImage": "wiki_data/source/images/6/f/6f5caa27cdbf65ef7ea5de90d4c817d8.png",
+		"MaxLiquidTemperatureText": null,
+		"MaxPressure": null,
+		"MemoryAccess": null,
+		"MemorySize": null,
+		"MinLiquidPressure": null,
+		"ModeInsert": [],
+		"MolesPerLitreText": null,
+		"Nutrition": null,
+		"PageCustomCategories": [],
+		"PaintableText": "Да",
+		"PlaceableInRocket": "Да",
+		"PrefabHash": -1309422980,
+		"PrefabHashString": "-1309422980",
+		"PrefabName": "StructureCableStraightH3",
+		"PressureBreakText": null,
+		"ProducedThingsInserts": [],
+		"RadiationFactorText": null,
+		"ReagentsHash": 0,
+		"ReagentsText": null,
+		"ReagentsType": null,
+		"ResourcesUsed": [],
+		"RocketEngineEfficiency": null,
+		"RocketEngineExhaustVelocity": null,
+		"RocketEngineForce": null,
+		"RocketMass": null,
+		"SlotInserts": [],
+		"SortPriority": 0,
+		"SpecificHeatText": null,
+		"StackSizeText": null,
+		"StructVersionInsert": [],
+		"TYPE": "object",
+		"Text": "",
+		"Title": "Heavy Cable (Straight 3)",
+		"UnitText": null,
+		"UsedIn": [],
+		"Volume": null,
+		"prefab": "StructureCableStraightH3",
+		"tags": [
+			"Buildable",
+			"Cable",
+			"Connectable",
+			"HasImage",
+			"HasPrefab",
+			"Structure"
+		]
+	},
+	"StructureCableStraightH3Burnt": {
+		"AutoIgnitionText": "",
+		"BasePowerDraw": null,
+		"BoilingTemperatureText": null,
+		"BuildStates": [
+			{
+				"Description": "",
+				"Details": "",
+				"PageLink": null,
+				"PrinterName": "",
+				"TierName": null,
+				"image": "wiki_data/source/images/8/c/8c548f0f64f4a835f857ef26a165d11f.png"
+			}
+		],
+		"CableBreakText": null,
+		"ConnectionInsert": [],
+		"ConstructWithText": null,
+		"ConstructedByKits": [],
+		"ConstructedThings": [],
+		"ConvectionFactorText": null,
+		"CustomSpriteToUse": null,
+		"Description": "",
+		"DeviceConnectCount": 0,
+		"DisplayFilter": 0,
+		"DrillHeadProperties": null,
+		"FlashpointText": "",
+		"FoundInGas": [],
+		"FoundInOre": [],
+		"FreezeTemperatureText": null,
+		"GasType": 0,
+		"GrowthTime": null,
+		"HasMemory": false,
+		"HowToBuild": [],
+		"ID": "StructureCableStraightH3Burnt",
+		"ImportantPage": false,
+		"InternalAtmosInfoText": null,
+		"Key": "ThingStructureCableStraightH3Burnt",
+		"Lang": "RU",
+		"LatentHeatText": null,
+		"LifeRequirements": [],
+		"LogicInsert": [],
+		"LogicInstructions": [],
+		"LogicSlotInsert": [],
+		"MainImage": "wiki_data/source/images/8/c/8c548f0f64f4a835f857ef26a165d11f.png",
+		"MaxLiquidTemperatureText": null,
+		"MaxPressure": null,
+		"MemoryAccess": null,
+		"MemorySize": null,
+		"MinLiquidPressure": null,
+		"ModeInsert": [],
+		"MolesPerLitreText": null,
+		"Nutrition": null,
+		"PageCustomCategories": [],
+		"PaintableText": "Да",
+		"PlaceableInRocket": null,
+		"PrefabHash": 740143732,
+		"PrefabHashString": "740143732",
+		"PrefabName": "StructureCableStraightH3Burnt",
+		"PressureBreakText": null,
+		"ProducedThingsInserts": [],
+		"RadiationFactorText": null,
+		"ReagentsHash": 0,
+		"ReagentsText": null,
+		"ReagentsType": null,
+		"ResourcesUsed": [],
+		"RocketEngineEfficiency": null,
+		"RocketEngineExhaustVelocity": null,
+		"RocketEngineForce": null,
+		"RocketMass": null,
+		"SlotInserts": [],
+		"SortPriority": 0,
+		"SpecificHeatText": null,
+		"StackSizeText": null,
+		"StructVersionInsert": [],
+		"TYPE": "object",
+		"Text": "",
+		"Title": "Burnt Heavy Cable (Straight 3)",
+		"UnitText": null,
+		"UsedIn": [],
+		"Volume": null,
+		"prefab": "StructureCableStraightH3Burnt",
+		"tags": ["Buildable", "Cable", "HasImage", "HasPrefab", "Structure"]
+	},
+	"StructureCableStraightH5": {
+		"AutoIgnitionText": "10,3 kK (10000<sup>o</sup>C)",
+		"BasePowerDraw": null,
+		"BoilingTemperatureText": null,
+		"BuildStates": [
+			{
+				"Description": "<span style=\"color: yellow\">4</span> x <a data-href=\"ThingItemCableCoilHeavy\"><span style=\"color: green\">Моток кабеля (Силовой)</span></a>\r\n",
+				"Details": "",
+				"PageLink": null,
+				"PrinterName": "",
+				"TierName": null,
+				"image": "wiki_data/source/images/2/c/2c459ed60b3670dcae1186f0587fdb69.png"
+			}
+		],
+		"CableBreakText": "100000W",
+		"ConnectionInsert": [
+			{
+				"LogicAccessTypes": "0",
+				"LogicName": "Соединение"
+			},
+			{
+				"LogicAccessTypes": "1",
+				"LogicName": "Соединение"
+			}
+		],
+		"ConstructWithText": null,
+		"ConstructedByKits": [],
+		"ConstructedThings": [
+			{
+				"NameOfThing": "Моток кабеля (Силовой)",
+				"PageLink": "ThingItemCableCoilHeavy",
+				"PrefabHash": 2060134443,
+				"image": "wiki_data/source/images/7/3/73ec85617408e88ccfbbb30a3a237adb.png"
+			}
+		],
+		"ConvectionFactorText": null,
+		"CustomSpriteToUse": null,
+		"Description": "",
+		"DeviceConnectCount": 0,
+		"DisplayFilter": 0,
+		"DrillHeadProperties": null,
+		"FlashpointText": "10,3 kK (10000<sup>o</sup>C)",
+		"FoundInGas": [],
+		"FoundInOre": [],
+		"FreezeTemperatureText": null,
+		"GasType": 0,
+		"GrowthTime": null,
+		"HasMemory": false,
+		"HowToBuild": [],
+		"ID": "StructureCableStraightH5",
+		"ImportantPage": false,
+		"InternalAtmosInfoText": null,
+		"Key": "ThingStructureCableStraightH5",
+		"Lang": "RU",
+		"LatentHeatText": null,
+		"LifeRequirements": [],
+		"LogicInsert": [],
+		"LogicInstructions": [],
+		"LogicSlotInsert": [],
+		"MainImage": "wiki_data/source/images/2/c/2c459ed60b3670dcae1186f0587fdb69.png",
+		"MaxLiquidTemperatureText": null,
+		"MaxPressure": null,
+		"MemoryAccess": null,
+		"MemorySize": null,
+		"MinLiquidPressure": null,
+		"ModeInsert": [],
+		"MolesPerLitreText": null,
+		"Nutrition": null,
+		"PageCustomCategories": [],
+		"PaintableText": "Да",
+		"PlaceableInRocket": "Да",
+		"PrefabHash": 1485860681,
+		"PrefabHashString": "1485860681",
+		"PrefabName": "StructureCableStraightH5",
+		"PressureBreakText": null,
+		"ProducedThingsInserts": [],
+		"RadiationFactorText": null,
+		"ReagentsHash": 0,
+		"ReagentsText": null,
+		"ReagentsType": null,
+		"ResourcesUsed": [],
+		"RocketEngineEfficiency": null,
+		"RocketEngineExhaustVelocity": null,
+		"RocketEngineForce": null,
+		"RocketMass": null,
+		"SlotInserts": [],
+		"SortPriority": 0,
+		"SpecificHeatText": null,
+		"StackSizeText": null,
+		"StructVersionInsert": [],
+		"TYPE": "object",
+		"Text": "",
+		"Title": "Heavy Cable (Straight 5)",
+		"UnitText": null,
+		"UsedIn": [],
+		"Volume": null,
+		"prefab": "StructureCableStraightH5",
+		"tags": [
+			"Buildable",
+			"Cable",
+			"Connectable",
+			"HasImage",
+			"HasPrefab",
+			"Structure"
+		]
+	},
+	"StructureCableStraightH5Burnt": {
+		"AutoIgnitionText": "",
+		"BasePowerDraw": null,
+		"BoilingTemperatureText": null,
+		"BuildStates": [
+			{
+				"Description": "",
+				"Details": "",
+				"PageLink": null,
+				"PrinterName": "",
+				"TierName": null,
+				"image": "wiki_data/source/images/1/2/124744513c142155babef3c648057835.png"
+			}
+		],
+		"CableBreakText": null,
+		"ConnectionInsert": [],
+		"ConstructWithText": null,
+		"ConstructedByKits": [],
+		"ConstructedThings": [],
+		"ConvectionFactorText": null,
+		"CustomSpriteToUse": null,
+		"Description": "",
+		"DeviceConnectCount": 0,
+		"DisplayFilter": 0,
+		"DrillHeadProperties": null,
+		"FlashpointText": "",
+		"FoundInGas": [],
+		"FoundInOre": [],
+		"FreezeTemperatureText": null,
+		"GasType": 0,
+		"GrowthTime": null,
+		"HasMemory": false,
+		"HowToBuild": [],
+		"ID": "StructureCableStraightH5Burnt",
+		"ImportantPage": false,
+		"InternalAtmosInfoText": null,
+		"Key": "ThingStructureCableStraightH5Burnt",
+		"Lang": "RU",
+		"LatentHeatText": null,
+		"LifeRequirements": [],
+		"LogicInsert": [],
+		"LogicInstructions": [],
+		"LogicSlotInsert": [],
+		"MainImage": "wiki_data/source/images/1/2/124744513c142155babef3c648057835.png",
+		"MaxLiquidTemperatureText": null,
+		"MaxPressure": null,
+		"MemoryAccess": null,
+		"MemorySize": null,
+		"MinLiquidPressure": null,
+		"ModeInsert": [],
+		"MolesPerLitreText": null,
+		"Nutrition": null,
+		"PageCustomCategories": [],
+		"PaintableText": "Да",
+		"PlaceableInRocket": null,
+		"PrefabHash": -96186007,
+		"PrefabHashString": "-96186007",
+		"PrefabName": "StructureCableStraightH5Burnt",
+		"PressureBreakText": null,
+		"ProducedThingsInserts": [],
+		"RadiationFactorText": null,
+		"ReagentsHash": 0,
+		"ReagentsText": null,
+		"ReagentsType": null,
+		"ResourcesUsed": [],
+		"RocketEngineEfficiency": null,
+		"RocketEngineExhaustVelocity": null,
+		"RocketEngineForce": null,
+		"RocketMass": null,
+		"SlotInserts": [],
+		"SortPriority": 0,
+		"SpecificHeatText": null,
+		"StackSizeText": null,
+		"StructVersionInsert": [],
+		"TYPE": "object",
+		"Text": "",
+		"Title": "Burnt Heavy Cable (Straight 5)",
+		"UnitText": null,
+		"UsedIn": [],
+		"Volume": null,
+		"prefab": "StructureCableStraightH5Burnt",
+		"tags": ["Buildable", "Cable", "HasImage", "HasPrefab", "Structure"]
+	},
 	"StructureCableStraightHBurnt": {
 		"AutoIgnitionText": "",
 		"BasePowerDraw": null,
@@ -138480,7 +139442,7 @@
 				"PageLink": null,
 				"PrinterName": "",
 				"TierName": null,
-				"image": "wiki_data/source/images/2/2/226bb9c1f80104cd4c2fa2b1fa82e363.png"
+				"image": "wiki_data/source/images/1/c/1cc27ea40f7c26b4f725321efdaecca9.png"
 			}
 		],
 		"CableBreakText": null,
@@ -138512,7 +139474,7 @@
 		"LogicInsert": [],
 		"LogicInstructions": [],
 		"LogicSlotInsert": [],
-		"MainImage": "wiki_data/source/images/2/2/226bb9c1f80104cd4c2fa2b1fa82e363.png",
+		"MainImage": "wiki_data/source/images/1/c/1cc27ea40f7c26b4f725321efdaecca9.png",
 		"MaxLiquidTemperatureText": null,
 		"MaxPressure": null,
 		"MemoryAccess": null,
@@ -160716,6 +161678,12 @@
 				"image": "wiki_data/source/images/e/1/e134ed301df26d192ec600868db52b60.png"
 			},
 			{
+				"NameOfThing": "Kit (Power Pylon)",
+				"PageLink": "ThingItemKitPowerPylon",
+				"PrefabHash": 824902754,
+				"image": "wiki_data/source/images/b/2/b203d6c15fd5cec30e25ee100251adb2.png"
+			},
+			{
 				"NameOfThing": "Аккумулятор (Высокоёмкий)",
 				"PageLink": "ThingItemBatteryCellLarge",
 				"PrefabHash": -459827268,
@@ -160905,7 +161873,7 @@
 				"NameOfThing": "Моток кабеля (Силовой)",
 				"PageLink": "ThingItemCableCoilHeavy",
 				"PrefabHash": 2060134443,
-				"image": "wiki_data/source/images/4/c/4c82c8a4005a3a90a75f879ecc07b327.png"
+				"image": "wiki_data/source/images/7/3/73ec85617408e88ccfbbb30a3a237adb.png"
 			},
 			{
 				"NameOfThing": "Моток кабеля",
@@ -202390,6 +203358,199 @@
 			"Structure"
 		]
 	},
+	"StructurePowerPylon": {
+		"AutoIgnitionText": "573 K (300<sup>o</sup>C)",
+		"BasePowerDraw": null,
+		"BoilingTemperatureText": null,
+		"BuildStates": [
+			{
+				"Description": "<a data-href=\"ThingItemWeldingTorch\"><span style=\"color: green\">Газовая горелка</span></a>\r\n<span style=\"color: yellow\">2</span> x <a data-href=\"ThingItemSteelSheets\"><span style=\"color: green\">Стальные листы</span></a>\r\n",
+				"Details": "",
+				"PageLink": null,
+				"PrinterName": "",
+				"TierName": null,
+				"image": "wiki_data/source/images/f/4/f4d036b79d5c063704743f29f34538ad.png"
+			},
+			{
+				"Description": "<span style=\"color: yellow\">2</span> x <a data-href=\"ThingItemKitPowerPylon\"><span style=\"color: green\">Kit (Power Pylon)</span></a>\r\n",
+				"Details": "",
+				"PageLink": null,
+				"PrinterName": "",
+				"TierName": null,
+				"image": "wiki_data/source/images/e/4/e431092d27260c11f57fa52f634aed7f.png"
+			}
+		],
+		"CableBreakText": null,
+		"ConnectionInsert": [],
+		"ConstructWithText": null,
+		"ConstructedByKits": [],
+		"ConstructedThings": [
+			{
+				"NameOfThing": "Kit (Power Pylon)",
+				"PageLink": "ThingItemKitPowerPylon",
+				"PrefabHash": 824902754,
+				"image": "wiki_data/source/images/b/2/b203d6c15fd5cec30e25ee100251adb2.png"
+			}
+		],
+		"ConvectionFactorText": null,
+		"CustomSpriteToUse": null,
+		"Description": "Carries power across ground where laying cable is impractical.\n\nPylons are strung with <a data-href=\"ThingItemCableCoilSuperHeavy\"><span style=\"color: green\">Моток кабеля (Сверхтяжёлый)</span></a>. Hold a coil, click one node to start a run and another node to finish it. A single run reaches 40m and costs between 5 and 30 coil depending on how far it spans, and the cable must have a clear path, so terrain, walls and structures between the two nodes will refuse the link.\n\nA pylon carries two nodes and each node accepts one run, so a pylon passes a line onward rather than branching it. Cut a run with the <a data-href=\"ThingItemWireCutters\"><span style=\"color: green\">Кусачки</span></a> to recover its cable; deconstructing a pylon returns the cable of every run still attached.",
+		"DeviceConnectCount": 0,
+		"DisplayFilter": 0,
+		"DrillHeadProperties": null,
+		"FlashpointText": "373 K (100<sup>o</sup>C)",
+		"FoundInGas": [],
+		"FoundInOre": [],
+		"FreezeTemperatureText": null,
+		"GasType": 0,
+		"GrowthTime": null,
+		"HasMemory": false,
+		"HowToBuild": [],
+		"ID": "StructurePowerPylon",
+		"ImportantPage": false,
+		"InternalAtmosInfoText": null,
+		"Key": "ThingStructurePowerPylon",
+		"Lang": "RU",
+		"LatentHeatText": null,
+		"LifeRequirements": [],
+		"LogicInsert": [],
+		"LogicInstructions": [],
+		"LogicSlotInsert": [],
+		"MainImage": "wiki_data/source/images/f/4/f4d036b79d5c063704743f29f34538ad.png",
+		"MaxLiquidTemperatureText": null,
+		"MaxPressure": null,
+		"MemoryAccess": null,
+		"MemorySize": null,
+		"MinLiquidPressure": null,
+		"ModeInsert": [],
+		"MolesPerLitreText": null,
+		"Nutrition": null,
+		"PageCustomCategories": [],
+		"PaintableText": "Да",
+		"PlaceableInRocket": null,
+		"PrefabHash": 980657345,
+		"PrefabHashString": "980657345",
+		"PrefabName": "StructurePowerPylon",
+		"PressureBreakText": null,
+		"ProducedThingsInserts": [],
+		"RadiationFactorText": null,
+		"ReagentsHash": 0,
+		"ReagentsText": null,
+		"ReagentsType": null,
+		"ResourcesUsed": [],
+		"RocketEngineEfficiency": null,
+		"RocketEngineExhaustVelocity": null,
+		"RocketEngineForce": null,
+		"RocketMass": null,
+		"SlotInserts": [],
+		"SortPriority": 0,
+		"SpecificHeatText": null,
+		"StackSizeText": null,
+		"StructVersionInsert": [],
+		"TYPE": "object",
+		"Text": "",
+		"Title": "Power Pylon",
+		"UnitText": null,
+		"UsedIn": [],
+		"Volume": null,
+		"prefab": "StructurePowerPylon",
+		"tags": ["Buildable", "HasImage", "HasPrefab", "Structure"]
+	},
+	"StructurePowerPylonTerminus": {
+		"AutoIgnitionText": "",
+		"BasePowerDraw": null,
+		"BoilingTemperatureText": null,
+		"BuildStates": [
+			{
+				"Description": "<span style=\"color: yellow\">1</span> x <a data-href=\"ThingItemKitPowerPylon\"><span style=\"color: green\">Kit (Power Pylon)</span></a>\r\n",
+				"Details": "",
+				"PageLink": null,
+				"PrinterName": "",
+				"TierName": null,
+				"image": "wiki_data/source/images/8/f/8fc0596418578bf741e98a09a91048af.png"
+			}
+		],
+		"CableBreakText": "5000W",
+		"ConnectionInsert": [
+			{
+				"LogicAccessTypes": "0",
+				"LogicName": "Соединение"
+			}
+		],
+		"ConstructWithText": null,
+		"ConstructedByKits": [],
+		"ConstructedThings": [
+			{
+				"NameOfThing": "Kit (Power Pylon)",
+				"PageLink": "ThingItemKitPowerPylon",
+				"PrefabHash": 824902754,
+				"image": "wiki_data/source/images/b/2/b203d6c15fd5cec30e25ee100251adb2.png"
+			}
+		],
+		"ConvectionFactorText": null,
+		"CustomSpriteToUse": null,
+		"Description": "Ties a pylon line into an ordinary cable network.\n\nThe terminus counts as a length of super heavy cable, so everything reachable through the line becomes one network with everything wired to the terminus.\n\nIt has a single node, which takes one run of <a data-href=\"ThingItemCableCoilSuperHeavy\"><span style=\"color: green\">Моток кабеля (Сверхтяжёлый)</span></a>. A terminus cannot link straight to another terminus; the run has to pass through at least one <a data-href=\"ThingStructurePowerPylon\"><span style=\"color: green\">Power Pylon</span></a>.",
+		"DeviceConnectCount": 0,
+		"DisplayFilter": 0,
+		"DrillHeadProperties": null,
+		"FlashpointText": "",
+		"FoundInGas": [],
+		"FoundInOre": [],
+		"FreezeTemperatureText": null,
+		"GasType": 0,
+		"GrowthTime": null,
+		"HasMemory": false,
+		"HowToBuild": [],
+		"ID": "StructurePowerPylonTerminus",
+		"ImportantPage": false,
+		"InternalAtmosInfoText": null,
+		"Key": "ThingStructurePowerPylonTerminus",
+		"Lang": "RU",
+		"LatentHeatText": null,
+		"LifeRequirements": [],
+		"LogicInsert": [],
+		"LogicInstructions": [],
+		"LogicSlotInsert": [],
+		"MainImage": "wiki_data/source/images/8/f/8fc0596418578bf741e98a09a91048af.png",
+		"MaxLiquidTemperatureText": null,
+		"MaxPressure": null,
+		"MemoryAccess": null,
+		"MemorySize": null,
+		"MinLiquidPressure": null,
+		"ModeInsert": [],
+		"MolesPerLitreText": null,
+		"Nutrition": null,
+		"PageCustomCategories": [],
+		"PaintableText": "Да",
+		"PlaceableInRocket": null,
+		"PrefabHash": -1234910677,
+		"PrefabHashString": "-1234910677",
+		"PrefabName": "StructurePowerPylonTerminus",
+		"PressureBreakText": null,
+		"ProducedThingsInserts": [],
+		"RadiationFactorText": null,
+		"ReagentsHash": 0,
+		"ReagentsText": null,
+		"ReagentsType": null,
+		"ResourcesUsed": [],
+		"RocketEngineEfficiency": null,
+		"RocketEngineExhaustVelocity": null,
+		"RocketEngineForce": null,
+		"RocketMass": null,
+		"SlotInserts": [],
+		"SortPriority": 0,
+		"SpecificHeatText": null,
+		"StackSizeText": null,
+		"StructVersionInsert": [],
+		"TYPE": "object",
+		"Text": "",
+		"Title": "Power Pylon Terminus",
+		"UnitText": null,
+		"UsedIn": [],
+		"Volume": null,
+		"prefab": "StructurePowerPylonTerminus",
+		"tags": ["Buildable", "Connectable", "HasImage", "HasPrefab", "Structure"]
+	},
 	"StructurePowerTransmitter": {
 		"AutoIgnitionText": "573 K (300<sup>o</sup>C)",
 		"BasePowerDraw": "<span style=\"color: yellow\">10 W</span>",
@@ -226022,6 +227183,18 @@
 		"PrefabName": "StructureToolManufactory",
 		"PressureBreakText": null,
 		"ProducedThingsInserts": [
+			{
+				"NameOfThing": "Cable Gun",
+				"PageLink": "ThingItemCableGun",
+				"PrefabHash": 272902242,
+				"image": "wiki_data/source/images/d/e/de1b3394a2e8cf1c5ca4a4e5dd264316.png"
+			},
+			{
+				"NameOfThing": "Electrical Belt",
+				"PageLink": "ThingItemCableToolBelt",
+				"PrefabHash": 975362046,
+				"image": "wiki_data/source/images/4/f/4f368aa2b33ac637357911f8ed188115.png"
+			},
 			{
 				"NameOfThing": "Kit Portable A Frame Sign (Stripes)",
 				"PageLink": "ThingItemKitDynamicAFrameStripes",

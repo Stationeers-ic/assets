@@ -5,7 +5,7 @@
 		"name": "abs"
 	},
 	"acos": {
-		"description": "计算弧长为a的余弦值, 并保存在寄存器(r?)中",
+		"description": "反余弦函数, 计算余弦值为a的弧长值, 并保存在寄存器(r?)中",
 		"example": "acos r? a(r?|num)",
 		"name": "acos"
 	},
@@ -45,7 +45,7 @@
 		"name": "bap"
 	},
 	"bapal": {
-		"description": "如果a!=b, 则跳转到代码行号c行, 并将跳转前的行号+1并储存在寄存器ra",
+		"description": "当符合abs(a-b)&lt;=max(c\\*max(abs(a), abs(b)), float. epsilon\\*8)时, 则跳转到代码行号d行, 并将跳转前的行号+1并储存在寄存器ra",
 		"example": "bapal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bapal"
 	},

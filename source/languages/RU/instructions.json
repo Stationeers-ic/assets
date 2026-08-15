@@ -5,7 +5,7 @@
 		"name": "abs"
 	},
 	"acos": {
-		"description": "Возвращает косинус указанного угла.",
+		"description": "Возвращает угол, косинус которого является указанным значением.",
 		"example": "acos r? a(r?|num)",
 		"name": "acos"
 	},
@@ -45,7 +45,7 @@
 		"name": "bap"
 	},
 	"bapal": {
-		"description": "Ответвление на строку c, если a != b, и сохранение номера следующей строки в ra",
+		"description": "Ответвление на строку d, если abs(a - b) &lt;= max(c \\* max(abs(a), abs(b)), float.epsilon \\* 8), и сохранение номера следующей строки в ra",
 		"example": "bapal a(r?|num) b(r?|num) c(r?|num) d(r?|num)",
 		"name": "bapal"
 	},
